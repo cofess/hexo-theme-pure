@@ -1,0 +1,1 @@
+# hexo-pure-theme
