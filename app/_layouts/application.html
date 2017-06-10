@@ -1,0 +1,19 @@
+{% from '_macros/helpers.html' import sprite %}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{{ title }}{% endblock %}</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block head %}{% endblock %}
+  </head>
+  <body>
+    {% block content %}{% endblock %}
+    {% block javascript %}
+      <script src="assets/js/app.js"></script>
+    {% endblock %}
+  </body>
+</html>

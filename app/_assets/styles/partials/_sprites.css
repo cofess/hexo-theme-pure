@@ -1,0 +1,43 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<i class="icon-home"></i>
+```
+*/
+.icon-facebook:hover {
+  background-image: url(/assets/images/sprites/icon-sprite.png);
+  background-position: 0px 0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-facebook {
+  background-image: url(/assets/images/sprites/icon-sprite.png);
+  background-position: 0px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon-googleplus:hover {
+  background-image: url(/assets/images/sprites/icon-sprite.png);
+  background-position: 0px -64px;
+  width: 32px;
+  height: 32px;
+}
+.icon-googleplus {
+  background-image: url(/assets/images/sprites/icon-sprite.png);
+  background-position: 0px -96px;
+  width: 32px;
+  height: 32px;
+}
+.icon-twitter:hover {
+  background-image: url(/assets/images/sprites/icon-sprite.png);
+  background-position: 0px -128px;
+  width: 32px;
+  height: 32px;
+}
+.icon-twitter {
+  background-image: url(/assets/images/sprites/icon-sprite.png);
+  background-position: 0px -160px;
+  width: 32px;
+  height: 32px;
+}

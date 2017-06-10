@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        <img src="/assets/images/gulp.png">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  <script src="{{ '/assets/js/application.js' | prepend: site.baseurl }}"></script>
+
+  </body>
+
+</html>
