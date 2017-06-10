@@ -1,5 +1,0 @@
-@define-extend pattern-light-grey {
-  background-color: $background-color;
-  background-image: url(/assets/images/patterns/light_grey.png);
-  background-size: 301px 621px;
-}

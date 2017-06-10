@@ -73,8 +73,14 @@ module.exports = {
     }
   },
   styles: {
-    src:  srcAssets + '/styles/*.css',
+    src:  srcAssets + '/styles/*.scss',
     dest: developmentAssets + '/css',
+    compile: {
+      indentedSyntax: true,
+      includePaths: [
+        './node_modules/normalize.css'
+      ]
+    },
     // less: {
     //   src: "less",
     //   extensions: ["less" ,"css"],
