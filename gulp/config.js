@@ -149,6 +149,7 @@ module.exports = {
   },
   js: {
     folder: srcAssets + '/javascripts',
+    excludeFolders: ["vendor"],
     src: [
       srcAssets + '/javascripts/*.js',
       srcAssets + '/javascripts/vendor/*.js',
