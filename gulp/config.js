@@ -97,6 +97,18 @@ module.exports = {
     // },
     options: {
       precss: {},
+      clean: {
+        debug: true,
+        level: 0, // The level option can be either 0, 1 (default), or 2, e.g.
+        compatibility: 'ie8', // Internet Explorer 8+ compatibility mode
+        format: 'keep-breaks' // formats output the default way but adds line breaks for improved readability
+      },
+      minify: {
+        debug: true,
+        level: 2, // The level option can be either 0, 1 (default), or 2, e.g.
+        compatibility: 'ie8', // Internet Explorer 8+ compatibility mode
+        format: 'keep-breaks' // formats output the default way but adds line breaks for improved readability
+      },
       autoprefixer: {
         browsers: [
           'last 2 versions',
@@ -112,7 +124,7 @@ module.exports = {
       mqpacker: {}
     }
   },
-  lintStyles: {
+  csslint: {
     src: [
       srcAssets + '/styles/**/*.css',
       '!' + srcAssets + '/styles/partials/_syntax-highlighting.css',
@@ -152,6 +164,15 @@ module.exports = {
       dest:       developmentAssets + '/js',
       outputName: 'head.js'
     }]
+  },
+  js: {
+    src: srcAssets + '/javascripts/*.js',
+    dest: developmentAssets + '/js/',
+    options: {
+      uglify: {
+
+      }
+    }
   },
   //JS代码校验
   jshint: {
