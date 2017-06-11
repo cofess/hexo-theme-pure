@@ -2,7 +2,7 @@ var gulp         = require('gulp')
 var sass         = require('gulp-sass')
 var minify       = require('gulp-clean-css')
 var plumber      = require('gulp-plumber')
-var sourcemaps   = require('gulp-sourcemaps')
+var sourcemap    = require('gulp-sourcemaps')
 var gutil        = require('gulp-util')
 var browsersync  = require('browser-sync')
 var autoprefixer = require('gulp-autoprefixer')
@@ -21,10 +21,10 @@ gulp.task('styles', function() {
     .pipe(plumber({
       errorHandler: onError
     }))
-    .pipe(sourcemaps.init())
+    .pipe(sourcemap.init())
     .pipe(sass(config.compile))
     .pipe(autoprefixer(config.options.autoprefixer))
     .pipe(minify(config.options.clean))
-    .pipe(sourcemaps.write('.'))
+    .pipe(sourcemap.write('.'))
     .pipe(gulp.dest(config.dest));
 });
