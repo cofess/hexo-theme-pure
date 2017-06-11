@@ -8,7 +8,7 @@ var runSequence    = require('run-sequence')
 //   runSequence('delete', 'jekyll:production',
 //   [
 //     'styles',
-//     'scripts',
+//     'js',
 //     'images',
 //     'copy:fonts'
 //   ],
@@ -32,7 +32,7 @@ var runSequence    = require('run-sequence')
 gulp.task('build:production', function(callback) {
   runSequence('delete', [
       'styles',
-      'scripts',
+      'js',
       'images',
       'copy:fonts'
     ],

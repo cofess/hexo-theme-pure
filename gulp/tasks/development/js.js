@@ -1,6 +1,7 @@
 var path           = require('path')
 var gulp           = require('gulp')
 var sourcemap      = require('gulp-sourcemaps')
+var browsersync    = require('browser-sync')
 var rename         = require('gulp-rename')
 var gulpif         = require('gulp-if')
 var config         = require('../../config').js

@@ -9,7 +9,7 @@ gulp.task('build', function(callback) {
       'copy:static',
       'copy:fonts',
       'styles',
-      'scripts',
+      'js',
       'images',
       'html'
     ],
