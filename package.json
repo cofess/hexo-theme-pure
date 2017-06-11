@@ -26,6 +26,7 @@
     "gulp-cached": "^1.1.1",
     "gulp-changed": "^1.0.0",
     "gulp-clean-css": "^3.4.1",
+    "gulp-concat": "^2.6.1",
     "gulp-data": "^1.2.1",
     "gulp-filter": "^3.0.1",
     "gulp-folders": "^1.1.0",

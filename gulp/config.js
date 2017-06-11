@@ -165,7 +165,10 @@ module.exports = {
     }]
   },
   js: {
-    src: srcAssets + '/javascripts/*.js',
+    src: [
+      srcAssets + '/javascripts/*.js',
+      srcAssets + '/javascripts/vendor/*.js',
+    ],
     dest: developmentAssets + '/js/',
     options: {
       uglify: {
