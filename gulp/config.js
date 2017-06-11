@@ -126,10 +126,9 @@ module.exports = {
   },
   csslint: {
     src: [
-      srcAssets + '/styles/**/*.css',
-      '!' + srcAssets + '/styles/partials/_syntax-highlighting.css',
-      '!' + srcAssets + '/styles/partials/_sprites.css',
-      '!' + srcAssets + '/styles/partials/fontcustom.css'
+      developmentAssets + '/css/*css',
+      '!' + developmentAssets + '/css/bootstrap.css',
+      '!' + developmentAssets + '/css/*.min.css',
     ],
     options: {
       stylelint: {
@@ -316,9 +315,16 @@ module.exports = {
     //   src + '/**/*.{html,markdown,md,yml,json,txt,xml}',
     //   src + '/*'
     // ],
+    html: [
+      src + '/_data/**/*.{json,yml,csv}',
+      src + '/_includes/**/*.{html,xml}',
+      src + '/_layouts/*.html',
+      src + '/**/*.{html,markdown,md,yml,json,txt,xml}',
+      src + '/*'
+    ],
     static:  static + '/**/*',
     fonts:   srcAssets + '/fonts/**/*',
-    styles:  srcAssets + '/styles/**/*.css',
+    styles:  srcAssets + '/styles/**/*.{css,scss,less}',
     scripts: srcAssets + '/javascripts/**/*.js',
     images:  srcAssets + '/images/**/*',
     sprites: srcAssets + '/images/**/*.png',
