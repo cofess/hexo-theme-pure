@@ -101,6 +101,7 @@ module.exports = {
         debug: true,
         level: 0, // The level option can be either 0, 1 (default), or 2, e.g.
         compatibility: 'ie8', // Internet Explorer 8+ compatibility mode
+        keepSpecialComments: 0,
         format: 'keep-breaks' // formats output the default way but adds line breaks for improved readability
       },
       minify: {
@@ -148,13 +149,16 @@ module.exports = {
     }
   },
   js: {
-    folder: srcAssets + '/javascripts',
-    excludeFolders: ["vendor"],
     src: [
       srcAssets + '/javascripts/*.js',
       srcAssets + '/javascripts/vendor/*.js',
     ],
     dest: developmentAssets + '/js/',
+    concat: {
+      folder: srcAssets + '/javascripts/concat',
+      excludeFolders: [],
+      dest: developmentAssets + '/js/',
+    },
     options: {
       uglify: {
 
