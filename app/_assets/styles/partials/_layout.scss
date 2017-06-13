@@ -1,34 +1,13 @@
 /*
- * Global add-ons
- */
-
-.sub-header {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-}
-
-
-/*
- * Top navigation
- * Hide default border to remove 1px line.
- */
-
-.navbar-fixed-top {
-  border: 0;
-}
-
-
-/*
  * Sidebar
  */
 
 
 /* Hide for mobile, show later */
 
-.main-sidebar {
-  display: none;
-}
-
+// .main-sidebar {
+//   display: none;
+// }
 @media (min-width: 768px) {
   .main-sidebar {
     position: fixed;
@@ -61,66 +40,87 @@
 }
 
 
-/* Sidebar navigation */
-
-.nav-sidebar {
-  margin-right: -21px;
-  /* 20px padding + 1px border */
-  margin-bottom: 20px;
-  margin-left: -20px;
-}
-
-.nav-sidebar > li > a {
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-.nav-sidebar > .active > a,
-.nav-sidebar > .active > a:hover,
-.nav-sidebar > .active > a:focus {
-  color: #fff;
-  background-color: #428bca;
-}
-
-
 /*
- * Main content
+ * main-center
  */
 
-.main {
-  padding: 20px;
-}
-
-@media (min-width: 768px) {
+body.main-center {
+  .main-sidebar {}
+  .sidebar{
+    left:auto;
+    right:0;
+    border-left: 1px solid #f6f6f6;
+    border-right:0;
+  }
   .main {
-    padding-right: 40px;
-    padding-left: 40px;
+    @media (min-width: $screen-sm-min) {
+      margin-left: 25%;
+    }
+    @media (min-width: $screen-md-min) {
+      margin-left: 16.66666667%;
+    }
+    @media (min-width: $screen-lg-min) {
+      margin-left: 16.66666667%;
+    }
   }
 }
 
-.main .page-header {
-  margin-top: 0;
+
+/*
+ * main-left
+ */
+
+body.main-left {
+  .main-sidebar {
+    left:auto;
+    right:0;
+    border-left: 1px solid #f6f6f6;
+    border-right:0;
+  }
+  .sidebar{
+    left:auto;
+    right:0;
+    border-left: 1px solid #f6f6f6;
+    border-right:0;
+    @media (min-width: $screen-sm-min) {
+      margin-right: 25%;
+    }
+    @media (min-width: $screen-md-min) {
+      margin-right: 16.66666667%;
+    }
+    @media (min-width: $screen-lg-min) {
+      margin-right: 16.66666667%;
+    }
+  }
 }
 
 
 /*
- * Placeholder dashboard ideas
+ * main-right
  */
 
-.placeholders {
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.placeholders h4 {
-  margin-bottom: 0;
-}
-
-.placeholder {
-  margin-bottom: 20px;
-}
-
-.placeholder img {
-  display: inline-block;
-  border-radius: 50%;
+body.main-right {
+  .main-sidebar {}
+  .sidebar {
+    @media (min-width: $screen-sm-min) {
+      margin-left: 25%;
+    }
+    @media (min-width: $screen-md-min) {
+      margin-left: 16.66666667%;
+    }
+    @media (min-width: $screen-lg-min) {
+      margin-left: 16.66666667%;
+    }
+  }
+  .main {
+    @media (min-width: $screen-sm-min) {
+      margin-left: 58.33333333%;
+    }
+    @media (min-width: $screen-md-min) {
+      margin-left: 41.66666667%;
+    }
+    @media (min-width: $screen-lg-min) {
+      margin-left: 41.66666667%;
+    }
+  }
 }

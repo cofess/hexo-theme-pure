@@ -2,5 +2,13 @@
 @import "partials/variables";
 @import "partials/mixins";
 
+@import "partials/scrollbar";
 @import "partials/ie10-viewport-bug-workaround";
+@import "partials/common";
 @import "partials/layout";
+@import "partials/main";
+@import "partials/main-sidebar";
+@import "partials/sidebar";
+@import "partials/list";
+@import "partials/post";
+@import "partials/theme";
