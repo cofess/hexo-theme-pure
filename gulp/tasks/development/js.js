@@ -15,7 +15,7 @@ if (!config) return
 gulp.task('js', function() {
   browsersync.notify('Compiling JavaScript');
   return gulp.src(config.src)
-    .pipe(gulpif('!*min.js',sourcemap.init()))
-    .pipe(gulpif('!*min.js',sourcemap.write('./')))
+    .pipe(gulpif(config.sourcemap && '!*min.js',sourcemap.init()))
+    .pipe(gulpif(config.sourcemap && '!*min.js',sourcemap.write('./')))
     .pipe(gulp.dest(config.dest));
 });

@@ -75,6 +75,7 @@ module.exports = {
   styles: {
     src:  srcAssets + '/styles/*.scss',
     dest: developmentAssets + '/css',
+    sourcemap: false, //是否生成sourcemap
     compile: {
       indentedSyntax: true,
       includePaths: [
@@ -154,6 +155,7 @@ module.exports = {
       srcAssets + '/javascripts/vendor/*.js',
     ],
     dest: developmentAssets + '/js/',
+    sourcemap: true, //是否生成sourcemap
     concat: {
       folder: srcAssets + '/javascripts/concat',
       excludeFolders: [],

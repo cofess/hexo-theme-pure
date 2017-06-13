@@ -6,6 +6,7 @@ var sourcemap    = require('gulp-sourcemaps')
 var gutil        = require('gulp-util')
 var browsersync  = require('browser-sync')
 var autoprefixer = require('gulp-autoprefixer')
+var gulpif       = require('gulp-if')
 var config       = require('../../config').styles
 
 if (!config) return
@@ -21,10 +22,10 @@ gulp.task('styles', function() {
     .pipe(plumber({
       errorHandler: onError
     }))
-    .pipe(sourcemap.init())
+    .pipe(gulpif(config.sourcemap,sourcemap.init()))
     .pipe(sass(config.compile))
     .pipe(autoprefixer(config.options.autoprefixer))
     .pipe(minify(config.options.clean))
-    .pipe(sourcemap.write('.'))
+    .pipe(gulpif(config.sourcemap,sourcemap.write('.')))
     .pipe(gulp.dest(config.dest));
 });
