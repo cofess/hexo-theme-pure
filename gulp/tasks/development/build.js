@@ -10,6 +10,7 @@ gulp.task('build', function(callback) {
       'copy:fonts',
       'styles',
       'js',
+      'jsconcat',
       'images',
       'html'
     ],
