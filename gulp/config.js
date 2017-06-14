@@ -194,8 +194,8 @@ module.exports = {
     src: srcAssets + '/images/sprites',
     // src: srcAssets + '/images/sprites/icon/*.png',
     dest: {
-      css: srcAssets + '/styles/partials/base/',
-      image: srcAssets + '/images/sprites/'
+      css: srcAssets + '/styles/partials/sprites/',
+      image: developmentAssets + '/images'
     },
     options: {
       // cssName: '_sprites.scss',
@@ -203,13 +203,13 @@ module.exports = {
       padding: 20,//图片间距
       algorithm: 'binary-tree', //图标排列方式，top-down、left-right、diagonal、alt-diagonal、binary-tree
       cssOpts: {
-        cssClass: function (item) {
+        cssSelector: function (item) {
           // If this is a hover sprite, name it as a hover one (e.g. 'home-hover' -> 'home:hover')
           if (item.name.indexOf('-hover') !== -1) {
-            return '.icon-' + item.name.replace('-hover', ':hover');
+            return '.' + item.name.replace('-hover', ':hover');
             // Otherwise, use the name as the selector (e.g. 'home' -> 'home')
           } else {
-            return '.icon-' + item.name;
+            return '.' + item.name;
           }
         }
       },

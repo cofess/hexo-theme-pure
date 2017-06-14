@@ -34,8 +34,8 @@ gulp.task(
       .pipe(spritesmith(extend(config.options, {
         // retinaSrcFilter: [config.src+'/**/*@2x.png'],
         // retinaImgName: 'sprite_' + folder + '@2x.png', // retina sprites image
-        imgName: 'sprite_' + folder + '.png',
-        cssName: 'sprite_' + folder + '.scss',
+        imgName: '../images/sprite_' + folder + '.png',
+        cssName: '_sprite_' + folder + '.scss',
       })));
 
     // Pipe image stream through image optimizer and onto disk
