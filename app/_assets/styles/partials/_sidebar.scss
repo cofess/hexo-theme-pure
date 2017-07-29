@@ -1,4 +1,8 @@
 .widget {
+  .widget-title{
+    font-size:18px;
+    font-weight:bold;
+  }
   time {
     color: $text-light-color;
     font-size: 12px;
@@ -22,6 +26,9 @@
   //     color: $link-hover-color;
   //   }
   // }
+  + .widget{
+    margin-top:20px;
+  }
 }
 
 .category-list-count,
