@@ -30,6 +30,7 @@
     "gulp-data": "^1.2.1",
     "gulp-filter": "^3.0.1",
     "gulp-folders": "^1.1.0",
+    "gulp-group-css-media-queries": "^1.2.0",
     "gulp-gzip": "^1.2.0",
     "gulp-htmlmin": "^1.2.0",
     "gulp-if": "^2.0.2",
