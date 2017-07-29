@@ -9,20 +9,16 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="icon" href="favicon.ico">
-  <title>Dashboard Template for Bootstrap</title>
+  <title>首页 - 主体内容靠左</title>
   {% include "_includes/head.html" %}
 </head>
 
-<body class="main-right">
-  <div class="container-fluid">
-    <div class="row">
-      {% include "_includes/main-sidebar.html" %}
-      {% include "_includes/sidebar.html" %}
-      <div class="col-sm-5 col-md-7 col-lg-7 main">
-        {% include "_includes/list.html" %}  
-      </div>
-    </div>
-  </div>
+<body class="main-left">
+  {% include "_includes/mainside.html" %} 
+  {% include "_includes/sidebar.html" %}
+  <section class="main">
+    {% include "_includes/list.html" %}
+  </section>
   {% include "_includes/scripts.html" %}
 </body>
 

@@ -15,7 +15,8 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
+// $brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
+$brand-primary:         #2196f3 !default; // #337ab7
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
@@ -315,6 +316,13 @@ $screen-lg:                  1200px !default;
 $screen-lg-min:              $screen-lg !default;
 //** Deprecated `$screen-lg-desktop` as of v3.0.1
 $screen-lg-desktop:          $screen-lg-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-xl:                  1440px !default;
+$screen-xl-min:              $screen-xl !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-xl-desktop:          $screen-xl-min !default;
 
 // So media queries don't overlap when required, provide a maximum
 $screen-xs-max:              ($screen-sm-min - 1) !default;

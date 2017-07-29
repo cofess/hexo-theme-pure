@@ -194,7 +194,7 @@
   position: relative;
   float: right;
   margin-right: $navbar-padding-horizontal;
-  padding: 9px 10px;
+  padding: 10px 10px;
   @include navbar-vertical-align(34px);
   background-color: transparent;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
@@ -215,7 +215,7 @@
     border-radius: 1px;
   }
   .icon-bar + .icon-bar {
-    margin-top: 4px;
+    margin-top: 3px;
   }
 
   @media (min-width: $grid-float-breakpoint) {

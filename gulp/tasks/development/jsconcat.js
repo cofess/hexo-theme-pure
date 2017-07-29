@@ -16,7 +16,7 @@ gulp.task('jsconcat', folders({
   //With folderFound.name gets the folderName 
   //With folderFound.path gets all folder path found 
   //With folderFound.pathTarget gets the relative path beginning from options.pathFolder 
-  return gulp.src(folder.path + "/*.js")
+  return gulp.src([folder.path + "/**/*.js","!" + folder.path + "/_*/*.js","!" + folder.path + "/**/_*.js"])
     .pipe(sourcemap.init())
     .pipe(concat(folder.name + ".js"))
     .pipe(sourcemap.write('.'))

@@ -4,6 +4,7 @@ var build             = 'build'; //构建目录
 var development       = 'build/development';
 var production        = 'build/production';
 var srcAssets         = 'app/_assets';
+var concatFolder      = srcAssets + '/javascripts/_concat';
 var developmentAssets = 'build/assets';
 var productionAssets  = 'build/production/assets';
 
@@ -73,7 +74,10 @@ module.exports = {
     }
   },
   styles: {
-    src:  srcAssets + '/styles/*.scss',
+    src:  [
+      srcAssets + '/styles/*.scss',
+      '!' + srcAssets + '/styles/_*.scss',
+    ],
     dest: developmentAssets + '/css',
     sourcemap: false, //是否生成sourcemap
     compile: {
@@ -109,7 +113,7 @@ module.exports = {
         debug: true,
         level: 2, // The level option can be either 0, 1 (default), or 2, e.g.
         compatibility: 'ie8', // Internet Explorer 8+ compatibility mode
-        format: 'keep-breaks' // formats output the default way but adds line breaks for improved readability
+        // format: 'keep-breaks' // formats output the default way but adds line breaks for improved readability
       },
       autoprefixer: {
         browsers: [
@@ -151,14 +155,17 @@ module.exports = {
   },
   js: {
     src: [
-      srcAssets + '/javascripts/*.js',
-      srcAssets + '/javascripts/vendor/*.js',
+      srcAssets + '/javascripts/**/*.js',
+      '!' + srcAssets + '/javascripts/_*/**',
+      '!' + srcAssets + '/javascripts/**/_*.js',
     ],
     dest: developmentAssets + '/js/',
     sourcemap: true, //是否生成sourcemap
     concat: {
-      folder: srcAssets + '/javascripts/concat',
-      excludeFolders: [],
+      folder: concatFolder,
+      excludeFolders: [
+        'bootstrap'
+      ],
       dest: developmentAssets + '/js/',
     },
     options: {
@@ -169,7 +176,10 @@ module.exports = {
   },
   //JS代码校验
   jshint: {
-    src: srcAssets + '/javascripts/*.js'
+    src: [
+      srcAssets + '/javascripts/*.js',
+      '!' + srcAssets + '/javascripts/*.min.js',
+    ]
   },
   images: {
     src:  srcAssets + '/images/**/*',

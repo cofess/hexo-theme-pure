@@ -1,0 +1,154 @@
+.modal {
+  button.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 99;
+  }
+}
+
+.modal-center {
+  text-align: center;
+  padding: 0!important;
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+  }
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+}
+
+.modal-xs-full {
+  .modal-dialog,
+  .modal-content {
+    @media (max-width: $screen-xs-max) {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      border-radius: 0;
+      box-shadow: none;
+      .donate-box {
+        padding-top: 50px;
+      }
+    }
+  }
+}
+
+.btn-donate {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 18px;
+  z-index: 99;
+  &:focus,
+  &:hover,
+  &:active {
+    border-color: transparent!important;
+    outline: none!important;
+  }
+  &.btn-fancy {
+    background-color: transparent;
+    span {
+      width: 50px;
+      height: 50px;
+      padding:0;
+    }
+  }
+  // &:after {
+  //   position: absolute;
+  //   content: '';
+  //   transition: all 0.3s;
+  //   z-index: -1;
+  // }
+  // &:hover {
+  //   &:after {
+  //     left: -5px;
+  //     top: -5px;
+  //     content: '';
+  //     display: block;
+  //     width: 60px;
+  //     height: 60px;
+  //     background: #d9534f;
+  //     border-radius: 50%;
+  //     overflow: hidden;
+  //   }
+  // }
+}
+
+.donate-box {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .donate-tit {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    line-height: 60px;
+    color: #a3a3a3;
+    font-size: 16px;
+    position: relative;
+    &:before,
+    &:after {
+      font-family: Arial, Helvetica, sans-serif;
+      background: none;
+      width: 0px;
+      height: 0px;
+      font-style: normal;
+      color: #eee;
+      font-size: 100px;
+      position: absolute;
+      top: 5px;
+    }
+    &:before {
+      content: '\201c';
+      left: 30px;
+    }
+    &:after {
+      content: '\201d';
+      right: 70px;
+    }
+  }
+  .pay_logo {
+    img {
+      margin-top: -5px;
+    }
+  }
+  .donate-payimg {
+    display: inline-block;
+    padding: 10px;
+    border: 6px solid #ea5f00;
+    margin: 0 auto;
+    border-radius: 3px;
+    img {
+      display: block;
+      text-align: center;
+      width: 140px;
+      height: 140px;
+    }
+  }
+  .donate-payselect {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    cursor: pointer;
+    height: 60px;
+    .pay_item {
+      display: inline-block;
+      margin-right: 10px;
+      float: left;
+    }
+  }
+}

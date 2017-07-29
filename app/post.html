@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+  <title>文章</title>
+  {% include "_includes/head.html" %}
+</head>
+
+<body class="main-center auto-scroll">
+  {% include "_includes/mainside.html" %} {% include "_includes/sidebar.html" %}
+  <section class="main">
+    <div class="content">
+      <article id="post-hexo-blog" class="article article-type-normal" itemscope="" itemprop="blogPost">
+        <header class="article-header">
+          <h1 itemprop="name">
+          <a class="article-title" href="/2017/04/09/hexo-blog.html">Hexo搭建个人博客并部署到Github</a>
+        </h1>
+          <div class="article-meta">
+            <span class="article-date">
+              <i class="fa fa-calendar"></i>
+              <a href="/2017/04/09/hexo-blog.html">
+                <time datetime="2017-04-09T06:49:13.000Z" itemprop="datePublished">2017-04-09</time>
+              </a>
+            </span>
+            <span class="article-category">
+              <i class="fa fa-folder"></i>
+              <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
+            </span>
+            <span class="article-tag">
+              <i class="fa fa-tag"></i>
+              <a class="tag-link" href="/tags/Github/">Github</a>, <a class="tag-link" href="/tags/Hexo/">Hexo</a>
+            </span>
+            <span class="article-read">
+              <i class="fa fa-eye" aria-hidden="true"></i>&nbsp;
+              <span id="busuanzi_container_page_pv">阅读<span id="busuanzi_value_page_pv">141</span>次</span>
+            </span>
+            <span class="post-count">&nbsp;&nbsp;字数统计: 252(字)</span>
+            <span class="post-count">&nbsp;&nbsp;阅读时长: 1(分)</span>
+          </div>
+        </header>
+        <div class="article-entry" itemprop="articleBody" lg-uid="lg0">
+          <h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2>
+          <p>你需要准备好以下软件：
+            <br>Node.js环境和Git</p>
+          <h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2>
+          <figure class="highlight plain">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter"><pre><div class="line">1</div></pre></td>
+                  <td class="code"><pre><div class="line">npm install hexo -g</div></pre></td>
+                </tr>
+              </tbody>
+            </table>
+          </figure>
+          <h2 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h2>
+          <p>更新hexo到最新版</p>
+          <figure class="highlight plain">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter"><pre><div class="line">1</div></pre></td>
+                  <td class="code"><pre><div class="line">npm update hexo -g</div></pre></td>
+                </tr>
+              </tbody>
+            </table>
+          </figure>
+          <h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2>
+          <figure class="highlight plain">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter"><pre><div class="line">1</div></pre></td>
+                  <td class="code"><pre><div class="line">hexo init &lt;folder&gt;</div></pre></td>
+                </tr>
+              </tbody>
+            </table>
+          </figure>
+          <p>如果指定
+            <folder>，便会在目前的资料夹建立一个名为
+              <folder> 的新文件夹；否则会在目前资料夹初始化。</folder>
+            </folder>
+          </p>
+          <h2 id="生成网站"><a href="#生成网站" class="headerlink" title="生成网站"></a>生成网站</h2>
+          <figure class="highlight plain">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter"><pre><div class="line">1</div></pre></td>
+                  <td class="code"><pre><div class="line">hexo g</div></pre></td>
+                </tr>
+              </tbody>
+            </table>
+          </figure>
+          <h2 id="启动本地服务"><a href="#启动本地服务" class="headerlink" title="启动本地服务"></a>启动本地服务</h2>
+          <figure class="highlight plain">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter"><pre><div class="line">1</div></pre></td>
+                  <td class="code"><pre><div class="line">hexo s</div></pre></td>
+                </tr>
+              </tbody>
+            </table>
+          </figure>
+          <p>启动服务后，就可以访问：<a href="http://localhost:4000/（port" target="_blank" rel="external">http://localhost:4000/（port</a> 预设为 4000，可在 _config.yml 设定）</p>
+          <h2 id="RSS订阅"><a href="#RSS订阅" class="headerlink" title="RSS订阅"></a>RSS订阅</h2>
+          <p>命令行切换到hexo博客根目录，安装hexo-generator-feed
+            <br>
+          </p>
+          <figure class="highlight plain">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter"><pre><div class="line">1</div></pre></td>
+                  <td class="code"><pre><div class="line">$ npm install hexo-generator-feed --save</div></pre></td>
+                </tr>
+              </tbody>
+            </table>
+          </figure>
+          <p></p>
+          <p>在博客目录的_config.yml中添加如下代码
+            <br>
+          </p>
+          <figure class="highlight plain">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td>
+                  <td class="code"><pre><div class="line"># feed   </div><div class="line">feed:</div><div class="line">  type: atom</div><div class="line">  path: atom.xml</div><div class="line">  limit: 20</div><div class="line">  hub:</div><div class="line">  content:</div></pre></td>
+                </tr>
+              </tbody>
+            </table>
+          </figure>
+          <p></p>
+          <h2 id="sitemap站点地图"><a href="#sitemap站点地图" class="headerlink" title="sitemap站点地图"></a>sitemap站点地图</h2>
+          <p>命令行切换到hexo博客根目录，分别用下面两个命令来安装针对谷歌和百度的sitemap插件
+            <br>
+          </p>
+          <figure class="highlight plain">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td>
+                  <td class="code"><pre><div class="line">npm install hexo-generator-sitemap --save</div><div class="line">npm install hexo-generator-baidu-sitemap --save</div></pre></td>
+                </tr>
+              </tbody>
+            </table>
+          </figure>
+          <p></p>
+          <p>在博客目录的_config.yml中添加如下代码
+            <br>
+          </p>
+          <figure class="highlight plain">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td>
+                  <td class="code"><pre><div class="line"># sitemap</div><div class="line">sitemap:</div><div class="line">  path: sitemap.xml</div><div class="line">baidusitemap:</div><div class="line">  path: baidusitemap.xml</div></pre></td>
+                </tr>
+              </tbody>
+            </table>
+          </figure>
+        </div>
+        <footer class="article-footer">
+          {% include "_includes/post-auth.html" %}
+        </footer>
+      </article>
+      <div class="wrapper mb-3x">
+        <a href="#" class="btn-fancy bg-gradient-info"><span><i class="fa fa-wheelchair-alt"></i>Follow Me</span></a>
+        <a href="#" class="btn-fancy bg-gradient-primary"><span><i class="fa fa-wheelchair-alt"></i>Follow Me</span></a>
+        <a href="#" class="btn-fancy bg-gradient-success"><span><i class="fa fa-envelope"></i>Messages</span></a>
+      </div><!-- /.wrapper -->
+      <div class="wrapper mb-3x">
+        <a href="#" class="btn-fancy pop-onhover bg-gradient-warning"><span>Post A Comment</span></a>
+        <a href="#" class="btn-fancy pop-onhover bg-gradient-danger"><span>Share Channel</span></a>
+      </div><!-- /.wrapper -->
+    </div>
+    <nav class="bar bar-footer clearfix" data-stick-bottom>
+      <ul class="pager pull-left">
+        <li class="previous"><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;Prev</a></li>
+        <li class="next"><a href="#">Next&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+      </ul>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
+      <div class="bar-right">
+        <!-- <div class="social-share" data-initialized="true">
+          <a href="#" class="social-share-icon fa fa-weibo icon-weibo"></a>
+          <a href="#" class="social-share-icon fa fa-qq icon-qq"></a>
+          <a href="#" class="social-share-icon fa fa-wechat icon-wechat"></a>
+          <a href="#" class="social-share-icon fa fa-wechat icon-wechat"></a>
+          <a href="#" class="social-share-icon fa fa-wechat icon-wechat"></a>
+          <a href="#" class="social-share-icon fa fa-wechat icon-wechat"></a> 
+          <a href="#" class="social-share-icon fa fa-wechat icon-wechat"></a> 
+          <a href="#" class="social-share-icon fa fa-wechat icon-wechat"></a> 
+          <a href="#" class="social-share-icon fa fa-wechat icon-wechat"></a>       
+        </div> -->
+        <div class="share-component" data-mobile-sites="weibo,qq,qzone" data-disabled="tencent,diandian,linkedin" data-description="一键分享到微博，QQ空间，腾讯微博，人人，豆瓣"></div>
+      </div>
+    </nav>
+    {% include "_includes/donate.html" %}
+  </section>
+  {% include "_includes/scripts.html" %}
+</body>
+
+</html>

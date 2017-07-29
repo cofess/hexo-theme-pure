@@ -1,0 +1,160 @@
+$oknav-header-bg: #fff;
+$oknav-header-height: 7rem;
+$oknav-links-color: #2e2e33;
+$oknav-links-hover-color: #0a6ebd;
+$oknav-links-font-size: 1.4rem;
+$oknav-links-font-weight: 400;
+$oknav-links-padding-x: 15px;
+$oknav-links-padding-y: 15px;
+$oknav-kebab-color: #666; // Icon color by default
+$oknav-kebab-active-color: $oknav-links-hover-color; // Icon color when nav is open
+$oknav-transition-curve: cubic-bezier(.55, 0, .1, 1);
+$oknav-transition-speed: 200ms;
+$oknav-invisible-background: #fff;
+
+/*
+ * We are hiding the invisible nav outside the screen
+ * so we need to avoid the horizontal scroll
+ */
+
+body.okayNav-loaded {
+  overflow-x: hidden
+}
+
+.okayNav {
+  position: relative;
+  @include clearfix;
+  &:not(.loaded) {
+    // Hide the links by default to avoid FOUC
+    visibility: hidden;
+    user-select: none;
+  }
+  ul {
+    /* We want two navigations - one hidden and one visible */
+    float: left;
+    padding-left: 0;
+  }
+  a {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.okayNav__nav--visible {
+  overflow: hidden;
+  white-space: nowrap;
+  li {
+    display: inline-block;
+    margin-left: $oknav-links-padding-y;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  a {
+    /* Link styling for the visible part of the nav */
+    display: block;
+    // padding: $oknav-links-padding-y $oknav-links-padding-x;
+    transition: color $oknav-transition-speed $oknav-transition-curve;
+    // &:hover {
+    //   color: $oknav-links-hover-color;
+    // }
+  }
+  &:empty {
+    & ~ .okayNav__menu-toggle {
+      top: 0
+    }
+  }
+}
+
+
+/* Link styling for the off-screen part of the nav */
+
+.okayNav__nav--invisible {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 24px;
+  // bottom: 0;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: $oknav-invisible-background;
+  li {
+    display: inline-block;
+    a {
+      display: block;
+      padding: 6px 15px;
+    }
+  }
+  &.nav-left {
+    left: 0;
+    // transform: translateX(-120%);
+  }
+  &.nav-right {
+    right: 0;
+    // transform: translateX(120%);
+  }
+  &.transition-enabled {
+    transition: transform 400ms $oknav-transition-curve
+  }
+  &.nav-open {
+    display: block;
+    z-index: 99;
+    border: 1px solid $border-color;
+    // transform: translateX(0)
+  }
+}
+
+
+/* Kebab icon */
+
+.okayNav__menu-toggle {
+  position: relative;
+  z-index: 1;
+  // top: 0;
+  float: right;
+  margin-left: 15px;
+  // width: 16px;
+  // height: 16px;
+  cursor: pointer;
+  transition: transform 400ms $oknav-transition-curve;
+  &.okay-invisible {
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    opacity: 0;
+  }
+  span {
+    // position: absolute;
+    // right: 0;
+    // left: 0;
+    background: $oknav-kebab-color;
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    margin: auto 1px;
+    pointer-events: none;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+  &.icon--active {
+    /* Kebab icon when off-screen nav is open */
+    // transform: rotate(90deg);
+    span {
+      background: $oknav-kebab-active-color
+    }
+  }
+}
+
+.okayNav {
+  a {
+    color: $oknav-links-color;
+    // font-size: $oknav-links-font-size;
+    font-weight: $oknav-links-font-weight;
+    &:hover {
+      color: $oknav-links-hover-color
+    }
+  }
+}

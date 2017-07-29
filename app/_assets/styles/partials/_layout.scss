@@ -2,40 +2,104 @@
  * Sidebar
  */
 
-
 /* Hide for mobile, show later */
 
-// .main-sidebar {
-//   display: none;
-// }
-@media (min-width: 768px) {
-  .main-sidebar {
+.mainside {
+  background-color: $mainside-bg;
+  @media (min-width: $screen-sm-min) {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     z-index: 1000;
     display: block;
-    padding: 20px;
-    overflow-x: hidden;
+    padding: 0;
+    // overflow-x: hidden;
     overflow-y: auto;
     /* Scrollable contents if viewport is shorter than content. */
-    background-color: #fbfbfb;
-    border-right: 1px solid #f6f6f6;
+    border-right: 1px solid $sidebar-border-color;
+    width: $mainside-sm-width;
   }
-  .sidebar {
+  @media (min-width: $screen-md-min) {
+    width: $mainside-md-width;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $mainside-lg-width;
+  }
+  @media (min-width: $screen-xl-min) {
+    width: $mainside-xl-width;
+  }
+}
+
+.sidebar {
+  background-color: $sidebar-bg;
+  .slimContent {
+    padding: 20px;
+  }
+  @media (max-width: $screen-xs-max) {
+    display: none;
+  }
+  @media (min-width: $screen-sm-min) {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     z-index: 1000;
     display: block;
-    padding: 20px;
+    padding: 0;
     overflow-x: hidden;
     overflow-y: auto;
     /* Scrollable contents if viewport is shorter than content. */
-    background-color: #fdfdfd;
-    border-right: 1px solid #f6f6f6;
+    border-right: 1px solid $sidebar-border-color;
+    width: $sidebar-sm-width;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $sidebar-md-width;
+    .slimContent {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $sidebar-lg-width;
+    .slimContent {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }
+  @media (min-width: $screen-xl-min) {
+    width: $sidebar-xl-width;
+    .slimContent {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
+}
+
+.main {
+  position: relative;
+  min-height: 100vh;
+  padding: 15px;
+  @include clearfix;
+  @media (min-width: $screen-sm-min) {
+    width: $main-sm-width;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $main-md-width;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $main-lg-width;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  @media (min-width: $screen-xl-min) {
+    width: $main-xl-width;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 
@@ -45,16 +109,16 @@
  */
 
 body.main-center {
-  .main-sidebar {}
-  .sidebar{
-    left:auto;
-    right:0;
-    border-left: 1px solid #f6f6f6;
-    border-right:0;
+  .mainside {}
+  .sidebar {
+    left: auto;
+    right: 0;
+    border-left: 1px solid $sidebar-border-color;
+    border-right: 0;
   }
   .main {
     @media (min-width: $screen-sm-min) {
-      margin-left: 25%;
+      margin-left: 4.16666667%;
     }
     @media (min-width: $screen-md-min) {
       margin-left: 16.66666667%;
@@ -71,19 +135,19 @@ body.main-center {
  */
 
 body.main-left {
-  .main-sidebar {
-    left:auto;
-    right:0;
-    border-left: 1px solid #f6f6f6;
-    border-right:0;
+  .mainside {
+    left: auto;
+    right: 0;
+    border-left: 1px solid $sidebar-border-color;
+    border-right: 0;
   }
-  .sidebar{
-    left:auto;
-    right:0;
-    border-left: 1px solid #f6f6f6;
-    border-right:0;
+  .sidebar {
+    left: auto;
+    right: 0;
+    border-left: 1px solid $sidebar-border-color;
+    border-right: 0;
     @media (min-width: $screen-sm-min) {
-      margin-right: 25%;
+      margin-right: 4.16666667%;
     }
     @media (min-width: $screen-md-min) {
       margin-right: 16.66666667%;
@@ -100,10 +164,10 @@ body.main-left {
  */
 
 body.main-right {
-  .main-sidebar {}
+  .mainside {}
   .sidebar {
     @media (min-width: $screen-sm-min) {
-      margin-left: 25%;
+      margin-left: 4.16666667%;
     }
     @media (min-width: $screen-md-min) {
       margin-left: 16.66666667%;
@@ -114,13 +178,52 @@ body.main-right {
   }
   .main {
     @media (min-width: $screen-sm-min) {
-      margin-left: 58.33333333%;
+      margin-left: 37.5%;
     }
     @media (min-width: $screen-md-min) {
       margin-left: 41.66666667%;
     }
     @media (min-width: $screen-lg-min) {
       margin-left: 41.66666667%;
+    }
+  }
+}
+
+body.no-sidebar {
+  .sidebar {
+    display: none!important;
+  }
+  &.main-left {
+    .main {
+      @media (min-width: $screen-sm-min) {
+        width: 95.83333333%;
+        margin-right: 4.16666667%;
+      }
+      @media (min-width: $screen-md-min) {
+        width: 83.33333333%;
+        margin-right: 16.66666667%;
+      }
+      @media (min-width: $screen-lg-min) {
+        width: 83.33333333%;
+        margin-right: 16.66666667%;
+      }
+    }
+  }
+  &.main-right,
+  &.main-center {
+    .main {
+      @media (min-width: $screen-sm-min) {
+        width: 95.83333333%;
+        margin-left: 4.16666667%;
+      }
+      @media (min-width: $screen-md-min) {
+        width: 83.33333333%;
+        margin-left: 16.66666667%;
+      }
+      @media (min-width: $screen-lg-min) {
+        width: 83.33333333%;
+        margin-left: 16.66666667%;
+      }
     }
   }
 }
