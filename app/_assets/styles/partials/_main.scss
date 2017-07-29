@@ -79,6 +79,11 @@
         text-decoration: none;
       }
     }
+    span{
+      + span {
+        margin-left:10px;
+      }
+    }
   }
   &.has-sticky {
     .content {
