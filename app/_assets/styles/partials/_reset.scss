@@ -15,6 +15,7 @@ body {
 a {
   color: $link-dark-color;
   text-decoration: none;
+  &:focus,
   &:hover {
     color: $link-hover-color;
     text-decoration: none;
