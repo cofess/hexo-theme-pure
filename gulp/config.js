@@ -61,7 +61,7 @@ module.exports = {
   },
   static: {
     src: static,
-    dest: build
+    dest: developmentAssets
   },
   fonts: {
     development: {
