@@ -3,15 +3,24 @@
   "version": "0.0.1",
   "description": "The build process of my website with Gulp.js",
   "private": true,
-  "browserify-shim": {
-    "modernizr": "Modernizr",
-    "jquery": "$"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "browserify": {
-    "transform": [
-      "browserify-shim"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cofess/hexo-theme-pure"
   },
+  "keywords": [
+    "hexo",
+    "theme",
+    "pure"
+  ],
+  "author": "Cofess",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cofess/hexo-theme-pure/issues"
+  },
+  "homepage": "https://github.com/cofess/hexo-theme-pure",
   "devDependencies": {
     "browser-sync": "^2.9.11",
     "del": "^0.1.3",

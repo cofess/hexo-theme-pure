@@ -1,115 +1,36 @@
-# Menus
+# Header
 menu:
-  Home: .
-  Archives: archives
-  Categories: categories
-  Tags: tags
-  Repository: repository
-  About: about
+  Home: /
+  Archives: /archives
+rss: /atom.xml
 
-# Site
-site:
-    title: Cofess - Web Developer & Designer # 页面title
-    board: <p>欢迎交流与分享经验!</p> # 站点公告
-    copyright: Cofess - Web Developer & Designer # 底部版权信息
-    footLinks: false # options: true, false  # 网站底部是否显示友情链接
+# Content
+excerpt_link: Read More
+fancybox: true
 
-# Customize
-customize:
-    logo:
-        enabled: true
-        width: 40
-        height: 40
-        url: ../images/logo.png
-    profile:
-        enabled: true # Whether to show profile bar
-        avatar: images/avatar.jpg
-        gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-        author: Cofess
-        author_title: Web Developer & Designer
-        location: Shenzhen, China
-        follow: https://github.com/cofess
-    highlight: github # github, monokai
-    sidebar: right # sidebar position, options: left, right
-    thumbnail: false # enable posts thumbnail, options: true, false
-    favicon: /favicon.png # path to favicon
-    social_links:
-        github: https://github.com/cofess
-        weibo: http://weibo.com/cofess
-        twitter: https://twitter.com/iwebued
-        # facebook: /
-        # dribbble: /
-        behance: https://www.behance.net/cofess
-        rss: atom.xml
-    social_link_tooltip: true # enable the social link tooltip, options: true, false
-
-# Widgets
+# Sidebar
+sidebar: right
 widgets:
-    - board
-    - recent_posts
-    - category
-    - archive
-    - tag
-    - tagcloud
-    - github_repo
-    # - links
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
 
-# Search
-search:
-    insight: true # you need to install `hexo-generator-json-content` before using Insight Search
-    swiftype: # enter swiftype install key here
-    baidu: false # you need to disable other search engines to use Baidu search, options: true, false
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+# - category
+# - tagcloud
+# - archive
 
-# Donate 打赏
-donate:
-    post: true # options: true, false # 文章是否显示打赏
-    profile: false # options: true, false  # 侧栏个人简介是否显示打赏
-
-# Comment
-comment:
-    disqus: # hexo-theme-icarus # enter disqus shortname here
-    duoshuo: # enter duoshuo account here
-    youyan: # 1783844 # enter youyan uid 
-    gentie: 0d6e33869f51404c819b14efcd39d1cf # enter youyan uid 
-
-# Share
-share: default # options: jiathis, bdshare, addtoany, default
-
-# Plugins
-plugins:
-    lightgallery: true # options: true, false
-    justified-gallery: true # options: true, false
-    google_analytics: # enter the tracking ID for your Google Analytics
-    google_site_verification: # enter Google site verification code
-    baidu_analytics: # enter Baidu Analytics hash key
-    tencent_analytics: 58860839
-
-# PV
-pv:
-    busuanzi:
-        enable: true # options: true, false # 不蒜子统计
-    leancloud:
-        enable: false # options: true, false # leancloud统计
-        app_id: 9XhaAqdAQpx9cRNSRLfgfO0U-gzGzoHsz # leancloud <AppID>
-        app_key: yfPEhch9cH6CpTx9cplMeRTh # leancloud <AppKey>
-
-# Github
-github: 
-    username: cofess
-    popular_repos: [gulp-startkit,gulp-startpro]
-
-# wordcount
-postCount:
-    enable: true
-    wordcount: true # options: true, false # 文章字数统计
-    min2read: true # options: true, false # 阅读时长预计
+# widget behavior
+archive_type: 'monthly'
+show_count: false
 
 # Miscellaneous
-miscellaneous:
-    open_graph: # see http://ogp.me
-        fb_app_id:
-        fb_admins:
-        twitter_id:
-        google_plus:
-    links:
-        Hexo: https://hexo.io/
+google_analytics:
+favicon: /favicon.png
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
