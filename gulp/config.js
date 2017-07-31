@@ -1,11 +1,11 @@
 var src               = 'app'; //源代码目录
 var static            = 'app/_static';
 var build             = 'build'; //构建目录
-var development       = 'build/development';
+var development       = './';
 var production        = 'build/production';
 var srcAssets         = 'app/_assets';
 var concatFolder      = srcAssets + '/javascripts/_concat';
-var developmentAssets = 'build/assets';
+var developmentAssets = 'source';
 var productionAssets  = 'build/production/assets';
 
 //gulp 任务配置

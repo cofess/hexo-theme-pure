@@ -55,3 +55,5 @@ $(function() {
     edgeOffset: 0
   });
 });
+
+//# sourceMappingURL=application.js.map
