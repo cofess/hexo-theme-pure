@@ -7,11 +7,10 @@
         <li><a href="#" target="_blank" data-toggle="tooltip" data-placement="top" title="Rss"><i class="fa fa-rss"></i></a></li>
     </ul>
     <div class="copyright">
-        <div class="themeby">
-        	<a target="_blank" href="/"><span>Theme by </span></a>
-            <a href="https://www.caicai.me" target="_blank"> CaiCai </a>
-        </div>
         &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
-        <div class="publishby"><%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a></div>
+        <div class="publishby">
+        	<!-- <%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>. -->
+        	<%= __('theme_by') %> <a href="https://github.com/cofess" target="_blank"> Cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure">pure</a>.
+        </div>
     </div>
 </div>
