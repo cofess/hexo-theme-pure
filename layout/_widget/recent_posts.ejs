@@ -1,8 +1,8 @@
 <% if (site.posts.length){ %>
-  <div class="widget-wrap">
-    <h3 class="widget-title"><%= __('recent_posts') %></h3>
-    <div class="widget">
-      <ul>
+  <div class="widget">
+    <h3 class="widget"><%= __('recent_posts') %></h3>
+    <div class="widget-body">
+      <ul class="no-thumbnail list-unstyled">
         <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
           <li>
             <a href="<%- url_for(post.path) %>"><%= post.title || '(no title)' %></a>
