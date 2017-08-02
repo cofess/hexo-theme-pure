@@ -37,6 +37,7 @@ customize:
         gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
         author: Cofess
         author_title: Web Developer & Designer
+        author_description: 喜欢新事物，关注前端动态，对新的技术有追求； 喜欢产品，喜欢设计，喜欢 coding。
         location: Shenzhen, China
         follow: https://github.com/cofess
     highlight: github # github, monokai

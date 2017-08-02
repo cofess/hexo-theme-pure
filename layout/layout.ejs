@@ -4,8 +4,7 @@
   <% if (theme.sidebar){ %>
     <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
   <% } %>
-  <section class="main"><%- body %></section>     
-  <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+  <section class="main"><%- body %></section>
   <%- partial('_partial/after-footer') %>
 </body>
 </html>
