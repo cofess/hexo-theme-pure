@@ -5016,6 +5016,23 @@ input[type="search"] {
   content: ")";
 }
 
+.category-list,
+.archive-list,
+.tag-list {
+  line-height: 1.75;
+}
+
+.category-list li:before,
+.archive-list li:before,
+.tag-list li:before {
+  color: #ccc;
+  content: "▪";
+  font-size: 12px;
+  margin-right: 6px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
 /*
  * Component: list
  * ----------------
