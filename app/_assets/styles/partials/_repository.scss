@@ -19,11 +19,17 @@
 }
 
 .repo-body {
+  display: -webkit-box;
   padding: 0 15px;
   margin: 0 0 10px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   line-height: 1.5em;
   height: 3em;
+  word-break: break-all !important;
+  word-wrap: break-word !important;
 }
 
 .repo-image {
