@@ -5033,6 +5033,10 @@ input[type="search"] {
   transition: 0.2s ease;
 }
 
+.recent-post-list li + li {
+  margin-top: 10px;
+}
+
 /*
  * Component: list
  * ----------------
