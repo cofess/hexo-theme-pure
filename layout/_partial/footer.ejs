@@ -1,11 +1,12 @@
 <div class="footer">
+	<% if(theme.customize.social_links) { %>
+	<% var tooltipClass = theme.customize.social_link_tooltip === false ? '' : 'data-toggle=tooltip data-placement=top'; %>
     <ul class="social-links">
-        <li><a href="#" target="_blank" data-toggle="tooltip" data-placement="top" title="Github"><i class="fa fa-github"></i></a></li>
-        <li><a href="#" target="_blank" data-toggle="tooltip" data-placement="top" title="Weibo"><i class="fa fa-weibo"></i></a></li>
-        <li><a href="#" target="_blank" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#" target="_blank" data-toggle="tooltip" data-placement="top" title="Behance"><i class="fa fa-behance"></i></a></li>
-        <li><a href="#" target="_blank" data-toggle="tooltip" data-placement="top" title="Rss"><i class="fa fa-rss"></i></a></li>
+    	<% for(var i in theme.customize.social_links) { %>
+        <li><a href="<%- url_for(theme.customize.social_links[i]) %>" target="_blank" title="<%= i %>" <%= tooltipClass %>><i class="fa fa-<%= i %>"></i></a></li>
+        <% } %>
     </ul>
+    <% } %>
     <div class="copyright">
         &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
         <div class="publishby">
