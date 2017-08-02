@@ -4,3 +4,46 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 </script>
 <%- js('js/plugin') %>
 <%- js('js/application') %>
+<script type="text/javascript">  
+  var open = function(){
+    var baiduTpl = new Object();
+    var handleTpl = function(){
+      baiduTpl.list = baidu.template("list-template");
+      baiduTpl.error = baidu.template("error-template");
+    };
+
+    var handleGithub = function(){
+      var repoContainer = $('.repo-content');
+      var errorContainer = repoContainer.find(".blankslate");
+      var countContainer = $("#repo-count");
+
+      $.get("https://api.github.com/users/<%=theme.github.username%>/repos",function(result){
+          if(result){
+            errorContainer.remove();
+            countContainer.text(result.length); //设置项目个数
+            var ul = $("<ul class='repo-list row clearfix'></ul>");
+            for(var i in result){
+              var repo = result[i];
+              repo.updated_at = repo.updated_at.substring(0,repo.updated_at.lastIndexOf("T"));
+              var html = baiduTpl.list(repo);
+              ul.append(html); 
+            }
+            repoContainer.append(ul);
+            $(".geopattern").each(function(){     
+              $(this).geopattern($(this).data('pattern-id'));
+            });
+          }else{
+            errorContainer.append(baiduTpl.error());
+          }
+      });
+    };
+
+    return {
+      init : function(){
+        handleTpl();
+        handleGithub();
+      }
+    }
+  };
+  $(open().init);
+</script>

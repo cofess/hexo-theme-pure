@@ -1,7 +1,8 @@
 <%- partial('_partial/head') %>
-<body class="main-center">
+<% var bodyClass = page.sidebar === 'none' ? 'main-center no-sidebar' : 'main-center'; %>
+<body class="<%= bodyClass %>">
   <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-  <% if (theme.sidebar){ %>
+  <% if (theme.sidebar && (page.sidebar!='none' || page.sidebar!='custom')){ %>
     <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
   <% } %>
   <%- body %>

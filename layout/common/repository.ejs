@@ -1,0 +1,33 @@
+<article class="article article-repository article-type-list" itemscope="">
+  <header class="article-header">
+    <h1 itemprop="title"><%= page.title%></h1>
+    <p>I have <span id="repo-count">0</span> projects on Github</p>
+  </header>
+  <div class="article-body">
+    <div class="repo-content">
+      <div class="blankslate"></div>
+    </div>
+  </div>
+</article>
+
+<!--Github项模版-->
+<script type="text/template" id="list-template">
+  <li class="col-sm-6 col-md-6 col-lg-4">
+    <div class="repo shadow-hover">
+      <div class="repo-image geopattern" data-pattern-id="{%=name%}"></div>
+      <h3 class="repo-title"><a href="{%=clone_url%}" target="_blank">{%=name%}</a></h3>
+      <p class="repo-body">{%=description%}</p>
+      <div class="repo-meta">
+        <span class="meta meta-type pull-left" aria-label="{%=language%} project">{%=language%}</span>
+        <span class="meta meta-star" aria-label="{%=stargazers_count%} stars"><i class="fa fa-fw fa-star"></i>{%=stargazers_count%}</span>
+        <span class="meta meta-fork" aria-label="{%=forks_count%} forks"><i class="fa fa-fw fa-code-fork"></i>{%=forks_count%}</span>
+        <span class="meta meta-last-updated" aria-label="最后更新时间：{%=updated_at%}">
+        <i class="fa fa-fw fa-clock-o"></i><time datetime="{%=updated_at%}">{%=updated_at%}</time></span>
+      </div>
+    </div>
+  </li>
+</script>
+<!--获取失败模版-->
+<script type="text/template" id="error-template">
+  <h3>加载失败</h3><p>请刷新或稍后再试...</p>
+</script>

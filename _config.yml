@@ -67,6 +67,11 @@ widgets:
 - archive
 - recent_posts
 
+# Github
+github: 
+  username: cofess
+  popular_repos: [gulp-startkit,gulp-startpro]
+
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
 # - category
