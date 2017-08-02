@@ -1,0 +1,4 @@
+<a href="<%- url_for(post.link) %>" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date) %></time>
+  <span>&nbsp;&nbsp;&nbsp;</span> <%= post.title %>
+</a>

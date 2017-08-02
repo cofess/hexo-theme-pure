@@ -8,19 +8,27 @@
     <% var year = post.date.year(); %>
     <% if (last != year){ %>
       <% if (last != null){ %>
-        </div></section>
+        </div></div></div></section>
       <% } %>
       <% last = year; %>
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a>
+      <section class="panel panel-default b-no">
+        <div class="panel-heading" role="tab">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#collapse<%= year %>" aria-expanded="true">
+              <i class="fa fa-calendar-plus-o text-active"></i><i class="fa fa-calendar-minus-o text"></i>
+              <%= year %>
+            </a>
+            <!-- <a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a> -->
+          </h4>
         </div>
-        <div class="archives">
+        <div id="collapse<%= year %>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<%= year %>">
+        <div class="panel-body">
+          <div class="collection">
     <% } %>
-    <%- partial('archive-post', {post: post, even: i % 2 == 0}) %>
+    <%- partial('item-post', {post: post, even: i % 2 == 0}) %>
   <% }) %>
   <% if (page.posts.length){ %>
-    </div></section>
+    </div></div></div></section>
   <% } %>
 <% } %>
 <% if (page.total > 1){ %>

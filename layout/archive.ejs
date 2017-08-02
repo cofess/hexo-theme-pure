@@ -1,3 +1,11 @@
 <section class="main">
-  <%- partial('_partial/archive', {pagination: config.archive, index: true}) %>
+  <article class="article article-archives article-type-list" itemscope="">
+    <header class="article-header">
+      <h1 itemprop="title">Archives</h1>
+      <p>Total <%= site.posts.length %> articles</p>
+    </header>
+    <div class="article-body">
+      <%- partial('_partial/archive', {pagination: config.archive, index: true}) %>
+    </div>
+  </article>
 </section>
