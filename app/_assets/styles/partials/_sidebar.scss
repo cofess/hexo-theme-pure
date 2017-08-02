@@ -1,8 +1,8 @@
 .widget {
   @include clearfix;
-  .widget-title{
-    font-size:18px;
-    color:#000;
+  .widget-title {
+    font-size: 18px;
+    color: #000;
   }
   time {
     color: $text-light-color;
@@ -50,4 +50,20 @@
 .tag-list-count:after,
 .archive-list-count:after {
   content: ")";
+}
+
+.category-list,
+.archive-list,
+.tag-list {
+  line-height: 1.75;
+  li:before {
+    color: #ccc;
+    content: "▪";
+    font-size: 12px;
+    margin-right: 6px;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -ms-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
 }
