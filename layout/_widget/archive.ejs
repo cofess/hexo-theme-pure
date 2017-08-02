@@ -2,7 +2,10 @@
   <div class="widget">
     <h3 class="widget-title"><%= __('archive_a') %></h3>
     <div class="widget-body">
-      <%- list_archives({show_count: theme.show_count, type: theme.archive_type}) %>
+      <%- list_archives({
+      	show_count: theme.show_count,
+      	type: theme.archive_type
+      }) %>
     </div>
   </div>
 <% } %>

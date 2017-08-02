@@ -4783,6 +4783,10 @@ input[type="search"] {
   margin-left: 10px;
 }
 
+.main .content {
+  min-height: 85vh;
+}
+
 .main.has-sticky .content {
   margin-bottom: 70px;
 }
