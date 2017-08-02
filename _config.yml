@@ -5,6 +5,7 @@ menu:
   Categories: categories
   Tags: tags
   Repository: repository
+  Links: links
   About: about
 rss: /atom.xml
 
@@ -21,6 +22,7 @@ menu_icons:
   categories: fa-folder
   tags: fa-tags
   repository: fa-code
+  links: fa-gg
   about: fa-coffee
   sitemap: sitemap
 
