@@ -1,11 +1,11 @@
-<%- partial('_partial/head') %>
+<%- partial('_common/head') %>
 <% var bodyClass = page.sidebar === 'none' ? 'main-center no-sidebar' : 'main-center'; %>
 <body class="<%= bodyClass %>">
-  <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+  <%- partial('_common/header', null, {cache: !config.relative_link}) %>
   <% if (theme.sidebar && (page.sidebar!='none' || page.sidebar!='custom')){ %>
-    <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+    <%- partial('_common/sidebar', null, {cache: !config.relative_link}) %>
   <% } %>
   <%- body %>
-  <%- partial('_partial/after-footer') %>
+  <%- partial('_common/after-footer') %>
 </body>
 </html>
