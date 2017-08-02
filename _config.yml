@@ -1,8 +1,57 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
+  Home: .
+  Archives: archives
+  Categories: categories
+  Tags: tags
+  Repository: repository
+  About: about
 rss: /atom.xml
+
+# Enable/Disable menu icons.
+# Icon Mapping:
+#   Map a menu item to a specific FontAwesome icon name.
+#   Key is the name of menu item and value is the name of FontAwesome icon. Key is case-senstive.
+#   When an question mask icon presenting up means that the item has no mapping icon.
+menu_icons:
+  enable: true
+  #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
+  home: fa-dashboard
+  archives: fa-delicious
+  categories: fa-folder
+  tags: fa-tags
+  repository: fa-code
+  about: fa-coffee
+  sitemap: sitemap
+
+# Customize
+customize:
+    logo:
+        enabled: true
+        width: 40
+        height: 40
+        url: ../images/logo.png
+    profile:
+        enabled: true # Whether to show profile bar
+        avatar: images/avatar.jpg
+        gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
+        author: Cofess
+        author_title: Web Developer & Designer
+        location: Shenzhen, China
+        follow: https://github.com/cofess
+    highlight: github # github, monokai
+    sidebar: right # sidebar position, options: left, right
+    thumbnail: false # enable posts thumbnail, options: true, false
+    favicon: /favicon.png # path to favicon
+    social_links:
+        github: https://github.com/cofess
+        weibo: http://weibo.com/cofess
+        twitter: https://twitter.com/iwebued
+        # facebook: /
+        # dribbble: /
+        behance: https://www.behance.net/cofess
+        rss: atom.xml
+    social_link_tooltip: true # enable the social link tooltip, options: true, false
 
 # Content
 excerpt_link: Read More

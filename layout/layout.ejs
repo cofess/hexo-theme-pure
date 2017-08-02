@@ -1,7 +1,7 @@
 <%- partial('_partial/head') %>
 <body class="main-center">
   <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-  <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
+  <% if (theme.sidebar){ %>
     <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
   <% } %>
   <section class="main"><%- body %></section>     
