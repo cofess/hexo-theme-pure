@@ -30,7 +30,7 @@ $(function() {
   // donate
   $('.donate-box').on('click', '.pay_item', function() {
     var dataid = $(this).attr('data-id');
-    var qrcode = $(this).attr('data-src') ? $(this).attr('data-src') : "source/images/donate/" + dataid + "img.png";
+    var qrcode = $(this).attr('data-src') ? $(this).attr('data-src') : "assets/images/donate/" + dataid + "img.png";
     var text = dataid == "alipay" ? "支付宝" : "微信";
     $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
     $(".donate-payimg img").attr("src", qrcode);
