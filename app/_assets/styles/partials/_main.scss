@@ -85,6 +85,9 @@
       }
     }
   }
+  .content {
+    min-height:85vh;
+  }
   &.has-sticky {
     .content {
       margin-bottom: 70px;
