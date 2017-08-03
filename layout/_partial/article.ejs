@@ -1,31 +1,52 @@
 <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    <%- partial('post/gallery') %>
+  <%- partial('post/gallery') %>
+  <header class="article-header">
     <% if (post.link || post.title){ %>
-      <header class="article-header">
-        <%- partial('post/title', {class_name: 'article-title'}) %>
-      </header>
+      <%- partial('post/title', {class_name: 'article-title'}) %>
     <% } %>
     <div class="article-meta">
       <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
       <%- partial('post/category') %>
+      <%- partial('post/tag') %>
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link){ %>
-          <p class="article-more-link">
-            <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <%- post.content %>
+    <!-- <div class="article-meta">
+      <span class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/04/09/hexo-blog.html">
+          <time datetime="2017-04-09T06:49:13.000Z" itemprop="datePublished">2017-04-09</time>
+        </a>
+      </span>
+      <span class="article-category">
+        <i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
+      </span>
+      <span class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Github/">Github</a>, <a class="tag-link" href="/tags/Hexo/">Hexo</a>
+      </span>
+      <span class="article-read">
+        <i class="fa fa-eye" aria-hidden="true"></i>&nbsp;
+        <span id="busuanzi_container_page_pv">阅读<span id="busuanzi_value_page_pv">141</span>次</span>
+      </span>
+      <span class="post-count">&nbsp;&nbsp;字数统计: 252(字)</span>
+      <span class="post-count">&nbsp;&nbsp;阅读时长: 1(分)</span>
+    </div> -->
+  </header>
+  <div class="article-entry" itemprop="articleBody">
+    <% if (post.excerpt && index){ %>
+      <%- post.excerpt %>
+      <% if (theme.excerpt_link){ %>
+        <p class="article-more-link">
+          <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
+        </p>
       <% } %>
-    </div>
-    <footer class="article-footer">
-      <%- partial('post/auth') %>
-    </footer>
+    <% } else { %>
+      <%- post.content %>
+    <% } %>
   </div>
+  <footer class="article-footer">
+    <%- partial('post/auth') %>
+  </footer>
   <% if (!index){ %>
     <%- partial('post/nav') %>
   <% } %>
