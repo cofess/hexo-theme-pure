@@ -5,42 +5,9 @@
       <p class="hidden-xs">Total <%= site.posts.length %> articles</p>
       <nav role="navigation" id="nav-main" class="okayNav">
         <ul>
-          <li><a href="#">前端</a></li>
-          <li><a href="#">Html5</a></li>
-          <li><a href="#">Canvas</a></li>
-          <li><a href="#">Git</a></li>
-          <li><a href="#">Gulp</a></li>
-          <li><a href="#">Webpack</a></li>
-          <li><a href="#">前端</a></li>
-          <li><a href="#">Html5</a></li>
-          <li><a href="#">Canvas</a></li>
-          <li><a href="#">Git</a></li>
-          <li><a href="#">Gulp</a></li>
-          <li><a href="#">Webpack</a></li>
-          <li><a href="#">前端</a></li>
-          <li><a href="#">Html5</a></li>
-          <li><a href="#">Canvas</a></li>
-          <li><a href="#">Git</a></li>
-          <li><a href="#">Gulp</a></li>
-          <li><a href="#">Webpack</a></li>
-          <li><a href="#">Git</a></li>
-          <li><a href="#">Gulp</a></li>
-          <li><a href="#">Webpack</a></li>
-          <li><a href="#">前端</a></li>
-          <li><a href="#">Html5</a></li>
-          <li><a href="#">Canvas</a></li>
-          <li><a href="#">Git</a></li>
-          <li><a href="#">Gulp</a></li>
-          <li><a href="#">Webpack</a></li>
-          <li><a href="#">Git</a></li>
-          <li><a href="#">Gulp</a></li>
-          <li><a href="#">Webpack</a></li>
-          <li><a href="#">前端</a></li>
-          <li><a href="#">Html5</a></li>
-          <li><a href="#">Canvas</a></li>
-          <li><a href="#">Git</a></li>
-          <li><a href="#">Gulp</a></li>
-          <li><a href="#">Webpack</a></li>
+          <% site.tags.each(function(item){ %>
+          <li><a href="/<%= item.path %>"><%= item.name %></a></li>
+          <% }) %>
         </ul>
       </nav>
     </header>

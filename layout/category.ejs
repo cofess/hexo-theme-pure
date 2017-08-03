@@ -5,143 +5,35 @@
       <p class="hidden-xs">Total <%= site.posts.length %> articles</p>
       <nav role="navigation" id="nav-main" class="okayNav">
         <ul>
-          <li><a href="#">前端</a></li>
-          <li><a href="#">Html5</a></li>
-          <li><a href="#">Canvas</a></li>
-          <li><a href="#">Git</a></li>
-          <li><a href="#">Gulp</a></li>
-          <li><a href="#">Webpack</a></li>
-          <li><a href="#">前端</a></li>
-          <li><a href="#">Html5</a></li>
-          <li><a href="#">Canvas</a></li>
-          <li><a href="#">Git</a></li>
-          <li><a href="#">Gulp</a></li>
-          <li><a href="#">Webpack</a></li>
-          <li><a href="#">前端</a></li>
-          <li><a href="#">Html5</a></li>
-          <li><a href="#">Canvas</a></li>
-          <li><a href="#">Git</a></li>
-          <li><a href="#">Gulp</a></li>
-          <li><a href="#">Webpack</a></li>
-          <li><a href="#">Git</a></li>
-          <li><a href="#">Gulp</a></li>
-          <li><a href="#">Webpack</a></li>
-          <li><a href="#">前端</a></li>
-          <li><a href="#">Html5</a></li>
-          <li><a href="#">Canvas</a></li>
-          <li><a href="#">Git</a></li>
-          <li><a href="#">Gulp</a></li>
-          <li><a href="#">Webpack</a></li>
-          <li><a href="#">Git</a></li>
-          <li><a href="#">Gulp</a></li>
-          <li><a href="#">Webpack</a></li>
-          <li><a href="#">前端</a></li>
-          <li><a href="#">Html5</a></li>
-          <li><a href="#">Canvas</a></li>
-          <li><a href="#">Git</a></li>
-          <li><a href="#">Gulp</a></li>
-          <li><a href="#">Webpack</a></li>
+          <% site.categories.each(function(item){ %>
+          <li><a href="/<%= item.path %>"><%= item.name %></a></li>
+          <% }) %>
         </ul>
       </nav>
     </header>
     <!-- /header -->
     <div class="article-body">
+      <% site.categories.each(function(item){ %>
       <div class="panel panel-default b-no">
         <div class="panel-heading" role="tab">
           <h4 class="panel-title">
-                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true">
-                  <i class="fa fa-folder-o text-active"></i><i class="fa fa-folder-open-o text"></i>
-                  前端开发
-                </a>
-              </h4>
+            <a data-toggle="collapse" href="#collapse<%= item.name %>" aria-expanded="true">
+              <i class="fa fa-folder-o text-active"></i><i class="fa fa-folder-open-o text"></i>
+              <%= item.name %>
+            </a>
+          </h4>
         </div>
-        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div id="collapse<%= item.name %>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<%= item.name %>">
           <div class="panel-body">
             <div class="collection">
-              <a href="#" class="collection-item">
-                <time datetime="2017-01-30T13:42:47.000Z">2017-01-30</time>
-                <span>&nbsp;&nbsp;&nbsp;</span> 状态模式与状态机
-              </a>
-              <a href="#" class="collection-item">
-                <time datetime="2017-01-29T13:27:31.000Z">2017-01-29</time>
-                <span>&nbsp;&nbsp;&nbsp;</span> 游戏开发中单例模式的一些思考
-              </a>
-              <a href="#" class="collection-item">
-                <time datetime="2017-01-18T12:03:09.000Z">2017-01-18</time>
-                <span>&nbsp;&nbsp;&nbsp;</span> 游戏引擎的事件系统
-              </a>
-              <a href="#" class="collection-item">
-                <time datetime="2017-01-13T13:33:32.000Z">2017-01-13</time>
-                <span>&nbsp;&nbsp;&nbsp;</span> 运行时游戏对象模型（下）——实时更新游戏对象
-              </a>
+              <% item.posts.each(function(post){ %>
+                <%- partial('_partial/item-post', {post: post}) %>
+              <% }) %>
             </div>
           </div>
         </div>
       </div>
-      <div class="panel panel-default b-no">
-        <div class="panel-heading" role="tab">
-          <h4 class="panel-title">
-                <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true">
-                  <i class="fa fa-folder-o text-active"></i><i class="fa fa-folder-open-o text"></i>
-                  Html5
-                </a>
-              </h4>
-        </div>
-        <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
-          <div class="panel-body">
-            <div class="collection">
-              <a href="#" class="collection-item">
-                <time datetime="2017-01-30T13:42:47.000Z">2017-01-30</time>
-                <span>&nbsp;&nbsp;&nbsp;</span> 状态模式与状态机
-              </a>
-              <a href="#" class="collection-item">
-                <time datetime="2017-01-29T13:27:31.000Z">2017-01-29</time>
-                <span>&nbsp;&nbsp;&nbsp;</span> 游戏开发中单例模式的一些思考
-              </a>
-              <a href="#" class="collection-item">
-                <time datetime="2017-01-18T12:03:09.000Z">2017-01-18</time>
-                <span>&nbsp;&nbsp;&nbsp;</span> 游戏引擎的事件系统
-              </a>
-              <a href="#" class="collection-item">
-                <time datetime="2017-01-13T13:33:32.000Z">2017-01-13</time>
-                <span>&nbsp;&nbsp;&nbsp;</span> 运行时游戏对象模型（下）——实时更新游戏对象
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="panel panel-default b-no">
-        <div class="panel-heading" role="tab">
-          <h4 class="panel-title">
-                <a data-toggle="collapse" href="#collapseThree" aria-expanded="true">
-                  <i class="fa fa-folder-o text-active"></i><i class="fa fa-folder-open-o text"></i>
-                  Webpack
-                </a>
-              </h4>
-        </div>
-        <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
-          <div class="panel-body">
-            <div class="collection">
-              <a href="#" class="collection-item">
-                <time datetime="2017-01-30T13:42:47.000Z">2017-01-30</time>
-                <span>&nbsp;&nbsp;&nbsp;</span> 状态模式与状态机
-              </a>
-              <a href="#" class="collection-item">
-                <time datetime="2017-01-29T13:27:31.000Z">2017-01-29</time>
-                <span>&nbsp;&nbsp;&nbsp;</span> 游戏开发中单例模式的一些思考
-              </a>
-              <a href="#" class="collection-item">
-                <time datetime="2017-01-18T12:03:09.000Z">2017-01-18</time>
-                <span>&nbsp;&nbsp;&nbsp;</span> 游戏引擎的事件系统
-              </a>
-              <a href="#" class="collection-item">
-                <time datetime="2017-01-13T13:33:32.000Z">2017-01-13</time>
-                <span>&nbsp;&nbsp;&nbsp;</span> 运行时游戏对象模型（下）——实时更新游戏对象
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <% }) %>
     </div>
   </article>
 </section>
