@@ -1,0 +1,14 @@
+<% if (theme.pv.busuanzi.enable) { %>
+	<span class="article-read">
+	    <i class="fa fa-eye" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			阅读<span id="busuanzi_value_page_pv">0</span>次
+		</span>
+	</span>
+<% } %>
+<% if(theme.pv.leancloud.enable){  %>
+	<span class="article-read">
+    	<i class="fa fa-eye" aria-hidden="true"></i>
+    	<span id="<%- url_for(post.path) %>" class="leancloud_visitors"  data-flag-title="<%= post.title %>">0</span>
+    </span>
+<% } %>

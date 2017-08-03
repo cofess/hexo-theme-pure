@@ -74,6 +74,21 @@ github:
   username: cofess
   popular_repos: [gulp-startkit,gulp-startpro]
 
+# PV
+pv:
+    busuanzi:
+        enable: true # options: true, false # 不蒜子统计
+    leancloud:
+        enable: false # options: true, false # leancloud统计
+        app_id: 9XhaAqdAQpx9cRNSRLfgfO0U-gzGzoHsz # leancloud <AppID>
+        app_key: yfPEhch9cH6CpTx9cplMeRTh # leancloud <AppKey>
+        
+# wordcount
+postCount:
+    enable: true
+    wordcount: true # options: true, false # 文章字数统计
+    min2read: true # options: true, false # 阅读时长预计         
+
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
 # - category
