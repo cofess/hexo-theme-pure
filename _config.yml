@@ -76,7 +76,6 @@ widgets:
   - tagcloud
   - archive
   - recent_posts
-  - github_repo
 
 # Github
 github: 
