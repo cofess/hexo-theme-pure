@@ -7,4 +7,7 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 <% if (page.layout === 'repository'){ %>
   <%- partial('_script/repository') %>
 <% } %>
+<% if (theme.sidebar && (page.sidebar!='none' || page.sidebar!='custom')){ %>
+  <%- partial('_script/github-repo') %>
+<% } %>
 <%- partial('_script/google-analytics') %>

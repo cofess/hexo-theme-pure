@@ -60,14 +60,23 @@ customize:
 excerpt_link: Read More
 fancybox: true
 
+# Site
+site:
+    title: Cofess - Web Developer & Designer # 页面title
+    board: <p>欢迎交流与分享经验!</p> # 站点公告
+    copyright: Cofess - Web Developer & Designer # 底部版权信息
+    footLinks: false # options: true, false  # 网站底部是否显示友情链接
+
 # Sidebar
 sidebar: right
 widgets:
-- category
-- tag
-- tagcloud
-- archive
-- recent_posts
+  - board  
+  - category
+  - tag
+  - tagcloud
+  - archive
+  - recent_posts
+  - github_repo
 
 # Github
 github: 

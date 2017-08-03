@@ -15,7 +15,7 @@
                 <%- list_categories(post.categories, {show_count: false, depth:2, class: 'category', style: 'none', separator: '<i class="fa fa-angle-right"></i>'}) %>
               </p>
               <p class="item-title">
-                <a href="<%- url_for((post.link?post.link:post.path)) %>" class="title"><%= post.title %></a>
+                <a href="<%- url_for((post.link?post.link:post.path)) %>" class="title"><%= post.title || '(no title)' %></a>
               </p>
               <p class="item-date">
                 <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date) %></time>
