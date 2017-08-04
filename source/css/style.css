@@ -5413,6 +5413,22 @@ body.no-sidebar .sidebar {
   background-color: transparent;
 }
 
+.main .pager .prev {
+  margin-right: 10px;
+}
+
+.main .pager .next {
+  margin-left: 10px;
+}
+
+.main .pager .page-number.current {
+  color: #2196f3;
+}
+
+.main .pager .page-number + .page-number {
+  margin-left: 10px;
+}
+
 .main .total-article {
   margin: 10px 0;
   line-height: 32px;
