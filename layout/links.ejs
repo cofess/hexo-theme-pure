@@ -6,54 +6,27 @@
     </header>
     <div class="article-body">
       <div class="row">
+        <% for (var link in site.data.links) { %>
+        <% var item = site.data.links[link]; %>
         <div class="col-sm-6 col-md-4">
-          <div class="panel panel-default panel-badger shadow-hover">
-            <div class="panel-body">
-              <a class="article-link" href="#">Friendly Links</a>
+          <div class="panel panel-default shadow-hover">
+            <div class="panel-body p-no">
+              <figure class="media media-middle">
+                <div class="media-left">
+                  <a href="<%= item.link %>" target="_blank" class="img-burn thumb-md media-middle">
+                    <img src="<%= item.avatar %>" class="w-full" alt="">
+                  </a>
+                </div>
+                <div class="media-body pr-0x">
+                  <h4 class="media-heading"><a href="<%= item.link %>" target="_blank"><span class="text-dark"><%= link %></span></a></h4>
+                  <div><%= item.desc %></div>
+                </div>
+              </figure>
             </div>
           </div>
         </div>
         <!-- /.col -->
-        <div class="col-sm-6 col-md-4">
-          <div class="panel panel-default panel-badger shadow-hover">
-            <div class="panel-body">
-              <a class="article-link" href="#">Friendly Links</a>
-            </div>
-          </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-sm-6 col-md-4">
-          <div class="panel panel-default panel-badger shadow-hover">
-            <div class="panel-body">
-              <a class="article-link" href="#">Friendly Links</a>
-            </div>
-          </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-sm-6 col-md-4">
-          <div class="panel panel-default panel-badger shadow-hover">
-            <div class="panel-body">
-              <a class="article-link" href="#">Friendly Links</a>
-            </div>
-          </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-sm-6 col-md-4">
-          <div class="panel panel-default panel-badger shadow-hover">
-            <div class="panel-body">
-              <a class="article-link" href="#">Friendly Links</a>
-            </div>
-          </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-sm-6 col-md-4">
-          <div class="panel panel-default panel-badger shadow-hover">
-            <div class="panel-body">
-              <a class="article-link" href="#">Friendly Links</a>
-            </div>
-          </div>
-        </div>
-        <!-- /.col -->
+        <% } %>
       </div>
     </div>
   </article>

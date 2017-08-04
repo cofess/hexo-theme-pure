@@ -2687,7 +2687,19 @@ a.thumbnail.active {
   vertical-align: middle;
 }
 
+.media-middle .media-left,
+.media-middle .media-right,
+.media-middle .media-body {
+  vertical-align: middle;
+}
+
 .media-bottom {
+  vertical-align: bottom;
+}
+
+.media-bottom .media-left,
+.media-bottom .media-right,
+.media-bottom .media-body {
   vertical-align: bottom;
 }
 
