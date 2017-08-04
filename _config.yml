@@ -26,26 +26,23 @@ menu_icons:
   about: fa-coffee
   sitemap: sitemap
 
+# Site
+site:
+  title: Cofess - Web Developer & Designer # 页面title
+  board: <p>欢迎交流与分享经验!</p> # 站点公告
+  copyright: Cofess - Web Developer & Designer # 底部版权信息
+  footLinks: false # options: true, false  # 网站底部是否显示友情链接
+
 # Customize
 customize:
-    logo:
-        enabled: true
-        width: 40
-        height: 40
-        url: ../images/logo.png
-    highlight: github # github, monokai
-    sidebar: right # sidebar position, options: left, right
-    thumbnail: false # enable posts thumbnail, options: true, false
-    favicon: /favicon.png # path to favicon
-    social_links:
-        github: https://github.com/cofess
-        weibo: http://weibo.com/cofess
-        twitter: https://twitter.com/iwebued
-        # facebook: /
-        # dribbble: /
-        behance: https://www.behance.net/cofess
-        rss: atom.xml
-    social_link_tooltip: true # enable the social link tooltip, options: true, false
+  logo:
+    enabled: true
+    width: 40
+    height: 40
+    url: ../images/logo.png
+  highlight: github # github, monokai
+  thumbnail: false # enable posts thumbnail, options: true, false
+  favicon: /favicon.png # path to favicon
 
 # Content
 excerpt_link: Read More
@@ -61,13 +58,16 @@ profile:
   author_description: 喜欢新事物，关注前端动态，对新的技术有追求； 喜欢产品，喜欢设计，喜欢 coding。
   location: Shenzhen, China
   follow: https://github.com/cofess
-
-# Site
-site:
-    title: Cofess - Web Developer & Designer # 页面title
-    board: <p>欢迎交流与分享经验!</p> # 站点公告
-    copyright: Cofess - Web Developer & Designer # 底部版权信息
-    footLinks: false # options: true, false  # 网站底部是否显示友情链接
+  social:
+    links:
+      github: https://github.com/cofess
+      weibo: http://weibo.com/cofess
+      twitter: https://twitter.com/iwebued
+      # facebook: /
+      # dribbble: /
+      behance: https://www.behance.net/cofess
+      rss: atom.xml
+    link_tooltip: true # enable the social link tooltip, options: true, false
 
 # Sidebar
 sidebar: right
