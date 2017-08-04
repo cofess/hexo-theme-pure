@@ -31,7 +31,7 @@ site:
   title: Cofess - Web Developer & Designer # 页面title
   board: <p>欢迎交流与分享经验!</p> # 站点公告
   copyright: Cofess - Web Developer & Designer # 底部版权信息
-  footLinks: false # options: true, false  # 网站底部是否显示友情链接
+  favicon: /favicon.png
 
 # Customize
 customize:
@@ -42,7 +42,6 @@ customize:
     url: ../images/logo.png
   highlight: github # github, monokai
   thumbnail: false # enable posts thumbnail, options: true, false
-  favicon: /favicon.png # path to favicon
 
 # Content
 excerpt_link: Read More
@@ -132,7 +131,6 @@ show_count: true
 
 # Miscellaneous
 google_analytics:
-favicon: /favicon.png
 twitter:
 google_plus:
 fb_admins:
