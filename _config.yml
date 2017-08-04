@@ -58,6 +58,7 @@ profile:
   author_description: 喜欢新事物，关注前端动态，对新的技术有追求； 喜欢产品，喜欢设计，喜欢 coding。
   location: Shenzhen, China
   follow: https://github.com/cofess
+  # Social Links
   social:
     links:
       github: https://github.com/cofess
@@ -68,6 +69,26 @@ profile:
       behance: https://www.behance.net/cofess
       rss: atom.xml
     link_tooltip: true # enable the social link tooltip, options: true, false
+  # My Skills 
+  skills:
+    Git: ★★★☆☆
+    Gulp: ★★★☆☆
+    Javascript: ★★★☆☆
+    HTML+CSS: ★★★☆☆
+    Bootstrap: ★★★☆☆
+    ThinkPHP: ★★★☆☆
+    平面设计: ★★★☆☆
+  # My Personal Links
+  links:
+    Github: https://github.com/cofess
+    Blog: http://blog.cofess.com
+    微博: http://weibo.com/cofess
+    花瓣: http://huaban.com/cofess
+    Behance: https://www.behance.net/cofess
+  # My Personal Projects
+  projects:
+    cofess/gulp-startpro: https://github.com/cofess/gulp-startpro
+    cofess/gulp-startkit: https://github.com/cofess/gulp-startkit
 
 # Sidebar
 sidebar: right
@@ -86,18 +107,18 @@ github:
 
 # PV
 pv:
-    busuanzi:
-        enable: true # options: true, false # 不蒜子统计
-    leancloud:
-        enable: false # options: true, false # leancloud统计
-        app_id: 9XhaAqdAQpx9cRNSRLfgfO0U-gzGzoHsz # leancloud <AppID>
-        app_key: yfPEhch9cH6CpTx9cplMeRTh # leancloud <AppKey>
+  busuanzi:
+    enable: true # options: true, false # 不蒜子统计
+  leancloud:
+    enable: false # options: true, false # leancloud统计
+    app_id: 9XhaAqdAQpx9cRNSRLfgfO0U-gzGzoHsz # leancloud <AppID>
+    app_key: yfPEhch9cH6CpTx9cplMeRTh # leancloud <AppKey>
         
 # wordcount
 postCount:
-    enable: true
-    wordcount: true # options: true, false # 文章字数统计
-    min2read: true # options: true, false # 阅读时长预计         
+  enable: true
+  wordcount: true # options: true, false # 文章字数统计
+  min2read: true # options: true, false # 阅读时长预计         
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:

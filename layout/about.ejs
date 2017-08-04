@@ -1,113 +1,35 @@
 <section class="sidebar">
   <div class="slimContent">
+    <% if(theme.profile.links) { %>
     <div class="widget">
       <h3 class="widget-title">个人链接</h3>
       <div class="widget-body">
         <ul class="list-square lh-2x">
+          <% for(var i in theme.profile.links) { %>
           <li>
-            Github:
-            <a href="https://github.com/cofess" target="_blank">
-              https://github.com/cofess
-            </a>
+            <%= i %>:
+            <a href="<%- theme.profile.links[i] %>" target="_blank"><%- theme.profile.links[i] %></a>
           </li>
-          <li>
-            Blog:
-            <a href="http://blog.cofess.com" target="_blank">
-              http://blog.cofess.com
-            </a>
-          </li>
-          <li>
-            微博:
-            <a href="http://weibo.com/cofess" target="_blank">
-              http://weibo.com/cofess
-            </a>
-          </li>
-          <li>
-            花瓣:
-            <a href="http://huaban.com/cofess" target="_blank">
-              http://huaban.com/cofess
-            </a>
-          </li>
+          <% } %>
         </ul>
       </div>
     </div>
+    <% } %>
+    <% if(theme.profile.skills) { %>
     <div class="widget">
       <h3 class="widget-title">技能</h3>
       <div class="widget-body">
         <ul class="skill-list lh-2x">
+          <% for(var i in theme.profile.skills) { %>
           <li>
-            <span>Git</span>
-            <span class="pull-right">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-              <i class="fa fa-star-o"></i>
-            </span>
+            <span><%= i %></span>
+            <span class="pull-right"><%- theme.profile.skills[i] %></span>
           </li>
-          <li>
-            <span>Gulp</span>
-            <span class="pull-right">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-              <i class="fa fa-star-o"></i>
-            </span>
-          </li>
-          <li>
-            <span>Javascript</span>
-            <span class="pull-right">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-              <i class="fa fa-star-o"></i>
-            </span>
-          </li>
-          <li>
-            <span>HTML+CSS</span>
-            <span class="pull-right">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-              <i class="fa fa-star-o"></i>
-            </span>
-          </li>
-          <li>
-            <span>Bootstrap</span>
-            <span class="pull-right">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-              <i class="fa fa-star-o"></i>
-            </span>
-          </li>
-          <li>
-            <span>ThinkPHP</span>
-            <span class="pull-right">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-              <i class="fa fa-star-o"></i>
-            </span>
-          </li>
-          <li>
-            <span>平面设计</span>
-            <span class="pull-right">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-o"></i>
-              <i class="fa fa-star-o"></i>
-            </span>
-          </li>
+          <% } %>
         </ul>
       </div>
     </div>
+    <% } %>
     <div class="widget">
       <h3 class="widget-title">Keywords</h3>
       <div class="widget-body">
@@ -122,27 +44,23 @@
         <span class="label label-default mb">Scss</span>
       </div>
     </div>
+    <% if(theme.profile.projects) { %>
     <div class="widget">
       <h3 class="widget-title">Popular Repositories</h3>
       <div class="widget-body">
         <ul class="popular-repo list-square lh-2x">
+          <% for(var i in theme.profile.projects) { %>
           <li class="public source">
-            <a href="https://github.com/cofess/gulp-startpro.git" target="_blank" title="cofess/gulp-startpro" class="mini-repo-list-item css-truncate">
+            <a href="<%- theme.profile.projects[i] %>" target="_blank" title="<%= i %>">
               <span class="repo-icon octicon octicon-repo"></span>
-              <span class="repo-and-owner css-truncate-target">cofess/gulp-startpro</span>
+              <span class="repo-and-owner css-truncate-target"><%= i %></span>
             </a>
           </li>
-          <li class="public source">
-            <a href="https://github.com/cofess/gulp-startkit.git" target="_blank" title="cofess/gulp-startkit" class="mini-repo-list-item css-truncate">
-              <span class="repo-icon octicon octicon-repo"></span>
-              <span class="repo-and-owner css-truncate-target">cofess/gulp-startkit</span>
-            </a>
-          </li>
+          <% } %>
         </ul>
       </div>
     </div>
-    <div>
-    </div>
+    <% } %>
   </div>
 </section>
 <section class="main">
