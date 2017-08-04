@@ -1,6 +1,6 @@
 <% if (site.posts.length){ %>
   <div class="widget">
-    <h3 class="widget-title"><%= __('recent_posts') %></h3>
+    <h3 class="widget-title"><%= __('widget.recent_posts') %></h3>
     <div class="widget-body">
       <ul class="recent-post-list list-unstyled <%= (theme.customize.thumbnail?'':'no-thumbnail') %>">
         <% site.posts.sort('date', -1).limit(5).each(function(post){ %>

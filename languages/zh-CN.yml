@@ -6,23 +6,31 @@ menu:
   Repository: 项目
   Links: 链接
   About: 关于
-categories: 分类
-search: 搜索
-tags: 标签
-tagcloud: 标签云
-tweets: 推文
 nav:
   next: 下一页
   prev: 上一页
   older: 下一篇
   newer: 上一篇
+widget:
+  board: 公告
+  archive: 归档
+  tags: 标签
+  categories: 分类
+  tagcloud: 标签云
+  recent_posts: 最新文章
+profile: 
+  follow: '关注'
+  skill: 技能
+  project: 个人项目
+  link: 个人链接
+categories: 分类
+search: 搜索
+tags: 标签
+tagcloud: 标签云
+tweets: 推文
 comment: 留言
-archive_a: 归档
 archive_b: 归档：%s
 page: 第 %d 页
-recent_posts: 最新文章
-newer: Newer
-older: Older
 share: Share
 theme_by: Theme by
 powered_by: Powered by

@@ -2,7 +2,7 @@
   <div class="slimContent">
     <% if(theme.profile.links) { %>
     <div class="widget">
-      <h3 class="widget-title">个人链接</h3>
+      <h3 class="widget-title"><%= __('profile.link') %></h3>
       <div class="widget-body">
         <ul class="list-square lh-2x">
           <% for(var i in theme.profile.links) { %>
@@ -17,7 +17,7 @@
     <% } %>
     <% if(theme.profile.skills) { %>
     <div class="widget">
-      <h3 class="widget-title">技能</h3>
+      <h3 class="widget-title"><%= __('profile.skill') %></h3>
       <div class="widget-body">
         <ul class="skill-list lh-2x">
           <% for(var i in theme.profile.skills) { %>
@@ -46,7 +46,7 @@
     </div>
     <% if(theme.profile.projects) { %>
     <div class="widget">
-      <h3 class="widget-title">Projects</h3>
+      <h3 class="widget-title"><%= __('profile.project') %></h3>
       <div class="widget-body">
         <ul class="popular-repo list-square lh-2x">
           <% for(var i in theme.profile.projects) { %>
