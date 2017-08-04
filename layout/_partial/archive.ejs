@@ -13,13 +13,13 @@
       <% last = year; %>
       <section class="panel panel-default b-no">
         <div class="panel-heading" role="tab">
-          <h4 class="panel-title">
+          <h3 class="panel-title">
             <a data-toggle="collapse" href="#collapse<%= year %>" aria-expanded="true">
               <i class="fa fa-calendar-plus-o text-active"></i><i class="fa fa-calendar-minus-o text"></i>
               <%= year %>
             </a>
             <!-- <a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a> -->
-          </h4>
+          </h3>
         </div>
         <div id="collapse<%= year %>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<%= year %>">
         <div class="panel-body">

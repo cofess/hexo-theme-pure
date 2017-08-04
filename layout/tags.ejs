@@ -2,9 +2,10 @@
   <article class="article article-tags post-type-list" itemscope="">
     <header class="article-header">
       <h1 itemprop="name" class="hidden-xs"><%= page.title || page.tag %></h1>
-      <p class="hidden-xs">Total <%= site.posts.length %> articles</p>
+      <p class="text-muted hidden-xs">Total <%= site.posts.length %> articles</p>
       <nav role="navigation" id="nav-main" class="okayNav">
         <ul>
+          <li><a href="/tags">All</a></li>
           <% site.tags.each(function(item){ %>
           <li><a href="/<%= item.path %>"><%= item.name %></a></li>
           <% }) %>
@@ -13,128 +14,34 @@
     </header>
     <!-- /header -->
     <div class="article-body">
+      <% site.tags.each(function(item){ %>
+      <h3 class="panel-title mb-1x">
+        <a href="<%- url_for(item.path) %>" title="#<%= item.name %>"><i class="fa fa-tag"></i> #<%= item.name %></a>
+      </h3>
       <div class="row">
+        <% item.posts.each(function(post, i){ %>
         <div class="col-md-6">
           <article class="panel panel-default shadow-hover">
             <div class="panel-body">
               <div class="article-meta">
-                <time class="article-time" title="2016年08月8日 14:43:38" datetime="2016-08-08T06:43:38.000Z" itemprop="datePublished">2016年08月8日</time>
+                <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date) %></time>
               </div>
               <h3 class="article-title" itemprop="name">
-                  <a class="article-link" href="#">如何为Canvas中特定图形绑定事件？</a>
-                </h3>
+                <a class="article-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
+              </h3>
             </div>
+            <% if (post.tags){ %>
             <div class="panel-footer">
-              <a href="#" class="label label-default mb">PHP</a>
-              <a href="#" class="label label-default mb">Javascript</a>
-              <a href="#" class="label label-default mb">HTML+CSS</a>
-              <a href="#" class="label label-default mb">Git</a>
-              <a href="#" class="label label-default mb">前端构建</a>
+              <% post.tags.each(function (tag) { %>
+              <a href="<%- url_for(tag.path) %>" class="label label-default mb"><%= tag.name %></a>
+              <% }); %>
             </div>
+            <% } %>
           </article>
         </div>
-        <!-- /.col -->
-        <div class="col-md-6">
-          <article class="panel panel-default shadow-hover">
-            <div class="panel-body">
-              <div class="article-meta">
-                <time class="article-time" title="2016年08月8日 14:43:38" datetime="2016-08-08T06:43:38.000Z" itemprop="datePublished">2016年08月8日</time>
-              </div>
-              <h3 class="article-title" itemprop="name">
-                  <a class="article-link" href="#">html5上传进度实现</a>
-                </h3>
-            </div>
-            <div class="panel-footer">
-              <a href="#" class="label label-default mb">PHP</a>
-              <a href="#" class="label label-default mb">Javascript</a>
-              <a href="#" class="label label-default mb">HTML+CSS</a>
-              <a href="#" class="label label-default mb">Git</a>
-              <a href="#" class="label label-default mb">前端构建</a>
-            </div>
-          </article>
-        </div>
-        <!-- /.col -->
-        <div class="col-md-6">
-          <article class="panel panel-default shadow-hover">
-            <div class="panel-body">
-              <div class="article-meta">
-                <time class="article-time" title="2016年08月8日 14:43:38" datetime="2016-08-08T06:43:38.000Z" itemprop="datePublished">2016年08月8日</time>
-              </div>
-              <h3 class="article-title" itemprop="name">
-                  <a class="article-link" href="#">如何为Canvas中特定图形绑定事件？</a>
-                </h3>
-            </div>
-            <div class="panel-footer">
-              <a href="#" class="label label-default mb">PHP</a>
-              <a href="#" class="label label-default mb">Javascript</a>
-              <a href="#" class="label label-default mb">HTML+CSS</a>
-              <a href="#" class="label label-default mb">Git</a>
-              <a href="#" class="label label-default mb">前端构建</a>
-            </div>
-          </article>
-        </div>
-        <!-- /.col -->
-        <div class="col-md-6">
-          <article class="panel panel-default shadow-hover">
-            <div class="panel-body">
-              <div class="article-meta">
-                <time class="article-time" title="2016年08月8日 14:43:38" datetime="2016-08-08T06:43:38.000Z" itemprop="datePublished">2016年08月8日</time>
-              </div>
-              <h3 class="article-title" itemprop="name">
-                  <a class="article-link" href="#">html5上传进度实现</a>
-                </h3>
-            </div>
-            <div class="panel-footer">
-              <a href="#" class="label label-default mb">PHP</a>
-              <a href="#" class="label label-default mb">Javascript</a>
-              <a href="#" class="label label-default mb">HTML+CSS</a>
-              <a href="#" class="label label-default mb">Git</a>
-              <a href="#" class="label label-default mb">前端构建</a>
-            </div>
-          </article>
-        </div>
-        <!-- /.col -->
-        <div class="col-md-6">
-          <article class="panel panel-default shadow-hover">
-            <div class="panel-body">
-              <div class="article-meta">
-                <time class="article-time" title="2016年08月8日 14:43:38" datetime="2016-08-08T06:43:38.000Z" itemprop="datePublished">2016年08月8日</time>
-              </div>
-              <h3 class="article-title" itemprop="name">
-                  <a class="article-link" href="#">如何为Canvas中特定图形绑定事件？</a>
-                </h3>
-            </div>
-            <div class="panel-footer">
-              <a href="#" class="label label-default mb">PHP</a>
-              <a href="#" class="label label-default mb">Javascript</a>
-              <a href="#" class="label label-default mb">HTML+CSS</a>
-              <a href="#" class="label label-default mb">Git</a>
-              <a href="#" class="label label-default mb">前端构建</a>
-            </div>
-          </article>
-        </div>
-        <!-- /.col -->
-        <div class="col-md-6">
-          <article class="panel panel-default shadow-hover">
-            <div class="panel-body">
-              <div class="article-meta">
-                <time class="article-time" title="2016年08月8日 14:43:38" datetime="2016-08-08T06:43:38.000Z" itemprop="datePublished">2016年08月8日</time>
-              </div>
-              <h3 class="article-title" itemprop="name">
-                  <a class="article-link" href="#">html5上传进度实现</a>
-                </h3>
-            </div>
-            <div class="panel-footer">
-              <a href="#" class="label label-default mb">PHP</a>
-              <a href="#" class="label label-default mb">Javascript</a>
-              <a href="#" class="label label-default mb">HTML+CSS</a>
-              <a href="#" class="label label-default mb">Git</a>
-              <a href="#" class="label label-default mb">前端构建</a>
-            </div>
-          </article>
-        </div>
-        <!-- /.col -->
+        <% }) %>
       </div>
+      <% }) %>
     </div>
   </article>
 </section>

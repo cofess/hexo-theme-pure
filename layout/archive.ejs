@@ -2,7 +2,7 @@
   <article class="article article-archives article-type-list" itemscope="">
     <header class="article-header">
       <h1 itemprop="title"><%= __('archive_a') %></h1>
-      <p>Total <%= site.posts.length %> articles</p>
+      <p class="text-muted">Total <%= page.posts.length %> articles</p>
     </header>
     <div class="article-body">
       <%- partial('_partial/archive', {pagination: config.archive, index: true}) %>

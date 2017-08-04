@@ -2,9 +2,10 @@
   <article class="article article-tags post-type-list" itemscope="">
     <header class="article-header">
       <h1 itemprop="name" class="hidden-xs"><%= page.title || page.tag %></h1>
-      <p class="hidden-xs">Total <%= site.posts.length %> articles</p>
+      <p class="text-muted hidden-xs">Total <%= page.posts.length %> articles</p>
       <nav role="navigation" id="nav-main" class="okayNav">
         <ul>
+          <li><a href="/tags">All</a></li>
           <% site.tags.each(function(item){ %>
           <li><a href="/<%= item.path %>"><%= item.name %></a></li>
           <% }) %>
