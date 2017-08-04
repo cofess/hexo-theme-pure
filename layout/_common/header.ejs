@@ -1,8 +1,8 @@
 <section class="mainside">
   <div class="slimContent">
     <div class="navbar-header">
-      <% if(theme.customize.profile && theme.customize.profile.enabled) { %>
-      <% var profile = theme.customize.profile; %>
+      <% if(theme.profile && theme.profile.enabled) { %>
+      <% var profile = theme.profile; %>
       <div class="profile-block text-center">
         <a id="avatar" href="<%= profile.follow %>" target="_blank">
           <img class="thumb-xl img-circle img-rotate" src="<%= ( profile.gravatar ? gravatar(profile.gravatar, 128) : url_for(profile.avatar)) %>" width="200" height="200">
