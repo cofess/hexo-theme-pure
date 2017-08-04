@@ -17,6 +17,7 @@
       <% site.tags.each(function(item){ %>
       <h3 class="panel-title mb-1x">
         <a href="<%- url_for(item.path) %>" title="#<%= item.name %>"><i class="fa fa-tag"></i> #<%= item.name %></a>
+        <small class="text-muted">(Total <%= item.posts.length %> articles)</small>
       </h3>
       <div class="row">
         <% item.posts.each(function(post, i){ %>

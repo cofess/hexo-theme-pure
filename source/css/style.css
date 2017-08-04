@@ -541,7 +541,7 @@ mark,
 }
 
 .text-muted {
-  color: #777777;
+  color: #777777 !important;
 }
 
 .text-primary {
