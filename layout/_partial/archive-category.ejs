@@ -1,0 +1,31 @@
+<%
+    switch (type) {
+        case 'category':
+            title = page.category;
+            icon = 'folder';
+            break;
+        case 'tag':
+            title = '#' + page.tag;
+            icon = 'tag';
+            break;
+    }
+%>
+<div class="panel panel-default b-no">
+    <div class="panel-heading" role="tab">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" href="#collapse<%= title %>" aria-expanded="true">
+              <i class="fa fa-folder-o text-active"></i><i class="fa fa-folder-open-o text"></i>
+              <%= title %>
+            </a>
+        </h4>
+    </div>
+    <div id="collapse<%= title %>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<%= title %>">
+        <div class="panel-body">
+            <div class="collection">
+              <% page.posts.each(function (post, i) { %>
+                <%- partial('_partial/item-post', {post: post}) %>
+              <% }); %>
+            </div>
+        </div>
+    </div>
+</div>
