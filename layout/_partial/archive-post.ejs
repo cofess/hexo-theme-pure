@@ -1,8 +1,13 @@
-<article class="archive-article archive-type-<%= post.layout %>">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'MMM D'}) %>
-      <%- partial('post/title', {class_name: 'archive-article-title'}) %>
-    </header>
+<article class="article article-type-<%= post.layout %>">
+  <header class="article-header">
+    <%- partial('post/title', {class_name: 'article-title'}) %>
+  </header>
+  <div class="article-entry text-muted">
+    <%- post.excerpt %>
   </div>
+  <p class="article-meta">
+    <%- partial('post/date', {class_name: 'article-date', date_format: 'MMM D'}) %>
+    <%- partial('post/category') %>
+    <%- partial('post/tag') %>
+  </p>
 </article>

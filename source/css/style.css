@@ -5806,6 +5806,10 @@ body.no-sidebar .sidebar {
   margin: 0;
 }
 
+.article-list .article-title {
+  font-size: 22px;
+}
+
 /*
  * We are hiding the invisible nav outside the screen
  * so we need to avoid the horizontal scroll
