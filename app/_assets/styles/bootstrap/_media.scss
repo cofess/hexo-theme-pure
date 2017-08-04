@@ -1,7 +1,6 @@
 .media {
   // Proper spacing between instances of .media
   margin-top: 15px;
-
   &:first-child {
     margin-top: 0;
   }
@@ -19,7 +18,6 @@
 
 .media-object {
   display: block;
-
   // Fix collapse in webkit from max-width: 100% and display: table-cell.
   &.img-thumbnail {
     max-width: none;
@@ -45,10 +43,20 @@
 
 .media-middle {
   vertical-align: middle;
+  .media-left,
+  .media-right,
+  .media-body {
+    vertical-align: middle;
+  }
 }
 
 .media-bottom {
   vertical-align: bottom;
+  .media-left,
+  .media-right,
+  .media-body {
+    vertical-align: bottom;
+  }
 }
 
 // Reset margins on headings for tighter default spacing
