@@ -13,14 +13,14 @@
   // -webkit-backface-visibility: hidden;
   // backface-visibility: hidden;
   &.bar-footer {
-    position:relative;
+    position: relative;
     background-color: #fff;
     bottom: -20px;
     &:before {
       position: absolute;
       width: 120%;
       height: 1px;
-      left:-10%;
+      left: -10%;
       background-color: #f6f6f6;
     }
   }
@@ -34,8 +34,8 @@
   .pager {
     text-align: left;
     margin: 10px 0;
-    .previous + .next{
-      margin-left:25px;
+    .previous + .next {
+      margin-left: 25px;
     }
     a {
       color: #666;
@@ -44,11 +44,25 @@
       padding: 0;
       &:link,
       &:visited {
-        background-color:transparent;
+        background-color: transparent;
       }
       &:hover {
         color: $link-hover-color;
-        background-color:transparent;
+        background-color: transparent;
+      }
+    }
+    .prev {
+      margin-right: 10px;
+    }
+    .next {
+      margin-left: 10px;
+    }
+    .page-number {
+      &.current {
+        color: $link-color;
+      }
+      + .page-number {
+        margin-left: 10px;
       }
     }
   }
@@ -79,14 +93,14 @@
         text-decoration: none;
       }
     }
-    span{
+    span {
       + span {
-        margin-left:10px;
+        margin-left: 10px;
       }
     }
   }
   .content {
-    min-height:85vh;
+    min-height: 85vh;
   }
   &.has-sticky {
     .content {
