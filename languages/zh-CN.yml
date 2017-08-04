@@ -11,6 +11,13 @@ nav:
   prev: 上一页
   older: 下一篇
   newer: 上一篇
+index:
+    home: '主页'
+    search: '搜索'
+    archive: '归档'
+    category: '分类'
+    uncategorized: '未分类'
+    tag: '标签'  
 widget:
   board: 公告
   archive: 归档
@@ -23,6 +30,13 @@ profile:
   skill: 技能
   project: 个人项目
   link: 个人链接
+insight:
+    hint: '想要查找什么...'
+    posts: '文章'
+    pages: '页面'
+    categories: '分类'
+    tags: '标签'
+    untitled: '(未命名)'  
 categories: 分类
 search: 搜索
 tags: 标签

@@ -13,3 +13,7 @@ hexo-wordcount
 ```
 npm i hexo-wordcount --save
 ```
+hexo-generator-json-content
+```
+npm install -S hexo-generator-json-content
+```
