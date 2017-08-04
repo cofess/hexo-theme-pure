@@ -146,21 +146,5 @@
   </div>
 </section>
 <section class="main">
-  <article class="article archives-about article-type-normal" itemscope="">
-    <header class="article-header">
-      <h1 itemprop="title"><%= page.title%></h1>
-      <p>喜欢新事物，关注前端动态，对新的技术有追求； 喜欢产品，喜欢设计，喜欢 coding。</p>
-    </header>
-    <div class="article-body">
-      <figure class="highlight javascript">
-        <table>
-          <tbody>
-            <tr>
-              <td class="code"><pre><span class="line"></span><br><span class="line">{</span><br><span class="line">  name: <span class="string">'邱同城 / qiutc'</span></span><br><span class="line">  age: <span class="number">22</span>,</span><br><span class="line">  gender: <span class="string">'男'</span>,</span><br><span class="line">  address: <span class="string">'浙江省杭州市'</span>,</span><br><span class="line">  education: <span class="string">'本科/西安电子科技大学'</span>,</span><br><span class="line">  Github: <span class="string">'https://github.com/TongchengQiu'</span>,</span><br><span class="line">  blog: <span class="string">'https://qiutc.me/'</span>,</span><br><span class="line">  email: <span class="string">'tongchengqiu@gmail.com'</span>,</span><br><span class="line"></span><br><span class="line">  skills: [</span><br><span class="line">    [<span class="string">'html'</span>, <span class="string">'javascript'</span>, <span class="string">'jQuery'</span>, <span class="string">'css'</span>, <span class="string">'es6'</span>, <span class="string">'node'</span>],</span><br><span class="line">    [<span class="string">'React'</span>, <span class="string">'redux'</span>, <span class="string">'react-router'</span>],</span><br><span class="line">    [<span class="string">'webpack'</span>, <span class="string">'gulp'</span>],</span><br><span class="line">    [<span class="string">'sass'</span>],</span><br><span class="line">    [<span class="string">'git'</span>],</span><br><span class="line">    [<span class="string">'docker'</span>]</span><br><span class="line">  ],</span><br><span class="line"></span><br><span class="line">  description: <span class="string">'喜欢新事物，关注前端动态，对新的技术有追求； 喜欢产品，喜欢设计，喜欢 coding。'</span></span><br><span class="line">}</span><br></pre></td>
-            </tr>
-          </tbody>
-        </table>
-      </figure>
-    </div>
-  </article>
+  <%- partial('_partial/article-about', {post: page, index: false}) %>
 </section>
