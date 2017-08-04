@@ -1,11 +1,22 @@
 <section class="main">
-  <article class="article article-archives article-type-list" itemscope="">
-    <header class="article-header">
-      <h1 itemprop="title"><%= __('archive_a') %></h1>
-      <p class="text-muted">Total <%= page.posts.length %> articles</p>
-    </header>
-    <div class="article-body">
-      <%- partial('_partial/archive', {pagination: config.archive, index: true}) %>
-    </div>
-  </article>
+  	<article class="content article article-archives article-type-list" itemscope="">
+	    <header class="article-header">
+	      <h1 itemprop="title"><%= __('archive_a') %></h1>
+	      <p class="text-muted">Total <%= page.posts.length %> articles</p>
+	    </header>
+	    <div class="article-body">
+	      <%- partial('_partial/archive', {pagination: config.archive, index: true}) %>
+	    </div>
+  	</article>
+  	<% if (page.total > 1){ %>
+	<nav class="bar bar-footer clearfix" data-stick-bottom>
+		<ul class="pager pull-left">
+		    <%- paginator({
+		      prev_text: "&laquo; __('prev')",
+		      next_text: "__('next') &raquo;"
+		    }) %>
+		</ul>
+	  	<div class="total-article bar-right">Total <%= site.posts.length %> articles</div>
+	</nav>
+	<% } %>
 </section>

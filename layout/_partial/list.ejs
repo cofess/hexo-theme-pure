@@ -9,14 +9,14 @@
     <% }) %>
   </div>
 <% } %>
+<% if (page.total > 1){ %>
 <nav class="bar bar-footer clearfix" data-stick-bottom>
-  <% if (page.total > 1){ %>
   <ul class="pager pull-left">
     <%- paginator({
       prev_text: "&laquo; __('prev')",
       next_text: "__('next') &raquo;"
     }) %>
   </ul>
-  <% } %>
   <div class="total-article bar-right">Total <%= site.posts.length %> articles</div>
 </nav>
+<% } %>
