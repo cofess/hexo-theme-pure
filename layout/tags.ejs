@@ -2,7 +2,7 @@
   <article class="article article-tags post-type-list" itemscope="">
     <header class="article-header">
       <h1 itemprop="name" class="hidden-xs"><%= __('page.'+page.title.toLowerCase()) %></h1>
-      <p class="text-muted hidden-xs">Total <%= site.posts.length %> articles</p>
+      <p class="text-muted hidden-xs"><%= _p('total.tag', site.tags.length) %></p>
       <nav role="navigation" id="nav-main" class="okayNav">
         <ul>
           <li><a href="/tags">All</a></li>

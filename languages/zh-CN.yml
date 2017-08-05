@@ -51,7 +51,13 @@ article:
   comments: 评论
   share: 分享到
   catalogue: 文章目录
-comment: 评论  
+total:
+  article: 共 %d 篇文章
+  tag: 共 %d 个标签
+  category: 共 %d 个分类
+  link: 共 %d 个友情链接
+  repository: 共 %d 个项目
+comment: 评论
 tweets: 推文
 archive_b: 归档：%s
 share: Share
