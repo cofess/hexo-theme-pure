@@ -7,20 +7,22 @@
   }
 }
 
-.modal-center {
-  text-align: center;
-  padding: 0!important;
-  &:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    margin-right: -4px;
-  }
-  .modal-dialog {
-    display: inline-block;
-    text-align: left;
-    vertical-align: middle;
+@media (min-width: $screen-xs-max) {
+  .modal-center {
+    text-align: center;
+    padding: 0!important;
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -4px;
+    }
+    .modal-dialog {
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+    }
   }
 }
 
@@ -63,7 +65,7 @@
     span {
       width: 50px;
       height: 50px;
-      padding:0;
+      padding: 0;
     }
   }
   // &:after {

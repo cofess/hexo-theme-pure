@@ -6,6 +6,14 @@
 
 .mainside {
   background-color: $mainside-bg;
+  @media (max-width: $screen-xs-max) {
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    z-index:1050;
+    @include clearfix;
+  }
   @media (min-width: $screen-sm-min) {
     position: fixed;
     top: 0;

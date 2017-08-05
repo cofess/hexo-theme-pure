@@ -10,6 +10,9 @@ body {
       }
     }
   }
+  @media (max-width: $screen-xs-max) {
+    padding-top:53px;
+  }
 }
 
 a {
