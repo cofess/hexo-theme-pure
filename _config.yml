@@ -143,7 +143,7 @@ gitment:
   githubID: cofess
   repo: cofess.github.io
   ClientID: 83135f90278afb380dcd
-  ClientSecret: d8d84b188989833920800e10f41da9da9101e13d
+  ClientSecret: b75709aa6f436e60d6333326f2ae5e19ca604509
   lazy: false         
 
 # display widgets at the bottom of index pages (pagination == 2)
