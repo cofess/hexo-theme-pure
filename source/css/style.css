@@ -5479,6 +5479,11 @@ body.no-sidebar .sidebar {
   margin-bottom: 70px;
 }
 
+#comments .gitment-footer-container,
+#comments .gitment-footer-project-link {
+  display: none !important;
+}
+
 /**
  * Sidebar navigation
  */

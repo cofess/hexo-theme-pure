@@ -29,6 +29,9 @@
       <%- partial('post/copyright') %>
     </footer>
   </article>
+  <% if (!index) { %>
+    <%- partial('post/comment') %>
+  <% } %>
 </div>
 <% if (!index){ %>
   <%- partial('post/nav') %>

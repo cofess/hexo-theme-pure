@@ -134,7 +134,17 @@ pv:
 postCount:
   enable: true
   wordcount: true # options: true, false # 文章字数统计
-  min2read: true # options: true, false # 阅读时长预计         
+  min2read: true # options: true, false # 阅读时长预计
+
+# Gitment
+# Introduction: https://imsun.net/posts/gitment-introduction/
+gitment:
+  enable: true
+  githubID: cofess
+  repo: cofess.github.io
+  ClientID: 83135f90278afb380dcd
+  ClientSecret: d8d84b188989833920800e10f41da9da9101e13d
+  lazy: false         
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:

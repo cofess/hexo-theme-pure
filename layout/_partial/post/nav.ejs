@@ -2,7 +2,7 @@
   <% if (post.prev || post.next){ %>
   <ul class="pager pull-left">
     <% if (post.prev){ %>
-    <li class="previous">
+    <li class="prev">
       <a href="<%- url_for(post.prev.path) %>" title="<%= post.prev.title || '(no title)' %>"><i class="fa fa-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;<%= __('nav.newer') %></a>
     </li>
     <% } %>

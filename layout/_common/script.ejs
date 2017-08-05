@@ -10,4 +10,7 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 <% if (theme.search.insight) { %>
   <%- partial('_script/insight') %>
 <% } %>
+<% if (theme.gitment.enable) { %>
+  <%- partial('_script/gitment') %>
+<% } %>
 <%- partial('_script/google-analytics') %>
