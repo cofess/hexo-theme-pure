@@ -1,7 +1,7 @@
 <section class="main">
   <article class="content article article-categories article-type-list" itemscope="">
     <header class="article-header">
-      <h1 itemprop="name" class="hidden-xs"><%= page.title || page.category %></h1>
+      <h1 itemprop="name" class="hidden-xs"><%= __('page.category') + ': ' + page.category; %></h1>
       <p class="hidden-xs">Total <%= page.posts.length %> articles</p>
       <nav role="navigation" id="nav-main" class="okayNav">
         <ul>

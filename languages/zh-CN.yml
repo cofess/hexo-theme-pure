@@ -11,14 +11,22 @@ nav:
   prev: 上一页
   older: 下一篇
   newer: 上一篇
-index:
-    home: '主页'
-    search: '搜索'
-    archive: '归档'
-    category: '分类'
-    uncategorized: '未分类'
-    tag: '标签'  
+page:
+  home: '主页'
+  archive: '归档'
+  category: '分类'
+  categories: 分类
+  tag: '标签'
+  tags: 标签
+  tagcloud: 标签云
+  uncategorized: '未分类'
+  repository: 项目
+  links: 友情链接
+  about: 关于
+pager:  
+  page: 第 %d 页     
 widget:
+  search: '搜索'
   board: 公告
   archive: 归档
   tags: 标签
@@ -36,15 +44,10 @@ insight:
     pages: '页面'
     categories: '分类'
     tags: '标签'
-    untitled: '(未命名)'  
-categories: 分类
-search: 搜索
-tags: 标签
-tagcloud: 标签云
+    untitled: '(未命名)'
 tweets: 推文
 comment: 留言
 archive_b: 归档：%s
-page: 第 %d 页
 share: Share
 theme_by: Theme by
 powered_by: Powered by

@@ -2,7 +2,7 @@
 <% if (theme.search.insight) { %>
     <form class="search-form sidebar-form">
         <div class="input-group">
-            <input type="text" class="ins-search-input search-form-input form-control" placeholder="<%= __('index.search') %>" />
+            <input type="text" class="search-form-input form-control" placeholder="<%= __('widget.search') %>" />
             <span class="input-group-btn">
                 <button type="submit" class="search-form-submit btn btn-flat"><i class="fa fa-search"></i></button>
             </span>
@@ -11,13 +11,17 @@
     <%- partial('_search/insight') %>
 <% } else if (theme.search.swiftype) { %>
     <form class="search-form">
-        <input type="text" class="st-default-search-input search-form-input" placeholder="<%= __('index.search') %>" />
-        <button type="submit" class="search-form-submit"></button>
+        <div class="input-group">
+        <input type="text" class="st-default-search-input search-form-input form-control" placeholder="<%= __('widget.search') %>" />
+        <span class="input-group-btn">
+            <button type="submit" class="search-form-submit btn btn-flat"><i class="fa fa-search"></i></button>
+        </span>
+        </div>
     </form>
     <%- partial('_search/swiftype') %>
 <% } else if (theme.search.baidu) { %>
     <%- partial('_search/baidu') %>
 <% } else { %>
-    <%- search_form({ button: ' ', text: __('index.search') }) %>
+    <%- search_form({ button: ' ', text: __('widget.search') }) %>
 <% } %>
 </div>
