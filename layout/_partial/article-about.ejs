@@ -1,7 +1,9 @@
 <article class="article archives-about article-type-normal" itemscope="">
   <header class="article-header">
     <h1 itemprop="title"><%= __('page.'+page.title.toLowerCase()) %></h1>
-    <p class="text-muted">喜欢新事物，关注前端动态，对新的技术有追求； 喜欢产品，喜欢设计，喜欢 coding。</p>
+    <% if(theme.profile.author_description) { %>
+    <p class="text-muted"><%= theme.profile.author_description %></p>
+    <% } %>
   </header>
   <div class="article-body">
     <%- page.content %>
