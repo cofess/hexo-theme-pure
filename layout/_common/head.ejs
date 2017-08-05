@@ -43,8 +43,8 @@
   <% if (theme.rss){ %>
     <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
-  <% if (theme.favicon){ %>
-    <link rel="icon" href="<%- theme.favicon %>">
+  <% if (theme.site.favicon){ %>
+    <link rel="icon" href="<%- theme.site.favicon %>" type="image/x-icon">
   <% } %>
   <!-- font-awesome CSS -->
   <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
