@@ -34,11 +34,11 @@
   .pager {
     text-align: left;
     margin: 10px 0;
-    .disabled{
+    .disabled {
       cursor: not-allowed;
     }
     > a,
-    > .page-number{
+    > .page-number {
       line-height: 32px;
       float: left;
     }
@@ -113,5 +113,12 @@
     .content {
       margin-bottom: 70px;
     }
+  }
+}
+
+#comments {
+  .gitment-footer-container,
+  .gitment-footer-project-link {
+    display: none!important;
   }
 }
