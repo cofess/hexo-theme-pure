@@ -100,8 +100,12 @@ layout:
 
 # Pagination
 pagination:
-  number: true
-  
+  number: false
+  prev: 
+    alwayShow: true
+  next:
+    alwayShow: true
+
 # Sidebar
 sidebar: right
 widgets:

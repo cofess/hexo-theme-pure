@@ -5392,8 +5392,14 @@ body.no-sidebar .sidebar {
   margin: 10px 0;
 }
 
-.main .pager .previous + .next {
-  margin-left: 25px;
+.main .pager .disabled {
+  cursor: not-allowed;
+}
+
+.main .pager > a,
+.main .pager > .page-number {
+  line-height: 32px;
+  float: left;
 }
 
 .main .pager a {
@@ -5425,7 +5431,6 @@ body.no-sidebar .sidebar {
   margin-left: 10px;
 }
 
-.main .pager .prev + .next,
 .main .pager .page-number + .next {
   margin-left: 10px;
 }
