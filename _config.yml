@@ -106,6 +106,18 @@ pagination:
   next:
     alwayShow: true
 
+# Donate
+donate:
+ enable: true
+ weipay:
+  image: images/donate/weipay.jpg
+  qrcode: images/donate/weipayimg.png
+  title: 微信支付
+ alipay: 
+  image: images/donate/alipay.jpg
+  qrcode: images/donate/alipayimg.png 
+  title: 支付宝  
+
 # Sidebar
 sidebar: right
 widgets:

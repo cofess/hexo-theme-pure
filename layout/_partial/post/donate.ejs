@@ -1,3 +1,4 @@
+<% if (theme.donate.enable){ %>
 <!-- Modal -->
 <div class="modal modal-center modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
@@ -9,20 +10,20 @@
             <p>感谢您的支持，我会继续努力的!</p>
           </div>
           <div class="donate-payimg">
-            <img src="/images/donate/alipayimg.png" alt="扫码支持" title="扫一扫" />
+            <img src="<%- url_for(theme.donate.alipay.qrcode) %>" alt="扫码支持" title="扫一扫" />
           </div>
           <p class="text-muted mv">扫码打赏，你说多少就多少</p>
           <div class="donate-payselect">
-            <div class="pay_item checked" data-id="alipay" data-src="/images/donate/alipayimg.png">
+            <div class="pay_item checked" data-id="alipay" data-src="<%- url_for(theme.donate.alipay.qrcode) %>">
               <div class="radio">
                 <input type="radio" name="payment" id="input-alipay" value="alipay" checked>
-                <label class="pay_logo clickable" for="input-alipay"><img src="/images/donate/alipay.jpg" alt="支付宝" /></label>
+                <label class="pay_logo clickable" for="input-alipay"><img src="<%- url_for(theme.donate.alipay.image) %>" alt="支付宝" /></label>
               </div>
             </div>
-            <div class="pay_item" data-id="weipay" data-src="/images/donate/weipayimg.png">
+            <div class="pay_item" data-id="weipay" data-src="<%- url_for(theme.donate.weipay.qrcode) %>">
               <div class="radio">
                 <input type="radio" name="payment" id="input-weipay" value="weipay">
-                <label class="pay_logo clickable" for="input-weipay"><img src="/images/donate/wechat.jpg" alt="微信" /></label>
+                <label class="pay_logo clickable" for="input-weipay"><img src="<%- url_for(theme.donate.weipay.image) %>" alt="微信" /></label>
               </div>
             </div>
           </div>
@@ -34,3 +35,4 @@
     </div>
   </div>
 </div>
+<% } %>
