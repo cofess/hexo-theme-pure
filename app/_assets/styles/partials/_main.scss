@@ -34,8 +34,13 @@
   .pager {
     text-align: left;
     margin: 10px 0;
-    .previous + .next {
-      margin-left: 25px;
+    .disabled{
+      cursor: not-allowed;
+    }
+    > a,
+    > .page-number{
+      line-height: 32px;
+      float: left;
     }
     a {
       color: #666;
@@ -54,14 +59,16 @@
     .prev {
       margin-right: 10px;
     }
-    .next {
-      margin-left: 10px;
-    }
     .page-number {
       &.current {
         color: $link-color;
       }
       + .page-number {
+        margin-left: 10px;
+      }
+    }
+    .page-number {
+      + .next {
         margin-left: 10px;
       }
     }
