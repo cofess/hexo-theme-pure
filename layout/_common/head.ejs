@@ -18,7 +18,7 @@
   var title = page.title;
 
   if (is_archive()){
-    title = __('menu.Archives');
+    title = __('page.archive');
 
     if (is_month()){
       title += ': ' + page.year + '/' + page.month;
@@ -26,9 +26,11 @@
       title += ': ' + page.year;
     }
   } else if (is_category()){
-    title = __('category') + ': ' + page.category;
+    title = __('page.category') + ': ' + page.category;
   } else if (is_tag()){
-    title = __('tag') + ': ' + page.tag;
+    title = __('page.tag') + ': ' + page.tag;
+  } else if (is_page()){
+    title = __('page.'+page.title.toLowerCase());
   }
   %>
   <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>

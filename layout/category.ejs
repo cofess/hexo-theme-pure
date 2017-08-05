@@ -17,15 +17,15 @@
       <%- partial('_partial/archive-category', { type: 'category' }) %>
     </div>
   </article>
+  <% if (page.total > 1){ %>
   <nav class="bar bar-footer clearfix" data-stick-bottom>
-    <% if (page.total > 1){ %>
     <ul class="pager pull-left">
       <%- paginator({
-        prev_text: "&laquo; __('prev')",
-        next_text: "__('next') &raquo;"
+        prev_text: "&laquo; __('nav.prev')",
+        next_text: "__('nav.next') &raquo;"
       }) %>
     </ul>
-    <% } %>
     <div class="total-article bar-right">Total <%= page.posts.length %> articles</div>
   </nav>
+  <% } %>
 </section>
