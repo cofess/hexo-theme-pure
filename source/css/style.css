@@ -5417,15 +5417,16 @@ body.no-sidebar .sidebar {
   margin-right: 10px;
 }
 
-.main .pager .next {
-  margin-left: 10px;
-}
-
 .main .pager .page-number.current {
   color: #2196f3;
 }
 
 .main .pager .page-number + .page-number {
+  margin-left: 10px;
+}
+
+.main .pager .prev + .next,
+.main .pager .page-number + .next {
   margin-left: 10px;
 }
 

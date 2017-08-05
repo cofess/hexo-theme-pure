@@ -1,0 +1,36 @@
+<% if (page.total > 1){ %>
+    <% if (theme.pagination.number){ %>
+    <nav class="bar bar-footer clearfix" data-stick-bottom>
+        <ul class="pager pull-left">
+            <%- paginator({
+                prev_text: '<i class="fa fa-angle-left"></i> ' + __('nav.prev'),
+                next_text: __('nav.next') + ' <i class="fa fa-angle-right"></i>'
+            }) %>
+        </ul>
+        <div class="total-article bar-right">Total <%= site.posts.length %> articles</div>
+    </nav>
+    <% } else { %>
+    <nav class="bar bar-footer clearfix" data-stick-bottom>
+        <ul class="pager pull-left">
+            <% if (page.prev) { %>
+            <li class="prev">
+                <a href="<%- url_for(page.prev_link) %>">
+                    <i class="fa fa-angle-left"></i>
+                    <span><%= __('nav.prev') %></span>
+                </a>
+            </li>
+            <% } %>
+            <% if (page.next) { %>
+            <li class="next">
+                <a href="<%- url_for(page.next_link) %>">
+                        <span><%= __('nav.next') %></span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+            <% } %>
+            <li class="pagination-number"></li>
+        </ul>
+        <div class="total-article bar-right"><%= _p('pagination.page', page.current) + ' ' + _p('pagination.of', page.total) %></div>
+    </nav>
+    <% } %>
+<% } %>
