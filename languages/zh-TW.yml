@@ -6,25 +6,74 @@ menu:
   Repository: 項目
   Links: 鏈接
   About: 關於
-categories: 分類
-search: 搜尋
-tags: 標籤
-tagcloud: 標籤雲
-tweets: 推文
 nav:
-  next: 上一頁
-  prev: 下一頁
   older: 下一篇
   newer: 上一篇
-comment: 留言
-archive_a: 彙整
-archive_b: 彙整：%s
-page: 第 %d 頁
-recent_posts: 最新文章
-newer: Newer
-older: Older
+page:
+  home: 主頁
+  archive: 歸檔
+  archives: 歸檔
+  category: 分類
+  categories: 分類
+  tag: 標籤
+  tags: 標籤
+  tagcloud: 標籤雲
+  uncategorized: 未分類
+  repository: 項目
+  links: 友情鏈接
+  about: 關於
+pagination: 
+  next: 下一頁
+  prev: 上一頁 
+  page: 第 %d 頁
+  pageof: Page %d of %s
+widget:
+  search: 搜索
+  board: 公告
+  archive: 歸檔
+  tags: 標籤
+  categories: 分類
+  tagcloud: 標籤雲
+  recent_posts: 最新文章
+profile: 
+  follow: 關注
+  skill: 技能
+  project: 個人項目
+  link: 個人鏈接
+insight:
+  hint: 想要查找什麼...
+  posts: 文章
+  pages: 頁面
+  categories: 分類
+  tags: 標籤
+  untitled: (未命名)
+article:
+  more: 查看更多
+  comments: 評論
+  share: 分享到
+  catalogue: 文章目錄
+total:
+  article: 共 %d 篇文章
+  tag: 共 %d 個標籤
+  category: 共 %d 個分類
+  link: 共 %d 個友情鏈接
+  repository: 共 %d 個項目
+donate:
+  qrcode_alt: 掃碼支持
+  qrcode_title: 掃一掃
+  button: 賞
+  title: 感謝您的支持，我會繼續努力的!
+  tip: 掃碼打賞，你說多少就多少
+  action: 打開
+  action_tip: 掃一掃，即可進行掃碼打賞哦
+  alipay: 支付寶
+  weipay: 微信支付
+  wechat: 微信
+comment: 評論
+tweets: 推文
 share: Share
-powered_by: Powered by
 rss_feed: RSS Feed
-category: Category
-tag: Tag
+copyright:
+  theme_by: Theme by
+  base_on: base on
+  powered_by: Powered by

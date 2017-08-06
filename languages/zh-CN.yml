@@ -12,6 +12,7 @@ nav:
 page:
   home: 主页
   archive: 归档
+  archives: 归档
   category: 分类
   categories: 分类
   tag: 标签
@@ -70,7 +71,6 @@ donate:
   wechat: 微信
 comment: 评论
 tweets: 推文
-archive_b: 归档：%s
 share: Share
 rss_feed: RSS Feed
 copyright:
