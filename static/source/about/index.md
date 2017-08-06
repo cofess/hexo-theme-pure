@@ -8,20 +8,22 @@ sidebar: custom
   name: '晓旭、 / cofess'
   age: 29,
   gender: '男',
+  profession: 'Web Developer & Designer',
   address: '广东省深圳市',
   education: '本科',
   Github: 'https://github.com/cofess',
   blog: 'http://blog.cofess.com',
-  email: 'tongchengqiu@gmail.com',
+  email: 'cofess@foxmail.com',
 
   skills: [
     ['html', 'javascript', 'jQuery', 'css', 'es6', 'node'],
     ['webpack', 'gulp'],
-    ['sass'],
+    ['less','sass'],
     ['git'],
     ['Bootstrap', 'SUI Mobile'],
+    ['平面设计']
   ],
 
-  description: '喜欢新事物，关注前端动态，对新的技术有追求； 喜欢产品，喜欢设计，喜欢 coding。'
+  description: '致力于网站建设与前端用户体验设计'
 }
 ```
