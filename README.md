@@ -6,8 +6,6 @@ A brand new default theme for [Hexo].
 
 ## Installation
 
-### Install
-
 ### Install plugin
 hexo-wordcount
 ```
@@ -28,4 +26,16 @@ npm i hexo-generator-sitemap --save
 hexo-generator-baidu-sitemap
 ```
 npm i hexo-generator-baidu-sitemap --save
+```
+
+## Other
+### Clean cache
+```
+hexo-clean
+```
+
+## Run
+```
+hexo g
+hexo s -w #(-w:watch file change)
 ```
