@@ -1,4 +1,4 @@
 title: "Categories"
-layout: "category"
+layout: "categories"
 comments: false
 ---
