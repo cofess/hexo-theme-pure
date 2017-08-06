@@ -93,7 +93,7 @@ profile:
   # My Personal Projects
   projects:
     cofess/gulp-startpro: https://github.com/cofess/gulp-startpro
-    cofess/gulp-startkit: https://github.com/cofess/gulp-startkit
+    cofess/hexo-theme-pure: https://github.com/cofess/hexo-theme-pure
 
 # Layout
 layout:
