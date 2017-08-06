@@ -15,5 +15,17 @@ npm i hexo-wordcount --save
 ```
 hexo-generator-json-content
 ```
-npm install -S hexo-generator-json-content
+npm i hexo-generator-json-content --save
+```
+hexo-generator-feed
+```
+npm i hexo-generator-feed --save
+```
+hexo-generator-sitemap
+```
+npm i hexo-generator-sitemap --save
+```
+hexo-generator-baidu-sitemap
+```
+npm i hexo-generator-baidu-sitemap --save
 ```
