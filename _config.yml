@@ -146,8 +146,8 @@ gitment:
   enable: true
   githubID: cofess
   repo: cofess.github.io
-  ClientID: 83135f90278afb380dcd
-  ClientSecret: b75709aa6f436e60d6333326f2ae5e19ca604509
+  ClientID: 51c8eb65102e492db949
+  ClientSecret: 0d9d4a0486ad7d8e6c64bc3adedc7cab663421a9
   lazy: false
   
 # PV
