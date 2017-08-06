@@ -54,7 +54,11 @@ Name:
     descr: "这是一个描述"
 ```
 添加多个友情链接，我们只需要根据上面的格式重复填写即可。
+
 . 将 Name 改为友情链接的名字，例如 Viosey。
+
 . http://example.com 为友情链接的地址。
+
 . http://example.com/avatar.png 为友情链接的头像。
+
 . 这是一个描述 为友情链接描述。
