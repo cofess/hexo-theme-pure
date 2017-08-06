@@ -116,7 +116,14 @@ donate:
  alipay: 
   image: images/donate/alipay.jpg
   qrcode: images/donate/alipayimg.png 
-  title: 支付宝  
+  title: 支付宝
+
+# Share
+# weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
+share:
+  enable: true
+  sites: weibo,qq,wechat,facebook,twitter 
+  mobile_sites: weibo,qq,qzone
 
 # Sidebar
 sidebar: right

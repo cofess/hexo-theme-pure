@@ -17,7 +17,9 @@
   <!-- Button trigger modal -->
   <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span><%= __('donate.button') %></span></button>
   <% } %>
+  <% if (theme.share.enable){ %>
   <div class="bar-right">
-    <div class="share-component" data-mobile-sites="weibo,qq,qzone" data-sites="weibo,qq,wechat,facebook,twitter"></div>
+    <div class="share-component" data-sites="<%= theme.share.sites %>" data-mobile-sites="<%= theme.share.mobile_sites %>"></div>
   </div>
+  <% } %>
 </nav>
