@@ -33,7 +33,7 @@
     title = __('page.'+page.title.toLowerCase());
   }
   %>
-  <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+  <title><% if (title) { %><%= title %> | <% } %><%= theme.site.title || config.title %></title>
   <%- open_graph({
     twitter_id: theme.twitter, 
     google_plus: theme.google_plus, 
