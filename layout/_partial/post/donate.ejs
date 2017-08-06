@@ -7,28 +7,28 @@
       <div class="modal-body">
         <div class="donate-box">
           <div class="donate-tit">
-            <p>感谢您的支持，我会继续努力的!</p>
+            <p><%= __('donate.title') %></p>
           </div>
           <div class="donate-payimg">
-            <img src="<%- url_for(theme.donate.alipay.qrcode) %>" alt="扫码支持" title="扫一扫" />
+            <img src="<%- url_for(theme.donate.alipay.qrcode) %>" alt="<%= __('donate.qrcode_alt') %>" title="<%= __('donate.qrcode_title') %>" />
           </div>
-          <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+          <p class="text-muted mv"><%= __('donate.tip') %></p>
           <div class="donate-payselect">
             <div class="pay_item checked" data-id="alipay" data-src="<%- url_for(theme.donate.alipay.qrcode) %>">
               <div class="radio">
                 <input type="radio" name="payment" id="input-alipay" value="alipay" checked>
-                <label class="pay_logo clickable" for="input-alipay"><img src="<%- url_for(theme.donate.alipay.image) %>" alt="支付宝" /></label>
+                <label class="pay_logo clickable" for="input-alipay"><img src="<%- url_for(theme.donate.alipay.image) %>" alt="<%= __('donate.alipay') %>" /></label>
               </div>
             </div>
             <div class="pay_item" data-id="weipay" data-src="<%- url_for(theme.donate.weipay.qrcode) %>">
               <div class="radio">
                 <input type="radio" name="payment" id="input-weipay" value="weipay">
-                <label class="pay_logo clickable" for="input-weipay"><img src="<%- url_for(theme.donate.weipay.image) %>" alt="微信" /></label>
+                <label class="pay_logo clickable" for="input-weipay"><img src="<%- url_for(theme.donate.weipay.image) %>" alt="<%= __('donate.weipay') %>" /></label>
               </div>
             </div>
           </div>
           <div class="text-grey">
-            <p>打开<span id="donate-pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+            <p><%= __('donate.action') %><span id="donate-pay_txt"><%= __('donate.alipay') %></span><%= __('donate.action_tip') %></p>
           </div>
         </div>
       </div>
