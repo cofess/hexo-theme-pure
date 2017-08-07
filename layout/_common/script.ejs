@@ -13,4 +13,7 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 <% if (theme.gitment.enable && !is_home() && is_post()) { %>
   <%- partial('_script/gitment') %>
 <% } %>
+<% if (theme.gitment.enable && !is_home() && is_post()) { %>
+  <%- partial('_script/pv') %>
+<% } %>
 <%- partial('_script/google-analytics') %>
