@@ -89,6 +89,9 @@
   min-height: 100vh;
   padding: 15px;
   @include clearfix;
+  @media (max-width: $screen-xs-max) {
+    min-height: 65vmax;
+  }
   @media (min-width: $screen-sm-min) {
     width: $main-sm-width;
     padding-right: 20px;
