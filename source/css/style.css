@@ -7798,6 +7798,14 @@ body.okayNav-loaded {
     display: none;
   }
 
+  .main {
+    min-height: 65vmax;
+  }
+
+  .main .content {
+    min-height: 83vmax;
+  }
+
   .sidebar-form {
     border: 0;
     margin: 9px 40px 9px 0;
