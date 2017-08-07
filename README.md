@@ -64,16 +64,15 @@ Name:
 . 这是一个描述 为友情链接描述。
 
 ## 其他插件
-### 路径转英文
-#### hexo-translate-title
+### hexo-translate-title
 使用Google翻译，百度翻译和有道翻译将Hexo中的汉字标题转成英文标题
 https://github.com/cometlj/hexo-translate-title
 
-##### 安装
+#### 安装
 ```bash
 npm install hexo-translate-title --save
 ```
-##### 使用
+#### 使用
 配置hexo根项目下的`_config.yml`
 
 ```yml
@@ -86,15 +85,16 @@ translate_title:
 ```
 **注意**：判断是否需要配置google本地代理，因为我在本地是开启时才能访问google翻译的，如果没有被墙，请将`_config.yml` 下的`is_need_proxy: true`改为false。如果设置为true,请设置本地代理地址
 
-##### 翻译效果评估
+#### 翻译效果评估
 google翻译 > baidu翻译 > ~~有道翻译~~
 
-#### hexo-abbrlink
+
+### hexo-abbrlink
 https://github.com/rozbo/hexo-abbrlink
 
 A [Hexo plugin](https://hexo.io/plugins/) to generate static post link based on post titles.
 
-##### How to install
+#### How to install
 
 Add plugin to Hexo:
 
@@ -116,13 +116,13 @@ rep -- Represent (the generated link could be presented in hex or dec value)
 ```
 
 ```
-##### abbrlink config
+#### abbrlink config
 abbrlink:
   alg: crc32  #support crc16(default) and crc32
   rep: hex    #support dec(default) and hex
 ```
 
-##### Sample
+#### Sample
 
 The generated link will look like the following:
 
