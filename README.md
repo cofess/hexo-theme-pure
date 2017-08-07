@@ -4,6 +4,20 @@ A brand new default theme for [Hexo].
 
 - [Preview](http://blog.cofess.com/)
 
+## 界面
+
+- 主页
+
+![](https://raw.githubusercontent.com/cofess/hexo-theme-pure/dev-gulp/screenshot/home.png)
+
+- 归档
+
+![](https://raw.githubusercontent.com/cofess/hexo-theme-pure/dev-gulp/screenshot/archives.png)
+
+- 分类
+
+![](https://raw.githubusercontent.com/cofess/hexo-theme-pure/dev-gulp/screenshot/categories.png)
+
 ## Installation
 
 ### Install plugin
