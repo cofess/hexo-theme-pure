@@ -9,23 +9,23 @@ A brand new default theme for [Hexo].
 ### Install plugin
 hexo-wordcount
 ```
-npm i hexo-wordcount --save
+npm install hexo-wordcount --save
 ```
 hexo-generator-json-content
 ```
-npm i hexo-generator-json-content --save
+npm install hexo-generator-json-content --save
 ```
 hexo-generator-feed
 ```
-npm i hexo-generator-feed --save
+npm install hexo-generator-feed --save
 ```
 hexo-generator-sitemap
 ```
-npm i hexo-generator-sitemap --save
+npm install hexo-generator-sitemap --save
 ```
 hexo-generator-baidu-sitemap
 ```
-npm i hexo-generator-baidu-sitemap --save
+npm install hexo-generator-baidu-sitemap --save
 ```
 
 ## Run
@@ -62,3 +62,83 @@ Name:
 . http://example.com/avatar.png 为友情链接的头像。
 
 . 这是一个描述 为友情链接描述。
+
+## 其他插件
+### 路径转英文
+#### hexo-translate-title
+使用Google翻译，百度翻译和有道翻译将Hexo中的汉字标题转成英文标题
+https://github.com/cometlj/hexo-translate-title
+
+##### 安装
+```bash
+npm install hexo-translate-title --save
+```
+##### 使用
+配置hexo根项目下的`_config.yml`
+
+```yml
+translate_title:
+  translate_way: google    #google | baidu | youdao
+  youdao_api_key: XXX
+  youdao_keyfrom: XXX
+  is_need_proxy: true     #true | false
+  proxy_url: http://localhost:8123
+```
+**注意**：判断是否需要配置google本地代理，因为我在本地是开启时才能访问google翻译的，如果没有被墙，请将`_config.yml` 下的`is_need_proxy: true`改为false。如果设置为true,请设置本地代理地址
+
+##### 翻译效果评估
+google翻译 > baidu翻译 > ~~有道翻译~~
+
+#### hexo-abbrlink
+https://github.com/rozbo/hexo-abbrlink
+
+A [Hexo plugin](https://hexo.io/plugins/) to generate static post link based on post titles.
+
+##### How to install
+
+Add plugin to Hexo:
+
+```
+npm install hexo-abbrlink --save
+```
+
+Modify permalink in config.yml file:
+
+```
+permalink: posts/:abbrlink/
+```
+
+There are two settings:
+
+```
+alg -- Algorithm (currently support crc16 and crc32, which crc16 is default)
+rep -- Represent (the generated link could be presented in hex or dec value)
+```
+
+```
+##### abbrlink config
+abbrlink:
+  alg: crc32  #support crc16(default) and crc32
+  rep: hex    #support dec(default) and hex
+```
+
+##### Sample
+
+The generated link will look like the following:
+
+```
+crc16 & hex
+https://post.zz173.com/posts/66c8.html
+
+crc16 & dec
+https://post.zz173.com/posts/65535.html
+```
+
+```
+crc32 & hex
+https://post.zz173.com/posts/8ddf18fb.html
+
+crc32 & dec
+https://post.zz173.com/posts/1690090958.html
+```
+
