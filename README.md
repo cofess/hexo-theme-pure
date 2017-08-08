@@ -45,7 +45,7 @@ npm install hexo-generator-baidu-sitemap --save
 ## Run
 ```
 hexo g
-hexo s -w //(-w:watch file change)
+hexo s -w
 ```
 
 ## Other
