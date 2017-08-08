@@ -7,6 +7,9 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 <% if (page.layout === 'repository'){ %>
   <%- partial('_script/repository') %>
 <% } %>
+<% if (page.layout === 'books'){ %>
+  <%- partial('_script/douban') %>
+<% } %>
 <% if (theme.search.insight) { %>
   <%- partial('_script/insight') %>
 <% } %>

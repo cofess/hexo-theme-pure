@@ -22,7 +22,12 @@ page:
   tagcloud: 標籤雲
   uncategorized: 未分類
   repository: 項目
+  books: 書單
+  books-desc: 個人收藏的書單推薦給大家
+  movies: 電影
+  movies-desc: 個人喜歡的電影推薦給大家
   links: 友情鏈接
+  links-desc: 歡迎交換鏈接，可在當前頁面留言
   about: 關於
 pagination: 
   next: 下一頁

@@ -1,0 +1,34 @@
+<article class="article article-links article-type-list" itemscope="">
+  <header class="article-header">
+    <h1 itemprop="title"><%= __('page.'+page.title.toLowerCase()) %></h1>
+    <p class="text-muted"><%= __('page.books-desc') %></p>
+    <nav role="navigation" id="nav-main" class="okayNav">
+      <ul id="tabs">
+        <li><a id="reading-tab" href="javascript:show('reading')" target="_blank" rel="external">在读<span id="reading-total"></span></a></li>
+        <li><a id="wish-tab" href="javascript:show('wish')" target="_blank" rel="external">想读<span id="wish-total"></span></a></li>
+        <li><a id="read-tab" href="javascript:show('read')" target="_blank" rel="external">已读<span id="read-total"></span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="article-body">
+    <div id="loading">
+      <p>正在加载...</p>
+    </div>
+    <div id="douban">
+      <div id="collections">
+        <div id="reading" class="row hide">
+        </div>
+        <div class="clearfix"></div>
+        <div id="wish" class="row hide">
+        </div>
+        <div class="clearfix"></div>
+        <div id="read" class="row hide">
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</article>
+<% if (theme.gitment.enable && !is_home()) { %>
+  <%- partial('post/comment', {post: page}) %>
+<% } %>

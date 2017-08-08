@@ -5879,6 +5879,10 @@ body.okayNav-loaded {
   z-index: 1;
 }
 
+.okayNav a.active {
+  color: #0a6ebd;
+}
+
 .okayNav__nav--visible {
   overflow: hidden;
   white-space: nowrap;

@@ -22,7 +22,12 @@ page:
   tagcloud: Tag Cloud
   uncategorized: Uncategorized
   repository: Repository
+  books: Books
+  books-desc: Personal collection of books recommended to everyone
+  movies: Movies
+  movies-desc: Personal favorite movies recommended to everyone
   links: Links
+  links-desc: Welcome to the exchange link, you can leave a message on this page
   about: About
 pagination: 
   next: Next

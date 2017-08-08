@@ -22,7 +22,12 @@ page:
   tagcloud: 标签云
   uncategorized: 未分类
   repository: 项目
+  books: 书单
+  books-desc: 个人收藏的书单推荐给大家
+  movies: 电影
+  movies-desc: 个人喜欢的电影推荐给大家
   links: 友情链接
+  links-desc: 欢迎交换链接，可在当前页面留言
   about: 关于
 pagination: 
   next: 下一页

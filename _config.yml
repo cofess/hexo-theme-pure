@@ -5,8 +5,7 @@ menu:
   Categories: categories
   Tags: tags
   Repository: repository
-  # Books: books     #This is your books page
-  # Movies: movies   #This is your movies page
+  Books: books     #This is your books page
   Links: links
   About: about
 rss: /atom.xml
@@ -25,7 +24,6 @@ menu_icons:
   tags: fa-tags
   repository: fa-code
   books: fa-leanpub
-  movies: fa-video-camera
   links: fa-gg
   about: fa-coffee
   sitemap: sitemap
@@ -153,6 +151,10 @@ gitment:
   ClientID: 51c8eb65102e492db949
   ClientSecret: 0d9d4a0486ad7d8e6c64bc3adedc7cab663421a9
   lazy: false
+
+# douban 豆瓣书单
+douban:
+  user: mythsman
   
 # PV
 pv:
