@@ -153,7 +153,16 @@ gitment:
   lazy: false
 
 # douban 豆瓣书单
-# Api：https://developers.douban.com/wiki/?title=book_v2
+# Api：
+  # https://developers.douban.com/wiki/?title=book_v2 图书
+  # https://developers.douban.com/wiki/?title=movie_v2 电影
+# books：  
+  # https://api.douban.com/v2/book/user/:name/collections?start=0&count=100 个人书单列表
+# movies: 
+  # https://api.douban.com/v2/movie/in_theaters 正在上映的电影
+  # https://api.douban.com/v2/movie/coming_soon 即将上映的电影
+  # https://api.douban.com/v2/movie/subject/:id 单个电影信息
+  # https://api.douban.com/v2/movie/search?q={text} 电影搜索
 douban:
   user: cofess # 豆瓣用户名
   start: 0 # 从哪一条记录开始

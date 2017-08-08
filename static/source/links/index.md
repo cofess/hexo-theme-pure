@@ -1,6 +1,6 @@
 ---
 title: "Links"
 layout: "links"
-comments: false
+comments: true
 sidebar: none
 ---
