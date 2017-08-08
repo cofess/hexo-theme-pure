@@ -37,6 +37,9 @@ body.okayNav-loaded {
   a {
     position: relative;
     z-index: 1;
+    &.active{
+      color:$oknav-links-hover-color
+    }
   }
 }
 
