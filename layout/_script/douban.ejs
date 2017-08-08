@@ -22,26 +22,43 @@ function show(id) {
   var wish = [];
   var reading = [];
 
+  // XHR 获取豆瓣书单数据，数据格式json
+  // function loadDoubanCollections() {
+  //   var xhr = new XMLHttpRequest();
+  //   // https://api.douban.com/v2/book/user/:name/collections
+  //   xhr.open('GET', 'http://7b1fa0.com1.z0.glb.clouddn.com/douban-20170429-1.json', true);
+
+  //   xhr.onload = function() {
+  //     // console.log(this);
+  //     if (this.status >= 200 && this.status < 300) {
+  //       var res = JSON.parse(this.response);
+  //       searchData = res;
+  //       onLoadDouban(searchData);
+  //     } else {
+  //       console.error(this.statusText);
+  //     }
+  //   };
+
+  //   xhr.onerror = function() {
+  //     console.error(this.statusText);
+  //   };
+
+  //   xhr.send();
+  // }
+  
+  // Ajax 获取豆瓣书单数据，数据格式json
   function loadDoubanCollections() {
-    var xhr = new XMLHttpRequest();
-    // https://api.douban.com/v2/book/user/:name/collections
-    xhr.open('GET', 'http://7b1fa0.com1.z0.glb.clouddn.com/douban-20170429-1.json', true);
-
-    xhr.onload = function() {
-      if (this.status >= 200 && this.status < 300) {
-        var res = JSON.parse(this.response);
-        searchData = res;
-        onLoadDouban(searchData);
-      } else {
-        console.error(this.statusText);
+    var _this = this;
+    var url = "https://api.douban.com/v2/book/user/<%= theme.douban.user %>/collections"
+    $.ajax({
+      url: url,
+      type: 'GET',
+      dataType: 'JSONP', //here
+      success: function(data) {
+        // console.log(data);
+        onLoadDouban(data);
       }
-    };
-
-    xhr.onerror = function() {
-      console.error(this.statusText);
-    };
-
-    xhr.send();
+    });
   }
 
   function onLoadDouban(data) {
@@ -74,7 +91,7 @@ function show(id) {
     document.getElementById('read-total').innerHTML = '(' + read.length + ')';
     document.getElementById('wish-total').innerHTML = '(' + wish.length + ')';
 
-    show('read');
+    show('reading');
     document.getElementById('loading').classList.add('hide');
   }
 
