@@ -49,10 +49,15 @@ function show(id) {
   // Ajax 获取豆瓣书单数据，数据格式json
   function loadDoubanCollections() {
     var _this = this;
-    var url = "https://api.douban.com/v2/book/user/<%= theme.douban.user %>/collections?start=<%= theme.douban.start %>&count=<%= theme.douban.count %>"
+    // https://api.douban.com/v2/book/user/:name/collections?start=0&count=100
+    var url = "https://api.douban.com/v2/book/user/<%= theme.douban.user %>/collections"
     $.ajax({
       url: url,
       type: 'GET',
+      data: {
+        start:<%= theme.douban.start %>, 
+        count:<%= theme.douban.count %>
+      },
       dataType: 'JSONP', //here
       success: function(data) {
         // console.log(data);

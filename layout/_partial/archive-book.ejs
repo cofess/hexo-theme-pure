@@ -1,7 +1,7 @@
 <article class="article article-links article-type-list" itemscope="">
   <header class="article-header">
     <h1 itemprop="title"><%= __('page.'+page.title.toLowerCase()) %></h1>
-    <p class="text-muted"><%= __('page.books-desc') %></p>
+    <p class="text-muted"><%= __('page.books-desc') %> <a href="https://www.douban.com/people/<%= theme.douban.user %>/" target="_blank">[<%= __('page.douban') %>]</a></p>
     <nav role="navigation" id="nav-main" class="okayNav">
       <ul id="tabs">
         <li><a id="reading-tab" href="javascript:show('reading')" target="_blank" rel="external">在读<span id="reading-total"></span></a></li>
