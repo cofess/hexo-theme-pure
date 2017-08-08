@@ -5,6 +5,7 @@ menu:
   Categories: categories
   Tags: tags
   Repository: repository
+  Books: books     #This is your books page
   Links: links
   About: about
 rss: /atom.xml
@@ -22,6 +23,7 @@ menu_icons:
   categories: fa-folder
   tags: fa-tags
   repository: fa-code
+  books: fa-leanpub
   links: fa-gg
   about: fa-coffee
   sitemap: sitemap
@@ -93,7 +95,7 @@ profile:
   # My Personal Projects
   projects:
     cofess/gulp-startpro: https://github.com/cofess/gulp-startpro
-    cofess/gulp-startkit: https://github.com/cofess/gulp-startkit
+    cofess/hexo-theme-pure: https://github.com/cofess/hexo-theme-pure
 
 # Layout
 layout:
@@ -148,8 +150,24 @@ gitment:
   repo: cofess.github.io
   ClientID: --
   ClientSecret: --
-  lazy: false   
+  lazy: false
 
+# douban 豆瓣书单
+# Api：
+  # https://developers.douban.com/wiki/?title=book_v2 图书
+  # https://developers.douban.com/wiki/?title=movie_v2 电影
+# books：  
+  # https://api.douban.com/v2/book/user/:name/collections?start=0&count=100 个人书单列表
+# movies: 
+  # https://api.douban.com/v2/movie/in_theaters 正在上映的电影
+  # https://api.douban.com/v2/movie/coming_soon 即将上映的电影
+  # https://api.douban.com/v2/movie/subject/:id 单个电影信息
+  # https://api.douban.com/v2/movie/search?q={text} 电影搜索
+douban:
+  user: cofess # 豆瓣用户名
+  start: 0 # 从哪一条记录开始
+  count: 100 # 获取豆瓣书单数据条数
+  
 # PV
 pv:
   busuanzi:
@@ -163,7 +181,7 @@ pv:
 postCount:
   enable: true
   wordcount: true # options: true, false # 文章字数统计
-  min2read: true # options: true, false # 阅读时长预计        
+  min2read: true # options: true, false # 阅读时长预计         
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
