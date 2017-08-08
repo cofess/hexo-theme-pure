@@ -49,7 +49,7 @@ function show(id) {
   // Ajax 获取豆瓣书单数据，数据格式json
   function loadDoubanCollections() {
     var _this = this;
-    var url = "https://api.douban.com/v2/book/user/<%= theme.douban.user %>/collections"
+    var url = "https://api.douban.com/v2/book/user/<%= theme.douban.user %>/collections?start=<%= theme.douban.start %>&count=<%= theme.douban.count %>"
     $.ajax({
       url: url,
       type: 'GET',
