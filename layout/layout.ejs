@@ -1,4 +1,4 @@
-<%- partial('_common/head') %>
+<%- partial('_common/head', {post: page}) %>
 <% var bodyClass = page.sidebar === 'none' ? 'main-center no-sidebar' : 'main-center'; %>
 <body class="<%= bodyClass %>">
   <%- partial('_common/header', null, {cache: !config.relative_link}) %>
@@ -6,6 +6,6 @@
     <%- partial('_common/sidebar', null, {cache: !config.relative_link}) %>
   <% } %>
   <%- body %>
-  <%- partial('_common/script') %>
+  <%- partial('_common/script', {post: page}) %>
 </body>
 </html>

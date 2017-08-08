@@ -9,3 +9,6 @@
     <%- page.content %>
   </div>
 </article>
+<% if (theme.gitment.enable && !is_home()) { %>
+  <%- partial('post/comment', {post: page}) %>
+<% } %>

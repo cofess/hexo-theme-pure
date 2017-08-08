@@ -48,7 +48,7 @@
   <% } %>
   <!-- font-awesome CSS -->
   <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <% if (theme.gitment.enable && !is_home() && is_post()) { %>
+  <% if (theme.gitment.enable && !is_home() && !is_category() && !is_tag() && !is_archive() && post.comments) { %>
   <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
   <% } %>
   <%- css('css/style') %>

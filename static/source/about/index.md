@@ -1,6 +1,7 @@
 ---
 title: "About"
 layout: "about"
+comments: false
 sidebar: custom
 ---
 ```javascript

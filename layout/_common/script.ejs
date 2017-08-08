@@ -10,10 +10,10 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 <% if (theme.search.insight) { %>
   <%- partial('_script/insight') %>
 <% } %>
-<% if (theme.gitment.enable && !is_home() && is_post()) { %>
+<% if (theme.gitment.enable && !is_home() && !is_category() && !is_tag() && !is_archive() && post.comments) { %>
   <%- partial('_script/gitment') %>
 <% } %>
-<% if (theme.gitment.enable && !is_home() && is_post()) { %>
+<% if (theme.gitment.enable && !is_home() && (is_post() || is_page())) { %>
   <%- partial('_script/pv') %>
 <% } %>
 <%- partial('_script/google-analytics') %>
