@@ -109,7 +109,7 @@
   .content {
     min-height: 85vh;
     @media (max-width: $screen-xs-max) {
-      min-height: 83vmax;
+      min-height: auto;
     }
   }
   &.has-sticky {
