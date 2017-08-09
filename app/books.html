@@ -89,26 +89,48 @@
     var wish = [];
     var reading = [];
 
+    // XHR 获取豆瓣书单数据，数据格式json
+    // function loadDoubanCollections() {
+    //   var xhr = new XMLHttpRequest();
+    //   // https://api.douban.com/v2/book/user/:name/collections
+    //   xhr.open('GET', 'http://7b1fa0.com1.z0.glb.clouddn.com/douban-20170429-1.json', true);
+
+    //   xhr.onload = function() {
+    //     // console.log(this);
+    //     if (this.status >= 200 && this.status < 300) {
+    //       var res = JSON.parse(this.response);
+    //       searchData = res;
+    //       onLoadDouban(searchData);
+    //     } else {
+    //       console.error(this.statusText);
+    //     }
+    //   };
+
+    //   xhr.onerror = function() {
+    //     console.error(this.statusText);
+    //   };
+
+    //   xhr.send();
+    // }
+
+    // Ajax 获取豆瓣书单数据，数据格式json
     function loadDoubanCollections() {
-      var xhr = new XMLHttpRequest();
-      // https://api.douban.com/v2/book/user/:name/collections
-      xhr.open('GET', 'http://7b1fa0.com1.z0.glb.clouddn.com/douban-20170429-1.json', true);
-
-      xhr.onload = function() {
-        if (this.status >= 200 && this.status < 300) {
-          var res = JSON.parse(this.response);
-          searchData = res;
-          onLoadDouban(searchData);
-        } else {
-          console.error(this.statusText);
+      var _this = this;
+      // https://api.douban.com/v2/book/user/:name/collections?start=0&count=100
+      var url = "https://api.douban.com/v2/book/user/cofess/collections"
+      $.ajax({
+        url: url,
+        type: 'GET',
+        data: {
+          start: 0, // 从哪一条记录开始
+          count: 100 // 获取豆瓣书单数据条数
+        },
+        dataType: 'JSONP', //here
+        success: function(data) {
+          // console.log(data);
+          onLoadDouban(data);
         }
-      };
-
-      xhr.onerror = function() {
-        console.error(this.statusText);
-      };
-
-      xhr.send();
+      });
     }
 
     function onLoadDouban(data) {
@@ -141,7 +163,7 @@
       document.getElementById('read-total').innerHTML = '(' + read.length + ')';
       document.getElementById('wish-total').innerHTML = '(' + wish.length + ')';
 
-      show('read');
+      show('reading');
       document.getElementById('loading').classList.add('hide');
     }
 
@@ -156,7 +178,7 @@
     }
 
     function renderBook(book) {
-      var html = '<div class="col-sm-6 col-md-6"><div class="panel panel-default"><div class="panel-body"><div class="media media-middle book book-' + book['status'] + '">' + '<div class="media-left"><a class="media-middle" target="_blank" href="' + book.book.alt + '" style="display:inline-block;width:116px"><img class="media-object" src="' + book.book.image + '"/></a></div><div class="media-body">' + '<h3 class="media-heading"><a target="_blank" href="' + book.book.alt + '">' + book.book.title + '</a></h3>' + '<p class="meta text-nowrap-1x"><small>' + book.book.author[0] + ' / ' + book.book.pubdate + ' / ' + book.book.rating.average + '分</small></p>' + '<p class="meta text-nowrap-1x">' + book.updated.substring(0, 10) + resolveRating(book.rating) + resolveTags(book.tags) + '</p>' + '<div class="comments text-muted text-nowrap-3x">' + (book.comment ? book.comment : '') + '</div>' + '</div>' + '</div>' + '</div>' + '</div>' + '</div>';
+      var html = '<div class="col-sm-6 col-md-6"><div class="panel panel-default"><div class="panel-body">' + '<div class="media media-middle book book-' + book['status'] + '">' + '<div class="media-left"><a class="media-middle" target="_blank" href="' + book.book.alt + '" style="display:inline-block;width:116px"><img class="media-object" src="' + book.book.image + '"/></a></div><div class="media-body">' + '<h3 class="media-heading"><a target="_blank" href="' + book.book.alt + '">' + book.book.title + '</a></h3>' + '<p class="meta text-nowrap-1x"><small>' + book.book.author[0] + ' / ' + book.book.pubdate + ' / ' + book.book.rating.average + '分</small></p>' + '<p class="meta text-nowrap-1x">' + book.updated.substring(0, 10) + resolveRating(book.rating) + resolveTags(book.tags) + '</p>' + '<div class="comments text-muted text-nowrap-3x">' + (book.comment ? book.comment : '') + '</div>' + '</div>' + '</div>' + '</div>' + '</div>' + '</div>';
       return html;
     }
 
