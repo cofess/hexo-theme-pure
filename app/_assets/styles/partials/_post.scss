@@ -7,8 +7,8 @@
   border-bottom: 1px solid #eee;
 }
 
-.article-header{
-  margin-bottom:20px;
+.article-header {
+  margin-bottom: 20px;
 }
 
 
@@ -34,8 +34,51 @@
   }
 }
 
-.article-list{
-  .article-title{
-    font-size:18px;
+.article-list {
+  .article-title {
+    font-size: 18px;
+  }
+}
+
+// 文章目录
+.article-toc {
+  .toc-title {
+    font-size: 18px;
+    color: #000;
+  }
+  .toc {
+    list-style: none;
+    padding-left: 0;
+    line-height: 2.0;
+    ol {
+      list-style: none;
+      padding-left: 10px;
+    }
+  }
+}
+
+.markdown-body {
+  .headerlink {
+    &:before {
+      content: "#";
+      color: $link-hover-color;
+      float: left;
+      margin-left: -20px;
+      visibility: hidden;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &:hover {
+      .headerlink {
+        &:before {
+          visibility: visible;
+        }
+      }
+    }
   }
 }

@@ -17,12 +17,24 @@
     background-color: #fff;
     bottom: -20px;
     &:before {
+      content: '';
       position: absolute;
       width: 120%;
-      height: 1px;
+      height: 52px;
       left: -10%;
-      background-color: #f6f6f6;
+      border-top: 1px solid #f6f6f6;
+      border-bottom: 1px solid #fff;
+      background-color: #fff;
+      @media (max-width: $screen-xs-max) {
+        width: calc(100% + 30px);
+        left: -15px;
+      }
     }
+  }
+  .bar-inner{
+    position:relative;
+    z-index:9;
+    @include clearfix;
   }
   .bar-right {
     margin: 10px 0;
