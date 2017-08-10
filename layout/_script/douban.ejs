@@ -55,8 +55,8 @@ function show(id) {
       url: url,
       type: 'GET',
       data: {
-        start:<%= theme.douban.start %>, 
-        count:<%= theme.douban.count %>
+        start:<%= theme.douban.start %>, // 从哪一条记录开始
+        count:<%= theme.douban.count %> // 获取豆瓣书单数据条数
       },
       dataType: 'JSONP', //here
       success: function(data) {
@@ -113,7 +113,7 @@ function show(id) {
   function renderBook(book) {
     var html = '<div class="col-sm-6 col-md-6"><div class="panel panel-default"><div class="panel-body">'
       + '<div class="media media-middle book book-' + book['status'] + '">' 
-      + '<div class="media-left"><a class="media-middle" target="_blank" href="' + book.book.alt + '" style="display:inline-block;width:116px"><img class="media-object" src="' + book.book.image + '"/></a></div><div class="media-body">' 
+      + '<div class="media-left"><a class="media-middle" target="_blank" href="' + book.book.alt + '"><img class="media-object" src="' + book.book.image + '"/></a></div><div class="media-body">' 
       + '<h3 class="media-heading"><a target="_blank" href="' + book.book.alt + '">' + book.book.title + '</a></h3>' 
       + '<p class="meta text-nowrap-1x"><small>' + book.book.author[0] + ' / ' + book.book.pubdate + ' / ' + book.book.rating.average + '分</small></p>' 
       + '<p class="meta text-nowrap-1x">' + book.updated.substring(0, 10) + resolveRating(book.rating) + resolveTags(book.tags) + '</p>' 

@@ -46,6 +46,8 @@ widget:
 profile: 
   follow: 关注
   skill: 技能
+  label: 个人标签
+  work: 个人作品
   project: 个人项目
   link: 个人链接
 insight:

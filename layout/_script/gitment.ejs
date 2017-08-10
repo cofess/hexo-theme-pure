@@ -1,6 +1,7 @@
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
+  // id:window.location.pathname, // document.location.href，默认为当前页面url
   owner: '<%= theme.gitment.githubID %>', // 可以是你的GitHub用户名，也可以是github id
   repo: '<%= theme.gitment.repo %>',
   oauth: {

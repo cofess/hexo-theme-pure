@@ -45,7 +45,9 @@ widget:
   recent_posts: Recent Posts
 profile: 
   follow: Follow
-  skill: Skill
+  skill: Skills
+  label: Labels
+  work: Works
   project: Projects
   link: Links
 insight:
