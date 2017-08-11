@@ -92,6 +92,7 @@
   @include clearfix;
   @media (max-width: $screen-xs-max) {
     min-height: auto;
+    overflow-x: hidden;
   }
   @media (min-width: $screen-sm-min) {
     width: $main-sm-width;

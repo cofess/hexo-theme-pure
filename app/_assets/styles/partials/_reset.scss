@@ -1,4 +1,5 @@
 body {
+  position: relative;
   font-family: $font-family-default;
   overflow-x: hidden;
   &.auto-scroll {
@@ -11,7 +12,7 @@ body {
     }
   }
   @media (max-width: $screen-xs-max) {
-    padding-top:53px;
+    padding-top: 53px;
   }
 }
 
@@ -22,6 +23,15 @@ a {
   &:hover {
     color: $link-hover-color;
     text-decoration: none;
+  }
+  &.active {
+    color: $link-hover-color;
+  }
+}
+
+.active {
+  > a {
+    color: $link-hover-color;
   }
 }
 

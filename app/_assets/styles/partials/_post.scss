@@ -57,13 +57,36 @@
   }
 }
 
+.toggle-contents {
+  position: absolute;
+  top: 40px!important;
+  right: 8px;
+  cursor: pointer;
+  .text-collapsed {
+    display: none;
+  }
+  .text-in {
+    display: block;
+  }
+  .collapsed {
+    .text-collapsed {
+      display: block;
+    }
+    .text-in {
+      display: none;
+    }
+  }
+}
+
 .markdown-body {
   .headerlink {
     &:before {
       content: "#";
       color: $link-hover-color;
-      float: left;
+      // float: left;
       margin-left: -20px;
+      padding-right: 4px;
+      vertical-align: middle;
       visibility: hidden;
     }
   }

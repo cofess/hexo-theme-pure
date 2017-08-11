@@ -54,4 +54,12 @@ $(function() {
     zindex: 42,
     edgeOffset: 0
   });
+  $('[data-stick-top]').keepInView({
+    fixed: true,
+    parentClass: "has-sticky",
+    customClass: "sticky",
+    trigger: 'top',
+    zindex: 42,
+    edgeOffset: 0
+  });
 });

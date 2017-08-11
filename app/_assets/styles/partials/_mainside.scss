@@ -283,3 +283,13 @@
     z-index: 99;
   }
 }
+
+// 文章目录
+.sidebar-contents {
+  &.collapse {
+    display: none!important;
+  }
+  &.in {
+    display: block!important;
+  }
+}

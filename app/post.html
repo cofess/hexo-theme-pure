@@ -30,14 +30,16 @@
 </head>
 
 <body class="main-center auto-scroll">
-  {% include "_includes/mainside.html" %} {% include "_includes/sidebar.html" %}
+  {% include "_includes/mainside.html" %} 
+  {% include "_includes/sidebar.html" %}
+  {% include "_includes/sidebar-contents.html" %}
   <section class="main">
     <div class="content">
       <article id="post-hexo-blog" class="article article-type-normal" itemscope="" itemprop="blogPost">
         <header class="article-header">
           <h1 itemprop="name">
-          <a class="article-title" href="/2017/04/09/hexo-blog.html">Hexo搭建个人博客并部署到Github</a>
-        </h1>
+            <a class="article-title" href="/2017/04/09/hexo-blog.html">Hexo搭建个人博客并部署到Github</a>
+          </h1>
           <div class="article-meta">
             <span class="article-date">
               <i class="fa fa-calendar"></i>
@@ -60,8 +62,14 @@
             <span class="post-count">&nbsp;&nbsp;字数统计: 252(字)</span>
             <span class="post-count">&nbsp;&nbsp;阅读时长: 1(分)</span>
           </div>
+          <div class="toggle-contents" data-stick-top>
+            <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseContents" aria-expanded="false" title="文章目录" role="button">
+              <i class="text-collapsed fa fa-align-left"></i>
+              <i class="text-in fa fa-close"></i>
+            </a>
+          </div>
         </header>
-        <div class="article-entry" itemprop="articleBody" lg-uid="lg0">
+        <div class="article-entry markdown-body" itemprop="articleBody" lg-uid="lg0">
           <h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2>
           <p>你需要准备好以下软件：
             <br>Node.js环境和Git</p>
@@ -200,6 +208,7 @@
       </div><!-- /.wrapper -->
     </div>
     <nav class="bar bar-footer clearfix" data-stick-bottom>
+      <div class="bar-inner">
       <ul class="pager pull-left">
         <li class="prev"><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;Prev</a></li>
         <li class="next"><a href="#">Next&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
@@ -219,6 +228,7 @@
           <a href="#" class="social-share-icon fa fa-wechat icon-wechat"></a>       
         </div> -->
         <div class="share-component" data-mobile-sites="weibo,qq,qzone" data-sites="weibo,qq,wechat,facebook,twitter" data-description="一键分享到微博，QQ空间，腾讯微博，人人，豆瓣"></div>
+      </div>
       </div>
     </nav>
     {% include "_includes/donate.html" %}
