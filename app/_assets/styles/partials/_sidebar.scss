@@ -75,3 +75,14 @@
     }
   }
 }
+
+
+// 文章目录
+.sidebar-toc {
+  &.collapse {
+    display: none!important;
+  }
+  &.in {
+    display: block!important;
+  }
+}
