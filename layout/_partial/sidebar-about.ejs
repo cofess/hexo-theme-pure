@@ -4,7 +4,7 @@
     <div class="widget">
       <h3 class="widget-title"><%= __('profile.link') %></h3>
       <div class="widget-body">
-        <ul class="list-square lh-2x">
+        <ul class="link-list lh-2x">
           <% for(var i in theme.profile.links) { %>
           <li>
             <%= i %>:
@@ -21,7 +21,7 @@
       <div class="widget-body">
         <ul class="skill-list lh-2x">
           <% for(var i in theme.profile.skills) { %>
-          <li>
+          <li class="clearfix">
             <span><%= i %></span>
             <span class="pull-right"><%- theme.profile.skills[i] %></span>
           </li>
@@ -46,7 +46,7 @@
       <div class="widget-body">
         <ul class="work-list lh-2x">
           <% for(var i in theme.profile.works) { %>
-          <li>
+          <li class="clearfix">
             <a href="<%- theme.profile.works[i].link %>" target="_blank" title="<%= i %>">
               <span><%= i %></span>
               <span class="pull-right text-muted"><%- theme.profile.works[i].date %></span>
@@ -61,7 +61,7 @@
     <div class="widget">
       <h3 class="widget-title"><%= __('profile.project') %></h3>
       <div class="widget-body">
-        <ul class="popular-repo list-square lh-2x">
+        <ul class="project-list list-square lh-2x">
           <% for(var i in theme.profile.projects) { %>
           <li class="public source">
             <a href="<%- theme.profile.projects[i] %>" target="_blank" title="<%= i %>">

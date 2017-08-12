@@ -5,7 +5,7 @@
       <p class="text-muted hidden-xs"><%= _p('total.article', page.posts.length) %></p>
       <nav role="navigation" id="nav-main" class="okayNav">
         <ul>
-          <li><a href="/tags">All</a></li>
+          <li><a href="/tags"><%= __('nav.all') %></a></li>
           <% site.tags.each(function(item){ %>
           <li><a href="/<%= item.path %>"><%= item.name %></a></li>
           <% }) %>

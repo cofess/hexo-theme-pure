@@ -2,10 +2,10 @@
   <div class="widget">
     <h3 class="widget-title"><%= __('widget.recent_posts') %></h3>
     <div class="widget-body">
-      <ul class="recent-post-list list-unstyled <%= (theme.customize.thumbnail?'':'no-thumbnail') %>">
+      <ul class="recent-post-list list-unstyled <%= (theme.config.thumbnail?'':'no-thumbnail') %>">
         <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
           <li>
-            <% if(theme.customize.thumbnail == true) { %>
+            <% if(theme.config.thumbnail == true) { %>
             <div class="item-thumbnail">
               <%- partial('common/thumbnail.ejs', {post: post}) %>
             </div>

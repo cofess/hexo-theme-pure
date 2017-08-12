@@ -2,44 +2,51 @@
 
 A brand new default theme for [Hexo].
 
-- [Preview](http://blog.cofess.com/)
+- [Preview](http://cofess.github.io/)
 
 ## 界面
 
 - 主页
 
-![](https://raw.githubusercontent.com/cofess/hexo-theme-pure/dev-gulp/screenshot/home.png)
-
-- 归档
-
-![](https://raw.githubusercontent.com/cofess/hexo-theme-pure/dev-gulp/screenshot/archives.png)
-
-- 分类
-
-![](https://raw.githubusercontent.com/cofess/hexo-theme-pure/dev-gulp/screenshot/categories.png)
+![](https://raw.githubusercontent.com/cofess/hexo-theme-pure/master/screenshot/pure.png)
+- [归档](http://cofess.github.io/archives/)
+- [分类](http://cofess.github.io/categories/)
+- [标签](http://cofess.github.io/tags/)
+- [项目](http://cofess.github.io/repository/)
+- [书单](http://cofess.github.io/books/)
+- [友链](http://cofess.github.io/links/)
+- [关于](http://cofess.github.io/about/)
 
 ## Installation
 
 ### Install plugin
-hexo-wordcount
+hexo-wordcount: [https://github.com/willin/hexo-wordcount](https://github.com/willin/hexo-wordcount)
 ```
 npm install hexo-wordcount --save
 ```
-hexo-generator-json-content
+hexo-generator-json-content: [https://github.com/alexbruno/hexo-generator-json-content](https://github.com/alexbruno/hexo-generator-json-content)
 ```
 npm install hexo-generator-json-content --save
 ```
-hexo-generator-feed
+hexo-generator-feed: [https://github.com/hexojs/hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
 ```
 npm install hexo-generator-feed --save
 ```
-hexo-generator-sitemap
+hexo-generator-sitemap: [https://github.com/hexojs/hexo-generator-sitemap](https://github.com/hexojs/hexo-generator-sitemap)
 ```
 npm install hexo-generator-sitemap --save
 ```
-hexo-generator-baidu-sitemap
+hexo-generator-baidu-sitemap: [https://github.com/coneycode/hexo-generator-baidu-sitemap](https://github.com/coneycode/hexo-generator-baidu-sitemap)
 ```
 npm install hexo-generator-baidu-sitemap --save
+```
+hexo-neat: [https://github.com/rozbo/hexo-neat](https://github.com/rozbo/hexo-neat)
+```
+npm install hexo-neat --save
+```
+hexo-baidu-url-submit: [https://github.com/huiwang/hexo-baidu-url-submit](https://github.com/huiwang/hexo-baidu-url-submit)
+```
+npm install hexo-neat --save
 ```
 
 ## Run
@@ -155,46 +162,3 @@ https://post.zz173.com/posts/8ddf18fb.html
 crc32 & dec
 https://post.zz173.com/posts/1690090958.html
 ```
-
-### hexo-douban
-
-douban plugin for [Hexo](https://hexo.io).
-
-#### Installation
-
-``` bash
-$ npm install hexo-douban --save
-```
-
-#### Options
-
-You should copy the following text to the bottom of  `_config.yml` of your blog.
-
-``` yaml
-douban:
-  user: mythsman
-  book:
-    title: 'This is my book title'
-    quote: 'This is my book quote'
-  movie:
-    title: 'This is my movie title'
-    quote: 'This is my movie quote'
-```
-
-- **user**: Your douban Id . You can see it from the url of your douban homepage.For example, you should click on your "个人主页" and you can see your id from the url "https://www.douban.com/people/xxxxxx/".
-- **title**: Your title in that page.
-- **quote**: Your quote in that page.
-
-#### Show
-If all the above is done , you can now check `http://yourblog/books` and `http://yourblog/movies` , and you will see the result.
-
-#### Menu
-If all the above is done , you can add them to the `_config.yml` of your theme like this:
-```yaml
-menu:
-  Home: /
-  Archives: /archives
-  Books: /books     #This is your books page
-  Movies: /movies   #This is your movies page
-```
-

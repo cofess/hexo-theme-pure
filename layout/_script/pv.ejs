@@ -1,11 +1,11 @@
 <% if (theme.pv.busuanzi.enable) { %>
-    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script defer src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <% } %>
 
 <% if(theme.pv.leancloud.enable){  %>
 <!-- custom analytics part create by xiamo -->
-<script src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>
-<script>
+<script defer src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>
+<script defer>
 AV.init({
   appId: '<%= theme.pv.leancloud.app_id %>',
   appKey: '<%= theme.pv.leancloud.app_key %>'

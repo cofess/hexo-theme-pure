@@ -1,0 +1,10 @@
+<% if (!index && theme.config.toc && post.toc) { %>
+<section class="sidebar sidebar-toc collapse" id="collapseToc">
+  <div class="slimContent">
+    <nav id="toc" class="article-toc">
+      <h3 class="toc-title"><%= __('article.catalogue') %></h3>
+      <%- toc(post.content) %>
+    </nav>
+  </div>
+</section>
+<% } %>

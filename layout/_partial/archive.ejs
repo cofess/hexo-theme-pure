@@ -25,7 +25,7 @@
         <div class="panel-body">
           <div class="collection">
     <% } %>
-    <%- partial('item-post', {post: post, even: i % 2 == 0}) %>
+    <%- partial('item-post', {post: post, type: 'link', even: i % 2 == 0}) %>
   <% }) %>
   <% if (page.posts.length){ %>
     </div></div></div></section>

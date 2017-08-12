@@ -5,7 +5,7 @@
       <p class="text-muted hidden-xs"><%= _p('total.category', site.categories.length) %></p>
       <nav role="navigation" id="nav-main" class="okayNav">
         <ul>
-          <li><a href="/categories">All</a></li>
+          <li><a href="/categories"><%= __('nav.all') %></a></li>
           <% site.categories.each(function(item){ %>
           <li><a href="/<%= item.path %>"><%= item.name %></a></li>
           <% }) %>
@@ -29,7 +29,7 @@
           <div class="panel-body">
             <div class="collection">
               <% item.posts.each(function(post){ %>
-                <%- partial('_partial/item-post', {post: post}) %>
+                <%- partial('_partial/item-post', {post: post, type: 'link'}) %>
               <% }) %>
             </div>
           </div>

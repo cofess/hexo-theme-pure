@@ -8,7 +8,7 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
   <%- partial('_script/repository') %>
 <% } %>
 <% if (page.layout === 'books'){ %>
-  <%- partial('_script/douban') %>
+  <%- partial('_script/douban',{page:post}) %>
 <% } %>
 <% if (theme.search.insight) { %>
   <%- partial('_script/insight') %>
@@ -19,4 +19,4 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 <% if (theme.gitment.enable && !is_home() && (is_post() || is_page())) { %>
   <%- partial('_script/pv') %>
 <% } %>
-<%- partial('_script/google-analytics') %>
+<%- partial('_script/plugins') %>

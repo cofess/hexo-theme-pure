@@ -1,7 +1,10 @@
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  // id:window.location.pathname, // document.location.href，默认为当前页面url
+  // id默认为当前页面url，如果url后带参数或锚点，gitment要重新初始化
+  // https://github.com/imsun/gitment/issues/55
+  // 解决方案：id:window.location.pathname,或者将id设置为当前页面标题
+  id: '<%= post.title %>', 
   owner: '<%= theme.gitment.githubID %>', // 可以是你的GitHub用户名，也可以是github id
   repo: '<%= theme.gitment.repo %>',
   oauth: {

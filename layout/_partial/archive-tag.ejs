@@ -1,21 +1,5 @@
 <% page.posts.each(function (post, i) { %>
 <div class="col-md-6">
-    <article class="panel panel-default shadow-hover">
-        <div class="panel-body">
-            <div class="article-meta">
-                <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date) %></time>
-            </div>
-            <h3 class="article-title" itemprop="name">
-                <a class="article-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
-            </h3>
-        </div>
-        <% if (post.tags){ %>
-        <div class="panel-footer">
-            <% post.tags.each(function (tag) { %>
-            <a href="<%- url_for(tag.path) %>" class="label label-default mb"><%= tag.name %></a>
-            <% }); %>
-        </div>
-        <% } %>
-    </article>
+    <%- partial('_partial/item-post', {post: post, type: 'card'}) %>
 </div>
 <% }); %>

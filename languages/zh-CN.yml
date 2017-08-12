@@ -6,9 +6,10 @@ menu:
   Repository: 项目
   Books: 书单
   Movies: 电影
-  Links: 链接
+  Links: 友链
   About: 关于
 nav:
+  all: All
   older: 下一篇
   newer: 上一篇
 page:
