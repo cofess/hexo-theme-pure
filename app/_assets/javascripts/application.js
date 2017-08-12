@@ -25,7 +25,9 @@ $(function() {
   });
 
   // okayNav
-  var navigation = $('#nav-main').okayNav();
+  var navigation = $('#nav-main').okayNav({
+    swipe_enabled: false, // If true, you'll be able to swipe left/right to open the navigation
+  });
 
   // donate
   $('.donate-box').on('click', '.pay_item', function() {
