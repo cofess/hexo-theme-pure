@@ -12,6 +12,7 @@
     left: 0;
     right: 0;
     top: 0;
+    width: 100%;
     z-index: 1050;
     @include clearfix;
   }
@@ -92,7 +93,7 @@
   @include clearfix;
   @media (max-width: $screen-xs-max) {
     min-height: auto;
-    overflow-x: hidden;
+    // overflow-x: hidden;
   }
   @media (min-width: $screen-sm-min) {
     width: $main-sm-width;

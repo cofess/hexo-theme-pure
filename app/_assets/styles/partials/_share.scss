@@ -61,15 +61,15 @@
   a {
     position: relative;
     text-decoration: none;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 18px;
+    // margin-right: 4px;
     display: inline-block;
     outline: none;
   }
   .social-share-icon {
     position: relative;
     display: inline-block;
-    width: 32px;
+    // width: 32px;
     height: 32px;
     // font-size: 20px;
     // border-radius: 50%;
@@ -178,8 +178,8 @@
     border: 1px solid #eee;
     position: absolute;
     z-index: 9;
-    top: -205px;
-    left: -84px;
+    top: -209px;
+    left: -90px;
     width: 200px;
     height: 200px;
     color: #666;

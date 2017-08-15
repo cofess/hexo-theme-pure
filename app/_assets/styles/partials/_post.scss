@@ -88,27 +88,29 @@
       text-decoration: none;
     }
   }
-  .headerlink {
-    &:before {
-      content: "#";
-      color: $link-hover-color;
-      // float: left;
-      margin-left: -20px;
-      padding-right: 4px;
-      vertical-align: middle;
-      visibility: hidden;
+  @media (min-width: $screen-sm-min) {
+    .headerlink {
+      &:before {
+        content: "#";
+        color: $link-hover-color;
+        // float: left;
+        margin-left: -20px;
+        padding-right: 4px;
+        vertical-align: middle;
+        visibility: hidden;
+      }
     }
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    &:hover {
-      .headerlink {
-        &:before {
-          visibility: visible;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      &:hover {
+        .headerlink {
+          &:before {
+            visibility: visible;
+          }
         }
       }
     }
