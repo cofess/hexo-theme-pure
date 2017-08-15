@@ -1,0 +1,9 @@
+<% if (theme.comment.type === 'disqus') { %>
+    <%- partial('_script/_comment/disqus', { script: true }) %>
+<% } else if (theme.comment.type === 'youyan') { %>
+    <%- partial('_script/_comment/youyan', { script: true }) %>
+<% } else if (theme.comment.type === 'livere') { %>
+    <%- partial('_script/_comment/livere', { script: true }) %>
+<% } else if (theme.comment.type === 'gitment') { %>
+    <%- partial('_script/_comment/gitment', { script: true }) %>    
+<% } %>

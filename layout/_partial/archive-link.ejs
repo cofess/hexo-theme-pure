@@ -30,6 +30,6 @@
     </div>
   </div>
 </article>
-<% if (theme.gitment.enable && !is_home()) { %>
+<% if (theme.comment.type && !is_home()) { %>
   <%- partial('_partial/post/comment', {post: page}) %>
 <% } %>

@@ -14,6 +14,9 @@
   <meta name="theme-color" content="#000000" />
   <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
   <meta http-equiv="window-target" content="_top" />
+  <% if (theme.plugins.google_site_verification) { %>
+  <meta name="google-site-verification" content="<%= theme.plugins.google_site_verification %>" />
+  <% } %>
   <%
   var title = page.title;
 
@@ -48,9 +51,6 @@
   <% } %>
   <!-- font-awesome CSS -->
   <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <% if (theme.gitment.enable && !is_home() && !is_category() && !is_tag() && !is_archive() && post.comments) { %>
-  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-  <% } %>
   <%- css('css/style') %>
-  <%- partial('_script/plugins', { isHead: true }) %>
+  <%- partial('_common/plugin') %>
 </head>

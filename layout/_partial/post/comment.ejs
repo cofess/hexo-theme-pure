@@ -1,3 +1,13 @@
 <% if (post.comments) { %>
-  <div id="comments"></div>
+  <div id="comments">
+  	<% if (theme.comment.type === 'disqus') { %>
+       <%- partial('_script/_comment/disqus') %>
+    <% } else if (theme.comment.type === 'youyan') { %>
+       <%- partial('_script/_comment/youyan') %>
+    <% } else if (theme.comment.type === 'livere') { %>
+       <%- partial('_script/_comment/livere') %>      
+    <% } else if (theme.comment.type === 'gitment') { %>
+       <%- partial('_script/_comment/gitment') %>    
+    <% } %>
+  </div>
 <% } %>

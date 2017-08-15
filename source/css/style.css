@@ -5916,22 +5916,15 @@ body.no-sidebar .sidebar {
   display: none;
 }
 
-.markdown-body .headerlink:before {
-  content: "#";
-  color: #0a6ebd;
-  margin-left: -20px;
-  padding-right: 4px;
-  vertical-align: middle;
-  visibility: hidden;
+.markdown-body a {
+  color: #2196f3;
+  text-decoration: none;
 }
 
-.markdown-body h1:hover .headerlink:before,
-.markdown-body h2:hover .headerlink:before,
-.markdown-body h3:hover .headerlink:before,
-.markdown-body h4:hover .headerlink:before,
-.markdown-body h5:hover .headerlink:before,
-.markdown-body h6:hover .headerlink:before {
-  visibility: visible;
+.markdown-body a:focus,
+.markdown-body a:hover {
+  color: #0a6ebd;
+  text-decoration: none;
 }
 
 /*
@@ -6178,8 +6171,7 @@ body.okayNav-loaded {
 .social-share a {
   position: relative;
   text-decoration: none;
-  margin-left: 4px;
-  margin-right: 4px;
+  margin-left: 18px;
   display: inline-block;
   outline: none;
 }
@@ -6187,7 +6179,6 @@ body.okayNav-loaded {
 .social-share .social-share-icon {
   position: relative;
   display: inline-block;
-  width: 32px;
   height: 32px;
   line-height: 32px;
   color: #999;
@@ -6254,8 +6245,8 @@ body.okayNav-loaded {
   border: 1px solid #eee;
   position: absolute;
   z-index: 9;
-  top: -205px;
-  left: -84px;
+  top: -209px;
+  left: -90px;
   width: 200px;
   height: 200px;
   color: #666;
@@ -7135,6 +7126,24 @@ body.okayNav-loaded {
   .main-nav > li > a {
     padding: 10px 20px;
   }
+
+  .markdown-body .headerlink:before {
+    content: "#";
+    color: #0a6ebd;
+    margin-left: -20px;
+    padding-right: 4px;
+    vertical-align: middle;
+    visibility: hidden;
+  }
+
+  .markdown-body h1:hover .headerlink:before,
+  .markdown-body h2:hover .headerlink:before,
+  .markdown-body h3:hover .headerlink:before,
+  .markdown-body h4:hover .headerlink:before,
+  .markdown-body h5:hover .headerlink:before,
+  .markdown-body h6:hover .headerlink:before {
+    visibility: visible;
+  }
 }
 
 @media (min-width: 992px) {
@@ -7898,6 +7907,7 @@ body.okayNav-loaded {
     left: 0;
     right: 0;
     top: 0;
+    width: 100%;
     z-index: 1050;
   }
 
@@ -7917,7 +7927,6 @@ body.okayNav-loaded {
 
   .main {
     min-height: auto;
-    overflow-x: hidden;
   }
 
   .bar.bar-footer:before {

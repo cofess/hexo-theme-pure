@@ -1,0 +1,9 @@
+<% if (theme.plugins.google_analytics) { %>
+        <%- partial('_script/_analytics/google-analytics') %>
+<% } %>
+<% if (theme.plugins.baidu_analytics) { %>
+    <%- partial('_script/_analytics/baidu-analytics') %>
+<% } %>
+<% if (theme.plugins.tencent_analytics) { %>
+    <%- partial('_script/_analytics/tencent-analytics') %>
+<% } %>

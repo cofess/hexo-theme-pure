@@ -1,0 +1,22 @@
+<% if (typeof(script) !== 'undefined' && script) { %>
+    <% if (page.layout === 'repository'){ %>
+        <%- partial('_script/repository') %>
+    <% } %>
+    <% if (page.layout === 'books'){ %>
+        <%- partial('_script/douban') %>
+    <% } %>
+    <% if (theme.search.insight) { %>
+        <%- partial('_script/insight') %>
+    <% } %>
+    <% if (is_home() || page.sidebar != 'none') { %>
+        <%- partial('_script/pv') %>
+    <% } %>
+    <% if (!is_home() && !is_category() && !is_tag() && !is_archive() && post.comments) { %>
+        <%- partial('_script/_comment/script') %>
+    <% } %>
+    <%- partial('_script/_analytics/script') %>
+<% } else { %>
+    <% if (theme.comment.type === 'gitment' && !is_home() && !is_category() && !is_tag() && !is_archive() && post.comments) { %>
+        <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <% } %>
+<% } %>

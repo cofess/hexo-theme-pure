@@ -38,16 +38,42 @@ site:
   title: Hexo # 页面title
   favicon: /favicon.png
   board: <p>欢迎交流与分享经验!</p> # 站点公告
-  copyright: Cofess - Web Developer & Designer # 底部版权信息
+  copyright: Hexo # 底部版权信息
 
 # config
-config: 
+config:
   toc: true # enable posts toc, options: true, false
   thumbnail: false # enable posts thumbnail, options: true, false
+  excerpt_link: Read More
+  fancybox: false
 
-# Content
-excerpt_link: Read More
-fancybox: true
+# Pagination
+pagination:
+  number: false
+  prev: 
+    alwayShow: true
+  next:
+    alwayShow: true
+
+# Sidebar
+sidebar: right
+widgets:
+  - board  
+  - category
+  - tag
+  - tagcloud
+  - archive
+  - recent_posts
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+# - category
+# - tagcloud
+# - archive  
+
+# widget behavior
+archive_type: 'monthly'
+show_count: true
 
 # Search
 search:
@@ -55,6 +81,90 @@ search:
   swiftype: # enter swiftype install key here
   baidu: false # you need to disable other search engines to use Baidu search, options: true, false
 
+# Donate
+donate:
+  enable: true
+  weipay:
+    image: images/donate/weipay.jpg
+    qrcode: images/donate/weipayimg.png
+    title: 微信支付
+  alipay: 
+    image: images/donate/alipay.jpg
+    qrcode: images/donate/alipayimg.png 
+    title: 支付宝
+
+# Share
+# weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
+share:
+  enable: true
+  sites: weibo,qq,wechat,facebook,twitter 
+  mobile_sites: weibo,qq,qzone
+
+# Github
+github: 
+  username: cofess
+
+# Comment
+# Gitment
+# Introduction: https://imsun.net/posts/gitment-introduction/
+comment:
+  type: youyan
+  disqus: # hexo-theme-icarus # enter disqus shortname here
+  youyan: 
+    uid: 1783844 # enter youyan uid 
+  livere:
+    uid: # enter youyan uid 
+  gitment:
+    githubID: 
+    repo: 
+    ClientID: 
+    ClientSecret: 
+    lazy: false
+
+# douban 豆瓣书单
+# Api：
+  # https://developers.douban.com/wiki/?title=book_v2 图书
+  # https://developers.douban.com/wiki/?title=movie_v2 电影
+# books：  
+  # https://api.douban.com/v2/book/user/:name/collections?start=0&count=100 个人书单列表
+# movies: 
+  # https://api.douban.com/v2/movie/in_theaters 正在上映的电影
+  # https://api.douban.com/v2/movie/coming_soon 即将上映的电影
+  # https://api.douban.com/v2/movie/subject/:id 单个电影信息
+  # https://api.douban.com/v2/movie/search?q={text} 电影搜索
+douban:
+  user: # 豆瓣用户名
+  start: 0 # 从哪一条记录开始
+  count: 100 # 获取豆瓣书单数据条数
+  
+# PV
+pv:
+  busuanzi:
+    enable: true # options: true, false # 不蒜子统计
+  leancloud:
+    enable: false # options: true, false # leancloud统计
+    app_id: # leancloud <AppID>
+    app_key: # leancloud <AppKey>
+        
+# wordcount
+postCount:
+  enable: true
+  wordcount: true # options: true, false # 文章字数统计
+  min2read: true # options: true, false # 阅读时长预计 
+
+# Plugins
+plugins:
+  google_analytics: # enter the tracking ID for your Google Analytics
+  google_site_verification: # enter Google site verification code
+  baidu_analytics: # enter Baidu Analytics hash key
+  tencent_analytics: 
+  
+# Miscellaneous
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:  
+  
 # profile
 profile:
   enabled: true # Whether to show profile bar
@@ -108,108 +218,3 @@ profile:
   projects:
     cofess/gulp-startpro: https://github.com/cofess/gulp-startpro
     cofess/hexo-theme-pure: https://github.com/cofess/hexo-theme-pure
-
-# Pagination
-pagination:
-  number: false
-  prev: 
-    alwayShow: true
-  next:
-    alwayShow: true
-
-# Donate
-donate:
- enable: true
- weipay:
-  image: images/donate/weipay.jpg
-  qrcode: images/donate/weipayimg.png
-  title: 微信支付
- alipay: 
-  image: images/donate/alipay.jpg
-  qrcode: images/donate/alipayimg.png
-  title: 支付宝
-
-# Share
-# weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
-share:
-  enable: true
-  sites: weibo,qq,wechat,facebook,twitter 
-  mobile_sites: weibo,qq,qzone
-
-# Sidebar
-sidebar: right
-widgets:
-  - board  
-  - category
-  - tag
-  - tagcloud
-  - archive
-  - recent_posts
-
-# Github
-github: 
-  username: cofess
-
-# Gitment
-# Introduction: https://imsun.net/posts/gitment-introduction/
-gitment:
-  enable: true
-  githubID: 
-  repo: 
-  ClientID: 
-  ClientSecret: 
-  lazy: false
-
-# douban 豆瓣书单
-# Api：
-  # https://developers.douban.com/wiki/?title=book_v2 图书
-  # https://developers.douban.com/wiki/?title=movie_v2 电影
-# books：  
-  # https://api.douban.com/v2/book/user/:name/collections?start=0&count=100 个人书单列表
-# movies: 
-  # https://api.douban.com/v2/movie/in_theaters 正在上映的电影
-  # https://api.douban.com/v2/movie/coming_soon 即将上映的电影
-  # https://api.douban.com/v2/movie/subject/:id 单个电影信息
-  # https://api.douban.com/v2/movie/search?q={text} 电影搜索
-douban:
-  user: # 豆瓣用户名
-  start: 0 # 从哪一条记录开始
-  count: 100 # 获取豆瓣书单数据条数
-  
-# PV
-pv:
-  busuanzi:
-    enable: true # options: true, false # 不蒜子统计
-  leancloud:
-    enable: false # options: true, false # leancloud统计
-    app_id: # leancloud <AppID>
-    app_key: # leancloud <AppKey>
-        
-# wordcount
-postCount:
-  enable: true
-  wordcount: true # options: true, false # 文章字数统计
-  min2read: true # options: true, false # 阅读时长预计         
-
-# display widgets at the bottom of index pages (pagination == 2)
-index_widgets:
-# - category
-# - tagcloud
-# - archive
-
-# widget behavior
-archive_type: 'monthly'
-show_count: true
-
-# Plugins
-plugins:
-  google_analytics: # enter the tracking ID for your Google Analytics
-  google_site_verification: # enter Google site verification code
-  baidu_analytics: # enter Baidu Analytics hash key
-  tencent_analytics: # enter Tencent Analytics hash key
-
-# Miscellaneous
-twitter:
-google_plus:
-fb_admins:
-fb_app_id:
