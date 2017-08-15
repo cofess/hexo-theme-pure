@@ -79,6 +79,15 @@
 }
 
 .markdown-body {
+  a {
+    color: $link-color;
+    text-decoration: none;
+    &:focus,
+    &:hover {
+      color: $link-hover-color;
+      text-decoration: none;
+    }
+  }
   .headerlink {
     &:before {
       content: "#";
