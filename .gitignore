@@ -1,7 +1,3 @@
-bak/
-back/
-dist/
-node_modules/
-build/
-app/_assets/styles/partials/base/
-app/bootstrap-3.3.7-dist.zip
+.DS_Store
+node_modules
+tmp
