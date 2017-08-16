@@ -23,8 +23,9 @@
     <nav id="main-navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav main-nav">
         <% for (var i in theme.menu){ %>
+        <% var activeClass = (theme.config.menu_highlight && is_current(theme.menu[i])) ? ' active' : '' ; %>
         <% var itemName = i.toLowerCase(); %>
-        <li class="menu-item menu-item-<%= itemName %>">
+        <li class="menu-item menu-item-<%= itemName %><%= activeClass %>">
           <a href="<%- url_for(theme.menu[i]) %>">
             <% if(theme.menu_icons.enable) { %>
             <i class="fa fa-fw <%= theme.menu_icons[itemName] %>"></i>

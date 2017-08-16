@@ -43,6 +43,8 @@
     fb_admins: theme.fb_admins, 
     fb_app_id: theme.fb_app_id
   }) %>
+  <!-- Canonical links -->
+  <link rel="canonical" href="<%- url %>">
   <% if (theme.rss){ %>
     <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
