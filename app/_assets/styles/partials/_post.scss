@@ -88,6 +88,11 @@
       text-decoration: none;
     }
   }
+  ul,
+  ol {
+    padding-left: 0;
+    margin-left: 20px;
+  }
   @media (min-width: $screen-sm-min) {
     .headerlink {
       &:before {
