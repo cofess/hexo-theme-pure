@@ -46,7 +46,7 @@ npm install hexo-neat --save
 ```
 hexo-baidu-url-submit: [https://github.com/huiwang/hexo-baidu-url-submit](https://github.com/huiwang/hexo-baidu-url-submit)
 ```
-npm install hexo-neat --save
+npm install hexo-baidu-url-submit --save
 ```
 
 ## Run
