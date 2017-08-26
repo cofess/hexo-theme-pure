@@ -1,0 +1,55 @@
+/**
+ * social-links
+ */
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .social-links {
+    .tooltip {
+      display: none!important;
+      visibility: hidden;
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .social-links {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    @include clearfix;
+    li {
+      display: block;
+      margin-left: 0;
+      margin-top: 10px;
+      @include clearfix;
+    }
+    .tooltip {
+      display: none!important;
+      visibility: hidden;
+    }
+  }
+}
+
+.header {
+  .social-links {
+    padding: 10px 20px;
+    @media (min-width: $screen-sm-min) {
+      display:none;
+    }
+  }
+}

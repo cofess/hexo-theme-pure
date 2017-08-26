@@ -115,60 +115,7 @@
   }
 }
 
-
-/**
- * footer
- */
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: $mainside-bg;
-  color: $link-dark-color;
-  clear: both;
-  .copyright {
-    font-size: 10px;
-    color: $text-light-color;
-    a {
-      color: $text-light-color;
-      text-decoration: none;
-      &:hover {
-        color: $link-hover-color;
-      }
-    }
-  }
-}
-
-
-/**
- * social-links
- */
-
-.social-links {
-  list-style: none;
-  padding: 0;
-  text-align: left;
-  li {
-    list-style: none;
-    display: inline-block;
-    margin-left: 10px;
-    &:first-child {
-      margin-left: 0;
-    }
-    // a {
-    //   color: $link-dark-color;
-    //   text-decoration: none;
-    //   &:hover {
-    //     color: $link-hover-color;
-    //   }
-    // }
-  }
-}
-
-.mainside {
+.header {
   /**
  * navbar
  */
@@ -213,17 +160,6 @@
     #location {
       display: none;
     }
-    .tooltip {
-      display: none!important;
-      visibility: hidden;
-    }
-    .footer {
-      // display: none;
-      position: static;
-      .copyright {
-        display: none;
-      }
-    }
   }
   @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
     .main-nav > li > a {
@@ -234,22 +170,6 @@
         display: none;
       }
     }
-    .social-links {
-      display: block;
-      width: 100%;
-      text-align: center;
-      @include clearfix;
-      li {
-        display: block;
-        margin-left: 0;
-        margin-top: 10px;
-        @include clearfix;
-      }
-    }
-    .tooltip {
-      display: none!important;
-      visibility: hidden;
-    }
     .profile-block {
       padding-left: 0;
       padding-right: 0;
@@ -257,13 +177,6 @@
     #avatar {
       width: 32px;
       height: 32px;
-    }
-    .footer {
-      padding-left: 0;
-      padding-right: 0;
-      .copyright {
-        display: none;
-      }
     }
   }
   @media (min-width: $screen-xl-min) {

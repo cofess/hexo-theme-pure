@@ -5,7 +5,7 @@
 
 /* Hide for mobile, show later */
 
-.mainside {
+.header {
   background-color: $mainside-bg;
   @media (max-width: $screen-xs-max) {
     position: fixed;
@@ -114,6 +114,29 @@
     width: $main-xl-width;
     padding-right: 40px;
     padding-left: 40px;
+  }
+}
+
+.footer {
+  padding: 20px;
+  background-color: $mainside-bg;
+  @media (min-width: $screen-sm-min) {
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    background-color: transparent;
+    color: $link-dark-color;
+    z-index: 1050;
+    width: $mainside-sm-width;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $mainside-md-width;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $mainside-lg-width;
+  }
+  @media (min-width: $screen-xl-min) {
+    width: $mainside-xl-width;
   }
 }
 
