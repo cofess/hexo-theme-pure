@@ -149,7 +149,7 @@ pv:
         
 # wordcount
 postCount:
-  enable: true
+  enable: false
   wordcount: true # options: true, false # 文章字数统计
   min2read: true # options: true, false # 阅读时长预计 
 
