@@ -1,4 +1,4 @@
-<section class="mainside">
+<header class="header" itemscope itemtype="http://schema.org/WPHeader">
   <div class="slimContent">
     <div class="navbar-header">
       <% if(theme.profile && theme.profile.enabled) { %>
@@ -20,7 +20,7 @@
         <span class="icon-bar"></span>
       </button>
     </div>
-    <nav id="main-navbar" class="collapse navbar-collapse">
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
       <ul class="nav navbar-nav main-nav">
         <% for (var i in theme.menu){ %>
         <% var activeClass = (theme.config.menu_highlight && is_current(theme.menu[i])) ? ' active' : '' ; %>
@@ -35,7 +35,7 @@
         </li>
         <% } %>
       </ul>
-      <%- partial('_common/footer', null, {cache: !config.relative_link}) %>
+      <%- partial('_common/social', null, {cache: !config.relative_link}) %>
     </nav>
   </div>
-</section>
+</header>

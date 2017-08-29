@@ -4,13 +4,6 @@ $(function() {
 
   // slimscroll
   if (typeof $.fn.slimScroll != 'undefined') {
-    // $(".mainside").slimScroll({ destroy: true }).height("auto");
-    // $(".mainside .slimContent").slimScroll({
-    //   height: "auto",
-    //   color: "rgba(0,0,0,0.2)",
-    //   size: "3px",
-    //   // allowPageScroll: true
-    // });
     $(".sidebar .slimContent").slimScroll({
       height: "auto",
       color: "rgba(0,0,0,0.2)",

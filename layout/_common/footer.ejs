@@ -1,17 +1,11 @@
-<div class="footer">
-	<% if(theme.profile.social.links) { %>
-	<% var tooltipClass = theme.profile.social.link_tooltip === false ? '' : 'data-toggle=tooltip data-placement=top'; %>
-    <ul class="social-links">
-    	<% for(var i in theme.profile.social.links) { %>
-        <li><a href="<%- url_for(theme.profile.social.links[i]) %>" target="_blank" title="<%= titlecase(i) %>" <%= tooltipClass %>><i class="fa fa-<%= i %>"></i></a></li>
-        <% } %>
-    </ul>
-    <% } %>
+<footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	<%- partial('_common/social', null, {cache: !config.relative_link}) %>
     <div class="copyright">
+    	<% if(theme.site.copyright) { %>
         &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+        <% } %>
         <div class="publishby">
-        	<!-- <%= __('copyright.powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>. -->
         	<%= __('copyright.theme_by') %> <a href="https://github.com/cofess" target="_blank"> cofess </a><%= __('copyright.base_on') %> <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
         </div>
     </div>
-</div>
+</footer>

@@ -1,7 +1,7 @@
 <div class="content">
-  <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+  <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemtype="http://schema.org/BlogPosting">
     <%- partial('post/gallery') %>
-    <header class="article-header">
+    <div class="article-header">
       <% if (post.link || post.title){ %>
         <%- partial('post/title', {class_name: 'article-title'}) %>
       <% } %>
@@ -21,7 +21,7 @@
         </a>
       </div>
       <% } %>
-    </header>
+    </div>
     <div class="article-entry markdown-body" itemprop="articleBody">
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
@@ -34,9 +34,9 @@
         <%- post.content %>
       <% } %>
     </div>
-    <footer class="article-footer">
+    <div class="article-footer">
       <%- partial('post/copyright') %>
-    </footer>
+    </div>
   </article>
   <% if (!index) { %>
     <%- partial('post/comment') %>

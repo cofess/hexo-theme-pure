@@ -1,5 +1,5 @@
 <% if (post.comments) { %>
-  <div id="comments">
+  <section id="comments">
   	<% if (theme.comment.type === 'disqus') { %>
        <%- partial('_script/_comment/disqus') %>
     <% } else if (theme.comment.type === 'youyan') { %>
@@ -9,5 +9,5 @@
     <% } else if (theme.comment.type === 'gitment') { %>
        <%- partial('_script/_comment/gitment') %>    
     <% } %>
-  </div>
+  </section>
 <% } %>

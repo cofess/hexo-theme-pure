@@ -1,6 +1,6 @@
 ---
-title: "Books"
-layout: "books"
+title: Books
+layout: books
 comments: false
 sidebar: none
 ---

@@ -38,7 +38,7 @@ site:
   title: Hexo # 页面title
   favicon: /favicon.png
   board: <p>欢迎交流与分享经验!</p> # 站点公告
-  copyright: Hexo # 底部版权信息
+  copyright: false # 底部版权信息
 
 # config
 config:

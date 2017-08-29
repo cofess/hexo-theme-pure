@@ -9,7 +9,7 @@
     }
   }
 %>
-<section class="main">
+<main class="main" role="main">
   	<article class="content article article-archives article-type-list" itemscope="">
 	    <header class="article-header">
 	      <h1 itemprop="title"><% if (title){ %><%= title %><% } %></h1>
@@ -20,4 +20,4 @@
 	    </div>
   	</article>
   	<%- partial('_partial/pagination', {type: 'page'}) %> 	
-</section>
+</main>

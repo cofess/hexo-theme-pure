@@ -1,4 +1,5 @@
-title: "Tags"
-layout: "tags"
+---
+title: Tags
+layout: tags
 comments: false
 ---

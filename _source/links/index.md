@@ -1,6 +1,6 @@
 ---
-title: "Links"
-layout: "links"
+title: Links
+layout: links
 comments: true
 sidebar: none
 ---

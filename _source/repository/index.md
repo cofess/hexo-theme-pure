@@ -1,5 +1,5 @@
 ---
-title: "Repository"
+title: Repository
 layout: repository
 comments: false
 sidebar: none
