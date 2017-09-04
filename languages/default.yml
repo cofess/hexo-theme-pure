@@ -72,7 +72,7 @@ total:
 donate:
   qrcode_alt: Scan Qrcode
   qrcode_title: Scan
-  button: Donate
+  button: $
   title: Thank you for your support, I will continue to work hard!
   tip: Scan this qrcode
   action: Open
