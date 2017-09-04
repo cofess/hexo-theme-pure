@@ -47,3 +47,35 @@ textarea,
     outline: none!important;
   }
 }
+
+
+/*------------------ Fluidity response ------------------------------*/
+
+img,
+canvas,
+iframe,
+video,
+svg {
+  max-width: 100%;
+  height: auto
+}
+
+img {
+  position: relative;
+}
+
+// img:before {
+//   position: absolute;
+//   content: "回";
+//   // content: "We're sorry, the image below is broken :(";
+//   display: block;
+//   width: 100%;
+//   text-align: center;
+//   color: #ccc;
+// }
+
+// img:after {
+//   content: "(url: " attr(src) ")";
+//   display: block;
+//   font-size: 12px
+// }
