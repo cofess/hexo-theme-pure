@@ -94,7 +94,7 @@ https://github.com/cometlj/hexo-translate-title
 npm install hexo-translate-title --save
 ```
 #### 使用
-配置hexo根项目下的`_config.yml`
+配置hexo根目录下的`_config.yml`
 
 ```yml
 translate_title:
@@ -109,56 +109,51 @@ translate_title:
 #### 翻译效果评估
 google翻译 > baidu翻译 > ~~有道翻译~~
 
+## 数学公式
 
-### hexo-abbrlink
-https://github.com/rozbo/hexo-abbrlink
+Hexo默认使用"hexo-renderer-marked"引擎渲染网页，该引擎会把一些特殊的markdown符号转换为相应的html标签
 
-A [Hexo plugin](https://hexo.io/plugins/) to generate static post link based on post titles.
+### 解决方案
 
-#### How to install
+解决方案有很多，可以网上搜下，为了节省大家的时间，这里只提供亲身测试过的方法。
 
-Add plugin to Hexo:
+更换Hexo的markdown渲染引擎，[hexo-renderer-markdown-it-plus](https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus)引擎替换默认的渲染引擎[hexo-renderer-marked](https://github.com/hexojs/hexo-renderer-marked)即可。
 
-```
-npm install hexo-abbrlink --save
-```
-
-Modify permalink in config.yml file:
+### 安装hexo-renderer-markdown-it-plus插件
 
 ```
-permalink: posts/:abbrlink/
+npm un hexo-renderer-marked --save
+npm i hexo-renderer-markdown-it-plus --save
 ```
 
-There are two settings:
+### 配置
+
+配置hexo根目录下的`_config.yml`
 
 ```
-alg -- Algorithm (currently support crc16 and crc32, which crc16 is default)
-rep -- Represent (the generated link could be presented in hex or dec value)
+markdown_it_plus:
+  highlight: true
+  html: true
+  xhtmlOut: true
+  breaks: true
+  langPrefix:
+  linkify: true
+  typographer:
+  quotes: “”‘’
+  plugins:
+    - plugin:
+        name: markdown-it-katex
+        enable: true
+    - plugin:
+        name: markdown-it-mark
+        enable: false  
 ```
 
-```
-#### abbrlink config
-abbrlink:
-  alg: crc32  #support crc16(default) and crc32
-  rep: hex    #support dec(default) and hex
-```
+### 文章启用mathjax
 
-#### Sample
-
-The generated link will look like the following:
-
-```
-crc16 & hex
-https://post.zz173.com/posts/66c8.html
-
-crc16 & dec
-https://post.zz173.com/posts/65535.html
-```
-
-```
-crc32 & hex
-https://post.zz173.com/posts/8ddf18fb.html
-
-crc32 & dec
-https://post.zz173.com/posts/1690090958.html
-```
+---
+​---
+title: Hello World
+mathjax: true
+​---
+---
