@@ -151,9 +151,10 @@ markdown_it_plus:
 
 ### 文章启用mathjax
 
+```
 ---
-​---
 title: Hello World
 mathjax: true
-​---
 ---
+```
+
