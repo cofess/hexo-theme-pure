@@ -128,7 +128,7 @@ npm i hexo-renderer-markdown-it-plus --save
 
 ### 配置
 
-在博客配置文件`_config.yml`中添加
+安装插件后，如果未正常渲染LaTeX数学公式，在博客配置文件`_config.yml`中添加
 
 ```
 markdown_it_plus:

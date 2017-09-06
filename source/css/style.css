@@ -7150,24 +7150,6 @@ body.okayNav-loaded {
     padding: 10px 20px;
   }
 
-  .markdown-body .headerlink:before {
-    content: "#";
-    color: #0a6ebd;
-    margin-left: -20px;
-    padding-right: 4px;
-    vertical-align: middle;
-    visibility: hidden;
-  }
-
-  .markdown-body h1:hover .headerlink:before,
-  .markdown-body h2:hover .headerlink:before,
-  .markdown-body h3:hover .headerlink:before,
-  .markdown-body h4:hover .headerlink:before,
-  .markdown-body h5:hover .headerlink:before,
-  .markdown-body h6:hover .headerlink:before {
-    visibility: visible;
-  }
-
   .header .social-links {
     display: none;
   }
@@ -7449,6 +7431,39 @@ body.okayNav-loaded {
   body.no-sidebar.main-center .main {
     width: 83.33333333%;
     margin-left: 16.66666667%;
+  }
+
+  .markdown-body .headerlink:before,
+  .markdown-body .markdownIt-Anchor:before {
+    content: "#";
+    color: #0a6ebd;
+    vertical-align: middle;
+    visibility: hidden;
+  }
+
+  .markdown-body .headerlink:before {
+    margin-left: -20px;
+    padding-right: 4px;
+  }
+
+  .markdown-body .markdownIt-Anchor:before {
+    margin-left: -20px;
+    margin-right: -5px;
+  }
+
+  .markdown-body h1:hover .headerlink:before,
+  .markdown-body h1:hover .markdownIt-Anchor:before,
+  .markdown-body h2:hover .headerlink:before,
+  .markdown-body h2:hover .markdownIt-Anchor:before,
+  .markdown-body h3:hover .headerlink:before,
+  .markdown-body h3:hover .markdownIt-Anchor:before,
+  .markdown-body h4:hover .headerlink:before,
+  .markdown-body h4:hover .markdownIt-Anchor:before,
+  .markdown-body h5:hover .headerlink:before,
+  .markdown-body h5:hover .markdownIt-Anchor:before,
+  .markdown-body h6:hover .headerlink:before,
+  .markdown-body h6:hover .markdownIt-Anchor:before {
+    visibility: visible;
   }
 }
 
