@@ -93,16 +93,27 @@
     padding-left: 0;
     margin-left: 20px;
   }
-  @media (min-width: $screen-sm-min) {
-    .headerlink {
+  @media (min-width: $screen-md-min) {
+    .headerlink,
+    .markdownIt-Anchor {
       &:before {
         content: "#";
         color: $link-hover-color;
         // float: left;
-        margin-left: -20px;
-        padding-right: 4px;
         vertical-align: middle;
         visibility: hidden;
+      }
+    }
+    .headerlink {
+      &:before {
+        margin-left: -20px;
+        padding-right: 4px;
+      }
+    }
+    .markdownIt-Anchor {
+      &:before {
+        margin-left: -20px;
+        margin-right: -5px;
       }
     }
     h1,
@@ -112,7 +123,8 @@
     h5,
     h6 {
       &:hover {
-        .headerlink {
+        .headerlink,
+        .markdownIt-Anchor {
           &:before {
             visibility: visible;
           }
