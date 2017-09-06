@@ -94,7 +94,7 @@ https://github.com/cometlj/hexo-translate-title
 npm install hexo-translate-title --save
 ```
 #### 使用
-配置hexo根目录下的`_config.yml`
+在博客配置文件`_config.yml`中添加
 
 ```yml
 translate_title:
@@ -128,7 +128,7 @@ npm i hexo-renderer-markdown-it-plus --save
 
 ### 配置
 
-配置hexo根目录下的`_config.yml`
+在博客配置文件`_config.yml`中添加
 
 ```
 markdown_it_plus:
@@ -152,9 +152,7 @@ markdown_it_plus:
 ### 文章启用mathjax
 
 ```
----
 title: Hello World
 mathjax: true
----
 ```
 

@@ -5230,7 +5230,7 @@ pre code {
 
 .highlight {
   position: relative;
-  padding: 38px 10px 15px 10px;
+  padding: 38px 10px 0 10px;
   border-radius: 4px;
 }
 
@@ -5942,6 +5942,15 @@ body.okayNav-loaded {
   /* We want two navigations - one hidden and one visible */
   float: left;
   padding-left: 0;
+}
+
+.okayNav ul li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.okayNav ul li:first-child {
+  margin-left: 0;
 }
 
 .okayNav a {
