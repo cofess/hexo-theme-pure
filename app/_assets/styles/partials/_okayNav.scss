@@ -33,12 +33,19 @@ body.okayNav-loaded {
     /* We want two navigations - one hidden and one visible */
     float: left;
     padding-left: 0;
+    li {
+      display: inline-block;
+      margin-left: $oknav-links-padding-y;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
   }
   a {
     position: relative;
     z-index: 1;
-    &.active{
-      color:$oknav-links-hover-color
+    &.active {
+      color: $oknav-links-hover-color
     }
   }
 }
