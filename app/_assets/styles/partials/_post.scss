@@ -100,7 +100,7 @@
         content: "#";
         color: $link-hover-color;
         // float: left;
-        vertical-align: middle;
+        // vertical-align: middle;
         visibility: hidden;
       }
     }
@@ -113,7 +113,7 @@
     .markdownIt-Anchor {
       &:before {
         margin-left: -20px;
-        margin-right: -5px;
+        margin-right: -4px;
       }
     }
     h1,
