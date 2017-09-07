@@ -7437,7 +7437,6 @@ body.okayNav-loaded {
   .markdown-body .markdownIt-Anchor:before {
     content: "#";
     color: #0a6ebd;
-    vertical-align: middle;
     visibility: hidden;
   }
 
@@ -7448,7 +7447,7 @@ body.okayNav-loaded {
 
   .markdown-body .markdownIt-Anchor:before {
     margin-left: -20px;
-    margin-right: -5px;
+    margin-right: -4px;
   }
 
   .markdown-body h1:hover .headerlink:before,
