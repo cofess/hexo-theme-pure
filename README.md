@@ -72,7 +72,7 @@ For example, add links.yml in source/_data folder.
 Name:
     link: http://example.com
     avatar: http://example.com/avatar.png
-    descr: "这是一个描述"
+    desc: "这是一个描述"
 ```
 添加多个友情链接，我们只需要根据上面的格式重复填写即可。
 
