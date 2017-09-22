@@ -32,8 +32,6 @@
     title = __('page.category') + ': ' + page.category;
   } else if (is_tag()){
     title = __('page.tag') + ': ' + page.tag;
-  } else if (is_page()){
-    title = __('page.'+page.title.toLowerCase());
   }
   %>
   <title><% if (title) { %><%= title %> | <% } %><%= theme.site.title || config.title %></title>

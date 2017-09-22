@@ -1,8 +1,8 @@
 <article class="article archives-about article-type-normal" itemscope="">
   <header class="article-header">
-    <h1 itemprop="title"><%= __('page.'+page.title.toLowerCase()) %></h1>
-    <% if(theme.profile.author_description) { %>
-    <p class="text-muted"><%= theme.profile.author_description %></p>
+    <h1 itemprop="title"><%= page.title %></h1>
+    <% if(page.description || theme.profile.author_description) { %>
+    <p class="text-muted"><%= page.description || theme.profile.author_description %></p>
     <% } %>
   </header>
   <div class="article-body">
