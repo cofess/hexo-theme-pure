@@ -150,7 +150,10 @@ pre code {
       }
     }
   }
-  td {
+  tr{
+    border:none;
+  }
+  td,th {
     border: none;
     padding: 0;
     &.code{
