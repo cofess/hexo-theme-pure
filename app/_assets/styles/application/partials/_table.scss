@@ -1,0 +1,51 @@
+/*
+ * Component: table
+ * css like github
+ * ----------------
+ */
+
+table {
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 10px 0;
+  > tbody > tr:hover {
+    background-color: #fbfbfb;
+  }
+}
+
+table tr {
+  border-top: 1px solid #ddd;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+table tr th {
+  font-weight: bold;
+  border: 1px solid #ddd;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr td {
+  border: 1px solid #ddd;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr th:first-child,
+table tr td:first-child {
+  margin-top: 0;
+}
+
+table tr th:last-child,
+table tr td:last-child {
+  margin-bottom: 0;
+}

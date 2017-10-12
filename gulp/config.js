@@ -204,7 +204,7 @@ module.exports = {
     src: srcAssets + '/images/sprites',
     // src: srcAssets + '/images/sprites/icon/*.png',
     dest: {
-      css: srcAssets + '/styles/partials/sprites/',
+      css: srcAssets + '/styles/application/sprites/',
       image: developmentAssets + '/images'
     },
     options: {
