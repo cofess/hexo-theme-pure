@@ -60,12 +60,108 @@ npm install hexo-generator-sitemap --save
 ```
 npm install hexo-generator-baidu-sitemap --save
 ```
-## Data files
-Sometimes you may need to use some data in templates which is not directly available in your posts, or you want to reuse the data elsewhere. For such use cases, Hexo 3 introduced the new Data files. This feature loads YAML or JSON files in source/_data folder so you can use them in your site.
+## 主题配置
 
-For example, add links.yml in source/_data folder.
+### 导航菜单
+
+```
+# 导航菜单
+menu:
+  Home: . 
+  Archives: archives # 归档
+  Categories: categories # 分类
+  Tags: tags # 标签
+  Repository: repository # github repositories
+  Books: books     # 书单
+  Links: links # 友链
+  About: about # 关于
+
+# 导航菜单图标（font awesome）
+menu_icons:
+  enable: true # 是否启用菜单图标
+  home: fa-dashboard
+  archives: fa-delicious
+  categories: fa-folder
+  tags: fa-tags
+  repository: fa-code
+  books: fa-leanpub
+  links: fa-gg
+  about: fa-coffee
+```
+
+### 搜索
+
+主题内置三种站内搜索方式：insight、swiftype、baidu
+
+```
+# Search
+search:
+  insight: true # you need to install `hexo-generator-json-content` before using Insight Search
+  swiftype: # enter swiftype install key here
+  baidu: false # you need to disable other search engines to use Baidu search
+```
+
+### 分享
+
+支持`weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin`
+
+```
+# Share
+# weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
+share:
+  enable: true  # 是否启用分享
+  sites: weibo,qq,wechat,facebook,twitter  # PC端显示的分享图标
+  mobile_sites: weibo,qq,qzone  # 移动端显示的分享图标
+```
+
+### 评论
+
+主题集成了[disqus](https://disqus.com/)、[友言](http://www.uyan.cc/)、[来必力](https://livere.com/)、[gitment](https://github.com/imsun/gitment)评论系统，选择其中一种即可
+
+```
+# Comment
+# Gitment
+# Introduction: https://imsun.net/posts/gitment-introduction/
+comment:
+  type: livere # 启用哪种评论系统
+  disqus:  # enter disqus shortname here
+  youyan: 
+    uid: *** # enter youyan uid 
+  livere:
+    uid: *** # enter livere uid
+  gitment:
+    githubID: username
+    repo: username.github.io
+    ClientID: ***
+    ClientSecret: ***
+    lazy: false
+```
+
+### Github respostory
+
+复制`theme/pure/_source/` 目录下`repository`文件夹到`blog path/source/` 目录下
+
+```
+# Github
+github: 
+  username: ***  # github username
+```
+
+### 豆瓣书单
+
+复制`theme/pure/_source/` 目录下`books`文件夹到`blog path/source/` 目录下
+
+```
+# douban 豆瓣书单
+douban:
+  user: *** # 豆瓣用户名
+  start: 0 # 从哪一条记录开始
+  count: 100 # 获取豆瓣书单数据条数
+```
 
 ### 友情链接
+
+复制`theme/pure/_source/` 目录下`links`文件夹到`blog path/source/` 目录下
 
 在 hexo 目录下的 source 文件夹内创建一个名为 _data（禁止改名）的文件夹。
 

@@ -1,23 +1,17 @@
-# Header
+# menu
 menu:
   Home: .
-  Archives: archives
-  Categories: categories
-  Tags: tags
-  Repository: repository
-  Books: books     #This is your books page
-  Links: links
-  About: about
-rss: /atom.xml
+  Archives: archives  # 归档
+  Categories: categories  # 分类
+  Tags: tags  # 标签
+  Repository: repository  # github repositories
+  Books: books  # 豆瓣书单
+  Links: links  # 友链
+  About: about  # 关于
 
-# Enable/Disable menu icons.
-# Icon Mapping:
-#   Map a menu item to a specific FontAwesome icon name.
-#   Key is the name of menu item and value is the name of FontAwesome icon. Key is case-senstive.
-#   When an question mask icon presenting up means that the item has no mapping icon.
+# Enable/Disable menu icons.（font awesome）
 menu_icons:
-  enable: true
-  #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
+  enable: true  # 是否启用导航菜单图标
   home: fa-dashboard
   archives: fa-delicious
   categories: fa-folder
@@ -26,7 +20,9 @@ menu_icons:
   books: fa-leanpub
   links: fa-gg
   about: fa-coffee
-  sitemap: sitemap
+
+# rss
+rss: /atom.xml
 
 # Site
 site:
@@ -42,7 +38,7 @@ site:
 
 # config
 config:
-  toc: true # enable posts toc, options: true, false
+  toc: true # 是否开启文章章节目录导航
   menu_highlight: false # 是否开启当前菜单高亮显示
   thumbnail: false # enable posts thumbnail, options: true, false
   excerpt_link: Read More
@@ -80,7 +76,7 @@ show_count: true
 search:
   insight: true # you need to install `hexo-generator-json-content` before using Insight Search
   swiftype: # enter swiftype install key here
-  baidu: false # you need to disable other search engines to use Baidu search, options: true, false
+  baidu: false # you need to disable other search engines to use Baidu search
 
 # Donate
 donate:
@@ -97,20 +93,20 @@ donate:
 # Share
 # weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
 share:
-  enable: true
-  sites: weibo,qq,wechat,facebook,twitter 
-  mobile_sites: weibo,qq,qzone
+  enable: true  # 是否启用分享
+  sites: weibo,qq,wechat,facebook,twitter  # PC端显示的分享图标
+  mobile_sites: weibo,qq,qzone  # 移动端显示的分享图标
 
 # Github
 github: 
-  username: cofess
+  username: cofess  # github username
 
 # Comment
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 comment:
-  type: youyan
-  disqus: # hexo-theme-icarus # enter disqus shortname here
+  type: youyan  # 启用哪种评论系统
+  disqus:  # enter disqus shortname here
   youyan: 
     uid: 1783844 # enter youyan uid 
   livere:
@@ -141,17 +137,17 @@ douban:
 # PV
 pv:
   busuanzi:
-    enable: true # options: true, false # 不蒜子统计
+    enable: true  # 不蒜子统计
   leancloud:
-    enable: false # options: true, false # leancloud统计
+    enable: false  # leancloud统计
     app_id: # leancloud <AppID>
     app_key: # leancloud <AppKey>
         
 # wordcount
 postCount:
   enable: false
-  wordcount: true # options: true, false # 文章字数统计
-  min2read: true # options: true, false # 阅读时长预计 
+  wordcount: true  # 文章字数统计
+  min2read: true  # 阅读时长预计 
 
 # Plugins
 plugins:
