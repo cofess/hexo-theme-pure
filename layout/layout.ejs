@@ -1,5 +1,11 @@
 <%- partial('_common/head', {post: page}) %>
-<% var bodyClass = page.sidebar === 'none' ? 'main-center no-sidebar' : 'main-center'; %>
+<% 
+	var bodyClass = 'main-center'; 
+	if (theme.config.layout) {
+		bodyClass = theme.config.layout;
+	}
+	bodyClass = page.sidebar === 'none' ? (bodyClass + ' no-sidebar') : bodyClass;
+%>
 <body class="<%= bodyClass %>" itemscope itemtype="http://schema.org/WebPage">
   <%- partial('_common/header', null, {cache: !config.relative_link}) %>
   <% if (theme.sidebar && (page.sidebar!='none' || page.sidebar!='custom')){ %>
