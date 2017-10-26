@@ -31,7 +31,7 @@
  */
 
 .profile-block {
-  padding: 40px 20px 20px;
+  padding: 20px 10px 10px 10px;
 }
 
 #avatar {
@@ -47,11 +47,12 @@
 
 #name {
   font-size: 20px;
+  margin-top: 10px;
   margin-bottom: 0;
 }
 
 #title {
-  font-size: 14px;
+  font-size: 13px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -64,7 +65,7 @@
 .sidebar-form {
   border-radius: 3px;
   border: 1px solid #eee;
-  margin: 0 10px 20px 10px;
+  margin: 0 10px 15px 10px;
   input[type="text"],
   .btn {
     box-shadow: none;
