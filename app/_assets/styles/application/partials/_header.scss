@@ -71,7 +71,7 @@
     box-shadow: none;
     background-color: transparent;
     border: 1px solid transparent;
-    height: 35px;
+    height: 32px;
     &:focus {
       outline: none;
     }
@@ -172,6 +172,7 @@
       }
     }
     .profile-block {
+      padding-top: 10px;
       padding-left: 0;
       padding-right: 0;
     }
