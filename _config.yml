@@ -54,6 +54,7 @@ pagination:
     alwayShow: true
 
 # Sidebar
+sidebar: right
 widgets:
   - board  
   - category
