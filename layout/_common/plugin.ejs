@@ -6,7 +6,10 @@
         <%- partial('_script/douban') %>
     <% } %>
     <% if (theme.search.insight) { %>
-        <%- partial('_script/insight') %>
+        <%- partial('_script/_search/insight') %>
+    <% } %>
+    <% if (theme.search.baidu) { %>
+        <%- partial('_script/_search/baidu') %>
     <% } %>
     <% if (is_home() || page.sidebar != 'none') { %>
         <%- partial('_script/pv') %>
