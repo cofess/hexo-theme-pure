@@ -186,6 +186,17 @@ Name:
 
 . 这是一个描述 为友情链接描述。
 
+## 文章启用目录索引
+
+```
+title: 文章标题
+categories:
+  - 文章分类
+tags:
+  - 文章标签
+toc: true # 是否启用内容索引
+```
+
 ## 博客优化
 
 ### [hexo-neat](https://github.com/rozbo/hexo-neat)
