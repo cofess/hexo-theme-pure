@@ -58,7 +58,12 @@ insight:
   categories: Categories
   tags: Tags
   untitled: (Untitled)
+unit:
+  word: words
+  time: minutes
 article:
+  wordcount: Word Count
+  readcount: Read Count
   more: Read More
   comments: Comments
   share: Share
