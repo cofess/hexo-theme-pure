@@ -58,7 +58,12 @@ insight:
   categories: 分类
   tags: 标签
   untitled: (未命名)
+unit:
+  word: 字
+  time: 分
 article:
+  wordcount: 字数统计
+  readcount: 阅读时长
   more: 查看更多
   comments: 评论
   share: 分享到
