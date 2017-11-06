@@ -68,14 +68,57 @@
   }
 }
 
-.recent-post-list{
-  li{
-    + li{
-      margin-top:10px;
+.recent-post-list {
+  &.no-thumbnail li {
+    padding: 0;
+    + li {
+      margin-top: 10px;
+    }
+  }
+  li {
+    padding-left: 72px;
+    + li {
+      margin-top: 15px;
+    }
+    .item-thumb {
+      opacity: 1;
+      float: left;
+      margin-left: -72px;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+      .thumb {
+        width: 60px;
+        height: 60px;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        span {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+        .thumb-image {
+          position: absolute;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          background-size: cover;
+          background-position: center;
+        }
+        .thumb-none {
+          background-image: url("../images/thumb-default.png");
+          -webkit-background-size: 100% 100%;
+          -moz-background-size: 100% 100%;
+          background-size: 100% 100%;
+        }
+      }
+    }
+    &:hover .item-thumb {
+      opacity: 0.8;
     }
   }
 }
-
 
 // 文章目录
 .sidebar-toc {
