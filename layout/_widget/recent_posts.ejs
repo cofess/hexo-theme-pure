@@ -6,8 +6,8 @@
         <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
           <li>
             <% if(theme.config.thumbnail == true) { %>
-            <div class="item-thumbnail">
-              <%- partial('common/thumbnail.ejs', {post: post}) %>
+            <div class="item-thumb">
+              <%- partial('_partial/post/thumbnail.ejs', {post: post}) %>
             </div>
             <% } %>
             <div class="item-inner">
