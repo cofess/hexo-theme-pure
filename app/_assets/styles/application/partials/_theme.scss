@@ -1,0 +1,140 @@
+.theme-black,
+.theme-blue,
+.theme-green,
+.theme-purple {
+  .header {
+    color: #fff;
+    a {
+      color: #efefef;
+    }
+    #location {
+      color: rgba(255, 255, 255, 0.5)!important;
+    }
+    .navbar-toggle {
+      .icon-bar {
+        background-color: #fff
+      }
+    }
+  }
+  .footer {
+    color: rgba(255, 255, 255, 0.5);
+    a {
+      color: rgba(255, 255, 255, 0.5)
+    }
+  }
+  .header,
+  .footer {
+    a {
+      &:focus,
+      &:hover,
+      &.active {
+        color: #fff;
+      }
+    }
+  }
+  .main-nav {
+    > li {
+      > a {
+        &:focus,
+        &:hover,
+        &.active {
+          color: #fff;
+          background: rgba(0, 0, 0, 0.15);
+        }
+      }
+    }
+    > .active {
+      a,
+      a:focus,
+      a:hover,
+      a.active {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+  .search {
+    .sidebar-form {
+      border: 0;
+      background: rgba(0, 0, 0, 0.2);
+      input::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.5)
+      }
+      input:-moz-placeholder {
+        color: rgba(255, 255, 255, 0.5)
+      }
+      input::-moz-placeholder {
+        color: rgba(255, 255, 255, 0.5)
+      }
+      input:-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.5)
+      }
+    }
+    input[type="text"] {
+      color: #666;
+      +.input-group-btn .btn {
+        color: rgba(255, 255, 255, 0.5)
+      }
+      &:focus,
+      &:focus+.input-group-btn .btn {
+        background-color: #fff;
+        color: #666
+      }
+    }
+    @media (max-width: $screen-xs-max) {
+      input[type="text"] {
+        &:focus {
+          background-color: transparent;
+          &+.input-group-btn .btn {
+            color: rgba(255, 255, 255, 0.5);
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+.theme-black {
+  .header {
+    background-color: $theme-black-color
+  }
+  #main-navbar {
+    @media (max-width: $screen-xs-max) {
+      background-color: $theme-black-color
+    }
+  }
+}
+
+.theme-blue {
+  .header {
+    background-color: $theme-blue-color
+  }
+  #main-navbar {
+    @media (max-width: $screen-xs-max) {
+      background-color: $theme-blue-color
+    }
+  }
+}
+
+.theme-green {
+  .header {
+    background-color: $theme-green-color
+  }
+  #main-navbar {
+    @media (max-width: $screen-xs-max) {
+      background-color: $theme-green-color
+    }
+  }
+}
+
+.theme-purple {
+  .header {
+    background-color: $theme-purple-color
+  }
+  #main-navbar {
+    @media (max-width: $screen-xs-max) {
+      background-color: $theme-purple-color
+    }
+  }
+}

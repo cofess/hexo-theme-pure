@@ -97,7 +97,7 @@ $screen-xl-desktop:          $screen-xl-min !default;
 $screen-xs-max:              ($screen-sm-min - 1) !default;
 $screen-sm-max:              ($screen-md-min - 1) !default;
 $screen-md-max:              ($screen-lg-min - 1) !default;
-
+$screen-lg-max:              ($screen-xl-min - 1) !default;
 //== Labels
 //
 //##
@@ -127,18 +127,26 @@ $mainside-bg:				  #fbfbfb !default;
 $sidebar-bg:				  #fdfdfd !default;
 $sidebar-border-color:        #f6f6f6 !default;
 
-//layout
-$mainside-sm-width: 4.16666667%;
-$mainside-md-width: 16.66666667%;
-$mainside-lg-width: 16.66666667%;
-$mainside-xl-width: 16.66666667%;
+// theme
+$theme-black-color:        	  #253449 !default;
+$theme-blue-color:        	  #0073e6 !default;
+$theme-green-color:        	  #0ac29d !default;
+$theme-yellow-color:          #e08e0b !default;
+$theme-red-color:        	  #d9230f !default;
+$theme-purple-color:          #555299 !default;
 
-$sidebar-sm-width: 33.33333333%;
-$sidebar-md-width: 25%;
-$sidebar-lg-width: 25%;
-$sidebar-xl-width: 25%;
+// layout
+$mainside-sm-width:           4.16666667%;
+$mainside-md-width:           16.66666667%;
+$mainside-lg-width:           16.66666667%;
+$mainside-xl-width:           16.66666667%;
 
-$main-sm-width: 62.5%;
-$main-md-width: 58.33333333%;
-$main-lg-width: 58.33333333%;
-$main-xl-width: 58.33333333%;
+$sidebar-sm-width:            33.33333333%;
+$sidebar-md-width:            25%;
+$sidebar-lg-width:            25%;
+$sidebar-xl-width:            25%;
+
+$main-sm-width:               62.5%;
+$main-md-width:               58.33333333%;
+$main-lg-width:               58.33333333%;
+$main-xl-width:               58.33333333%;

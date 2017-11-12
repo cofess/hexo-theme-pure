@@ -10,7 +10,13 @@
     position: relative;
     > a {
       color: $link-base-color;
-      @media (min-width: $screen-sm-min) {
+      @media (max-width: $screen-xs-max) {
+        padding: 10px 20px;
+      }
+      @media (max-width: $screen-md-max) {
+        padding: 6px 20px;
+      }
+      @media (min-width: $screen-lg-min) {
         padding: 10px 20px;
       }
     }
@@ -35,18 +41,21 @@
 }
 
 #avatar {
-  width: 80px;
-  height: 80px;
+  width: 64px;
+  height: 64px;
   display: inline-block;
   img {
     width: 100%;
     max-height: 100%;
     height: auto!important;
+    @media (min-width: $screen-sm-min) {
+      padding: 5px
+    }
   }
 }
 
 #name {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 10px;
   margin-bottom: 0;
 }
@@ -105,7 +114,7 @@
       &:focus {
         background-color: transparent;
         &+.input-group-btn .btn {
-          color: $brand-success;
+          color: $brand-primary;
           background-color: transparent;
         }
       }
@@ -130,6 +139,13 @@
   .navbar-toggle {
     .icon-bar {
       background-color: $brand-primary;
+    }
+  }
+  @media (max-width: $screen-xs) {
+    #avatar {
+      width: 24px;
+      height: 24px;
+      margin-top: 3px;
     }
   }
   @media (max-width: $screen-xs-max) {
@@ -183,7 +199,7 @@
   }
   @media (min-width: $screen-xl-min) {
     #title {
-      font-size: 16px;
+      font-size: 15px;
     }
   }
 }

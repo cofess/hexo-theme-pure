@@ -49,7 +49,13 @@
   .social-links {
     padding: 10px 20px;
     @media (min-width: $screen-sm-min) {
-      display:none;
+      display: none;
     }
+  }
+}
+
+.footer {
+  .social-links {
+    margin-bottom: 5px
   }
 }
