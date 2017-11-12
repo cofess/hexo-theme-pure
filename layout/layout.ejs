@@ -6,6 +6,9 @@
 	if (theme.config.layout) {
 		bodyClass = theme.config.layout;
 	}
+  if (theme.config.skin) {
+    bodyClass += ' ' + theme.config.skin;
+  }
 	bodyClass = page.sidebar === 'none' ? (bodyClass + ' no-sidebar') : bodyClass;
 %>
 <body class="<%= bodyClass %>" itemscope itemtype="http://schema.org/WebPage">

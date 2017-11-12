@@ -1,8 +1,8 @@
 # pure
 
-A brand new default theme for [[Hexo](https://hexo.io)].  [Preview](http://cofess.github.io/) | [English documentation](https://github.com/cofess/hexo-theme-pure/blob/master/README.md)
+A brand new default theme for [[Hexo](https://hexo.io)].  [Preview](http://cofess.github.io/) | [English documentation](README.md)
 
-![](https://raw.githubusercontent.com/cofess/hexo-theme-pure/master/screenshot/pure.png)
+![](screenshot/pure.png)
 
 ## 特色
 
@@ -11,6 +11,16 @@ A brand new default theme for [[Hexo](https://hexo.io)].  [Preview](http://cofes
 - Tags page
 - Categories page
 - Social Media
+
+## 主题颜色
+
+![](screenshot/pure-theme-black.png)
+
+![](screenshot/pure-theme-blue.png)
+
+![](screenshot/pure-theme-green.png)
+
+![](screenshot/pure-theme-purple.png)
 
 ## 外观
 
@@ -61,6 +71,16 @@ npm install hexo-generator-sitemap --save
 npm install hexo-generator-baidu-sitemap --save
 ```
 ## 主题配置
+
+### 主题颜色
+
+定制了五套颜色，默认白，黑:theme-black，蓝:theme-blue，绿:theme-green，紫:theme-purple
+
+```
+# config
+config:
+  skin: # 主题颜色 theme-black theme-blue theme-green theme-purple
+```
 
 ### 导航菜单
 

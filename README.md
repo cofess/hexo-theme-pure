@@ -1,8 +1,8 @@
 # pure
 
-A brand new default theme for [[Hexo](https://hexo.io)].  [Preview](http://cofess.github.io/) | [中文说明文档](https://github.com/cofess/hexo-theme-pure/blob/master/README.cn.md)
+A brand new default theme for [[Hexo](https://hexo.io)].  [Preview](http://cofess.github.io/) | [中文说明文档](README.cn.md)
 
-![](https://raw.githubusercontent.com/cofess/hexo-theme-pure/master/screenshot/pure.png)
+![](screenshot/pure.png)
 
 ## Features
 
@@ -11,6 +11,16 @@ A brand new default theme for [[Hexo](https://hexo.io)].  [Preview](http://cofes
 - Tags page
 - Categories page
 - Social Media
+
+## Skins
+
+![](screenshot/pure-theme-black.png)
+
+![](screenshot/pure-theme-blue.png)
+
+![](screenshot/pure-theme-green.png)
+
+![](screenshot/pure-theme-purple.png)
 
 ## Appearance
 
