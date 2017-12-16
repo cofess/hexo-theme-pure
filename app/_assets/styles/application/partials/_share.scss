@@ -10,6 +10,7 @@
 }
 
 .social-share {
+  display: inline-block;
   font-family: "socialshare" !important;
   font-size: 16px;
   font-style: normal;
@@ -61,7 +62,7 @@
   a {
     position: relative;
     text-decoration: none;
-    margin-left: 18px;
+    margin-left: 16px;
     // margin-right: 4px;
     display: inline-block;
     outline: none;

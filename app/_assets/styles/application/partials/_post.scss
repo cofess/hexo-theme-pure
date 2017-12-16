@@ -2,6 +2,23 @@
  * Global add-ons
  */
 
+.text-collapsed {
+  display: none;
+}
+
+.text-in {
+  display: block;
+}
+
+.collapsed {
+  .text-collapsed {
+    display: block;
+  }
+  .text-in {
+    display: none;
+  }
+}
+
 .sub-header {
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
@@ -11,7 +28,7 @@
   margin-bottom: 20px;
 }
 
-.article-footer{
+.article-footer {
   margin-top: 20px;
 }
 
@@ -62,23 +79,15 @@
 }
 
 .toggle-toc {
-  position: absolute;
-  top: 40px!important;
-  right: 8px;
+  display: inline-block;
   cursor: pointer;
-  .text-collapsed {
-    display: none;
-  }
-  .text-in {
-    display: block;
-  }
-  .collapsed {
-    .text-collapsed {
-      display: block;
-    }
-    .text-in {
-      display: none;
-    }
+  margin-left: 16px;
+  a{
+    display: inline-block;
+    width: 16px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center
   }
 }
 
