@@ -10,17 +10,17 @@
 /**
  * application
  */
-@import "application/partials/ie10-viewport-bug-workaround";
-@import "application/partials/scrollbar";
-@import "application/partials/reset";
-@import "application/partials/common";
-@import "application/partials/form";
-@import "application/partials/list";
-@import "application/partials/labels";
-@import "application/partials/panels";
-@import "application/partials/boxes";
-@import "application/partials/buttons";
-// @import "application/partials/timeline";
+@import "application/base/ie10-viewport-bug-workaround";
+@import "application/base/scrollbar";
+@import "application/base/reset";
+@import "application/base/common";
+@import "application/base/form";
+@import "application/base/list";
+@import "application/base/labels";
+@import "application/base/panels";
+@import "application/base/boxes";
+@import "application/base/buttons";
+@import "application/base/table";
 @import "application/partials/highlight";
 @import "application/partials/layout";
 @import "application/partials/header";
@@ -29,10 +29,10 @@
 @import "application/partials/footer";
 @import "application/partials/repository";
 @import "application/partials/post";
-@import "application/partials/table";
 @import "application/partials/okayNav";
 @import "application/partials/social";
 @import "application/partials/share";
 @import "application/partials/donate";
+@import "application/partials/book";
 @import "application/partials/insight-search";
 @import "application/partials/theme";

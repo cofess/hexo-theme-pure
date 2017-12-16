@@ -3,15 +3,6 @@
  */
 
 .bar {
-  // position: absolute;
-  // right: 0;
-  // left: 0;
-  // z-index: 10;
-  // padding-right: .5rem;
-  // padding-left: .5rem;
-  // border-bottom: 1px solid #e7e7e7;
-  // -webkit-backface-visibility: hidden;
-  // backface-visibility: hidden;
   &.bar-footer {
     position: relative;
     background-color: #fff;
@@ -19,15 +10,27 @@
     &:before {
       content: '';
       position: absolute;
-      width: 120%;
+      width: calc(100% + 30px);
       height: 52px;
-      left: -10%;
+      left: -15px;
       border-top: 1px solid #f6f6f6;
       border-bottom: 1px solid #fff;
       background-color: #fff;
-      @media (max-width: $screen-xs-max) {
-        width: calc(100% + 30px);
-        left: -15px;
+      @media (min-width: $screen-sm-min) {
+        width: calc(100% + 40px);
+        left: -20px;
+      }
+      @media (min-width: $screen-md-min) {
+        width: calc(100% + 50px);
+        left: -25px;
+      }
+      @media (min-width: $screen-lg-min) {
+        width: calc(100% + 60px);
+        left: -30px;
+      }
+      @media (min-width: $screen-xl-min) {
+        width: calc(100% + 80px);
+        left: -40px;
       }
     }
   }

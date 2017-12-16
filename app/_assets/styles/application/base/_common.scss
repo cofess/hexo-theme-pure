@@ -237,7 +237,7 @@ img.hover-up:hover, .hover-up:hover img { top: -6px }
  */
 // div[class*="shadow"]{-webkit-transition: box-shadow 1s ease; -o-transition: box-shadow 1s ease; transition: box-shadow 1s ease;}
 .shadow-no { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
-.shadow,.shadow-hover:hover { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
+.shadow,.hover-shadow:hover { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
 
 /*radio*/
 .radio { margin-left: 20px; }
@@ -248,4 +248,14 @@ img.hover-up:hover, .hover-up:hover img { top: -6px }
 .radio input[type=radio]:checked + label:after { -webkit-transform: scale(1, 1); -ms-transform: scale(1, 1); -o-transform: scale(1, 1); transform: scale(1, 1); }
 .radio input[type=radio]:disabled + label { opacity: 0.65; }
 .radio input[type=radio]:disabled + label:before { cursor: not-allowed; }
+// hover
+.hover-grow {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.hover-grow:hover {
+  -webkit-transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -2px, 0);
+}
 

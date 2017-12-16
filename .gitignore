@@ -5,3 +5,5 @@ node_modules/
 build/
 app/_assets/styles/partials/base/
 app/bootstrap-3.3.7-dist.zip
+app/_assets/styles/application/sprites/_sprite_social.scss
+app/_assets/styles/application/sprites/_sprite_icon.scss
