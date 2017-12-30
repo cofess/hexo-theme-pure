@@ -75,6 +75,16 @@
       list-style: none;
       padding-left: 10px;
     }
+    .toc-item {
+      position: relative;
+      .markdownIt-Anchor {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 14px 0;
+      }
+    }
   }
 }
 
@@ -82,7 +92,7 @@
   display: inline-block;
   cursor: pointer;
   margin-left: 16px;
-  a{
+  a {
     display: inline-block;
     width: 16px;
     height: 32px;
@@ -92,6 +102,27 @@
 }
 
 .markdown-body {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.25
+  }
+  h1 {
+    padding-bottom: 0.3em;
+    font-size: 2em;
+    border-bottom: 1px solid $border-color
+  }
+  h2 {
+    padding-bottom: 0.3em;
+    font-size: 1.5em;
+    border-bottom: 1px solid $border-color
+  }
   a {
     color: $link-color;
     text-decoration: none;

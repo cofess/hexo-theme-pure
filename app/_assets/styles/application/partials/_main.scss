@@ -34,9 +34,9 @@
       }
     }
   }
-  .bar-inner{
-    position:relative;
-    z-index:9;
+  .bar-inner {
+    position: relative;
+    z-index: 9;
     @include clearfix;
   }
   .bar-right {
