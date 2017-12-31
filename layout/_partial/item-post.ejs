@@ -4,7 +4,7 @@
   <span>&nbsp;&nbsp;&nbsp;</span> <%= post.title %>
 </a>
 <% } else if (type == 'card'){ %>
-<article class="panel panel-default shadow-hover" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="panel-body">
      <div class="article-meta">
        <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date) %></time>

@@ -1,6 +1,6 @@
 # pure
 
-A brand new default theme for [[Hexo](https://hexo.io)].  [Preview](http://cofess.github.io/) | [English documentation](README.md)
+A brand new default theme for [[Hexo](https://hexo.io)].  [Preview](http://cofess.github.io/) | [English documentation](README.md) | [iconfont](http://devbank.gitee.io/hexo-theme-pure/iconfont/demo_fontclass.html)
 
 ![](screenshot/pure.png)
 
@@ -99,14 +99,14 @@ menu:
 # 导航菜单图标（font awesome）
 menu_icons:
   enable: true # 是否启用菜单图标
-  home: fa-dashboard
-  archives: fa-delicious
-  categories: fa-folder
-  tags: fa-tags
-  repository: fa-code
-  books: fa-leanpub
-  links: fa-gg
-  about: fa-coffee
+  home: icon-home-fill
+  archives: icon-archives-fill
+  categories: icon-folder
+  tags: icon-tags
+  repository: icon-project
+  books: icon-book-fill
+  links: icon-friendship
+  about: icon-cup-fill
 ```
 
 ### 搜索

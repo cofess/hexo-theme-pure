@@ -4,14 +4,14 @@
         <div class="bar-inner">
         <div class="pager pull-left">
             <% if (!page.prev && theme.pagination.prev.alwayShow) { %>
-            <a class="prev disabled" href="javascript:;"><i class="fa fa-angle-left"></i> <%= __('pagination.prev') %></a>
+            <a class="prev disabled" href="javascript:;"><i class="icon icon-angle-left"></i> <%= __('pagination.prev') %></a>
             <% } %>
             <%- paginator({
-                prev_text: '<i class="fa fa-angle-left"></i> ' + __('pagination.prev'),
-                next_text: __('pagination.next') + ' <i class="fa fa-angle-right"></i>'
+                prev_text: '<i class="icon icon-angle-left"></i> ' + __('pagination.prev'),
+                next_text: __('pagination.next') + ' <i class="icon icon-angle-right"></i>'
             }) %>
             <% if (!page.next && theme.pagination.next.alwayShow) { %>
-            <a class="next disabled" href="javascript:;"><%= __('pagination.next') %> <i class="fa fa-angle-right"></i></a>
+            <a class="next disabled" href="javascript:;"><%= __('pagination.next') %> <i class="icon icon-angle-right"></i></a>
             <% } %>
         </div>
         </div>
@@ -24,14 +24,14 @@
             <% if (!page.prev && theme.pagination.prev.alwayShow) { %>
             <li class="prev disabled">
                 <a href="javascript:;">
-                    <i class="fa fa-angle-left"></i>
+                    <i class="icon icon-angle-left"></i>
                     <%= __('pagination.prev') %>
                 </a>
             </li>
             <% } else { %>
             <li class="prev">
                 <a href="<%- url_for(page.prev_link) %>">
-                    <i class="fa fa-angle-left"></i>
+                    <i class="icon icon-angle-left"></i>
                     <%= __('pagination.prev') %>
                 </a>
             </li>
@@ -40,14 +40,14 @@
             <li class="next disabled">
                 <a href="javascript:;">
                     <%= __('pagination.next') %>
-                    <i class="fa fa-angle-right"></i>                    
+                    <i class="icon icon-angle-right"></i>                    
                 </a>
             </li>
             <% } else { %>
             <li class="next">
                 <a href="<%- url_for(page.next_link) %>">
                     <%= __('pagination.next') %>
-                    <i class="fa fa-angle-right"></i>
+                    <i class="icon icon-angle-right"></i>
                 </a>
             </li>
             <% } %>

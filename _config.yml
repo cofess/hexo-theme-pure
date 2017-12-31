@@ -9,17 +9,17 @@ menu:
   Links: links  # 友链
   About: about  # 关于
 
-# Enable/Disable menu icons.（font awesome）
+# Enable/Disable menu icons
 menu_icons:
   enable: true  # 是否启用导航菜单图标
-  home: fa-dashboard
-  archives: fa-delicious
-  categories: fa-folder
-  tags: fa-tags
-  repository: fa-code
-  books: fa-leanpub
-  links: fa-gg
-  about: fa-coffee
+  home: icon-home-fill
+  archives: icon-archives-fill
+  categories: icon-folder
+  tags: icon-tags
+  repository: icon-project
+  books: icon-book-fill
+  links: icon-friendship
+  about: icon-cup-fill
 
 # rss
 rss: /atom.xml

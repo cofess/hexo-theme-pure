@@ -11,7 +11,7 @@
     <%- partial('post/date', {class_name: 'article-date', date_format: 'MMM D'}) %>
     <%- partial('post/category') %>
     <%- partial('post/tag') %>
-    <span class="post-comment"><i class="fa fa-commenting-o"></i> <a href="<%- url_for(post.path) %>#comments" class="article-comment-link"><%= __('article.comments') %></a></span>
+    <span class="post-comment"><i class="icon icon-comment"></i> <a href="<%- url_for(post.path) %>#comments" class="article-comment-link"><%= __('article.comments') %></a></span>
     <%- partial('post/wordcount') %>
   </p>
 </article>

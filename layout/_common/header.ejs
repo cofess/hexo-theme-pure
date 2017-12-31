@@ -9,7 +9,7 @@
         </a>
         <h2 id="name" class="hidden-xs hidden-sm"><%= profile.author %></h2>
         <h3 id="title" class="hidden-xs hidden-sm hidden-md"><%= profile.author_title %></h3>
-        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="fa fa-map-marker"></i> <%= profile.location %></small>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> <%= profile.location %></small>
       </div>
       <% } %>
       <%- partial('_search/index') %>
@@ -28,7 +28,7 @@
         <li class="menu-item menu-item-<%= itemName %><%= activeClass %>">
           <a href="<%- url_for(theme.menu[i]) %>">
             <% if(theme.menu_icons.enable) { %>
-            <i class="fa fa-fw <%= theme.menu_icons[itemName] %>"></i>
+            <i class="icon <%= theme.menu_icons[itemName] %>"></i>
             <% } %>
             <span class="menu-title"><%= __('menu.'+i) %></span>
           </a>

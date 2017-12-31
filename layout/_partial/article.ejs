@@ -10,17 +10,9 @@
         <%- partial('post/category') %>
         <%- partial('post/tag') %>
         <%- partial('post/pv') %>
-        <span class="post-comment"><i class="fa fa-commenting-o"></i> <a href="<%- url_for(post.path) %>#comments" class="article-comment-link"><%= __('article.comments') %></a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="<%- url_for(post.path) %>#comments" class="article-comment-link"><%= __('article.comments') %></a></span>
         <%- partial('post/wordcount') %>
       </div>
-      <% if (!index && theme.config.toc && post.toc) { %>
-      <div class="toggle-toc hidden-xs" data-stick-top>
-        <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false" title="<%= __('article.catalogue') %>" role="button">
-          <i class="text-collapsed fa fa-anchor"></i>
-          <i class="text-in fa fa-close"></i>
-        </a>
-      </div>
-      <% } %>
     </div>
     <div class="article-entry markdown-body" itemprop="articleBody">
       <% if (post.excerpt && index){ %>
