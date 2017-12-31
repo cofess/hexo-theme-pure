@@ -8,12 +8,22 @@
 }
 
 .icon {
-  font-family:"icon" !important;
-  font-size:16px;
-  font-style:normal;
+  display: inline-block;
+  font: normal normal normal 14px/1 icon;
+  font-size: inherit;
+  text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale
 }
+
+// .icon {
+//   font-family:"icon" !important;
+//   font-size:16px;
+//   font-style:normal;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
 
 .icon-diandian:before { content: "\e63a"; }
 
