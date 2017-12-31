@@ -92,12 +92,12 @@ pre code {
 
 .highlight {
   position: relative;
-  padding: 38px 10px 0 10px;
+  padding: 32px 10px 0 10px;
   border-radius: 4px;
   &:before {
     display: block;
     content: ' ';
-    height: 38px;
+    height: 32px;
     position: absolute;
     top: 0;
     left: 0;
@@ -113,11 +113,11 @@ pre code {
     -webkit-border-radius: 50%;
     border-radius: 50%;
     background: #fc625d;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     top: 0;
-    left: 20px;
-    margin-top: 13px;
+    left: 15px;
+    margin-top: 11px;
     -webkit-box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
     box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
   }
