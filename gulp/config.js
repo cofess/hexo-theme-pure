@@ -7,6 +7,10 @@ var srcAssets         = 'app/_assets';
 var concatFolder      = srcAssets + '/javascripts/_concat';
 var developmentAssets = 'build/assets';
 var productionAssets  = 'build/production/assets';
+var sourcemaps        = {
+  css: false,
+  js: false
+}
 
 //gulp 任务配置
 module.exports = {
@@ -79,7 +83,7 @@ module.exports = {
       '!' + srcAssets + '/styles/_*.scss',
     ],
     dest: developmentAssets + '/css',
-    sourcemap: false, //是否生成sourcemap
+    sourcemap: sourcemaps.css, //是否生成sourcemap
     compile: {
       indentedSyntax: true,
       includePaths: [
@@ -160,7 +164,7 @@ module.exports = {
       '!' + srcAssets + '/javascripts/**/_*.js',
     ],
     dest: developmentAssets + '/js/',
-    sourcemap: true, //是否生成sourcemap
+    sourcemap: sourcemaps.js, //是否生成sourcemap
     concat: {
       folder: concatFolder,
       excludeFolders: [

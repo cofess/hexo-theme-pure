@@ -15,6 +15,7 @@ gulp.task('build', function(callback) {
       'html'
     ],
     'cssmin',
+    'jsmin',
     'base64',
     callback);
 });
