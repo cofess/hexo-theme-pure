@@ -22,16 +22,6 @@ $(function() {
     swipe_enabled: false, // If true, you'll be able to swipe left/right to open the navigation
   });
 
-  // donate
-  $('.donate-box').on('click', '.pay_item', function() {
-    var dataid = $(this).attr('data-id');
-    var qrcode = $(this).attr('data-src') ? $(this).attr('data-src') : "assets/images/donate/" + dataid + "img.png";
-    var text = dataid == "alipay" ? "支付宝" : "微信";
-    $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
-    $(".donate-payimg img").attr("src", qrcode);
-    $("#donate-pay_txt").text(text);
-  });
-
   // modal居中
   // $('.modal').on('shown.bs.modal', function(e) {
   //   $(this).show();

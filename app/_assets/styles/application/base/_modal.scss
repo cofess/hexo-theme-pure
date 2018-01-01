@@ -1,0 +1,49 @@
+.modal {
+  button.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 99;
+  }
+}
+
+.modal-small {
+  .modal-dialog {
+    width: 480px
+  }
+}
+
+@media (min-width: $screen-xs-max) {
+  .modal-center {
+    text-align: center;
+    padding: 0!important;
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -4px;
+    }
+    .modal-dialog {
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+    }
+  }
+}
+
+.modal-xs-full {
+  .modal-dialog,
+  .modal-content {
+    @media (max-width: $screen-xs-max) {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      border-radius: 0;
+      box-shadow: none;
+      .donate-box {
+        padding-top: 50px;
+      }
+    }
+  }
+}

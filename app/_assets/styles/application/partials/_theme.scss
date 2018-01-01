@@ -97,44 +97,44 @@
 
 .theme-black {
   .header {
-    background-color: $theme-black-color
+    @include gradientBg(darken($theme-black-color, 6.5%), $theme-black-color)
   }
   #main-navbar {
     @media (max-width: $screen-xs-max) {
-      background-color: $theme-black-color
+      @include gradientBg(darken($theme-black-color, 6.5%), $theme-black-color)
     }
   }
 }
 
 .theme-blue {
   .header {
-    background-color: $theme-blue-color
+    @include gradientBg(darken($theme-blue-color, 6.5%), $theme-blue-color)
   }
   #main-navbar {
     @media (max-width: $screen-xs-max) {
-      background-color: $theme-blue-color
+      @include gradientBg(darken($theme-blue-color, 6.5%), $theme-blue-color)
     }
   }
 }
 
 .theme-green {
   .header {
-    background-color: $theme-green-color
+    @include gradientBg(darken($theme-green-color, 6.5%), $theme-green-color)
   }
   #main-navbar {
     @media (max-width: $screen-xs-max) {
-      background-color: $theme-green-color
+      @include gradientBg(darken($theme-green-color, 6.5%), $theme-green-color)
     }
   }
 }
 
 .theme-purple {
   .header {
-    background-color: $theme-purple-color
+    @include gradientBg(darken($theme-purple-color, 6.5%), $theme-purple-color)
   }
   #main-navbar {
     @media (max-width: $screen-xs-max) {
-      background-color: $theme-purple-color
+      @include gradientBg(darken($theme-purple-color, 6.5%), $theme-purple-color)
     }
   }
 }

@@ -79,3 +79,12 @@
     }
   }
 }
+
+/* Mixins */
+
+@mixin gradientBg($startColor, $endColor) {
+  background: $startColor;
+  background: -moz-linear-gradient(left, $startColor 0%, $endColor 80%, $endColor 100%);
+  background: -webkit-linear-gradient(left, $startColor 0%, $endColor 80%, $endColor 100%);
+  background: linear-gradient(to right, $startColor 0%, $endColor 80%, $endColor 100%);
+}

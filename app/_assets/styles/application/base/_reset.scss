@@ -1,16 +1,28 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
 body {
   position: relative;
-  font-family: $font-family-default;
   overflow-x: hidden;
-  &.auto-scroll {
-    overflow-y: auto;
-    padding-right: 0!important;
-    &.modal-open {
-      @media (max-width: $screen-xs-max) {
-        overflow: hidden;
-      }
-    }
-  }
+}
+
+// html {
+//   -webkit-box-sizing: border-box;
+//   box-sizing: border-box;
+//   -webkit-text-size-adjust: 100%;
+//   -ms-text-size-adjust: 100%;
+//   -ms-overflow-style: scrollbar;
+//   -webkit-tap-highlight-color: transparent;
+//   overflow-y: scroll;
+// }
+
+body {
+  padding-right: 0!important;
+  font-family: $font-family-default;
   @media (max-width: $screen-xs-max) {
     padding-top: 53px;
   }
@@ -63,7 +75,6 @@ svg {
 // img {
 //   position: relative;
 // }
-
 // img:before {
 //   position: absolute;
 //   content: "回";
@@ -73,7 +84,6 @@ svg {
 //   text-align: center;
 //   color: #ccc;
 // }
-
 // img:after {
 //   content: "(url: " attr(src) ")";
 //   display: block;
