@@ -1,34 +1,39 @@
 <% if (theme.donate.enable){ %>
 <!-- Modal -->
-<div class="modal modal-center modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-content donate">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       <div class="modal-body">
         <div class="donate-box">
-          <div class="donate-tit">
+          <div class="donate-head">
             <p><%= __('donate.title') %></p>
           </div>
-          <div class="donate-payimg">
-            <img src="<%- url_for(theme.donate.alipay.qrcode) %>" alt="<%= __('donate.qrcode_alt') %>" title="<%= __('donate.qrcode_title') %>" />
-          </div>
-          <p class="text-muted mv"><%= __('donate.tip') %></p>
-          <div class="donate-payselect">
-            <div class="pay_item checked" data-id="alipay" data-src="<%- url_for(theme.donate.alipay.qrcode) %>">
-              <div class="radio">
-                <input type="radio" name="payment" id="input-alipay" value="alipay" checked>
-                <label class="pay_logo clickable" for="input-alipay"><img src="<%- url_for(theme.donate.alipay.image) %>" alt="<%= __('donate.alipay') %>" /></label>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="<%- url_for(theme.donate.alipay.qrcode) %>" alt="<%= __('donate.qrcode_alt') %>" title="<%= __('donate.qrcode_title') %>" />
               </div>
+              <p class="text-muted mv"><%= __('donate.tip') %></p>
+              <p class="text-grey"><%= __('donate.alipay_action_tip') %></p>
             </div>
-            <div class="pay_item" data-id="weipay" data-src="<%- url_for(theme.donate.weipay.qrcode) %>">
-              <div class="radio">
-                <input type="radio" name="payment" id="input-weipay" value="weipay">
-                <label class="pay_logo clickable" for="input-weipay"><img src="<%- url_for(theme.donate.weipay.image) %>" alt="<%= __('donate.weipay') %>" /></label>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="<%- url_for(theme.donate.wechatpay.qrcode) %>" alt="<%= __('donate.qrcode_alt') %>" title="<%= __('donate.qrcode_title') %>" />
               </div>
+              <p class="text-muted mv"><%= __('donate.tip') %></p>
+              <p class="text-grey"><%= __('donate.wechatpay_action_tip') %></p>
             </div>
           </div>
-          <div class="text-grey">
-            <p><%= __('donate.action_tip') %></p>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> <%= __('donate.alipay') %></a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> <%= __('donate.wechatpay') %></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

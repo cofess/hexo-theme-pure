@@ -80,11 +80,10 @@ donate:
   button: 賞
   title: 感謝您的支持，我會繼續努力的!
   tip: 掃碼打賞，你說多少就多少
-  action: 打開
-  action_tip: 掃一掃，即可進行掃碼打賞哦
+  alipay_action_tip: 打開支付寶掃一掃，即可進行掃碼打賞哦
+  wechatpay_action_tip: 打開微信掃一掃，即可進行掃碼打賞哦
   alipay: 支付寶
-  weipay: 微信支付
-  wechat: 微信
+  wechatpay: 微信支付
 comment: 評論
 tweets: 推文
 share: Share

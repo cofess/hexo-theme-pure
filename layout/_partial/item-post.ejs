@@ -15,9 +15,12 @@
    </div>
    <% if (post.tags){ %>
    <div class="panel-footer">
-     <% post.tags.each(function (tag) { %>
+     <% post.tags.limit(3).each(function (tag) { %>
       <a href="<%- url_for(tag.path) %>" class="label label-default mb"><%= tag.name %></a>
      <% }); %>
+     <% if (post.tags.length > 3){ %>
+      <span class="label label-default mb">···</span>
+     <% }; %>
    </div>
    <% } %>
 </article>

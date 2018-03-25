@@ -78,13 +78,12 @@ donate:
   qrcode_alt: Scan Qrcode
   qrcode_title: Scan
   button: $
-  title: Thank you for your support, I will continue to work hard!
+  title: Maybe you could buy me a cup of coffee.
   tip: Scan this qrcode
-  action: Open
-  action_tip: Scan this qrcode, you can sweep yards reward oh!
+  alipay_action_tip: Open alipay app scan this qrcode, buy me a coffee!
+  wechatpay_action_tip: Open wechat app scan this qrcode, buy me a coffee!
   alipay: alipay
-  weipay: weipay
-  wechat: wechat
+  wechatpay: wechat payment
 comment: Comment
 tweets: Tweets
 share: Share
