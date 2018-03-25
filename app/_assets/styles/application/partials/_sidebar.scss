@@ -124,10 +124,22 @@
 
 // 文章目录
 .sidebar-toc {
+  // .slimContent{
+  //   @media (max-width: $screen-xs-max) {
+  //     padding-top: 52px;
+  //     padding-bottom: 52px;
+  //   }
+  // }
   &.collapse {
     display: none!important;
   }
   &.in {
     display: block!important;
+    @media (max-width: $screen-xs-max) {
+      position: fixed;
+      top: 50px;
+      bottom: 50px;
+      z-index: 9
+    }
   }
 }

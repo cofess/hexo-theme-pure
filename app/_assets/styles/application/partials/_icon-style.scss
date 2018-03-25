@@ -1,0 +1,196 @@
+$wave-icon-size: 50px;
+$wave-icon-before-size: $wave-icon-size + 24px;
+$wave-icon-after-size: $wave-icon-size + 48px;
+$wave-icon-half-size: $wave-icon-size / 2;
+$wave-icon-before-half-size: $wave-icon-before-size / 2;
+$wave-icon-after-half-size: $wave-icon-after-size / 2;
+
+/**
+ * .wave-icon
+ */
+
+.wave-icon {
+  display: inline-block;
+  position: relative;
+  .wave-circle {
+    display: block;
+    // width: $wave-icon-size + 20px;
+    // height: $wave-icon-size + 20px;
+    // border: 10px solid lighten($brand-primary, 40%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: transparent;
+    // box-shadow: 0 0 0 10px lighten($brand-primary, 45%);
+    &:before,
+    &:after {
+      content: '';
+      border: 10px solid $brand-primary;
+      background: $brand-primary;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+    }
+    &:before {
+      height: $wave-icon-before-size;
+      width: $wave-icon-before-size;
+      -webkit-animation: pulse 5s ease-out;
+      -moz-animation: pulse 5s ease-out;
+      animation: pulse 5s ease-out;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      margin-top: - $wave-icon-before-half-size;
+      margin-left: - $wave-icon-before-half-size;
+      opacity: 0;
+    }
+    &:after {
+      height: $wave-icon-after-size;
+      width: $wave-icon-after-size;
+      -webkit-animation: pulse 5s ease-out;
+      -moz-animation: pulse 5s ease-out;
+      animation: pulse 5s ease-out;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      margin-top: - $wave-icon-after-half-size;
+      margin-left: - $wave-icon-after-half-size;
+      opacity: 0.3;
+    }
+  }
+  .icon {
+    position: relative;
+    display: block;
+    width: $wave-icon-size;
+    height: $wave-icon-size;
+    line-height: $wave-icon-size;
+    text-align: center;
+    background-color: $brand-primary;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #fff;
+    z-index: 2
+  }
+  &.wave-icon-info {
+    .wave-circle {
+      // border: 10px solid lighten($brand-info, 40%);
+      // box-shadow: 0 0 0 10px lighten($brand-info, 45%);
+      &:before,
+      &:after {
+        border: 10px solid $brand-info;
+        background: $brand-info;
+      }
+    }
+    .icon {
+      background-color: $brand-info;
+    }
+  }
+  &.wave-icon-primary {
+    .wave-circle {
+      // border: 10px solid lighten($brand-primary, 40%);
+      // box-shadow: 0 0 0 10px lighten($brand-primary, 45%);
+      &:before,
+      &:after {
+        border: 10px solid $brand-primary;
+        background: $brand-primary;
+      }
+    }
+    .icon {
+      background-color: $brand-primary;
+    }
+  }
+  &.wave-icon-warning {
+    .wave-circle {
+      // border: 10px solid lighten($brand-warning, 40%);
+      // box-shadow: 0 0 0 10px lighten($brand-warning, 45%);
+      &:before,
+      &:after {
+        border: 10px solid $brand-warning;
+        background: $brand-warning;
+      }
+    }
+    .icon {
+      background-color: $brand-warning;
+    }
+  }
+  &.wave-icon-success {
+    .wave-circle {
+      // border: 10px solid lighten($brand-success, 40%);
+      // box-shadow: 0 0 0 10px lighten($brand-success, 45%);
+      &:before,
+      &:after {
+        border: 10px solid $brand-success;
+        background: $brand-success;
+      }
+    }
+    .icon {
+      background-color: $brand-success;
+    }
+  }
+  &.wave-icon-danger {
+    .wave-circle {
+      // border: 10px solid lighten($brand-danger, 40%);
+      // box-shadow: 0 0 0 10px lighten($brand-danger, 45%);
+      &:before,
+      &:after {
+        border: 10px solid $brand-danger;
+        background: $brand-danger;
+      }
+    }
+    .icon {
+      background-color: $brand-danger;
+    }
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(0);
+    opacity: 0.0;
+  }
+  25% {
+    -moz-transform: scale(0);
+    opacity: 0.1;
+  }
+  50% {
+    -moz-transform: scale(0.1);
+    opacity: 0.3;
+  }
+  75% {
+    -moz-transform: scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    -moz-transform: scale(1);
+    opacity: 0.0;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0;
+  }
+  25% {
+    -webkit-transform: scale(0);
+    opacity: 0.1;
+  }
+  50% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.3;
+  }
+  75% {
+    -webkit-transform: scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0.0;
+  }
+}

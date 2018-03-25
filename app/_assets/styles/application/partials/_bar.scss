@@ -1,0 +1,73 @@
+.bar {
+  .pager{
+    .next > a, 
+    .next > span{
+      float: none
+    }
+    li{
+      a{
+        span{
+          @media (max-width: $screen-md-max){
+            display:none
+          }
+        }
+      }
+    }
+  }
+  &.bar-footer {
+    position: relative;
+    background-color: #fff;
+    bottom: -15px;
+    &:before {
+      content: '';
+      position: absolute;
+      width: calc(100% + 30px);
+      height: 52px;
+      left: -15px;
+      border-top: 1px solid #f6f6f6;
+      border-bottom: 1px solid #fff;
+      background-color: #fff;
+      @media (min-width: $screen-sm-min) {
+        width: calc(100% + 40px);
+        left: -20px;
+      }
+      @media (min-width: $screen-md-min) {
+        width: calc(100% + 50px);
+        left: -25px;
+      }
+      @media (min-width: $screen-lg-min) {
+        width: calc(100% + 60px);
+        left: -30px;
+      }
+      // @media (min-width: $screen-xl-min) {
+      //   width: calc(100% + 80px);
+      //   left: -40px;
+      // }
+    }
+    @media (max-width: $screen-xs-max) {
+      top: auto!important;
+      bottom: 0!important
+    }
+  }
+  .bar-inner {
+    position: relative;
+    z-index: 9;
+    @include clearfix;
+  }
+  .bar-right {
+    margin: 10px 0;
+    float: right;
+  }
+}
+
+.toggle-toc {
+  // display: inline-block;
+  cursor: pointer;
+  margin-left: 10px;
+  a {
+    display: inline-block;
+    // width: 16px;
+    line-height: 32px;
+    text-align: center
+  }
+}

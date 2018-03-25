@@ -3,10 +3,12 @@
  */
 @import "application/variables";
 @import "application/mixins";
+
 /**
  * bootstrap
  */
 @import "bootstrap";
+
 /**
  * application
  */
@@ -28,7 +30,9 @@
 @import "application/partials/header";
 @import "application/partials/main";
 @import "application/partials/sidebar";
+@import "application/partials/bar";
 @import "application/partials/footer";
+@import "application/partials/icon-style";
 @import "application/partials/repository";
 @import "application/partials/post";
 @import "application/partials/okayNav";

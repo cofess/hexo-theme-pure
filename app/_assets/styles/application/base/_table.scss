@@ -5,47 +5,47 @@
  */
 
 table {
-  padding: 0;
-  width: 100%;
-  max-width: 100%;
-  margin: 10px 0;
+  border: 1px solid $border-color;
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border: 1px solid $border-color;
+      }
+    }
+  }
+  > tbody > tr:nth-of-type(odd) {
+    background-color: #f8f8f8;
+  }
   > tbody > tr:hover {
     background-color: #fbfbfb;
   }
 }
 
-table tr {
-  border-top: 1px solid $border-color;
-  background-color: white;
-  margin: 0;
+table {
   padding: 0;
-}
-
-table tr:nth-child(2n) {
-  background-color: #f8f8f8;
-}
-
-table tr th {
-  font-weight: bold;
-  border: 1px solid $border-color;
-  text-align: left;
-  margin: 0;
-  padding: 6px 13px;
-}
-
-table tr td {
-  border: 1px solid $border-color;
-  text-align: left;
-  margin: 0;
-  padding: 6px 13px;
-}
-
-table tr th:first-child,
-table tr td:first-child {
-  margin-top: 0;
-}
-
-table tr th:last-child,
-table tr td:last-child {
-  margin-bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 10px 0;
+  // Cells
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: 6px 13px;
+      }
+    }
+  }
+  // Account for multiple tbody instances
+  > tbody + tbody {
+    border-top: 2px solid $border-color;
+  }
+  // Nesting
+  table {
+    background-color: $body-bg;
+  }
 }

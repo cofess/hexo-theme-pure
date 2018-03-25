@@ -224,6 +224,13 @@
         </footer>
       </article>
       <div class="wrapper mb-3x">
+        <a href="#" class="btn btn-info"><span>Follow Me</span></a>
+        <a href="#" class="btn btn-primary"><span>Follow Me</span></a>
+        <a href="#" class="btn btn-warning"><span>Follow Me</span></a>
+        <a href="#" class="btn btn-success"><span>Messages</span></a>
+        <a href="#" class="btn btn-danger"><span>Follow Me</span></a>
+      </div>
+      <div class="wrapper mb-3x">
         <a href="#" class="btn-fancy bg-gradient-info"><span>Follow Me</span></a>
         <a href="#" class="btn-fancy bg-gradient-primary"><span>Follow Me</span></a>
         <a href="#" class="btn-fancy bg-gradient-success"><span>Messages</span></a>
@@ -236,19 +243,30 @@
     <nav class="bar bar-footer clearfix" data-stick-bottom>
       <div class="bar-inner">
       <ul class="pager pull-left">
-        <li class="prev"><a href="#"><i class="icon icon-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;Prev</a></li>
-        <li class="next"><a href="#">Next&nbsp;&nbsp;<i class="icon icon-angle-right" aria-hidden="true"></i></a></li>
+        <li class="prev"><a href="#"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Prev</span></a></li>
+        <li class="next"><a href="#"><span>Next&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a></li>
+        <li class="toggle-toc">
+          <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false" role="button">
+            <span>[&nbsp;</span><span>文章目录</span>
+            <i class="text-collapsed icon icon-anchor" title="打开文章目录"></i>
+            <i class="text-in icon icon-close" title="关闭文章目录"></i>
+            <span>]</span>
+          </a>
+        </li>
       </ul>
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
+      <!-- <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button> -->
+      <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+        <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+      </div>
       <div class="bar-right">
         <div class="share-component" data-mobile-sites="weibo,qq,qzone" data-sites="weibo,qq,wechat,facebook,twitter" data-description="一键分享到微博，QQ空间，腾讯微博，人人，豆瓣"></div>
-        <div class="toggle-toc">
-          <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false" title="文章目录" role="button">
-            <i class="text-collapsed icon icon-anchor"></i>
-            <i class="text-in icon icon-close"></i>
+        <!-- <div class="toggle-toc">
+          <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false" role="button">
+            <i class="text-collapsed icon icon-anchor" title="打开文章目录"></i>
+            <i class="text-in icon icon-close" title="关闭文章目录"></i>
           </a>
-        </div>
+        </div> -->
       </div>
       </div>
     </nav>

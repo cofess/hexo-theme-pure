@@ -23,6 +23,10 @@ body {
 body {
   padding-right: 0!important;
   font-family: $font-family-default;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-color;
+  background-color: $body-bg;
   @media (max-width: $screen-xs-max) {
     padding-top: 53px;
   }
@@ -59,7 +63,6 @@ textarea,
     outline: none!important;
   }
 }
-
 
 /*------------------ Fluidity response ------------------------------*/
 

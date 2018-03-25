@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2)
+  background: rgba(0, 0, 0, 0.15)
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
@@ -18,12 +18,12 @@
 
 ::-webkit-scrollbar-thumb:vertical {
   height: 4px;
-  background: rgba(0, 0, 0, 0.2)
+  background: rgba(0, 0, 0, 0.15)
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
   width: 4px;
-  background: rgba(0, 0, 0, 0.2)
+  background: rgba(0, 0, 0, 0.15)
 }
 
 ::-webkit-scrollbar-thumb:vertical:hover {
@@ -31,7 +31,7 @@
 }
 
 ::-webkit-scrollbar-thumb:vertical:active {
-  background-color: rgba(0, 0, 0, 0.6)
+  background-color: rgba(0, 0, 0, 0.5)
 }
 
 ::-webkit-scrollbar-track {
@@ -40,5 +40,5 @@
 }
 
 ::-webkit-scrollbar-track-piece {
-  background: rgba(0, 0, 0, 0.2)
+  background: rgba(0, 0, 0, 0.15)
 }

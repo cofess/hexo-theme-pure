@@ -79,10 +79,10 @@
   }
   @media (min-width: $screen-xl-min) {
     width: $sidebar-xl-width;
-    .slimContent {
-      padding-right: 40px;
-      padding-left: 40px;
-    }
+    // .slimContent {
+    //   padding-right: 40px;
+    //   padding-left: 40px;
+    // }
   }
 }
 
@@ -112,8 +112,8 @@
   }
   @media (min-width: $screen-xl-min) {
     width: $main-xl-width;
-    padding-right: 40px;
-    padding-left: 40px;
+    // padding-right: 40px;
+    // padding-left: 40px;
   }
 }
 
@@ -122,8 +122,9 @@
   background-color: $mainside-bg;
   @media (min-width: $screen-sm-min) {
     position: fixed;
+    left: 0;
     bottom: 0;
-    margin: 0 auto;
+    // margin: 0 auto;
     background-color: transparent;
     // color: $link-dark-color;
     z-index: 1050;
@@ -155,13 +156,16 @@ body.main-center {
   }
   .main {
     @media (min-width: $screen-sm-min) {
-      margin-left: 4.16666667%;
+      margin-left: $mainside-sm-width;
     }
     @media (min-width: $screen-md-min) {
-      margin-left: 16.66666667%;
+      margin-left: $mainside-md-width;
     }
     @media (min-width: $screen-lg-min) {
-      margin-left: 16.66666667%;
+      margin-left: $mainside-lg-width;
+    }
+    @media (min-width: $screen-xl-min) {
+      margin-left: $mainside-xl-width;
     }
   }
 }
@@ -184,14 +188,21 @@ body.main-left {
     border-left: 1px solid $sidebar-border-color;
     border-right: 0;
     @media (min-width: $screen-sm-min) {
-      margin-right: 4.16666667%;
+      margin-right: $mainside-sm-width;
     }
     @media (min-width: $screen-md-min) {
-      margin-right: 16.66666667%;
+      margin-right: $mainside-md-width;
     }
     @media (min-width: $screen-lg-min) {
-      margin-right: 16.66666667%;
+      margin-right: $mainside-lg-width;
     }
+    @media (min-width: $screen-xl-min) {
+      margin-right: $mainside-xl-width;
+    }
+  }
+  .footer {
+    left: auto;
+    right: 0;
   }
 }
 
@@ -204,24 +215,30 @@ body.main-right {
   .header {}
   .sidebar {
     @media (min-width: $screen-sm-min) {
-      margin-left: 4.16666667%;
+      margin-left: $mainside-sm-width;
     }
     @media (min-width: $screen-md-min) {
-      margin-left: 16.66666667%;
+      margin-left: $mainside-md-width;
     }
     @media (min-width: $screen-lg-min) {
-      margin-left: 16.66666667%;
+      margin-left: $mainside-lg-width;
+    }
+    @media (min-width: $screen-xl-min) {
+      margin-left: $mainside-xl-width;
     }
   }
   .main {
     @media (min-width: $screen-sm-min) {
-      margin-left: 37.5%;
+      margin-left: $mainside-sm-width + $sidebar-sm-width;
     }
     @media (min-width: $screen-md-min) {
-      margin-left: 41.66666667%;
+      margin-left: $mainside-md-width + $sidebar-md-width;
     }
     @media (min-width: $screen-lg-min) {
-      margin-left: 41.66666667%;
+      margin-left: $mainside-lg-width + $sidebar-lg-width;
+    }
+    @media (min-width: $screen-xl-min) {
+      margin-left: $mainside-xl-width + $sidebar-xl-width;
     }
   }
 }
@@ -234,15 +251,19 @@ body.no-sidebar {
     .main {
       @media (min-width: $screen-sm-min) {
         width: 95.83333333%;
-        margin-right: 4.16666667%;
+        margin-right: $mainside-sm-width;
       }
       @media (min-width: $screen-md-min) {
         width: 83.33333333%;
-        margin-right: 16.66666667%;
+        margin-right: $mainside-md-width;
       }
       @media (min-width: $screen-lg-min) {
         width: 83.33333333%;
-        margin-right: 16.66666667%;
+        margin-right: $mainside-lg-width;
+      }
+      @media (min-width: $screen-xl-min) {
+        width: 83.33333333%;
+        margin-right: $mainside-xl-width;
       }
     }
   }
@@ -251,15 +272,19 @@ body.no-sidebar {
     .main {
       @media (min-width: $screen-sm-min) {
         width: 95.83333333%;
-        margin-left: 4.16666667%;
+        margin-left: $mainside-sm-width;
       }
       @media (min-width: $screen-md-min) {
         width: 83.33333333%;
-        margin-left: 16.66666667%;
+        margin-left: $mainside-md-width;
       }
       @media (min-width: $screen-lg-min) {
         width: 83.33333333%;
-        margin-left: 16.66666667%;
+        margin-left: $mainside-lg-width;
+      }
+      @media (min-width: $screen-xl-min) {
+        width: 83.33333333%;
+        margin-left: $mainside-xl-width;
       }
     }
   }

@@ -7,12 +7,12 @@
 }
 
 .text-in {
-  display: block;
+  display: inline-block;
 }
 
 .collapsed {
   .text-collapsed {
-    display: block;
+    display: inline-block;
   }
   .text-in {
     display: none;
@@ -88,18 +88,6 @@
   }
 }
 
-.toggle-toc {
-  display: inline-block;
-  cursor: pointer;
-  margin-left: 16px;
-  a {
-    display: inline-block;
-    width: 16px;
-    line-height: 32px;
-    text-align: center
-  }
-}
-
 .markdown-body {
   h1,
   h2,
@@ -139,24 +127,26 @@
   @media (min-width: $screen-md-min) {
     .headerlink,
     .markdownIt-Anchor {
-      &:before {
+      &:before {    
+        display: inline-block;
+        width: 18px;
         content: "#";
         color: $link-hover-color;
-        // float: left;
-        // vertical-align: middle;
+        text-align: right;
+        float: left;
         visibility: hidden;
       }
     }
     .headerlink {
       &:before {
-        margin-left: -20px;
-        padding-right: 4px;
+        margin-left: -15px;
+        padding-right: 2px;
       }
     }
     .markdownIt-Anchor {
       &:before {
         margin-left: -20px;
-        margin-right: -4px;
+        // margin-right: -2px;
       }
     }
     h1,

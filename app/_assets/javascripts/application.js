@@ -5,12 +5,21 @@ $(function() {
   // slimscroll
   if (typeof $.fn.slimScroll != 'undefined') {
     $(".sidebar .slimContent").slimScroll({
-      height: "auto",
-      color: "rgba(0,0,0,0.2)",
-      size: "3px",
+      height: $(window).height(),
+      color: "rgba(0,0,0,0.15)",
+      size: "5px",
+      position: 'right',
       // allowPageScroll: true
     });
   }
+
+  $('#collapseToc').on('shown.bs.collapse', function () {
+    // do something…
+    // slimscroll
+    if (typeof $.fn.slimScroll != 'undefined') {
+      $(".sidebar .slimContent").slimScroll().on('slimscroll');
+    }
+  });
 
   // geopattern 背景生成
   $(".geopattern").each(function() {
