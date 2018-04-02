@@ -6076,6 +6076,10 @@ body.no-sidebar .sidebar {
   display: block !important;
 }
 
+.tagcloud a {
+  display: inline-block;
+}
+
 .bar .pager .next > a,
 .bar .pager .next > span {
   float: none;
