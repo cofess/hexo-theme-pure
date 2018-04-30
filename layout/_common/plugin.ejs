@@ -11,7 +11,7 @@
     <% if (theme.search.baidu) { %>
         <%- partial('_script/_search/baidu') %>
     <% } %>
-    <% if (is_home() || page.sidebar != 'none') { %>
+    <% if (is_home() || is_post()) { %>
         <%- partial('_script/pv') %>
     <% } %>
     <% if (!is_home() && !is_category() && !is_tag() && !is_archive() && post.comments) { %>
