@@ -8,4 +8,6 @@
     <%- partial('_script/_comment/gitment', { script: true }) %>
 <% } else if (theme.comment.type === 'changyan') { %>
     <%- partial('_script/_comment/changyan', { script: true }) %>
+<% } else if (theme.comment.type === 'gitalk') { %>
+    <%- partial('_script/_comment/gitalk', { script: true }) %>
 <% } %>
