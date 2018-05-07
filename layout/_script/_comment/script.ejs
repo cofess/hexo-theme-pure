@@ -5,5 +5,9 @@
 <% } else if (theme.comment.type === 'livere') { %>
     <%- partial('_script/_comment/livere', { script: true }) %>
 <% } else if (theme.comment.type === 'gitment') { %>
-    <%- partial('_script/_comment/gitment', { script: true }) %>    
+    <%- partial('_script/_comment/gitment', { script: true }) %>
+<% } else if (theme.comment.type === 'changyan') { %>
+    <%- partial('_script/_comment/changyan', { script: true }) %>
+<% } else if (theme.comment.type === 'gitalk') { %>
+    <%- partial('_script/_comment/gitalk', { script: true }) %>
 <% } %>

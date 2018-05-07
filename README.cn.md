@@ -164,7 +164,7 @@ share:
 
 ### 评论
 
-主题集成了[disqus](https://disqus.com/)、[友言](http://www.uyan.cc/)、[来必力](https://livere.com/)、[gitment](https://github.com/imsun/gitment)评论系统，选择其中一种即可
+主题集成了[disqus](https://disqus.com/)、[友言](http://www.uyan.cc/)、[来必力](https://livere.com/)、[gitment](https://github.com/imsun/gitment)、[畅言](http://changyan.kuaizhan.com/)评论系统，选择其中一种即可
 
 ```
 # Comment
@@ -183,6 +183,9 @@ comment:
     ClientID: ***
     ClientSecret: ***
     lazy: false
+  changyan:
+    appid: 
+    conf: 
 ```
 
 ### 文章浏览量统计

@@ -118,6 +118,9 @@ comment:
     ClientID: 
     ClientSecret: 
     lazy: false
+  changyan:
+    appid:
+    conf:
 
 # douban 豆瓣书单
 # Api：
