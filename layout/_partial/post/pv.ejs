@@ -11,4 +11,11 @@
     	<i class="icon icon-eye-fill" aria-hidden="true"></i>
     	<span id="<%- url_for(post.path) %>" class="leancloud_visitors"  data-flag-title="<%= post.title %>">0</span>
     </span>
+<% }else if(theme.comment.type == 'valine' && theme.comment.valine.visitor) { %>
+	<span class="article-read hidden-xs">
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="<%- url_for(post.path) %>" class="leancloud_visitors"  data-flag-title="<%= post.title %>">
+			<span class="leancloud-visitors-count">0</span>
+		</span>
+    </span>
 <% } %>

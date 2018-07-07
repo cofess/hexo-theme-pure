@@ -8,6 +8,8 @@
        <%- partial('_script/_comment/livere') %>      
     <% } else if (theme.comment.type === 'gitment') { %>
        <%- partial('_script/_comment/gitment') %>    
+    <% } else if (theme.comment.type === 'valine') { %>
+       <%- partial('_script/_comment/valine') %>    
     <% } %>
   </section>
 <% } %>
