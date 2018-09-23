@@ -144,8 +144,19 @@
   }
 }
 
-.tagcloud{
-  a{
-    display: inline-block
+.tagcloud {
+  a {
+    display: inline-block;
+    padding: .3em .6em;
+    font-size: 75%;
+    line-height: 1;
+    background-color: #eee;
+    color: #777;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em
   }
 }
+
+
