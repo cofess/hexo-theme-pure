@@ -7,7 +7,7 @@ A brand new default theme for [[Hexo](https://hexo.io)].  [Preview](http://cofes
 ## 特色
 
 - 多语言
-- 第三方评论框（友言、来必力、gitment）
+- 第三方评论框（友言、来必力、gitment、gitalk）
 - 可展示个人豆瓣书单
 - 可展示个人github托管项目
 - 可设置支付宝、微信打赏
@@ -164,7 +164,7 @@ share:
 
 ### 评论
 
-主题集成了[disqus](https://disqus.com/)、[友言](http://www.uyan.cc/)、[来必力](https://livere.com/)、[gitment](https://github.com/imsun/gitment)评论系统，选择其中一种即可
+主题集成了[disqus](https://disqus.com/)、[友言](http://www.uyan.cc/)、[来必力](https://livere.com/)、[gitment](https://github.com/imsun/gitment)、[gitalk](https://github.com/gitalk/gitalk)评论系统，选择其中一种即可
 
 ```
 # Comment

@@ -10,6 +10,8 @@
        <%- partial('_script/_comment/gitment') %>    
     <% } else if (theme.comment.type === 'valine') { %>
        <%- partial('_script/_comment/valine') %>    
-    <% } %>
+    <% }  else if (theme.comment.type === 'gitalk') { %>
+      <%- partial('_script/_comment/gitalk') %>    
+   <% } %>
   </section>
 <% } %>
