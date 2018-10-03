@@ -73,10 +73,12 @@ index_widgets:
 archive_type: 'monthly'
 show_count: true
 
+# Fancybox
+fancybox: false
+
 # Search
 search:
   insight: true # you need to install `hexo-generator-json-content` before using Insight Search
-  swiftype: # enter swiftype install key here
   baidu: false # you need to disable other search engines to use Baidu search
 
 # Donate
@@ -118,6 +120,12 @@ comment:
     ClientID: 
     ClientSecret: 
     lazy: false
+  gitalk: # gitalk. https://gitalk.github.io/
+    owner:  #必须. GitHub repository 所有者，可以是个人或者组织。
+    admin:  #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
+    repo:  #必须. GitHub repository.
+    ClientID:  #必须. GitHub Application Client ID.
+    ClientSecret:  #必须. GitHub Application Client Secret.
   valine: # Valine. https://valine.js.org
     appid:  # your leancloud application appid
     appkey:  # your leancloud application appkey

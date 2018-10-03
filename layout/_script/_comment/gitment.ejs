@@ -1,5 +1,5 @@
 <% if (typeof(script) !== 'undefined' && script) { %>
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script src="//cdn.jsdelivr.net/npm/gitment@0.0.3/dist/gitment.browser.min.js"></script>
 <script>
 var gitment = new Gitment({
   // id默认为当前页面url，如果url后带参数或锚点，gitment要重新初始化
@@ -15,6 +15,4 @@ var gitment = new Gitment({
 })
 gitment.render('comments')
 </script>
-<% } else { %>
-
 <% } %>
