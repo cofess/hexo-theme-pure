@@ -5,9 +5,9 @@
 <% } else if (theme.comment.type === 'livere') { %>
     <%- partial('_script/_comment/livere', { script: true }) %>
 <% } else if (theme.comment.type === 'gitment') { %>
-    <%- partial('_script/_comment/gitment', { script: true }) %>   
-<% } else if (theme.comment.type === 'valine') { %>
-    <%- partial('_script/_comment/valine', { script: true }) %>    
+    <%- partial('_script/_comment/gitment', { script: true }) %>
 <% } else if (theme.comment.type === 'gitalk') { %>
-    <%- partial('_script/_comment/gitalk', { script: true }) %>    
+    <%- partial('_script/_comment/gitalk', { script: true }) %>      
+<% } else if (theme.comment.type === 'valine') { %>
+    <%- partial('_script/_comment/valine', { script: true }) %>     
 <% } %>

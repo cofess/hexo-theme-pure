@@ -1,18 +1,17 @@
 <% if (typeof(script) !== 'undefined' && script) { %>
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script type="text/javascript">
-        var gitalk = new Gitalk({
-            clientID: '<%= theme.comment.gitalk.ClientID %>',
-            clientSecret: '<%= theme.comment.gitalk.ClientSecret %>',
-            repo: '<%= theme.comment.gitalk.repo %>',
-            owner: '<%= theme.comment.gitalk.owner %>',
-            admin: ['<%= theme.comment.gitalk.admin %>'],
-            id: location.pathname,
-            distractionFreeMode: true
-        })
-        gitalk.render('comments')
-    </script>
-<% } else { %>
-
+  <!-- <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"> -->
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: '<%= theme.comment.gitalk.ClientID %>',
+    clientSecret: '<%= theme.comment.gitalk.ClientSecret %>',
+    repo: '<%= theme.comment.gitalk.repo %>',
+    owner: '<%= theme.comment.gitalk.owner %>',
+    admin: ['<%= theme.comment.gitalk.admin %>'],
+    id: md5(location.pathname),
+    distractionFreeMode: true
+  })
+  gitalk.render('comments')
+  </script>
 <% } %>

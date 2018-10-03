@@ -1,25 +1,23 @@
 <% if (typeof(script) !== 'undefined' && script) { %>
-   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-   <script src="//cdn.jsdelivr.net/npm/valine"></script>
-   <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-     var meta = '<%= theme.comment.valine.meta %>';
-     meta = meta.split(',').filter(function (item) {
-       return GUEST.indexOf(item)>-1;
-     });
-     new Valine({
-         el: '#vcomments' ,
-         verify: <%= theme.comment.valine.verify %>,
-         notify: <%= theme.comment.valine.notify %>,
-         appId: '<%= theme.comment.valine.appid %>',
-         appKey: '<%= theme.comment.valine.appkey %>',
-         placeholder: '<%= theme.comment.valine.placeholder %>',
-         avatar:'<%= theme.comment.valine.avatar %>',
-         meta:meta,
-         pageSize:'<%= theme.comment.valine.pageSize %>' || 10,
-         visitor: <%= theme.comment.valine.visitor %>
-     });
-   </script>
-<% } else { %>
-    <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = '<%= theme.comment.valine.meta %>';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: <%= theme.comment.valine.verify %>,
+    notify: <%= theme.comment.valine.notify %>,
+    appId: '<%= theme.comment.valine.appid %>',
+    appKey: '<%= theme.comment.valine.appkey %>',
+    placeholder: '<%= theme.comment.valine.placeholder %>',
+    avatar: '<%= theme.comment.valine.avatar %>',
+    meta: meta,
+    pageSize: '<%= theme.comment.valine.pageSize %>' || 10,
+    visitor: <%= theme.comment.valine.visitor %>
+  });
+  </script>
 <% } %>

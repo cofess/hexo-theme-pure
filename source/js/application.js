@@ -13,7 +13,7 @@ $(function() {
     });
   }
 
-  $('#collapseToc').on('shown.bs.collapse', function () {
+  $('#collapseToc').on('shown.bs.collapse', function() {
     // do something…
     // slimscroll
     if (typeof $.fn.slimScroll != 'undefined') {
@@ -48,6 +48,7 @@ $(function() {
     zindex: 42,
     edgeOffset: 0
   });
+  
   $('[data-stick-top]').keepInView({
     fixed: true,
     parentClass: "has-sticky",
@@ -56,13 +57,13 @@ $(function() {
     zindex: 42,
     edgeOffset: 0
   });
-  
+
   // menu auto highlight
   var menuHighlight = $("ul.main-nav").hasClass('menu-highlight');
   if (menuHighlight) {
     var currentPathname = location.pathname,
-        $menuList = $("ul.main-nav>li"),
-        activeIndex = -1;
+      $menuList = $("ul.main-nav>li"),
+      activeIndex = -1;
     for (var i = 0, length = $menuList.length; i < length; i++) {
       var itemHref = $($menuList[i]).find('a').attr('href');
       if (currentPathname.indexOf(itemHref) > -1 ||
