@@ -147,11 +147,11 @@
 .tagcloud {
   a {
     display: inline-block;
+    margin-bottom: 0.2em;
     padding: .3em .6em;
-    font-size: 75%;
+    font-size: 75%!important;
     line-height: 1;
     background-color: #eee;
-    color: #777;
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
