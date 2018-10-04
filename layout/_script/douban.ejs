@@ -50,7 +50,7 @@ function show(id) {
   function loadDoubanCollections() {
     var _this = this;
     // https://api.douban.com/v2/book/user/:name/collections?start=0&count=100
-    var url = "https://douban.uieee.com/v2/book/user/<%= theme.douban.user %>/collections"
+    var url = "https://api.douban.com/v2/book/user/<%= theme.douban.user %>/collections"
     $.ajax({
       url: url,
       type: 'GET',
