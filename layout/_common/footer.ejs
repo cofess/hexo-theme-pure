@@ -4,6 +4,11 @@
     	<% if(theme.site.copyright) { %>
         &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
         <% } %>
+        <% if (theme.pv.busuanzi.enable) { %>
+            <span id="busuanzi_container_site_uv">
+                总访客: <span id="busuanzi_value_site_uv">0</span>
+             </span>
+        <% } %>
         <div class="publishby">
         	<%= __('copyright.theme_by') %> <a href="https://github.com/cofess" target="_blank"> cofess </a><%= __('copyright.base_on') %> <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
         </div>
