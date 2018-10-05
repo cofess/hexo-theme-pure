@@ -35,7 +35,7 @@
     title = __('page.tag') + ': ' + page.tag;
   }
   %>
-  <title><% if (title) { %><%= title %> | <% } %><%= theme.site.title || config.title %></title>
+  <title><% if (title||theme.site.title) { %> <%= title || theme.site.title %> <% } %> </title>
   <%- open_graph({
     twitter_id: theme.twitter, 
     google_plus: theme.google_plus, 
@@ -52,13 +52,13 @@
   <% } %>
   <%- css('css/style') %>
   <% if (page.mathjax) { %>
-    <link href="//cdn.jsdelivr.net/npm/katex@0.9.0/dist/katex.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css">
   <% } %>
   <% if (theme.comment.type === 'gitment' && !is_home() && !is_category() && !is_tag() && !is_archive() && post.comments) { %>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css">
   <% } %>
   <% if (theme.fancybox) { %>
-    <link href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.1/dist/jquery.fancybox.min.css" rel="stylesheet">
   <% } %>
   <% if (theme.comment.type === 'gitalk') { %>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.css">
