@@ -4,30 +4,10 @@
     <p class="text-muted">
       <%= __('page.links-desc') %>
     </p>
+  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1f4e6112-fff1-45c3-8c1b-602b7a122acd";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
   </header>
   <div class="article-body">
-    <div class="row">
-      <% for (var link in site.data.links) { %>
-        <% var item = site.data.links[link]; %>
-          <div class="col-sm-6 col-md-4">
-            <div class="panel panel-default hover-shadow hover-grow">
-              <figure class="media media-middle">
-                <div class="media-left pr-no">
-                  <a href="<%= item.link %>" target="_blank" class="img-burn thumb-md media-middle">
-                    <img src="<%= item.avatar %>" class="w-full" alt="">
-                  </a>
-                </div>
-                <div class="media-body p-0x">
-                  <h4 class="media-heading"><a href="<%= item.link %>" target="_blank"><span class="text-dark"><%= link %></span></a></h4>
-                  <div class="text-muted">
-                    <%= item.desc %>
-                  </div>
-                </div>
-              </figure>
-            </div>
-          </div>
-          <% } %>
-    </div>
+     <blockquote><p>原谅我柔情矫情甚至故作深情，就像我原谅你没有再度认出我的脸。</p><p>原谅我竟然再次想起普希金的长诗，他讲，有一种蝉，它天生畸形，无法生出翅膀，于是只能在茧里摇啊摇。</p><p>当其他蝉翼被突然袭来的暴雨拍碎，它依然摇啊摇，不必产子，不必飞翔，同时也不必经历任何痛苦挣扎。</p></blockquote>
   </div>
 </article>
 <% if (theme.comment.type && !is_home()) { %>

@@ -1,9 +1,9 @@
-<article class="article article-type-<%= post.layout %>" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="article article-type-<%= post.layout %>" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-header">
     <%- partial('post/title', {class_name: 'article-title'}) %>
   </div>
   <% if (post.excerpt){ %>
-  <div class="article-entry text-muted" itemprop="description">
+  <div class="article-entry text-muted fix-article-text" itemprop="description">
     <%- post.excerpt %>
   </div>
   <% } %>

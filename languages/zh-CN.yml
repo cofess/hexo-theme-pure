@@ -6,7 +6,7 @@ menu:
   Repository: 项目
   Books: 书单
   Movies: 电影
-  Links: 友链
+  Links: 留言
   About: 关于
 nav:
   all: All
@@ -28,8 +28,8 @@ page:
   books-desc: 个人收藏的书单推荐给大家
   movies: 电影
   movies-desc: 个人喜欢的电影推荐给大家
-  links: 友情链接
-  links-desc: 欢迎交换链接，可在当前页面留言
+  links: 留言板
+  links-desc: " "
   about: 关于
 pagination: 
   next: 下一页
@@ -72,7 +72,7 @@ total:
   article: 共 %d 篇文章
   tag: 共 %d 个标签
   category: 共 %d 个分类
-  link: 共 %d 个友情链接
+  link: 共 %d 条留言
   repository: 共 %d 个项目
 donate:
   qrcode_alt: 扫码支持
@@ -90,5 +90,5 @@ share: Share
 rss_feed: RSS Feed
 copyright:
   theme_by: Theme by
-  base_on: base on
+  base_on: "& Theme by"
   powered_by: Powered by
