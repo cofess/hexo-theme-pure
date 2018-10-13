@@ -1,13 +1,12 @@
 # menu
 menu:
   Home: .
-  Archives: archives  # 归档
-  Categories: categories  # 分类
-  Tags: tags  # 标签
-  Repository: repository  # github repositories
-  Books: books  # 豆瓣书单
-  Links: links  # 友链
-  About: about  # 关于
+  Archives: archives/      # 归档
+  Categories: categories/  # 分类
+  Tags: tags/              # 标签
+  Repository: repository/  # github repositories
+  Links: links/            # 友链
+  About: about/            # 关于
 
 # Enable/Disable menu icons
 menu_icons:
@@ -17,9 +16,10 @@ menu_icons:
   categories: icon-folder
   tags: icon-tags
   repository: icon-project
-  books: icon-book-fill
   links: icon-friendship
   about: icon-cup-fill
+  zhihu: icon-zhihu
+  email: icon-email
 
 # rss
 rss: /atom.xml
@@ -34,7 +34,7 @@ site:
   title: Hexo # 页面title
   favicon: /favicon.png
   board: <p>欢迎交流与分享经验!</p> # 站点公告
-  copyright: false # 底部版权信息
+  copyright: true # 底部版权信息
 
 # config
 config:
@@ -47,7 +47,7 @@ config:
 
 # Pagination
 pagination:
-  number: false
+  number: true
   prev: 
     alwayShow: true
   next:
@@ -57,8 +57,8 @@ pagination:
 sidebar: right
 widgets:
   - board  
-  - category
-  - tag
+#  - category
+#  - tag
   - tagcloud
   - archive
   - recent_posts
@@ -74,7 +74,7 @@ archive_type: 'monthly'
 show_count: true
 
 # Fancybox
-fancybox: false
+fancybox: true
 
 # Search
 search:
@@ -97,7 +97,7 @@ donate:
 # weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
 share:
   enable: true  # 是否启用分享
-  sites: weibo,qq,wechat,facebook,twitter  # PC端显示的分享图标
+  sites: weibo,qq,wechat,twitter  # PC端显示的分享图标
   mobile_sites: weibo,qq,qzone  # 移动端显示的分享图标
 
 # Github
@@ -156,7 +156,7 @@ douban:
 # PV
 pv:
   busuanzi:
-    enable: false  # 不蒜子统计
+    enable: true  # 不蒜子统计
   leancloud:
     enable: false  # leancloud统计
     app_id: # leancloud <AppID>
@@ -164,7 +164,7 @@ pv:
         
 # wordcount
 postCount:
-  enable: false
+  enable: true
   wordcount: true  # 文章字数统计
   min2read: true  # 阅读时长预计 
 

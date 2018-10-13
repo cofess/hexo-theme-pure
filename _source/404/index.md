@@ -1,7 +1,11 @@
 ---
-title: 404 Not Found：该页无法显示
+title: 躲猫猫
 toc: false
 comments: false
 permalink: /404
+sidebar: custom
+translate_title: hiding-cat
 ---
-<script type="text/javascript" src="//www.qq.com/404/search_children.js" charset="utf-8" homePageUrl="<%- config.url %>" homePageName="回到我的主页"></script>
+
+啊哦，你要找的页面失踪啦 ੧ᐛ੭
+

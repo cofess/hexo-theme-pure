@@ -1,4 +1,4 @@
-<header class="header" itemscope itemtype="http://schema.org/WPHeader">
+<header class="header" id="LeftHeader" itemscope itemtype="https://schema.org/WPHeader">
   <div class="slimContent">
     <div class="navbar-header">
       <% if(theme.profile && theme.profile.enabled) { %>
@@ -20,7 +20,7 @@
         <span class="icon-bar"></span>
       </button>
     </div>
-    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="https://schema.org/SiteNavigationElement" role="navigation">
       <ul class="nav navbar-nav main-nav <%- theme.config.menu_highlight ? 'menu-highlight' : '' %>">
         <% for (var i in theme.menu){ %>
         <% var itemName = i.toLowerCase(); %>

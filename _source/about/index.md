@@ -4,5 +4,9 @@ description: 个人简介
 layout: about
 comments: false
 sidebar: custom
+translate_title: 'on'
 ---
-个人详细介绍
+
+繁星永存，记忆亘古不变。
+
+

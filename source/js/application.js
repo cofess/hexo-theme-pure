@@ -13,6 +13,11 @@ $(function() {
     });
   }
 
+  //手机分辨率下不自动打开目录
+  if($(window).width() > 768 ) {
+    $('a.toggle-btn').trigger('click');
+  }
+
   $('#collapseToc').on('shown.bs.collapse', function() {
     // do something…
     // slimscroll
