@@ -5,9 +5,9 @@
       <p class="hidden-xs"><%= _p('total.article', page.posts.length) %></p>
       <nav role="navigation" id="nav-main" class="okayNav">
         <ul>
-          <li><a href="/categories"><%= __('nav.all') %></a></li>
+          <li><a href="<%= config.root %>categories"><%= __('nav.all') %></a></li>
           <% site.categories.each(function(item){ %>
-          <li><a href="/<%= item.path %>"><%= item.name %></a></li>
+          <li><a href="<%= config.root %><%= item.path %>"><%= item.name %></a></li>
           <% }) %>
         </ul>
       </nav>
