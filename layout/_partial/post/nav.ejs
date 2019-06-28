@@ -12,7 +12,7 @@
       <a href="<%- url_for(post.next.path) %>" title="<%= post.next.title || '(no title)' %>"><span><%= __('nav.older') %>&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     <% } %>
-    <% if (!index && theme.config.toc && post.toc) { %>
+    <% if (!index && theme.config.toc && (post.toc !== false)) { %>
     <li class="toggle-toc">
       <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false" title="<%= __('article.catalogue') %>" role="button">
         <span>[&nbsp;</span><span><%= __('article.catalogue') %></span>
