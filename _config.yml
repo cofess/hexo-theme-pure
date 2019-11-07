@@ -31,14 +31,14 @@ site:
     width: 40
     height: 40
     url: ../images/logo.png
-  title: Hexo # 页面title
+  title: 理想国# 页面title
   favicon: /favicon.png
-  board: <p>欢迎交流与分享经验!</p> # 站点公告
-  copyright: false # 底部版权信息
+  board: <p>码农</p> # 站点公告
+  copyright: true # 底部版权信息
 
 # config
 config:
-  skin: # 主题颜色 theme-black theme-blue theme-green theme-purple
+  skin: theme-black # 主题颜色 theme-black theme-blue theme-green theme-purple
   layout: main-center # 布局方式 main-left main-center main-right
   toc: true # 是否开启文章章节目录导航
   menu_highlight: false # 是否开启当前菜单高亮显示
@@ -82,16 +82,16 @@ search:
   baidu: false # you need to disable other search engines to use Baidu search
 
 # Donate
-donate:
-  enable: true
-  # 微信打赏
-  wechatpay:
-    qrcode: images/donate/wechatpayimg.png
-    title: 微信支付
-  # 支付宝打赏
-  alipay: 
-    qrcode: images/donate/alipayimg.png 
-    title: 支付宝
+# donate:
+#   enable: true
+#   # 微信打赏
+#   wechatpay:
+#     qrcode: images/donate/wechatpayimg.png
+#     title: 微信支付
+#   # 支付宝打赏
+#   alipay: 
+#     qrcode: images/donate/alipayimg.png 
+#     title: 支付宝
 
 # Share
 # weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
@@ -102,13 +102,13 @@ share:
 
 # Github
 github: 
-  username: cofess  # github username
+  username: joeltsui # github username
 
 # Comment
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 comment:
-  type: valine  # 启用哪种评论系统
+  type: gitment # 启用哪种评论系统
   disqus:  # enter disqus shortname here
   youyan: 
     uid: 1783844 # enter youyan uid 
@@ -148,10 +148,10 @@ comment:
   # https://api.douban.com/v2/movie/coming_soon 即将上映的电影
   # https://api.douban.com/v2/movie/subject/:id 单个电影信息
   # https://api.douban.com/v2/movie/search?q={text} 电影搜索
-douban:
-  user: # 豆瓣用户名
-  start: 0 # 从哪一条记录开始
-  count: 100 # 获取豆瓣书单数据条数
+# douban:
+#   user: # 豆瓣用户名
+#   start: 0 # 从哪一条记录开始
+#   count: 100 # 获取豆瓣书单数据条数
   
 # PV
 pv:
