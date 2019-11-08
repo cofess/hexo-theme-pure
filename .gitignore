@@ -4,3 +4,4 @@ tmp
 source/CNAME
 package-lock.json
 public
+db.json
