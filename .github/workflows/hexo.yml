@@ -15,5 +15,6 @@ jobs:
     - name: Deploy
       run: |
         npm install
-        hexo generate 
+        ./node_modules/hexo/bin/hexo clean
+        ./node_modules/hexo/bin/hexo generate
         echo "Deploy done!"
