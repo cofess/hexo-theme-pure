@@ -2,3 +2,4 @@
 node_modules
 tmp
 source/CNAME
+package-lock.json
