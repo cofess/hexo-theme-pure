@@ -2,7 +2,7 @@
 
 A brand new default theme for [[Hexo](https://hexo.io)].  [Preview](http://cofess.github.io/) | [中文说明文档](README.cn.md) | [iconfont](http://blog.cofess.com/hexo-theme-pure/iconfont/demo_fontclass.html)
 
-![](screenshot/pure.png)
+![](themes/pure/screenshot/pure.png)
 
 ## Features
 
@@ -14,13 +14,13 @@ A brand new default theme for [[Hexo](https://hexo.io)].  [Preview](http://cofes
 
 ## Skins
 
-![](screenshot/pure-theme-black.png)
+![](themes/pure/screenshot/pure-theme-black.png)
 
-![](screenshot/pure-theme-blue.png)
+![](themes/pure/screenshot/pure-theme-blue.png)
 
-![](screenshot/pure-theme-green.png)
+![](themes/pure/screenshot/pure-theme-green.png)
 
-![](screenshot/pure-theme-purple.png)
+![](themes/pure/screenshot/pure-theme-purple.png)
 
 ## Appearance
 
