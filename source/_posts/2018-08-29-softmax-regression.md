@@ -1,5 +1,6 @@
 ---
 title: "机器学习实践——Softmax回归（Softmax Regression）"
+mathjax: true
 ---
 
 ## 0x00 问题引入

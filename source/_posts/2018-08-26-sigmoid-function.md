@@ -1,5 +1,6 @@
 ---
 title: "机器学习实践——Logistic回归（Logistic Regression）"
+mathjax: true
 ---
 
 ## 0x00 问题引入

@@ -1,5 +1,6 @@
 ---
 title: "机器学习实践——线性回归（Linear Regression）"
+mathjax: true
 ---
 
 ## 0x00 回归问题的引入
