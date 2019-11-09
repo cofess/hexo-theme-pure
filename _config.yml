@@ -97,4 +97,4 @@ theme: pure
 deploy:
   type: 'git'
   repo: git@github.com:JoelTsui/joeltsui.github.io.git
-  branch: gh-pages
+  branch: master 
