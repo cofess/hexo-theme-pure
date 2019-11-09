@@ -95,4 +95,6 @@ theme: pure
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: 'git'
+  repo: git@github.com:JoelTsui/joeltsui.github.io.git
+  branch: gh-pages
