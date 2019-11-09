@@ -31,7 +31,7 @@ site:
     width: 40
     height: 40
     url: ../images/logo.png
-  title: 理想国# 页面title
+  title: 理想国 #页面title
   favicon: /favicon.png
   board: <p>码农</p> # 站点公告
   copyright: true # 底部版权信息
