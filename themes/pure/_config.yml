@@ -30,9 +30,9 @@ site:
     enabled: true
     width: 40
     height: 40
-    url: ../images/logo.png
+    url: ../images/icon.ico
   title: 理想国 #页面title
-  favicon: /favicon.png
+  favicon: ../images/icon.png
   board: <p>码农</p> # 站点公告
   copyright: true # 底部版权信息
 
@@ -97,8 +97,8 @@ donate:
 # weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
 share:
   enable: true  # 是否启用分享
-  sites: weibo,qq,wechat,facebook,twitter  # PC端显示的分享图标
-  mobile_sites: weibo,qq,qzone  # 移动端显示的分享图标
+  sites: weibo,wechat # PC端显示的分享图标
+  mobile_sites: weibo,wechat  # 移动端显示的分享图标
 
 # Github
 github: 
@@ -199,48 +199,41 @@ profile:
   author: 昵称
   author_title: Web Developer & Designer
   author_description: 个人简介。
-  location: Shenzhen, China
-  follow: https://github.com/cofess
+  location: HangZhou, China
+  follow: https://github.com/joeltsui
   # Social Links
   social:
     links:
-      github: https://github.com/cofess
-      weibo: http://weibo.com/cofess
-      twitter: https://twitter.com/iwebued
+      github: https://github.com/joeltsui
+      # weibo: http://weibo.com/cofess
+      # twitter: https://twitter.com/iwebued
       # facebook: /
       # dribbble: /
-      behance: https://www.behance.net/cofess
+      # behance: https://www.behance.net/cofess
       rss: atom.xml
     link_tooltip: true # enable the social link tooltip, options: true, false
   # My Skills 
   skills:
     Git: ★★★☆☆
-    Gulp: ★★★☆☆
-    Javascript: ★★★☆☆
-    HTML+CSS: ★★★☆☆
-    Bootstrap: ★★★☆☆
-    ThinkPHP: ★★★☆☆
-    平面设计: ★★★☆☆
   # My Personal Links
   links:
-    Github: https://github.com/cofess
-    Blog: http://blog.cofess.com
-    微博: http://weibo.com/cofess
-    花瓣: http://huaban.com/cofess
-    Behance: https://www.behance.net/cofess
+    Github: https://github.com/joeltsui
+    # Blog: http://blog.cofess.com
+    # 微博: http://weibo.com/cofess
+    # 花瓣: http://huaban.com/cofess
+    # Behance: https://www.behance.net/cofess
   # My Personal Labels
   labels:
-    - 前端
-    - 前端开发
-    - 前端重构
-    - Web前端
-    - 网页重构
+    - C++ 
+    - Python
+    - Deep Learning
+    - Machine Vision
   # My Personal Works
   works:
     name:
-      link: http://www.example.com
-      date: 2016
+      # link: http://www.example.com
+      # date: 2016
   # My Personal Projects
   projects:
-    cofess/gulp-startpro: https://github.com/cofess/gulp-startpro
-    cofess/hexo-theme-pure: https://github.com/cofess/hexo-theme-pure
+    # cofess/gulp-startpro: https://github.com/cofess/gulp-startpro
+    # cofess/hexo-theme-pure: https://github.com/cofess/hexo-theme-pure
