@@ -12,9 +12,35 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 10.x
-    - name: Deploy
+    - name: Prepare git
+      run: |
+        apt-get install -y git
+    - name: Generate pages
       run: |
         npm install
         ./node_modules/hexo/bin/hexo clean
         ./node_modules/hexo/bin/hexo generate
-        echo "Deploy done!"
+        echo "hexo generate done!"
+    - name: Deploy
+      env: 
+        GITHUB_TOKEN: ${{ secrets.BLOG_DEPLOY }}
+      run: |
+        REPOSITORY_PATH="https://x-access-token:${GITHUB_TOKEN}@github.com/joeltsui/joeltsui.github.io.git"  
+      
+        cd public/
+        git init 
+        git config user.name "${GITHUB_ACTION}"
+        git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        
+        git remote add origin "${REPOSITORY_PATH}"
+        git checkout --orphan gh-pages
+        git add --all
+
+        echo "Start commit"
+        git commit --allow-empty -m "Deploy to gh-pages"
+
+        echo "Start push"
+        git push origin gh-pages --force
+
+        echo "Finish deploy"
+
