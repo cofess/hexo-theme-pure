@@ -52,7 +52,28 @@
   <% } %>
   <%- css('css/style') %>
   <% if (page.mathjax) { %>
-    <link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        menuSettings: {
+          zoom: "None"
+        },
+        showMathMenu: false,
+        jax: ["input/TeX","output/CommonHTML"],
+        extensions: ["tex2jax.js"],
+        TeX: {
+          extensions: ["AMSmath.js","AMSsymbols.js"],
+          equationNumbers: {
+            autoNumber: "AMS"
+          }
+        },
+        tex2jax: {
+          inlineMath: [["\\(", "\\)"]],
+          displayMath: [["\\[", "\\]"]]
+        }
+      });
+    </script>
+    
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js"></script>
   <% } %>  
   <% if (theme.comment.type === 'gitment' && !is_home() && !is_category() && !is_tag() && !is_archive() && post.comments) { %>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css">

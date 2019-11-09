@@ -180,7 +180,17 @@ twitter:
 google_plus:
 fb_admins:
 fb_app_id:  
-  
+
+kramed:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
+
+
 # profile
 profile:
   enabled: true # Whether to show profile bar
