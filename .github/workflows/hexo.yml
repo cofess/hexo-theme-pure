@@ -30,14 +30,13 @@ jobs:
         git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
         
         git remote add origin "${REPOSITORY_PATH}"
-        git checkout --orphan gh-pages
         git add --all
 
         echo "Start commit"
         git commit --allow-empty -m "Deploy to gh-pages"
 
         echo "Start push"
-        git push origin gh-pages --force
+        git push origin master --force
 
         echo "Finish deploy"
 
