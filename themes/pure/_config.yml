@@ -30,9 +30,9 @@ site:
     enabled: true
     width: 40
     height: 40
-    url: images/icon.jpg
+    url: http://q0qh4z3h0.bkt.clouddn.com/icon.jpg
   title: 理想国 #页面title
-  favicon: images/icon.ico
+  favicon: http://q0qh4z3h0.bkt.clouddn.com/icon.ico
   board: <p>码农</p> # 站点公告
   copyright: true # 底部版权信息
 
@@ -172,7 +172,7 @@ postCount:
 plugins:
   google_analytics: # enter the tracking ID for your Google Analytics
   google_site_verification: # enter Google site verification code
-  baidu_analytics: # enter Baidu Analytics hash key
+  baidu_analytics: 4554cf1badd940edd310d2211ab8b2f3 # enter Baidu Analytics hash key
   tencent_analytics: 
   
 # Miscellaneous
