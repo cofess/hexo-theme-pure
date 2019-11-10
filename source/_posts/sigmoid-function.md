@@ -130,7 +130,7 @@ $$
 上述的`$\theta=[\theta_1,\theta_2,\cdots,\theta_n]^T$`，`$x=[x^{(1)},x^{(2)},\cdots,x^{(m)}]^T$`,其中 `$x^{(i)}=[x^{(i)}_1,x^{(i)}_2,\cdots,x^{(i)}_n]$`，`$y=[y^{1},y^{(2)},\cdots,y^{(m)}]^T$`。
 
 ## 0x02 Coding Example
-代码在[这里](https://github.com/JoelTsui/joeltsui.github.io/raw/master/assets/files/logRegres.py)，数据集在[这里](https://github.com/JoelTsui/joeltsui.github.io/raw/master/assets/files/testSet.txt)
+代码在[这里](http://q0qh4z3h0.bkt.clouddn.com/files/logRegres.py)，数据集在[这里](http://q0qh4z3h0.bkt.clouddn.com/files/testSet.txt)
 
 将测试集的数据进行展示。
 
