@@ -25,7 +25,8 @@ OpenSSH是OpenBSD项目的一个产品，它实现了SSH-1和SSH-2协议。
 平时我们用的最多的就是通过SSH实现远程登陆，以及通过scp传输文件。
 
 通过SSH协议我们可以在两个计算机之间建立一个安全通道，并且这个通道是双向的。基于这个通道可以实现端口的转发。也就是将这个通道给其他的应用使用，而不仅仅是SSH。
-![SSH通道建立](http://q0qh4z3h0.bkt.clouddn.com/ssh_0904.gif)
+
+<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/ssh_0904.gif" alt="SSH通道建立" title style/>
 
 ### 本地端口转发
 假设，我有个服务运行在远程服务器上，如上图中的Host B，这个服务会监听远程服务器的143端口，当有消息过来的时候进行处理。
@@ -38,7 +39,7 @@ ssh -L <localhost>:<localport>:<remotehost>:<remoteport> <SSH hostname>
 ```
 `-L`表示"local forwarding"，`localhost`表示本机地址，`localport`表示本地端口，`remotehost`表示远程服务主机地址，`remoteport`表示远程服务的监听端口，也就是说把所有发送到本地的端口的数据都转发到远程服务器的端口上。然后在本地的应用程序上配置代理到本地端口。
 
-![SSH通道建立](http://q0qh4z3h0.bkt.clouddn.com/ssh_0905.gif)
+<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/ssh_0905.gif" alt="SSH通道建立" title style/>
 
 但是，实际的使用中，我们省略了`localhost`，并且用`localhost`代替`remotehost`，这是为什么呢？
 ```
@@ -150,15 +151,17 @@ $ ssh -p1234 user.a@30.23.1.23
 
 首先，要应付服务器重启的情况，那肯定是不能通过输入密码的方式，这里就要用到ssh连接中的通过ssh key实现无密连接了。这个过程其他教程也写了。
 
+
 ``` bash
 $ ssh-keygen
 ```
 
 提示输入`passphrase`的时候，直接回车，不然还是要输入密码。这个命令会生成一个私钥一个公钥。为了防止文件被覆盖，可以通过参数`-f`进行重命名密钥文件。不过记得提供完整的路径，不然会生成在当前目录下。
 
+
 ``` bash
 $ ssh-copy-id -i /path/to/ssh-key.pub user.b@30.23.1.23
-``` 
+```
 
 上面的命令可以吧选定的公钥文件拷贝到远程主机上，此时，就不需要输入密码就能ssh登陆远程主机了。
 
