@@ -37,7 +37,7 @@ title: "同步与异步、阻塞与非阻塞"
 
 同步IO或者阻塞IO都有这种说法，也都会对IO的性能产生影响，但是是不同的维度。从书中的例子我们也能看出来。
 
-<p align="center"><img src="https://github.com/JoelTsui/joeltsui.github.io/raw/master/assets/images/2018-10-10-blocking-synchrnous.png"/>
+<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/2018-10-10-blocking-synchrnous.png"/>
 </p>
 
 同步阻塞和同步非阻塞，说的就是到了IO操作这步以后，是不是要等着IO操作结果的返回。但是，**同步非阻塞增加CPU的消耗**，这点不是很懂，为什么会增加CPU的消耗？

@@ -6,7 +6,7 @@ mathjax: true
 ## 0x00 问题引入
 [上一节](https://joeltsui.github.io/2018/08/24/linear-regression/)中讨论了线性回归，线性回归中$y$的值是连续的，有无数种可能。有些问题它的`$y$`值是离散的，可能只有两种或者三种，这类回归问题也叫分类问题。我们以二元分类为例，在二元分类中，`$y$`值有两种可能，分别叫做正样本和负样本。要实现二元分类问题其实也是求一条直线，和线性回归问题一样。对于线性回归问题，是通过已有的点去拟合一条直线，使得这条直线尽可能多的代表已有的数据点。而对于分类问题，也是通过一条直线，但是这条直线是把两个类别分开，直线的这边是正样本，直线的另一边是负样本。因此我们的任务也就变成了，寻找一条可以区分正负样本的直线。
 
-![](../_images/2018-08-26-logistic-regression.png "Classification Example")
+![](http://q0qh4z3h0.bkt.clouddn.com/2018-08-26-logistic-regression.png "Classification Example")
 
 ## 0x01 问题概述与思路
 都是寻找一条直线，但是直线的目的不同，我们需要通过Loss函数或者最大似然估计函数的不同去求解不同的直线。`$y=ax+b$`得到的是连续值，取值范围根据`$x$`的不同在`$(-\infty,+\infty)$`之间。而我们只有正样本和负样本两个值，因此我们需要一个函数，可以把`$y$`值变成可以得到两个分类的值。我们常用的就是Sigmoid函数。
@@ -25,7 +25,7 @@ $$
 Sigmoid函数也叫Logistic函数。
 
 
-![](https://github.com/JoelTsui/joeltsui.github.io/raw/master/assets/images/2018-08-26-sigmoid-function.png "Logistic Regression")
+![](http://q0qh4z3h0.bkt.clouddn.com/2018-08-26-sigmoid-function.png "Logistic Regression")
 
 我们按照图1来梳理一下整个的流程。
 图1中有`$(x_1,x_2,1)$`两个自变量，一对`$(x_1^{(i)},x_2^{(i)},1),x\in[1,m]$`有一个标签对应，表示它是正样本还是负样本，最后的那个1表示的是截距，这个表达式其实和直线方程是一致的。我们现在假设有参数`$\theta=(\theta_1, \theta_2,\theta_3)$`就是我们最后的结果，也就是图中的那条直线。
@@ -131,7 +131,7 @@ $$
 
 将测试集的数据进行展示。
 
-<p align="center"><img src="https://github.com/JoelTsui/joeltsui.github.io/raw/master/assets/images/2018-08-26-logistic-example.png" alt="Logistic Regression Example" title style/>
+<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/2018-08-26-logistic-example.png" alt="Logistic Regression Example" title style/>
 </p>
 
 在这个例子中$x=[x_0,x_1,1]^T$，最后一个的1表示截距。`$\theta=[\theta_0, \theta_1, \theta_2]^T$`，正负样本分别是标签为1和0的数据。数据为`dataMatrix`，标签数据为`labelMatrix`。其中`dataMatrix`的`$shape=100 \times 3$`，`labelMatrix`的`$shape=100 \times 1$`
@@ -151,7 +151,7 @@ def gradAscent(dataMatrix, labelMatrix):
 ```
 进过计算就能得到`$\theta$`的参数值了，把`$\theta^T x=0$`直线画上去，就能得到下图了。
 
-<p align="center"><img src="https://github.com/JoelTsui/joeltsui.github.io/raw/master/assets/images/2018-08-26-logistic-example-result.png" alt="Logistic Regression Example" title style/>
+<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/2018-08-26-logistic-example-result.png" alt="Logistic Regression Example" title style/>
 </p>
 
 (end)

@@ -25,7 +25,7 @@ OpenSSH是OpenBSD项目的一个产品，它实现了SSH-1和SSH-2协议。
 平时我们用的最多的就是通过SSH实现远程登陆，以及通过scp传输文件。
 
 通过SSH协议我们可以在两个计算机之间建立一个安全通道，并且这个通道是双向的。基于这个通道可以实现端口的转发。也就是将这个通道给其他的应用使用，而不仅仅是SSH。
-![SSH通道建立](../assets/images/ssh_0904.gif)
+![SSH通道建立](http://q0qh4z3h0.bkt.clouddn.com/ssh_0904.gif)
 
 ### 本地端口转发
 假设，我有个服务运行在远程服务器上，如上图中的Host B，这个服务会监听远程服务器的143端口，当有消息过来的时候进行处理。
@@ -38,7 +38,7 @@ ssh -L <localhost>:<localport>:<remotehost>:<remoteport> <SSH hostname>
 ```
 `-L`表示"local forwarding"，`localhost`表示本机地址，`localport`表示本地端口，`remotehost`表示远程服务主机地址，`remoteport`表示远程服务的监听端口，也就是说把所有发送到本地的端口的数据都转发到远程服务器的端口上。然后在本地的应用程序上配置代理到本地端口。
 
-![SSH通道建立](../assets/images/ssh_0905.gif)
+![SSH通道建立](http://q0qh4z3h0.bkt.clouddn.com/ssh_0905.gif)
 
 但是，实际的使用中，我们省略了`localhost`，并且用`localhost`代替`remotehost`，这是为什么呢？
 ```
