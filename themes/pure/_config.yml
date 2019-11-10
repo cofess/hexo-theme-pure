@@ -170,10 +170,10 @@ postCount:
 
 # Plugins
 plugins:
-  google_analytics: # enter the tracking ID for your Google Analytics
+  google_analytics: UA-151940991-1 # enter the tracking ID for your Google Analytics
   google_site_verification: # enter Google site verification code
   baidu_analytics: 4554cf1badd940edd310d2211ab8b2f3 # enter Baidu Analytics hash key
-  tencent_analytics: 
+  tencent_analytics: 66487444 
   
 # Miscellaneous
 twitter:
