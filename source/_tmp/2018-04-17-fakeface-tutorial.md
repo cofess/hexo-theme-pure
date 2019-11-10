@@ -1,10 +1,8 @@
-<!-- ---
-layout: post
+---
 title: "FakeFace实现指南"
 categories: deeplearning 
-author: "Xu Qiang"
 lang: zh
---- -->
+---
 
 ## 0x00
 

@@ -1,10 +1,8 @@
-<!-- ---
-layout: post
+---
 title: "《Linux Shell脚本攻略》读书笔记"
 categories: ReID,算法
-author: "Xu Qiang"
 lang: zh
---- -->
+---
 
 ## 第一章 小试牛刀
 
