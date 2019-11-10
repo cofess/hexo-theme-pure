@@ -1,5 +1,6 @@
 ---
 title: "机器学习实践——Softmax回归（Softmax Regression）"
+date: 2018-08-29
 mathjax: true
 ---
 

@@ -42,7 +42,7 @@ config:
   layout: main-center # 布局方式 main-left main-center main-right
   toc: true # 是否开启文章章节目录导航
   menu_highlight: false # 是否开启当前菜单高亮显示
-  thumbnail: false # enable posts thumbnail, options: true, false
+  thumbnail: true # enable posts thumbnail, options: true, false
   excerpt_link: Read More
 
 # Pagination
@@ -196,7 +196,7 @@ profile:
   enabled: true # Whether to show profile bar
   avatar: images/icon.jpg
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-  author: Joeltsui
+  author: joeltsui
   author_title: Deep learning engineer
   author_description: 个人简介。
   location: HangZhou, China

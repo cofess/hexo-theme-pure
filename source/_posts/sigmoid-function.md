@@ -1,5 +1,6 @@
 ---
 title: "机器学习实践——Logistic回归（Logistic Regression）"
+date: 2018-08-26
 mathjax: true
 ---
 

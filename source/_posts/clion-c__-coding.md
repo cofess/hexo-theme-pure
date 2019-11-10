@@ -1,5 +1,6 @@
 ---
 title: "Clion远程Debug"
+date: 2018-06-13
 ---
 
 ## 0x00
