@@ -164,7 +164,7 @@ pv:
         
 # wordcount
 postCount:
-  enable: false
+  enable: false 
   wordcount: true  # 文章字数统计
   min2read: true  # 阅读时长预计 
 
@@ -198,7 +198,7 @@ profile:
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
   author: joeltsui
   author_title: Deep learning engineer
-  author_description: 个人简介。
+  author_description: 码农。
   location: HangZhou, China
   follow: http://joeltsui.github.io
   # Social Links
