@@ -108,7 +108,7 @@ github:
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 comment:
-  type: gitment # 启用哪种评论系统
+  type: gitalk # 启用哪种评论系统
   disqus:  # enter disqus shortname here
   youyan: 
     uid: 1783844 # enter youyan uid 
@@ -121,11 +121,11 @@ comment:
     ClientSecret: 
     lazy: false
   gitalk: # gitalk. https://gitalk.github.io/
-    owner:  #必须. GitHub repository 所有者，可以是个人或者组织。
-    admin:  #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
-    repo:  #必须. GitHub repository.
-    ClientID:  #必须. GitHub Application Client ID.
-    ClientSecret:  #必须. GitHub Application Client Secret.
+    owner: joeltsui #必须. GitHub repository 所有者，可以是个人或者组织。
+    admin: joeltsui #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
+    repo:  joeltsui.github.io #必须. GitHub repository.
+    ClientID: ae1aeae9d231bf54430e #必须. GitHub Application Client ID.
+    ClientSecret: 8b48909d2cbbe957209c3d4484464e1eeabb382a #必须. GitHub Application Client Secret.
   valine: # Valine. https://valine.js.org
     appid:  # your leancloud application appid
     appkey:  # your leancloud application appkey
