@@ -134,7 +134,6 @@ $$
 将测试集的数据进行展示。
 
 <p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/2018-08-26-logistic-example.png" alt="Logistic Regression Example" title style/>
-</p>
 
 在这个例子中`$x=[x_0,x_1,1]^T$`，最后一个的1表示截距。`$\theta=[\theta_0, \theta_1, \theta_2]^T$`，正负样本分别是标签为1和0的数据。数据为`dataMatrix`，标签数据为`labelMatrix`。其中`dataMatrix`的`$shape=100 \times 3$`，`labelMatrix`的`$shape=100 \times 1$`
 
@@ -154,7 +153,6 @@ def gradAscent(dataMatrix, labelMatrix):
 进过计算就能得到`$\theta$`的参数值了，把`$\theta^T x=0$`直线画上去，就能得到下图了。
 
 <p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/2018-08-26-logistic-example-result.png" alt="Logistic Regression Example" title style/>
-</p>
 
 (end)
 
