@@ -59,9 +59,9 @@ $$
 
 按照在线性回归中的方法，通过求导求最大值。也不是说不能做，但是整个过程会变得很复杂，求导很麻烦。
 
-因此我们换个思路。也就是**梯度上升法**。可以用简单一点的函数去理解，导数就是沿着某个方向变化最快的值，当到达最高点或者最低点的时候，导数为0。我们就沿着当前点的导数方向去调整$\theta$值，使得$L$往最大值的方向走。
+因此我们换个思路。也就是**梯度上升法**。可以用简单一点的函数去理解，导数就是沿着某个方向变化最快的值，当到达最高点或者最低点的时候，导数为0。我们就沿着当前点的导数方向去调整`$\theta$`值，使得`$L$`往最大值的方向走。
 
-对于`$y=ax+b$`函数，自变量只有一个`$x$`，因此对$x$求导就可以，对于`$y=ax_1+bx_2+c$`，自变量有两个，需要在`$x_1$`和`$x_2$`两个方向一起去变化，分别对`$x_1$`和`$x_2$`进行求导。
+对于`$y=ax+b$`函数，自变量只有一个`$x$`，因此对`$x$`求导就可以，对于`$y=ax_1+bx_2+c$`，自变量有两个，需要在`$x_1$`和`$x_2$`两个方向一起去变化，分别对`$x_1$`和`$x_2$`进行求导。
 
 因此对于式(1)就需要分别对`$\theta_1,\theta_2,...,\theta_{m}$`进行求导，更新每一个`$\theta_{i}$`的值。
 
@@ -136,7 +136,7 @@ $$
 <p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/2018-08-26-logistic-example.png" alt="Logistic Regression Example" title style/>
 </p>
 
-在这个例子中$x=[x_0,x_1,1]^T$，最后一个的1表示截距。`$\theta=[\theta_0, \theta_1, \theta_2]^T$`，正负样本分别是标签为1和0的数据。数据为`dataMatrix`，标签数据为`labelMatrix`。其中`dataMatrix`的`$shape=100 \times 3$`，`labelMatrix`的`$shape=100 \times 1$`
+在这个例子中`$x=[x_0,x_1,1]^T$`，最后一个的1表示截距。`$\theta=[\theta_0, \theta_1, \theta_2]^T$`，正负样本分别是标签为1和0的数据。数据为`dataMatrix`，标签数据为`labelMatrix`。其中`dataMatrix`的`$shape=100 \times 3$`，`labelMatrix`的`$shape=100 \times 1$`
 
 ``` python
 def gradAscent(dataMatrix, labelMatrix):
