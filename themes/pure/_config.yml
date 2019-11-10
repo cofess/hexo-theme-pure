@@ -125,7 +125,7 @@ comment:
     admin: joeltsui #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
     repo:  joeltsui.github.io #必须. GitHub repository.
     ClientID: ae1aeae9d231bf54430e #必须. GitHub Application Client ID.
-    ClientSecret: 8b48909d2cbbe957209c3d4484464e1eeabb382a #必须. GitHub Application Client Secret.
+    ClientSecret: cabc2c8374879885b8c59bac4567e3e3b2f5362a #必须. GitHub Application Client Secret.
   valine: # Valine. https://valine.js.org
     appid:  # your leancloud application appid
     appkey:  # your leancloud application appkey
