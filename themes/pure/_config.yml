@@ -30,9 +30,9 @@ site:
     enabled: true
     width: 40
     height: 40
-    url: ../images/icon.ico
+    url: images/icon.jpg
   title: 理想国 #页面title
-  favicon: ../images/icon.png
+  favicon: images/icon.ico
   board: <p>码农</p> # 站点公告
   copyright: true # 底部版权信息
 
