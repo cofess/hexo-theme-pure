@@ -6,7 +6,9 @@ mathjax: true
 ## 0x00 问题引入
 [上一节](https://joeltsui.github.io/2018/08/24/linear-regression/)中讨论了线性回归，线性回归中`$y$`的值是连续的，有无数种可能。有些问题它的`$y$`值是离散的，可能只有两种或者三种，这类回归问题也叫分类问题。我们以二元分类为例，在二元分类中，`$y$`值有两种可能，分别叫做正样本和负样本。要实现二元分类问题其实也是求一条直线，和线性回归问题一样。对于线性回归问题，是通过已有的点去拟合一条直线，使得这条直线尽可能多的代表已有的数据点。而对于分类问题，也是通过一条直线，但是这条直线是把两个类别分开，直线的这边是正样本，直线的另一边是负样本。因此我们的任务也就变成了，寻找一条可以区分正负样本的直线。
 
-![](http://q0qh4z3h0.bkt.clouddn.com/2018-08-26-logistic-regression.png "Classification Example")
+
+<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/2018-08-26-logistic-regression.png" alt="Classification Example" title style/>
+
 
 ## 0x01 问题概述与思路
 都是寻找一条直线，但是直线的目的不同，我们需要通过Loss函数或者最大似然估计函数的不同去求解不同的直线。`$y=ax+b$`得到的是连续值，取值范围根据`$x$`的不同在`$(-\infty,+\infty)$`之间。而我们只有正样本和负样本两个值，因此我们需要一个函数，可以把`$y$`值变成可以得到两个分类的值。我们常用的就是Sigmoid函数。
