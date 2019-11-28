@@ -5,8 +5,9 @@ mathjax: true
 ---
 
 ## TODO
-1. 什么是`nce_loss`，它`sampled_softmax_loss`之间的区别
-2. 
+1. 什么是`nce_loss`，它`sampled_softmax_loss`之间的区别。
+2. dropout的起源和使用。
+3. Batch Normalization具体的计算和推导
 
 ## 第二章 深度学习开源框架
 深度学习的变化真的很快，在2015年的时候，tensoflow刚出来，theano还是深度学习框架的霸主，而如今，theano都已经销声匿迹，只剩下了tensorflow和pytorch在争霸了。
@@ -50,6 +51,13 @@ $$
 
 [示例代码](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/word2vec/word2vec_basic.py#L205)中提到，这里用了`tf.nn.nce_loss`而没有用`tf.nn.sampled_softmax_loss`，这块还没有仔细看。
 
+
+## 第四章 卷积神经网络在图像分类中的应用
+文中提到，引入ReLU激活函数后，可以减少梯度消失的影响，但是会带来另一个问题，有可能存在很少被激活的“死节点”。这个原因应该是小于0的部分梯度直接变成0造成的，但是，说明这部分的参数就是没用的啊，不可能参数都利用起来吧，就算是用sigmoid或者tanh激活函数，应该也会存在这种问题，只不过那种表现是梯度很小。
+
+局部响应归一化(Batch Normalization)和仿生学中临近的非常活跃的神经元之间存在竞争机制，其实Normalization的操作很多地方都有，只不过这里是在特征图之间进行。
+
+dropout最开始提出来是为了能够融合多个模型？这个没有看过具体的论文不太清楚。那么dropout应该用在哪一层呢？最后？还是可以用在中间。
 
 ## 第十三章 深度学习的下一个浪潮
 我觉得未来的深度学习还是得在强化学习上面，其他方面也肯定大有作为，想想看互联网刚出来的时候不过是应用在很小范围内，但是现在几乎生活的方方面面都是计算机和互联网，未来深度学习或者机器学习会普及到生活的方方面面，显然现在还远远没有达到。
