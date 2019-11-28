@@ -5,7 +5,7 @@ mathjax: true
 ---
 
 ## TODO
-1. P57页中negative sample中的loss函数计算公式是怎么得到的。
+1. 什么是`nce_loss`，它`sampled_softmax_loss`之间的区别
 2. 
 
 ## 第二章 深度学习开源框架
@@ -47,6 +47,8 @@ $$
 其中$i_n\in \{0,1,...,9\},i_n \ne 1$，$i_n=1$是我们的正样本。
 
 虽然论文中没有推公式，但是我们理解起来没有那么困难。其实就是让正样本的$\exp^{(-z^1)}$越大，那么loss越小，而负样本的$\exp^{z^{i_n}}$值越大，那么造成loss越大，这样让正样本的概率越来越大。
+
+[示例代码](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/word2vec/word2vec_basic.py#L205)中提到，这里用了`tf.nn.nce_loss`而没有用`tf.nn.sampled_softmax_loss`，这块还没有仔细看。
 
 
 ## 第十三章 深度学习的下一个浪潮
