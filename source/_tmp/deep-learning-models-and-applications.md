@@ -8,6 +8,8 @@ mathjax: true
 1. 什么是`nce_loss`，它`sampled_softmax_loss`之间的区别。
 2. dropout的起源和使用。
 3. Batch Normalization具体的计算和推导
+4. 《Query-drive Iterated Neighborhood Graph Search for Large Scale Indexing》论文研究一下
+5. Rich-CDSSM、《Learning Deep Structured Semantic Models for Web Search using Clickthrough》
 
 ## 第二章 深度学习开源框架
 深度学习的变化真的很快，在2015年的时候，tensoflow刚出来，theano还是深度学习框架的霸主，而如今，theano都已经销声匿迹，只剩下了tensorflow和pytorch在争霸了。
@@ -116,6 +118,14 @@ $$
 
 输入用户的输入，就是类似于图像中的像素，是一系列的特征，然后每经过一次RNN的网络，它输出的不是一个数值，而是一个特征向量，通过注意力模型得到的分数是每一个分量的分数，最后经过权重计算后得到的也是一个向量，用这个向量和广告得到的特征向量进行比较，可以得到两个特征向量的相似度。在我们平时的计算中，一个例子进行就有负样本，但是我们这里是要通过输入才有负样本，也就是一个batch输入既有正样本也有负样本，然后把这个看成一体计算loss。
 
+
+## 第七章 图像识别及在广告搜索方面的应用
+
+从特征提取模型中提取出1024维的特征向量，但是这个特征向量还是很长，因此还需要把特征向量进行压缩，压缩的方法可以通过PCA或者Rich-CDSSM算法提取成64维的特征向量。然后通过ANN（近似最邻近）来搜索两个向量之间的相似度。找出和query图像相似的内容。
+
+书中也提到了NGS（邻域图搜索，Query-drive Iterated Neighborhood Graph Search for Large Scale Indexing）。这个可以参考一下用于向量的搜索。
+
+Rich-CDSSM的算法到底是什么
 
 ## 第十三章 深度学习的下一个浪潮
 我觉得未来的深度学习还是得在强化学习上面，其他方面也肯定大有作为，想想看互联网刚出来的时候不过是应用在很小范围内，但是现在几乎生活的方方面面都是计算机和互联网，未来深度学习或者机器学习会普及到生活的方方面面，显然现在还远远没有达到。
