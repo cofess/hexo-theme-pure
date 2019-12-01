@@ -1,8 +1,11 @@
 ---
 title: 《深度学习模型及应用详解》读书笔记 
-date: 
+date: 2019-12-01
 mathjax: true
 ---
+
+## 概述
+难度还是有点大，不适合入门的，有些章节现在还是有很多看不懂，特别是第8，10，11，12章，后面有机会再继续看吧。
 
 ## TODO
 1. 什么是`nce_loss`，它`sampled_softmax_loss`之间的区别。
@@ -10,6 +13,7 @@ mathjax: true
 3. Batch Normalization具体的计算和推导
 4. 《Query-drive Iterated Neighborhood Graph Search for Large Scale Indexing》论文研究一下
 5. Rich-CDSSM、《Learning Deep Structured Semantic Models for Web Search using Clickthrough》
+6. RapidScorer算法到底是个什么流程，有什么应用。
 
 ## 第二章 深度学习开源框架
 深度学习的变化真的很快，在2015年的时候，tensoflow刚出来，theano还是深度学习框架的霸主，而如今，theano都已经销声匿迹，只剩下了tensorflow和pytorch在争霸了。
@@ -126,6 +130,20 @@ $$
 书中也提到了NGS（邻域图搜索，Query-drive Iterated Neighborhood Graph Search for Large Scale Indexing）。这个可以参考一下用于向量的搜索。
 
 Rich-CDSSM的算法到底是什么
+
+## 第八章 Seq2Seq模型在聊天机器人中的应用
+最重要的部分一点代码也没有，很多问题也根本没有说清楚。
+
+## 第九章 word2vec的改进：fastText模型
+word2vec中我们通过单词的n-gram方法构建输入输出对，但是会遇到生僻词、未知词，这个就没办法了。但是英文单词中很多单词是由词根等构成的，我们可以在单词的层面应用n-gram方法，这个就是*subword*了。每一个单词由多个特征向量构成，每一个特征向量就是我们的subword。
+
+本章最重要的内容就是**分层softmax**算法，其实我在实际中就遇到过，在求解softmax的值的时候，如果维度太大，会导致计算机内存不够算不下来，这里提出了分层的softmax算法。
+
+所谓的分层softmax就是对所有的类构建成树状结构，把softmax的多分类变成sigmoid二分类。
+
+## 第十章 生成对抗网络
+
+
 
 ## 第十三章 深度学习的下一个浪潮
 我觉得未来的深度学习还是得在强化学习上面，其他方面也肯定大有作为，想想看互联网刚出来的时候不过是应用在很小范围内，但是现在几乎生活的方方面面都是计算机和互联网，未来深度学习或者机器学习会普及到生活的方方面面，显然现在还远远没有达到。
