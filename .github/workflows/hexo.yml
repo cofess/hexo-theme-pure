@@ -33,7 +33,7 @@ jobs:
         git add --all
 
         echo "Start commit"
-        git commit --allow-empty -m "Deploy to gh-pages"
+        git commit --allow-empty -m "Deploy to master"
 
         echo "Start push"
         git push origin master --force
