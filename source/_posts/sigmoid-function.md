@@ -8,7 +8,7 @@ mathjax: true
 [上一节](https://joeltsui.github.io/2018/08/24/linear-regression/)中讨论了线性回归，线性回归中`$y$`的值是连续的，有无数种可能。有些问题它的`$y$`值是离散的，可能只有两种或者三种，这类回归问题也叫分类问题。我们以二元分类为例，在二元分类中，`$y$`值有两种可能，分别叫做正样本和负样本。要实现二元分类问题其实也是求一条直线，和线性回归问题一样。对于线性回归问题，是通过已有的点去拟合一条直线，使得这条直线尽可能多的代表已有的数据点。而对于分类问题，也是通过一条直线，但是这条直线是把两个类别分开，直线的这边是正样本，直线的另一边是负样本。因此我们的任务也就变成了，寻找一条可以区分正负样本的直线。
 
 
-<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/2018-08-26-logistic-regression.png" alt="Classification Example" title style/>
+<p align="center"><img src="https://joeltsui-blog.oss-cn-hangzhou.aliyuncs.com/2018-08-26-logistic-regression.png" alt="Classification Example" title style/>
 
 
 ## 0x01 问题概述与思路
@@ -27,7 +27,7 @@ $$
 
 Sigmoid函数也叫Logistic函数。
 
-<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/2018-08-26-sigmoid-function.png" alt="Logistic Regression" title style/>
+<p align="center"><img src="https://joeltsui-blog.oss-cn-hangzhou.aliyuncs.com/2018-08-26-sigmoid-function.png" alt="Logistic Regression" title style/>
 
 
 我们按照图1来梳理一下整个的流程。
@@ -134,7 +134,7 @@ $$
 
 将测试集的数据进行展示。
 
-<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/2018-08-26-logistic-example.png" alt="Logistic Regression Example" title style/>
+<p align="center"><img src="https://joeltsui-blog.oss-cn-hangzhou.aliyuncs.com/2018-08-26-logistic-example.png" alt="Logistic Regression Example" title style/>
 
 在这个例子中`$x=[x_0,x_1,1]^T$`，最后一个的1表示截距。`$\theta=[\theta_0, \theta_1, \theta_2]^T$`，正负样本分别是标签为1和0的数据。数据为`dataMatrix`，标签数据为`labelMatrix`。其中`dataMatrix`的`$shape=100 \times 3$`，`labelMatrix`的`$shape=100 \times 1$`
 
@@ -153,7 +153,7 @@ def gradAscent(dataMatrix, labelMatrix):
 ```
 进过计算就能得到`$\theta$`的参数值了，把`$\theta^T x=0$`直线画上去，就能得到下图了。
 
-<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/2018-08-26-logistic-example-result.png" alt="Logistic Regression Example" title style/>
+<p align="center"><img src="https://joeltsui-blog.oss-cn-hangzhou.aliyuncs.com/2018-08-26-logistic-example-result.png" alt="Logistic Regression Example" title style/>
 
 (end)
 

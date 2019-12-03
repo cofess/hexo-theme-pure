@@ -160,7 +160,7 @@ def sample(preds, t = 1.0):
 
 我们来看下图
 
-<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/%E6%8C%87%E6%95%B8%E5%87%BD%E6%95%B8%E5%9C%96.jpg" alt="指数函数" title style/>
+<p align="center"><img src="https://joeltsui-blog.oss-cn-hangzhou.aliyuncs.com/expo-function.jpg" alt="指数函数" title style/>
 
 当我们进行`$\log$`运算以后，概率越大的部分，生成的值越小，最后处以`$t$`以后值就越大，概率大的值和概率小的值之间的差距会随着`$t$`变小而变大，然后在作用一个`$e^x$`操作，又把数值变到`$[0,1]$`之间。总结来说就是`$t$`很小的时候，原来概率越小的部分，在变换以后概率会变得更加小，大概率值与小概率值之间的差距就会变大，也就是说越来越偏向于大概率的值，最后输出的结果也就越确定，熵就会越小**
 

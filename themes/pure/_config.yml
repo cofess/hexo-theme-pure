@@ -30,9 +30,9 @@ site:
     enabled: true
     width: 40
     height: 40
-    url: http://q0qh4z3h0.bkt.clouddn.com/icon.jpg
+    url: https://joeltsui-blog.oss-cn-hangzhou.aliyuncs.com/icon.jpg
   title: 理想国 #页面title
-  favicon: http://q0qh4z3h0.bkt.clouddn.com/icon.ico
+  favicon: https://joeltsui-blog.oss-cn-hangzhou.aliyuncs.com/icon.ico
   board: <p>码农</p> # 站点公告
   copyright: true # 底部版权信息
 

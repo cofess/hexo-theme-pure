@@ -77,7 +77,7 @@ BRNN是一个信息可以是正向传入，也可以反向传入，这和上上�
 
 LSTM是解决普通的RNN不能有效建模长距离依存关系的问题。下面一张图可以说是非常清晰的解释了什么是LSTM，比书上讲的那么多门清晰的多的多了。
 
-<p align=center><img src="http://q0qh4z3h0.bkt.clouddn.com/LSTM3-chain.png" alt="LSTM" title style/>
+<p align=center><img src="https://joeltsui-blog.oss-cn-hangzhou.aliyuncs.com/LSTM3-chain.png" alt="LSTM" title style/>
 
 ## 第六章 DeepIntent模型在信息检索领域的应用
 普通的RNN可以接收一系列的输入，最后输出一个结果，当然中间也有结果输出，只是在最后的时候这部分很难用上，有时候我们要叠加LSTM模块，前一个模块的所有输出都引入到后一个模块上。还有另一种做法就是引入**注意力机制**，把中间的所有输出也都加上，然后通过一个权重向量得到一个输出。
@@ -114,7 +114,7 @@ $$
 
 这个`$\alpha_t$`就是我们的权重，这个权重通过`$s(h_t;\theta)$`得到概率分布，这就是所说的注意力模型网络。整个过程就是如下图所示了。
 
-<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/IMG_6193.JPG" alt="RNN" title style>
+<p align="center"><img src="https://joeltsui-blog.oss-cn-hangzhou.aliyuncs.com/IMG_6193.jpg" alt="RNN" title style>
 
 **在经过注意力模型`$s(h_t;\theta)$`后输出了一系列的值，这个值经过上面的公式计算变成权重。但是直接输出的值还经过了一道加工，就是把所有的值都减去了最大值，这样保证所有的值都是小于等于0，如果其中的最大值比较大，按照指数增长的趋势，可能会造成溢出。**
 

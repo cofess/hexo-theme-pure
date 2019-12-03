@@ -11,24 +11,24 @@ date: 2018-06-13
 ## 0x01
 首先第一步是要同步代码，把本地的代码和远程的代码同步一下，不然修改代码就会变得很麻烦。
 
-<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/cliondeployment1.png" alt="配置代码同步" title style/>
+<p align="center"><img src="https://joeltsui-blog.oss-cn-hangzhou.aliyuncs.com/deployment1.png" alt="配置代码同步" title style/>
 </p>
 
 选择`SFTP`，这样的话可以通过`SSH`进行文件的同步。
-<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/cliondeployment2.png" alt="配置代码同步" title style/>
+<p align="center"><img src="https://joeltsui-blog.oss-cn-hangzhou.aliyuncs.com/deployment2.png" alt="配置代码同步" title style/>
 </p>
 
-<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/cliondeployment3.png" alt="配置代码同步" title style/>
+<p align="center"><img src="https://joeltsui-blog.oss-cn-hangzhou.aliyuncs.com/deployment3.png" alt="配置代码同步" title style/>
 </p>
 
 把本地需要同步的路径和远程主机的路径关联上。
 
-<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/cliondeployment4.png" alt="配置代码同步" title style/>
+<p align="center"><img src="https://joeltsui-blog.oss-cn-hangzhou.aliyuncs.com/deployment4.png" alt="配置代码同步" title style/>
 </p>
 
 配置好各个路径以后直接把本地的代码上传上去，还能设置自动上传代码。登陆远程服务器，就可以看到代码了。
 
-<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/cliondeployment5.png" alt="配置代码同步" title style/>
+<p align="center"><img src="https://joeltsui-blog.oss-cn-hangzhou.aliyuncs.com/deployment5.png" alt="配置代码同步" title style/>
 </p>
 
 然后就能随心所欲上传下载更新文件了，调试利器。
@@ -45,13 +45,13 @@ date: 2018-06-13
 
 编译好以后我们回到本地，对本地进行一些配置。
 
-<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/clionremotedebug1.png" alt="远程调试" title style/>
+<p align="center"><img src="https://joeltsui-blog.oss-cn-hangzhou.aliyuncs.com/remotedebug1.png" alt="远程调试" title style/>
 </p>
 
-<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/clionremotedebug2.png" alt="远程调试" title style/>
+<p align="center"><img src="https://joeltsui-blog.oss-cn-hangzhou.aliyuncs.com/remotedebug2.png" alt="远程调试" title style/>
 </p>
 
-<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/clionremotedebug3.png" alt="远程调试" title style/>
+<p align="center"><img src="https://joeltsui-blog.oss-cn-hangzhou.aliyuncs.com/remotedebug3.png" alt="远程调试" title style/>
 </p>
 
 
@@ -75,7 +75,7 @@ gdbserver localhost:7000 ./remoteTest
 ```
 此时，远程端的程序就会监听7000端口，同时会一直等待。此时在本机启动调试。
 
-<p align="center"><img src="http://q0qh4z3h0.bkt.clouddn.com/clionremotedebug4.png" alt="远程调试" title style/>
+<p align="center"><img src="https://joeltsui-blog.oss-cn-hangzhou.aliyuncs.com/remotedebug4.png" alt="远程调试" title style/>
 </p>
 
 ## 0x03 one more thing
