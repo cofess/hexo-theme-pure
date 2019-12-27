@@ -56,7 +56,8 @@ function show(id) {
       type: 'GET',
       data: {
         start:<%= theme.douban.start %>, // 从哪一条记录开始
-        count:<%= theme.douban.count %> // 获取豆瓣书单数据条数
+        count:<%= theme.douban.count %>, // 获取豆瓣书单数据条数
+        apikey:'<%= theme.douban.apikey %>' // 豆瓣apikey
       },
       dataType: 'JSONP', //here
       success: function(data) {

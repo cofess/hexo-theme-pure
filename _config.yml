@@ -152,6 +152,7 @@ douban:
   user: # 豆瓣用户名
   start: 0 # 从哪一条记录开始
   count: 100 # 获取豆瓣书单数据条数
+  apikey: # 豆瓣apikey
   
 # PV
 pv:
