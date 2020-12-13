@@ -177,7 +177,7 @@ markdown_it_plus:
 
 Article enable mathjax
 
-```
+```yml
 title: Hello World
 mathjax: true
 ```
