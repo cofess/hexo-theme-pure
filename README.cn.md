@@ -353,7 +353,7 @@ npm i hexo-renderer-markdown-it-plus --save
 
 安装插件后，如果未正常渲染LaTeX数学公式，在博客配置文件`_config.yml`中添加
 
-```
+```yml
 markdown_it_plus:
   highlight: true
   html: true
@@ -374,7 +374,7 @@ markdown_it_plus:
 
 ### 文章启用mathjax
 
-```
+```yml
 title: Hello World
 mathjax: true
 ```
