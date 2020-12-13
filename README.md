@@ -156,7 +156,7 @@ npm i hexo-renderer-markdown-it-plus --save
 
 You can configure this plugin in `_config.yml`.
 
-```
+```yml
 markdown_it_plus:
   highlight: true
   html: true
