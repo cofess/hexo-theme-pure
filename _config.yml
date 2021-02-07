@@ -52,6 +52,8 @@ pagination:
     alwayShow: true
   next:
     alwayShow: true
+  midSize: 2 # 当前页码左右到省略号显示的页码数，默认2，表现为 1 ... 4 5 6 7 8 ... 10
+  showContent: true # 页面文章小于2篇时显示文章内容
 
 # Sidebar
 sidebar: right
