@@ -1,0 +1,42 @@
+name: Hexo Blog Deploy
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@master
+    - name: Prepare Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 10.x
+    - name: Generate pages
+      run: |
+        npm install
+        ./node_modules/hexo/bin/hexo clean
+        ./node_modules/hexo/bin/hexo generate
+        echo "hexo generate done!"
+    - name: Deploy
+      env: 
+        GITHUB_TOKEN: ${{ secrets.BLOG_DEPLOY }}
+      run: |
+        REPOSITORY_PATH="https://x-access-token:${GITHUB_TOKEN}@github.com/joeltsui/joeltsui.github.io.git"  
+      
+        cd public/
+        git init 
+        git config user.name "${GITHUB_ACTION}"
+        git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        
+        git remote add origin "${REPOSITORY_PATH}"
+        git add --all
+
+        echo "Start commit"
+        git commit --allow-empty -m "Deploy to master"
+
+        echo "Start push"
+        git push origin master --force
+
+        echo "Finish deploy"
+
