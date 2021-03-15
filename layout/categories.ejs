@@ -22,7 +22,7 @@
               <i class="icon icon-folder text-active"></i><i class="icon icon-folder-open text"></i>
               <%= item.name %>
             </a>
-            <small class="text-muted">(Total <%= item.posts.length %> articles)</small>
+            <small class="text-muted">(<%= _p('total.article', item.posts.length) %>)</small>
           </h3>
         </div>
         <div id="collapse<%= item.name %>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<%= item.name %>">
