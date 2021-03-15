@@ -1,0 +1,94 @@
+menu:
+  Home: Anasayfa
+  Archives: Arşivler
+  Categories: Kategoriler
+  Tags: Etiketler
+  Repository: Kod Depoları
+  Books: Kitaplar
+  Movies: Filmler
+  Links: Bağlantılar
+  About: Hakkında
+nav:
+  all: Hepsi
+  older: Daha Eski
+  newer: Daha Yeni
+page:
+  home: Anasayfa
+  archive: Arşiv
+  archives: Arşivler
+  category: Kategori
+  categories: Kategoriler
+  tag: Etiket
+  tags: Etiketler
+  tagcloud: Etiker Bulutu
+  uncategorized: Kategorilendirilmeyenler
+  repository: Kod Deposu
+  douban: Douban
+  books: Kitaplar
+  books-desc: Herkese önerilen kişisel kitap koleksiyonu
+  movies: Filmler
+  movies-desc: Herkese önerilen kişisel film koleksiyonu
+  links: Bağlantılar
+  links-desc: Bağlantı alışverişine hoş geldiniz, mevcut sayfada bir mesaj bırakabilirsiniz
+  about: Hakkında
+pagination: 
+  next: Sonraki
+  prev: Önceki
+  page: Sayfa %d
+  pageof: Sayfa %d / %s
+widget:
+  search: Arama
+  board: Duyuru
+  archive: Arşiv
+  tags: Etiketler
+  categories: Kategoriler
+  tagcloud: Etiket Bulutu
+  recent_posts: Son Gönderiler
+profile: 
+  follow: Takip Et
+  skill: Yetenekler
+  label: Etiketler
+  work: İşler
+  project: Projeler
+  link: Bağlantılar
+insight:
+  hint: Bir şeyler yaz...
+  posts: Gönderiler
+  pages: Sayfalar
+  categories: Kategoriler
+  tags: Etiketler
+  untitled: (Başlıksız)
+unit:
+  word: kelime
+  time: dakika
+article:
+  wordcount: Kelime Adedi
+  readcount: Okuma Süresi
+  more: Daha fazla oku
+  comments: Yorumlar
+  share: Paylaş
+  catalogue: Katalog
+total:
+  article: Toplam %d gönderi/makale
+  tag: Toplam %d etiket
+  category: Toplam %d kategori
+  link: Toplam %d bağlantı
+  repository: Toplam %d proje
+donate:
+  qrcode_alt: Karekodu Tara
+  qrcode_title: Tara
+  button: $
+  title: Belki bana bir kahve almak istersiniz.
+  tip: Bu karekodu tarayın
+  alipay_action_tip: Bu karekodu taramak için Alipay uygulamasını açın ve bana bir kahve alın!
+  wechatpay_action_tip: Bu karekodu taramak için WeChat uygulamasını açın ve bana bir kahve alın!
+  alipay: Alipay
+  wechatpay: wechat Ödeme
+comment: Yorum
+tweets: Tweetler
+share: Paylaş
+rss_feed: RSS Beslemesi
+copyright:
+  theme_by: Tema tarafından geliştirildi 
+  base_on: üzerinde
+  powered_by: Tarafından desteklenmektedir
