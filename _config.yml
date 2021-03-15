@@ -188,7 +188,7 @@ profile:
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
   author: 昵称
   author_title: Web Developer & Designer
-  author_description: 个人简介。
+  author_description: Burayı düzenlemek için _config.yml dosyasına gidin.
   location: Shenzhen, China
   follow: https://github.com/cofess
   # Social Links
