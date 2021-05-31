@@ -3,7 +3,7 @@
     <% if (post.permalink) { %>
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="<%- post.permalink %>" title="<%= post.title %>" target="_blank" rel="external"><%- post.permalink %></a>
+      <a href="<%- post.permalink %>" title="<%= post.title %>" target="_blank" rel="external"><%- decodeURIComponent(post.permalink) %></a>
     </li>
     <% } %>
     <li class="post-copyright-license">
