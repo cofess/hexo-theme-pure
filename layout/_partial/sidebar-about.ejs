@@ -8,7 +8,11 @@
           <% for(var i in theme.profile.links) { %>
           <li>
             <%= i %>:
-            <a href="<%- theme.profile.links[i] %>" target="_blank"><%- theme.profile.links[i] %></a>
+            <% if (theme.profile.links[i].startsWith('http')) { %>
+              <a href="<%- theme.profile.links[i] %>" target="_blank"><%- theme.profile.links[i] %></a>
+            <%  } else { %>
+              <a><%- theme.profile.links[i] %></a>
+            <% } %>
           </li>
           <% } %>
         </ul>
