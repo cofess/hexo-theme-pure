@@ -1,4 +1,4 @@
-<% if (!index && theme.config.toc && post.toc) { %>
+<% if (!index && theme.config.toc && (post.toc !== false)) { %>
 <aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
   <div class="slimContent">
     <nav id="toc" class="article-toc">
