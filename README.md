@@ -182,3 +182,18 @@ title: Hello World
 mathjax: true
 ```
 
+### [hexo-filter-mermaid-diagrams](https://github.com/webappdevelp/hexo-filter-mermaid-diagrams)
+
+Install dependencies.
+```
+yarn add hexo-filter-mermaid-diagrams
+```
+
+
+To enable mermaid plugin, just add following lines to your `_config.yaml`
+```
+mermaid:
+    enable: true
+```
+
+See [mermaid.js](https://mermaidjs.github.io/) for more details about mermaid.

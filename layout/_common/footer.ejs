@@ -8,4 +8,13 @@
         	<%= __('copyright.theme_by') %> <a href="https://github.com/cofess" target="_blank"> cofess </a><%= __('copyright.base_on') %> <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
         </div>
     </div>
+    {% if theme.mermaid.enable %}
+        <script src='https://unpkg.com/mermaid@{{ theme.mermaid.version }}/dist/mermaid.min.js'></script>
+        <script>
+            if (window.mermaid) {
+              mermaid.initialize({{ JSON.stringify(theme.mermaid.options) }});
+            }
+        </script>
+{% endif %}
+
 </footer>
