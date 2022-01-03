@@ -7895,6 +7895,11 @@ body.okayNav-loaded {
 }
 
 @media (min-width: 992px) {
+  
+  .slimContent{
+    margin-top: 20px;
+  }
+
   .container {
     width: 970px;
   }

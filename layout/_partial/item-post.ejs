@@ -1,5 +1,5 @@
 <% if (type == 'link'){ %>
-<a href="<%- url_for(post.path) %>" class="collection-item" target="_blank" itemprop="url">
+<a href="<%- url_for(post.path) %>" class="collection-item" <% if (theme.config.isNewTabLinks){ %> target="_blank" <%}%>  itemprop="url">
   <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date) %></time>
   <span>&nbsp;&nbsp;&nbsp;</span> <%= post.title %>
 </a>
@@ -25,7 +25,7 @@
    <% } %>
 </article>
 <% } else { %>
-<a href="<%- url_for(post.path) %>" class="collection-item" target="_blank" itemprop="url">
+<a href="<%- url_for(post.path) %>" class="collection-item" <% if (theme.config.isNewTabLinks){ %> target="_blank" <%}%>  itemprop="url">
   <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date) %></time>
   <span>&nbsp;&nbsp;&nbsp;</span> <%= post.title %>
 </a>

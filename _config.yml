@@ -44,6 +44,9 @@ config:
   menu_highlight: false # 是否开启当前菜单高亮显示
   thumbnail: false # enable posts thumbnail, options: true, false
   excerpt_link: Read More
+  #New
+  isNewTabLinks: false #是否链接打开新标签页
+  autoUnfold: true # 默认展开文章目录
 
 # Pagination
 pagination:
@@ -128,6 +131,9 @@ comment:
     repo:  #必须. GitHub repository.
     ClientID:  #必须. GitHub Application Client ID.
     ClientSecret:  #必须. GitHub Application Client Secret.
+    enableHotKey: true
+    language: zh-CN
+    
   valine: # Valine. https://valine.js.org
     appid:  # your leancloud application appid
     appkey:  # your leancloud application appkey
@@ -187,6 +193,7 @@ fb_app_id:
 # profile
 profile:
   enabled: true # Whether to show profile bar
+  articleSelfBlock: false # 关闭文章下方的自我介绍
   avatar: images/avatar.jpg
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
   author: 昵称
