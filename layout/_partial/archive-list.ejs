@@ -1,4 +1,4 @@
-<% if (page.posts.length < 2){ %>
+<% if (theme.pagination.showContent && page.posts.length < 2){ %>
   <% page.posts.each(function(post){ %>
     <%- partial('article', {post: post, index: true}) %>
   <% }) %>

@@ -5865,7 +5865,7 @@ body.no-sidebar .sidebar {
 .main .pager > a,
 .main .pager > .page-number {
   line-height: 32px;
-  float: left;
+  /* float: left; */
 }
 
 .main .pager a {

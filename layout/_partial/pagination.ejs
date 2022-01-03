@@ -8,7 +8,8 @@
             <% } %>
             <%- paginator({
                 prev_text: '<i class="icon icon-angle-left"></i> ' + __('pagination.prev'),
-                next_text: __('pagination.next') + ' <i class="icon icon-angle-right"></i>'
+                next_text: __('pagination.next') + ' <i class="icon icon-angle-right"></i>',
+                escape: false, mid_size: theme.pagination.midSize ? theme.pagination.midSize : 2
             }) %>
             <% if (!page.next && theme.pagination.next.alwayShow) { %>
             <a class="next disabled" href="javascript:;"><%= __('pagination.next') %> <i class="icon icon-angle-right"></i></a>
@@ -52,7 +53,7 @@
             </li>
             <% } %>
         </ul>
-        <div class="total-article bar-right"><%= _p('pagination.pageof', page.current, page.total) %></div>
+            <div class="total-article bar-right"><%= _p('pagination.pageof', page.current, page.total) %></div>
         </div>
     </nav>
     <% } %>

@@ -13,7 +13,7 @@
   	<article class="content article article-archives article-type-list" itemscope="">
 	    <header class="article-header">
 	      <h1 itemprop="title"><% if (title){ %><%= title %><% } %></h1>
-	      <p class="text-muted"><%= _p('total.article', page.posts.length) %></p>
+	      <p class="text-muted"><%= _p('total.article', site.posts.length) %></p>
 	    </header>
 	    <div class="article-body">
 	      <%- partial('_partial/archive', {pagination: config.archive, index: true}) %>
