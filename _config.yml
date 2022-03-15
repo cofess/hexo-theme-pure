@@ -106,8 +106,14 @@ share:
   mobile_sites: weibo,qq,qzone  # 移动端显示的分享图标
 
 # Github
-github: 
-  username: cofess  # github username
+# github: 
+#   username: cofess  # github username
+
+# Repository Info (This will override 'github' option)
+# 项目仓库信息（将会覆盖 github 项）
+repository:
+  platform: github # 托管平台（github | gitee）
+  username: cofess # 用户名
 
 # Comment
 # Gitment
