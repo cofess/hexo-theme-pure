@@ -1,7 +1,7 @@
 <article class="article article-repository article-type-list" itemscope="">
   <header class="article-header">
     <h1 itemprop="title"><%= page.title %></h1>
-    <p class="text-muted">I have <span id="repo-count">0</span> projects on Github</p>
+    <p class="text-muted">I have <span id="repo-count">0</span> projects on <span id="repo-platform">Github</span></p>
   </header>
   <div class="article-body">
     <div class="repo-content">
@@ -11,11 +11,12 @@
     </div>
   </div>
 </article>
+
 <% if (theme.comment.type && !is_home()) { %>
   <%- partial('post/comment', {post: page}) %>
 <% } %>
 
-<!--Github项模版-->
+<!--项模版-->
 <script type="text/template" id="list-template">
   <li class="col-sm-6 col-md-6 col-lg-4">
     <div class="repo hover-shadow hover-grow">
@@ -32,6 +33,7 @@
     </div>
   </li>
 </script>
+
 <!--获取失败模版-->
 <script type="text/template" id="error-template">
   <h3>加载失败</h3><p>请刷新或稍后再试...</p>

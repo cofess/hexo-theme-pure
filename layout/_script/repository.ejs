@@ -1,52 +1,9 @@
-<script type="text/javascript">
-var open = function() {
-  var baiduTpl = new Object();
-  var handleTpl = function() {
-    baiduTpl.list = baidu.template("list-template");
-    baiduTpl.error = baidu.template("error-template");
-  };
-
-  var handleGithub = function() {
-    var repoContainer = $('.repo-content');
-    var errorContainer = repoContainer.find(".blankslate");
-    var countContainer = $("#repo-count");
-
-    $.get("https://api.github.com/users/<%=theme.github.username%>/repos", function(result) {
-      if (result) {
-        errorContainer.remove();
-        countContainer.text(result.length); //设置项目个数
-        var ul = $("<ul class='repo-list row clearfix'></ul>");
-        result.sort(function(a, b) {
-          return new Date(b.updated_at) - new Date(a.updated_at)
-        }).sort(function(a, b) {
-          var a_start = a.stargazers_count;
-          var b_start = b.stargazers_count;
-          if (a.fork) a_start * 0.5;
-          if (b.fork) b_start * 0.5;
-          return b_start - a_start;
-        }).map(function(repo) {
-          if (!repo.description) repo.description = "";
-          repo.updated_at = repo.updated_at.substring(0, repo.updated_at.lastIndexOf("T"));
-          var html = baiduTpl.list(repo);
-          ul.append(html);
-        })
-
-        repoContainer.append(ul);
-        $(".geopattern").each(function() {
-          $(this).geopattern($(this).data('pattern-id'));
-        });
-      } else {
-        errorContainer.append(baiduTpl.error());
-      }
-    });
-  };
-
-  return {
-    init: function() {
-      handleTpl();
-      handleGithub();
-    }
-  }
-};
-$(open().init);
-</script>
+<% if (theme.repository) { %>
+  <% if (theme.repository.platform === 'github') { %>
+    <%- partial('_script/_repository/github', { script: true }) %>
+  <% } else if (theme.repository.platform === 'gitee') { %>
+    <%- partial('_script/_repository/gitee', { script: true }) %>
+  <% } %>
+<% } else if (theme.github) { %>
+  <%- partial('_script/_repository/legacy', { script: true }) %>
+<% } %>

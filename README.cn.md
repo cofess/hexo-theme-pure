@@ -199,9 +199,23 @@ pv:
 
 如果不需要第三方来统计浏览量，只需将相应设置改为false即可（设置为false后不会加载第三方JS脚本）
 
-### Github respostory
+### 项目
 
 复制`theme/pure/_source/` 目录下`repository`文件夹到`blog path/source/` 目录下
+
+新版配置（支持 Github 和 Gitee）：
+
+*新版配置将会覆盖旧版的 github 配置！*
+
+```
+# Repository Info (This will override 'github' option)
+# 项目仓库展示信息（将会覆盖 github 项）
+repository:
+  platform: github # 托管平台（github | gitee）
+  username: *** # 用户名
+```
+
+旧版配置（仅支持 Github）：
 
 ```
 # Github
