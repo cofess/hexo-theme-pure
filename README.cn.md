@@ -392,3 +392,19 @@ markdown_it_plus:
 title: Hello World
 mathjax: true
 ```
+
+###  安装 mermaid 插件 [hexo-filter-mermaid-diagrams](https://github.com/webappdevelp/hexo-filter-mermaid-diagrams)
+
+Install dependencies.
+```
+yarn add hexo-filter-mermaid-diagrams
+```
+
+
+To enable mermaid plugin, just add following lines to your `_config.yaml`
+```
+mermaid:
+    enable: true
+```
+
+See [mermaid.js](https://mermaidjs.github.io/) for more details about mermaid.
