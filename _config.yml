@@ -37,6 +37,13 @@ site:
   favicon: /favicon.png
   board: <p>欢迎交流与分享经验!</p> # 站点公告
   copyright: false # 底部版权信息
+  visitor: true # 底部站点点击数访客数统计
+  theme_author: true # 是否显示主题作者信息
+  site_time:
+    enable: true # 是否显示站点成立时间
+    date: "2022-09-23" # 建站日期 模板 "YYYY-MM-DD"
+    time: "23:10:10" # 建站时间 模板 "HH:mm:ss"
+    frequency: 1000 # 时间刷新评论 1000 为 1 秒
 
 # config
 config:
@@ -44,7 +51,7 @@ config:
   layout: main-center # 布局方式 main-left main-center main-right
   toc: true # 是否开启文章章节目录导航
   menu_highlight: false # 是否开启当前菜单高亮显示
-  thumbnail: false # enable posts thumbnail, options: true, false
+  thumbnail: true # enable posts thumbnail, options: true, false
   excerpt_link: Read More
 
 # Pagination
@@ -159,7 +166,7 @@ douban:
 # PV
 pv:
   busuanzi:
-    enable: false  # 不蒜子统计
+    enable: false  # 不蒜子统计(阅读人数统计)
   leancloud:
     enable: false  # leancloud统计
     app_id: # leancloud <AppID>
@@ -167,7 +174,7 @@ pv:
         
 # wordcount
 postCount:
-  enable: false
+  enable: true
   wordcount: true  # 文章字数统计
   min2read: true  # 阅读时长预计 
 
