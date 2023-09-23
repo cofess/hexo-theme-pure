@@ -13,12 +13,14 @@
             <div class="panel panel-default hover-shadow hover-grow">
               <figure class="media media-middle">
                 <div class="media-left pr-no">
-                  <a href="<%= item.link %>" target="_blank" class="img-burn thumb-md media-middle">
-                    <img src="<%= item.avatar %>" class="w-full" alt="">
+                  <a href="<%= item.avatar %>" target="_blank" class="img-burn thumb-md media-middle">
+                    <img src="<%= item.avatar %>" class="w-full" alt="<%= item.desc %>"">
                   </a>
                 </div>
                 <div class="media-body p-0x">
-                  <h4 class="media-heading"><a href="<%= item.link %>" target="_blank"><span class="text-dark"><%= link %></span></a></h4>
+                  <h4 class="media-heading"><a href="<%= item.link %>" target="_blank">
+                    <span style="color:#9932CC" title="点击跳转"><%= name %></span>
+                    </a></h4>
                   <div class="text-muted">
                     <%= item.desc %>
                   </div>

@@ -138,6 +138,9 @@ markdown_it_plus:
         enable: false  
 ```
 
+install markdown-it-katex dependency for markdown-it-plus
+`npm install --save markdown-it-katex`
+
 Article enable mathjax
 
 ```

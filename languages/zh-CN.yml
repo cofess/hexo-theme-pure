@@ -5,6 +5,7 @@ menu:
   Tags: 标签
   Repository: 项目
   Books: 书单
+  Gallery: 相册
   Movies: 电影
   Links: 友链
   About: 关于
@@ -26,6 +27,8 @@ page:
   douban: 我的豆瓣
   books: 书单
   books-desc: 个人收藏的书单推荐给大家
+  gallery: 相册
+  gallery-desc: 分享一些照片
   movies: 电影
   movies-desc: 个人喜欢的电影推荐给大家
   links: 友情链接

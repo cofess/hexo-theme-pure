@@ -124,6 +124,11 @@ sub {
 
 img {
   border: 0;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 3px;
+  text-align: center;
+  display: block;
 }
 
 svg:not(:root) {
@@ -148,7 +153,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace,monospace;
+  font-family: consolas,monospace,monospace;
   font-size: 1em;
 }
 
@@ -5545,8 +5550,8 @@ code {
   text-shadow: 0 1px #fff;
   padding: 0.2em 0.4em;
   margin: 0 0.3em;
-  color: #555;
-  background: #eee;
+  color: rgb(12, 12, 12);
+  background: rgb(79, 220, 255);
   border-radius: 3px;
   font-size: 85%;
 }

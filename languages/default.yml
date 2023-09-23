@@ -5,6 +5,7 @@ menu:
   Tags: Tags
   Repository: Repository
   Books: Books
+  Gallery: Gallery
   Movies: Movies
   Links: Links
   About: About
@@ -26,6 +27,8 @@ page:
   douban: Douban
   books: Books
   books-desc: Personal collection of books recommended to everyone
+  gallery: Gallery
+  gallery-desc: share some pictures
   movies: Movies
   movies-desc: Personal favorite movies recommended to everyone
   links: Links

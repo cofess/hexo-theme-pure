@@ -5,6 +5,7 @@ menu:
   Categories: categories  # 分类
   Tags: tags  # 标签
   Repository: repository  # github repositories
+  Gallery: gallery  # 相册
   Books: books  # 豆瓣书单
   Links: links  # 友链
   About: about  # 关于
@@ -18,6 +19,7 @@ menu_icons:
   tags: icon-tags
   repository: icon-project
   books: icon-book-fill
+  gallery: icon-delicious
   links: icon-friendship
   about: icon-cup-fill
 
@@ -73,8 +75,8 @@ index_widgets:
 archive_type: 'monthly'
 show_count: true
 
-# Fancybox
-fancybox: false
+# Fancybox 点击图片查看大图
+fancybox: true
 
 # Search
 search:
