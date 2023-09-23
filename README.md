@@ -1,49 +1,31 @@
-# pure
+# purabo
 
-A brand new default theme for [[Hexo](https://hexo.io)].  [Preview](http://cofess.github.io/) | [中文说明文档](README.cn.md) | [iconfont](http://blog.cofess.com/hexo-theme-pure/iconfont/demo_fontclass.html)
+## About [purabo](https://github.com/abobot/hexo-theme-purabo)
 
-![](screenshot/pure.png)
+Forked from [hexo-theme-pure](https://github.com/cofess/hexo-theme-pure)
 
-## Features
+[Origin English documentation](README.origin.md) | [原始中文文档](README.cn.origin.md)
 
-- Multiple languages support
-- Comment support
-- Tags page
-- Categories page
-- Social Media
+## How to use
 
-## Skins
+Open `cmd` in your `theme` directoery.
 
-![](screenshot/pure-theme-black.png)
+### install theme
 
-![](screenshot/pure-theme-blue.png)
+Run `git clone https://github.com/abobot/hexo-theme-purabo purabo`
+> You can replace the name of `purabo` as your theme name.
 
-![](screenshot/pure-theme-green.png)
-
-![](screenshot/pure-theme-purple.png)
-
-## Appearance
-
-[Home](http://cofess.github.io/) | [Archives](http://cofess.github.io/archives/) | [Categories](http://cofess.github.io/categories/) | [Tags](http://cofess.github.io/tags/) | [Repository](http://cofess.github.io/repository/) | [Books](http://cofess.github.io/books/) | [Links](http://cofess.github.io/links/) | [About](http://cofess.github.io/about/)
-
-## Install theme
-
-Execute the following command under your `hexo` folder.
-
-```
-git clone https://github.com/cofess/hexo-theme-pure.git themes/pure
-```
-Then modify the property `theme` of the file `hexo/_config.yml`  to `theme: pure`
-
-## Update theme
-
-Execute the following command to update theme.
-
-```
-cd themes/pure
+### Update theme
+```bash
+cd purabo
 git pull
 ```
-## Install plugin
+
+### Use theme
+Find the `theme: landscape` in `site` `_config.yml` and change to `theme: purabo`.
+> `purabo` is the theme name you named.
+
+## Install plugins
 
 ### [hexo-wordcount](https://github.com/willin/hexo-wordcount)
 
@@ -70,28 +52,9 @@ npm install hexo-generator-sitemap --save
 ```
 npm install hexo-generator-baidu-sitemap --save
 ```
-## Data files
-Sometimes you may need to use some data in templates which is not directly available in your posts, or you want to reuse the data elsewhere. For such use cases, Hexo 3 introduced the new Data files. This feature loads YAML or JSON files in source/_data folder so you can use them in your site.
+### Plugins for blog optimization
 
-For example, add links.yml in source/_data folder.
-
-### links data
-
-add links.yml in source/_data folder.
-
-The format of the link :
-
-```
-Name:
-    link: http://example.com
-    avatar: http://example.com/avatar.png
-    desc: description
-```
-Add a number of links, we just need to repeat the format according to the above.
-
-## Blog optimization
-
-### [hexo-neat](https://github.com/rozbo/hexo-neat)
+#### [hexo-neat](https://github.com/rozbo/hexo-neat)
 
 > auto Minify html、js、css and make it neat
 
@@ -120,13 +83,13 @@ neat_js:
     - '*.min.js' 
 ```
 
-### [hexo-baidu-url-submit](https://github.com/huiwang/hexo-baidu-url-submit)
+#### [hexo-baidu-url-submit](https://github.com/huiwang/hexo-baidu-url-submit)
 
 ```
 npm install hexo-baidu-url-submit --save
 ```
 
-### [hexo-translate-title](https://github.com/cometlj/hexo-translate-title)
+#### [hexo-translate-title](https://github.com/cometlj/hexo-translate-title)
 > translate the chinese title of Hexo blog to english words automatially
 
 ```
@@ -145,7 +108,7 @@ translate_title:
 ```
 ## Mathjax Support
 
-### [hexo-renderer-markdown-it-plus](https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus)
+#### [hexo-renderer-markdown-it-plus](https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus)
 
 install
 
@@ -182,3 +145,18 @@ title: Hello World
 mathjax: true
 ```
 
+
+## Data files
+
+Sometimes you may need to use some data in templates which is not directly available in your posts, or you want to reuse the data elsewhere. For such use cases, Hexo 3 introduced the new Data files. This feature loads YAML or JSON files in `source/_data` folder so you can use them in your site.
+
+For example, add `links.yml` in `source/_data` folder.
+
+The format of the link:
+
+```yml
+Name:
+    link: http://example.com
+    avatar: http://example.com/avatar.png
+    desc: description
+```
