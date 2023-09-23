@@ -19,3 +19,7 @@
 + 添加访问量和访客数
   + 问题：文章阅读量和站点点击量访客量会使用两次**不蒜子**
 + 添加站点使用时间
++ 调整菜单栏高度
++ 添加go to top 按钮
++ valine av-min.js cdn过期，更换为`<script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>`
++ 

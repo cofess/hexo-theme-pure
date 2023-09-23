@@ -9213,3 +9213,19 @@ body.okayNav-loaded {
     max-height: 200px;
   }
 }
+
+/* 调整菜单栏高度 */
+.menu-item{
+	height: 35px;
+}
+
+/* 调整a标签的高度 */
+.menu-item a{
+	display: block;
+	height: 35px;
+}
+
+/* 隐藏valine版权信息 */
+.txt-right{
+	display: none;
+}

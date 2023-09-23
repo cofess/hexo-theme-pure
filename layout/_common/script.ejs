@@ -19,3 +19,8 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 <% } %>
 <%- partial('_script/fancybox') %>
 <%- partial('_script/analytics') %>
+
+<!-- go to top -->
+<% if (theme.purabo.go_top.enable) { %>
+   <%- partial('_purabo/go_top') %>
+<% } %>

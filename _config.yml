@@ -26,6 +26,12 @@ menu_icons:
 # rss
 rss: /atom.xml
 
+# function 自己添加的一些功能
+purabo:
+  go_top:
+    enable: true
+
+
 # Site
 site:
   logo:
