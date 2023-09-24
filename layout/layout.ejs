@@ -11,6 +11,10 @@
   }
 	bodyClass = page.sidebar === 'none' ? (bodyClass + ' no-sidebar') : bodyClass;
 %>
+<% if(theme.purabo.custom_img){ %>
+  <script src="https://cdn.jsdelivr.net/gh/bobcn/hexo_resize_image.js@master/hexo_resize_image.js"></script>
+  <% } %>
+%>
 <body class="<%= bodyClass %>" itemscope itemtype="http://schema.org/WebPage">
   <%- partial('_common/header', null, {cache: !config.relative_link}) %>
   <% if (theme.sidebar && (page.sidebar!='none' || page.sidebar!='custom')){ %>

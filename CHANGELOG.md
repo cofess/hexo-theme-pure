@@ -35,3 +35,6 @@
   > `npm uninstall hexo-generator-index --save`
 
   > `npm install hexo-generator-index-pin-top --save`
+
++ 添加文章更新时间
++ 自定义图片功能

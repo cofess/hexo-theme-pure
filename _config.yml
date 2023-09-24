@@ -30,7 +30,10 @@ rss: /atom.xml
 purabo:
   go_top:
     enable: true
-
+  custom_img: true 
+  # 格式 ?widthxheight ?widthx ?xheight ?scale
+  # ![avatar](https://cdn.jsdelivr.net/gh/hwame/pics@main/avatar.jpg?200x200)
+  
 
 # Site
 site:
@@ -59,6 +62,7 @@ config:
   top: 
     enable: true # 是否开启文章置顶 
     top_desc: 置顶 #置顶描述
+  updated: true # 是否开启文章更新时间
   # 说明
   # 1. 卸载 `npm uninstall hexo-generator-index --save` 
   # 2. 安装 `npm install hexo-generator-index-pin-top --save`

@@ -25,3 +25,11 @@ title: Hello World
 top: true
 top_desc: 
 ```
+
+## updated enable
+
+```
+title: Hello World
+updated: 
+```
+> 默认是文本更新时间

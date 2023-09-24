@@ -8,7 +8,7 @@
   </div>
   <% } %>
   <p class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: 'MMM D'}) %>
+    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
     <%- partial('post/category') %>
     <%- partial('post/tag') %>
     <span class="post-comment"><i class="icon icon-comment"></i> <a href="<%- url_for(post.path) %>#comments" class="article-comment-link"><%= __('article.comments') %></a></span>
