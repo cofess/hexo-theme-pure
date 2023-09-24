@@ -24,3 +24,9 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 <% if (theme.purabo.go_top.enable) { %>
    <%- partial('_purabo/go_top') %>
 <% } %>
+
+<% if(theme.purabo.copy_button.enable) { %>
+   <!-- 代码块复制功能 -->
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.js"></script>
+   <script type="text/javascript" src="/js/copy_button.js"></script>
+   <% } %>

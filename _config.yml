@@ -33,7 +33,9 @@ purabo:
   custom_img: true 
   # 格式 ?widthxheight ?widthx ?xheight ?scale
   # ![avatar](https://cdn.jsdelivr.net/gh/hwame/pics@main/avatar.jpg?200x200)
-  
+  copy_button:
+    enable: true
+    show_result: true
 
 # Site
 site:
@@ -109,7 +111,7 @@ search:
 
 # Donate
 donate:
-  enable: true
+  enable: false
   # 微信打赏
   wechatpay:
     qrcode: images/donate/wechatpayimg.png
@@ -134,7 +136,14 @@ github:
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 comment:
-  type: valine  # 启用哪种评论系统
+  type: utterances  # 启用哪种评论系统
+  # 20230921 utterances https://utteranc.es/
+  utterances:
+    repo: abobot/hexo-blog-comments
+    issue_term: pathname 
+    label: 💬comments 
+    theme: github-light 
+    crossorigin: anonymous
   disqus:  # enter disqus shortname here
   youyan: 
     uid: 1783844 # enter youyan uid 

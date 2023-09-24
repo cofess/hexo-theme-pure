@@ -1,0 +1,10 @@
+<% if (typeof(script) !== 'undefined' && script) { %>
+    <script src="https://utteranc.es/client.js" 
+            repo=<%= theme.comment.utterances.repo %>
+            issue-term=<%= theme.comment.utterances.issue_term %>
+            label=<%= theme.comment.utterances.label %>
+            theme=<%= theme.comment.utterances.theme %> 
+            crossorigin=<%= theme.comment.utterances.crossorigin %>
+            async>
+    </script>
+  <% } %>
