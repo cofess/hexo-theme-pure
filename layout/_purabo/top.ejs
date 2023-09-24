@@ -1,0 +1,18 @@
+<% if (post.top) { %>
+    <span class="article-title" style="color:rgb(248, 6, 6);
+                  background-color: rgb(219, 233, 233);
+                  border-radius: 15%;
+                  ">
+      <i class="icon icon-anchor"></i>
+      <font> 
+        <% if (post.top_desc) { %>
+            <%= post.top_desc %>
+        <% } else if(theme.config.top.top_desc){ %>
+          <%= theme.config.top.top_desc %>
+        <% } else{ %>
+            置顶
+        <% } %>
+      </font>
+    </span>
+    <span class="post-meta-divider" >|</span>
+  <% } %>

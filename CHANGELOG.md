@@ -22,4 +22,16 @@
 + 调整菜单栏高度
 + 添加go to top 按钮
 + valine av-min.js cdn过期，更换为`<script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>`
-+ 
+
+**20230924**
+
++ 启用toc功能
+  > 第一步：vi ./node_modules/hexo/lib/plugins/helper/toc.js</br>
+  > 第二步：修改其中list_number: true的属性值，默认true为使用自动编号，改为false(大概在第16行)
+
++ 设置文章置顶
+  > 安装插件
+
+  > `npm uninstall hexo-generator-index --save`
+
+  > `npm install hexo-generator-index-pin-top --save`

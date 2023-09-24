@@ -5,6 +5,13 @@
 <% } else if (post.title){ %>
   <% if (index){ %>
     <h1 itemprop="name">
+
+      <!-- 置顶代码 -->
+      <% if (theme.config.top) { %>
+        <%- partial('_purabo/top') %>
+      <% } %>
+      <!-- 置顶代码结束 -->
+
       <a class="<%= class_name %>" href="<%- url_for(post.path) %>"><%= post.title %></a>
     </h1>
   <% } else { %>

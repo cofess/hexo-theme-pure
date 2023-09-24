@@ -49,13 +49,20 @@ site:
     enable: true # 是否显示站点成立时间
     date: "2022-09-23" # 建站日期 模板 "YYYY-MM-DD"
     time: "23:10:10" # 建站时间 模板 "HH:mm:ss"
-    frequency: 1000 # 时间刷新评论 1000 为 1 秒
+    frequency: 1000 # 时间刷新频率 1000 为 1 秒
 
 # config
 config:
   skin: # 主题颜色 theme-black theme-blue theme-green theme-purple
   layout: main-center # 布局方式 main-left main-center main-right
   toc: true # 是否开启文章章节目录导航
+  top: 
+    enable: true # 是否开启文章置顶 
+    top_desc: 置顶 #置顶描述
+  # 说明
+  # 1. 卸载 `npm uninstall hexo-generator-index --save` 
+  # 2. 安装 `npm install hexo-generator-index-pin-top --save`
+  # 文章front-matter 中可以写 top:999 数字代表优先级
   menu_highlight: false # 是否开启当前菜单高亮显示
   thumbnail: true # enable posts thumbnail, options: true, false
   excerpt_link: Read More
@@ -250,3 +257,4 @@ profile:
   projects:
     cofess/gulp-startpro: https://github.com/cofess/gulp-startpro
     cofess/hexo-theme-pure: https://github.com/cofess/hexo-theme-pure
+
