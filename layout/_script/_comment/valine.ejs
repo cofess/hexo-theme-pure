@@ -1,13 +1,17 @@
 <% if (typeof(script) !== 'undefined' && script) { %>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css" />
   <!-- <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script> -->
   <script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script src="//cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js"></script>
   <script type="text/javascript">
   var GUEST = ['nick', 'mail', 'link'];
   var meta = '<%= theme.comment.valine.meta %>';
   meta = meta.split(',').filter(function(item) {
     return GUEST.indexOf(item) > -1;
   });
+  var requiredFields = '<%= theme.comment.valine.requiredFields %>';
+  requiredFields = requiredFields.split(',');
   new Valine({
     el: '#vcomments',
     verify: <%= theme.comment.valine.verify %>,
@@ -18,7 +22,15 @@
     avatar: '<%= theme.comment.valine.avatar %>',
     meta: meta,
     pageSize: '<%= theme.comment.valine.pageSize %>' || 10,
-    visitor: <%= theme.comment.valine.visitor %>
+    enableQQ: '<%= theme.comment.valine.enableQQ %>',
+    recordIP: '<%= theme.comment.valine.recordIP %>',
+    requiredFields: requiredFields,
+    visitor: <%= theme.comment.valine.visitor %>,
+
+    master: 'bcc362624e1e2ec06f89934099c75a7b',
+    friends: [],
+    tagMeta: ['黄雀', '螳螂', '蝉'],
+    metaPlaceholder: {"nick":"昵称/QQ号","mail":"邮箱(必填)","link":"个人主页"}
   });
   </script>
 <% } %>

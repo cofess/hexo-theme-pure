@@ -9276,3 +9276,49 @@ body.okayNav-loaded {
 .code-wrapper:hover .btn-copy {
   opacity: 1;
 }
+
+/* valine评论区 start */
+/* 评论框背景及隐藏 */
+#veditor {
+	background-image: url(https://cdn.jsdelivr.net/gh/drew233/cdn/20200409110727.webp);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: rgba(255, 255, 255, 0);
+	resize: vertical;
+}
+#veditor:focus{
+	background-position-y: 200px;
+	transition: all 0.2s ease-in-out 0s;
+}
+
+/* 评论及回复添加边框 */
+#vcomments .vcards .vcard {
+	padding: 15px 20px 0 20px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	box-shadow: 0 0 4px 1px rgba(0, 0, 0, .12);
+	transition: all .3s
+}
+#vcomments .vcards .vcard:hover {
+	box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12)
+}
+#vcomments .vcards .vcard .vh .vcard {
+	border: none;
+	box-shadow: none;
+}
+
+/* 评论头像旋转 */
+img.vimg {
+	transition: all 1s
+}
+img.vimg:hover {
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+}
+/* valine评论区 end */
+
+

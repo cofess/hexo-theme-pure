@@ -6,6 +6,10 @@ Forked from [hexo-theme-pure](https://github.com/cofess/hexo-theme-pure)
 
 [Origin English documentation](README.origin.md) | [原始中文文档](README.cn.origin.md)
 
+## New functions
+
+
+
 ## How to use
 
 Open `cmd` in your `theme` directoery.
