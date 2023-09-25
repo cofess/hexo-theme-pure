@@ -145,7 +145,7 @@ share:
 
 # Github
 github: 
-  username: cofess  # github username
+  username: abobot  # github username
 
 # Comment
 # Gitment
@@ -246,16 +246,16 @@ profile:
   author_title: Web Developer & Designer
   author_description: 个人简介。
   location: Shenzhen, China
-  follow: https://github.com/cofess
+  follow: https://github.com/aboobt
   # Social Links
   social:
     links:
-      github: https://github.com/cofess
-      weibo: http://weibo.com/cofess
-      twitter: https://twitter.com/iwebued
+      github: https://github.com/abobot
+      weibo: http://weibo.com/
+      twitter: https://twitter.com/
       # facebook: /
       # dribbble: /
-      behance: https://www.behance.net/cofess
+      behance: https://www.behance.net/
       rss: atom.xml
     link_tooltip: true # enable the social link tooltip, options: true, false
   # My Skills 
@@ -269,11 +269,11 @@ profile:
     平面设计: ★★★☆☆
   # My Personal Links
   links:
-    Github: https://github.com/cofess
-    Blog: http://blog.cofess.com
-    微博: http://weibo.com/cofess
-    花瓣: http://huaban.com/cofess
-    Behance: https://www.behance.net/cofess
+    Github: https://github.com/aboobt
+    Blog: http://abobot.github.io
+    微博: http://weibo.com/
+    花瓣: http://huaban.com/
+    Behance: https://www.behance.net/
   # My Personal Labels
   labels:
     - 前端
@@ -288,6 +288,5 @@ profile:
       date: 2016
   # My Personal Projects
   projects:
-    cofess/gulp-startpro: https://github.com/cofess/gulp-startpro
-    cofess/hexo-theme-pure: https://github.com/cofess/hexo-theme-pure
+    abobot/hexo-theme-purabo: https://github.com/abobot/hexo-theme-purable
 
