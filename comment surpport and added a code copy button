@@ -1,0 +1,273 @@
+[33mcommit d340a9dd8f22620f2b5cd9eba8dc11e42d37e8de[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: abobot <1145451169@qq.com>
+Date:   Sun Sep 24 23:01:22 2023 +0800
+
+    added utterances comment surpport and added a code copy button
+
+[33mcommit c303144f17b37d88fbedb5e0805184c1487fde77[m
+Author: abobot <1145451169@qq.com>
+Date:   Sun Sep 24 15:23:01 2023 +0800
+
+    added article updated time and added custom img size
+
+[33mcommit 4c79701033605f5e5f02bb8f0a70e59d45baf031[m
+Author: abobot <1145451169@qq.com>
+Date:   Sun Sep 24 14:15:45 2023 +0800
+
+    added function: toc and top
+
+[33mcommit 1188bed97d8d70791762dc4adbbbfe8515562cac[m
+Author: abobot <1145451169@qq.com>
+Date:   Sun Sep 24 02:41:10 2023 +0800
+
+    added buttom for go-to-top and changed av-min.js cdn
+
+[33mcommit ee337b6fa0e69f7e1c6fb92a529a6e49123cdcc6[m
+Author: abobot <1145451169@qq.com>
+Date:   Sun Sep 24 02:10:36 2023 +0800
+
+    add visited times and site run time
+
+[33mcommit 65040ce30043fe1ff01aacba28a2375cdd64d373[m
+Author: abobot <1145451169@qq.com>
+Date:   Sat Sep 23 22:50:42 2023 +0800
+
+    add gallery page
+
+[33mcommit 26792a7f06e9e44b92dbb64d049e5099c993e630[m
+Author: abobot <1145451169@qq.com>
+Date:   Sat Sep 23 20:45:22 2023 +0800
+
+    installed hexo-renderer-markdown-it plus and add this plugin config content to _config.yml
+
+[33mcommit 91f731b3252e37bdef64b2b64f2808632d48c3ce[m
+Author: abobot <1145451169@qq.com>
+Date:   Sat Sep 23 17:34:53 2023 +0800
+
+    modified README.md
+
+[33mcommit 3e47b5629ede6b20f5932864bdcd9e2060d9da78[m
+Merge: cf715c0 78db1df
+Author: Sunny <cofess@users.noreply.github.com>
+Date:   Mon May 31 10:54:50 2021 +0800
+
+    Merge pull request #124 from gentryhuang/fix-permalink
+    
+    decode post.permalink
+
+[33mcommit cf715c0041125618e066b0e637aa5ba07fe767a1[m
+Merge: 4e8a0f2 faed287
+Author: Sunny <cofess@users.noreply.github.com>
+Date:   Mon May 31 10:52:18 2021 +0800
+
+    Merge pull request #87 from fengkx/feat/links-can-be-other
+    
+    link in about page can be not link and unclickable
+
+[33mcommit 4e8a0f288358717650e8e30472864948e11dded2[m
+Merge: 2ec7633 617a267
+Author: Sunny <cofess@users.noreply.github.com>
+Date:   Mon May 31 10:51:25 2021 +0800
+
+    Merge pull request #104 from lazyallen/fixbug-douban-apikey-20191227
+    
+    fixbug: add douban api request parameter apikey
+
+[33mcommit 2ec7633df115f03c69d3b410ceaf2f2a25ad5398[m
+Author: Sunny <cofess@users.noreply.github.com>
+Date:   Wed Dec 9 11:59:04 2020 +0800
+
+    Update issue templates
+
+[33mcommit 78db1df82764f2b45860de1a62fd3e501407b1c9[m
+Author: shunhua <gentryhuang.xw@gmail.com>
+Date:   Sun Jul 5 11:02:05 2020 +0800
+
+    decode post.permalink
+
+[33mcommit 617a2679f25c6c71eec7f5070ca1d2b7484f581a[m
+Author: Allen Zhang <allenzhang.plus@gmail.com>
+Date:   Fri Dec 27 18:05:08 2019 +0800
+
+    fixbug: add douban api request param apikey
+
+[33mcommit c9f4706aee551156b94ac5d83383bca1697d693c[m
+Merge: 79fbdb7 4269f90
+Author: Sunny <cofess@users.noreply.github.com>
+Date:   Fri Aug 2 10:17:12 2019 +0800
+
+    Merge pull request #86 from fengkx/feat/sort-repo
+    
+    sort repo by star number and update time
+
+[33mcommit faed287622f613bd4b388be3ba412d7fbecb795f[m
+Author: fengkx <liangkx8237@gmail.com>
+Date:   Fri Jun 28 11:06:35 2019 +0800
+
+    link in about page can be not link and unclickable
+
+[33mcommit 4269f90b367c55a07f43c6e5e9336166f228df4e[m
+Author: fengkx <liangkx8237@gmail.com>
+Date:   Fri Jun 28 10:59:54 2019 +0800
+
+    sort repo by star number and update time
+
+[33mcommit 79fbdb72aafffd50e7dfb047da84278e66a4bab9[m
+Merge: 19990e0 72d1461
+Author: Lony <cofess@users.noreply.github.com>
+Date:   Thu Mar 28 09:36:53 2019 +0800
+
+    Merge pull request #75 from VanLiuZhi/master
+    
+    修改标签和分类因root不是 '/' 而出现问题
+
+[33mcommit 72d146103adf251c0223a909c041b5f35d298522[m
+Author: VanLiuZhi <1441765847@qq.com>
+Date:   Sun Jan 13 00:15:33 2019 +0800
+
+    修改标签和分类
+
+[33mcommit 19990e0454687540f194d12075df8135952e1425[m
+Merge: dd052d6 c1d563e
+Author: cofess <285088180@qq.com>
+Date:   Thu Oct 4 22:11:17 2018 +0800
+
+    Merge branch 'dev'
+
+[33mcommit c1d563e93cc80ee1987b7d533b74356a809b67c3[m[33m ([m[1;31morigin/dev[m[33m)[m
+Author: cofess <285088180@qq.com>
+Date:   Thu Oct 4 22:08:56 2018 +0800
+
+    修复豆瓣图片403
+
+[33mcommit dd052d60016e6d9468798798b533ca08c984b58c[m
+Author: cofess <285088180@qq.com>
+Date:   Wed Oct 3 18:01:13 2018 +0800
+
+    no message
+
+[33mcommit 374e3dbfee30ab58c03a787e7bc1166955d76da3[m
+Author: cofess <285088180@qq.com>
+Date:   Wed Oct 3 17:58:42 2018 +0800
+
+    no message
+
+[33mcommit a10c177aa71cf662ba2e11b5eed8e48da34c16c4[m
+Merge: 450d9b8 51dce37
+Author: cofess <285088180@qq.com>
+Date:   Wed Oct 3 17:48:56 2018 +0800
+
+    Merge branch 'dev'
+    
+    # Conflicts:
+    #       _config.yml
+    #       layout/_common/script.ejs
+    #       layout/_partial/post/comment.ejs
+    #       layout/_script/_comment/gitalk.ejs
+    #       layout/_script/comment.ejs
+    #       source/css/style.css
+
+[33mcommit 51dce379e799dcdbefe49d5cfdad2b769c9175e4[m
+Author: cofess <285088180@qq.com>
+Date:   Wed Oct 3 17:43:46 2018 +0800
+
+    样式表更新；更新不蒜子JS；修复豆瓣图片不显示bug；其他优化
+
+[33mcommit 450d9b8fa68d836fce9de35201a87b7988104684[m
+Merge: 75ef8b8 8371cb7
+Author: Lony <cofess@users.noreply.github.com>
+Date:   Sun Sep 23 15:00:46 2018 +0800
+
+    Merge pull request #55 from dmego/master
+    
+    添加 gitalk 评论插件；使用 fancybox 实现点击图片放大；修改部分样式
+
+[33mcommit 8371cb7c222db38a4e1c54f3be56daf028f66c5a[m
+Author: Dmego <zengkai12138@outlook.com>
+Date:   Tue Aug 21 01:04:16 2018 +0800
+
+    update readme
+
+[33mcommit cb36bd0a25a09723b631db6c79608f084a6cb3e2[m
+Author: Dmego <zengkai12138@outlook.com>
+Date:   Tue Aug 21 00:56:57 2018 +0800
+
+    1.添加Gitalk评论
+    2.修改标签云显示样式，图片显示样式
+    3.使用 fancybox 实现点击图片放大
+
+[33mcommit 75ef8b80694314553cb7feec5c1941d804657974[m
+Merge: 8b4d986 95b263f
+Author: Lony <cofess@users.noreply.github.com>
+Date:   Tue Jul 31 17:55:53 2018 +0800
+
+    Merge pull request #52 from Tammeny/master
+    
+    fixed menu highlight
+
+[33mcommit 95b263f6662d10d53136c20092ddac7d6afb9b65[m
+Author: 唐文雍 <tammeny@qq.com>
+Date:   Tue Jul 31 15:51:12 2018 +0800
+
+    fixed menu highlight
+
+[33mcommit 8b4d986267a77f238bdef0aaf5f882b540501404[m
+Merge: 8e9d025 caeb190
+Author: Lony <cofess@users.noreply.github.com>
+Date:   Mon Jul 9 09:07:58 2018 +0800
+
+    Merge pull request #49 from xCss/master
+    
+    add valine comment system
+
+[33mcommit 8e9d025c624ccdb33f15951082288043eb329e6b[m
+Merge: 446e3be 22b05a5
+Author: Lony <cofess@users.noreply.github.com>
+Date:   Mon Jul 9 09:07:14 2018 +0800
+
+    Merge pull request #48 from czlvjin/patch-1
+    
+    copyright 配置
+
+[33mcommit caeb1906597d5394c129f12f05101651ab228d2d[m
+Author: xCss <yy.liu@foxmail.com>
+Date:   Sat Jul 7 18:07:55 2018 +0800
+
+    add valine comment system
+
+[33mcommit 22b05a58599588cb27e5e9030ca9d6a7abaa0e17[m
+Author: czlvjin <6661294+czlvjin@users.noreply.github.com>
+Date:   Thu Jun 28 17:30:11 2018 +0800
+
+    copyright 配置
+    
+    使 _config.yml 中关闭 copyright 后对文章底部的版权声明信息同样生效（隐藏）
+
+[33mcommit 446e3be8fc37efbbbb1edd178a524b1e903cb7f0[m
+Author: cofess <285088180@qq.com>
+Date:   Tue May 1 01:39:06 2018 +0800
+
+    图标字体更新，readme更新
+
+[33mcommit 62e0171a335490babd28bc0dbec3c82317c6552c[m
+Author: cofess <285088180@qq.com>
+Date:   Tue Apr 10 20:58:59 2018 +0800
+
+    修复豆瓣图片不显示bug
+
+[33mcommit bcc77a64e16607cfab1893c5f9c9484a6baa579b[m
+Author: cofess <285088180@qq.com>
+Date:   Mon Apr 2 22:01:15 2018 +0800
+
+    样式表更新
+
+[33mcommit 6fcaa7fc0e09d18ca7ed9c160f268b8c54f14907[m
+Author: cofess <285088180@qq.com>
+Date:   Sun Mar 25 15:52:52 2018 +0800
+
+    主题更新：
+    1、样式表更新
+    2、tags页文章标签最多显示3个，超过3个显示省略号
+    3、文章打赏优化
+
+[33mcommit 26e086ed28c0f92855f66f02beacd

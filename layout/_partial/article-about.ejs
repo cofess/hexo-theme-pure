@@ -12,3 +12,13 @@
 <% if (theme.comment.type && !is_home()) { %>
   <%- partial('post/comment', {post: page}) %>
 <% } %>
+
+  <!-- about 博客图表统计 -->
+  <!-- data-length显示最大tag数 -->
+<% if(theme.purabo.about.chart.enable) { %>
+  <div id="posts-calendar"></div>
+  <div id="posts-chart"></div>
+  <div id="tags-chart" data-length="10"></div>
+  <div id="categories-chart"></div>
+  <div id="categories-radar"></div>
+<% } %>

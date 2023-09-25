@@ -36,6 +36,9 @@ purabo:
   copy_button:
     enable: true
     show_result: true
+  about: # 开启about页面博客总体统计 需要安装 npm i --save hexo-statistics-charts
+    chart:
+      enable: true
 
 # Site
 site:
