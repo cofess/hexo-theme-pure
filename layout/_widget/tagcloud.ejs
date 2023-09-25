@@ -1,8 +1,22 @@
-<% if (site.tags.length){ %>
-  <div class="widget">
-    <h3 class="widget-title"><%= __('widget.tagcloud') %></h3>
-    <div class="widget-body tagcloud">
-      <%- tagcloud({min_font:13,max_font:14}) %>
-    </div>
+
+<% if(theme.tag_cloud.enable && site.tags.length) {%>
+  <script type="text/javascript" charset="utf-8" src="/js/tagcloud/tagcloud.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/js/tagcloud/tagcanvas.js"></script>
+  <div class="widget-wrap">
+      <h3 class="widget-title"><%= __('widget.tagcloud') %></h3>
+      <div id="myCanvasContainer" class="widget tagcloud">
+          <canvas width="250" height="250" id="resCanvas" style="width=100%">
+              <%- tagcloud() %>
+          </canvas>
+      </div>
   </div>
-<% } %>
+  <% } else { %>
+    <% if (site.tags.length){ %>
+      <div class="widget">
+        <h3 class="widget-title"><%= __('widget.tagcloud') %></h3>
+        <div class="widget-body tagcloud">
+          <%- tagcloud({min_font:13,max_font:14}) %>
+        </div>
+      </div>
+    <% } %>
+  <% } %>
