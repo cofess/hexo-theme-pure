@@ -58,7 +58,7 @@
           url: url,
           type: 'GET',
           data: {
-            id: 150386616,
+            id: "<%= theme.douban.id %>",
             action: status,
             // start:0, // 从哪一条记录开始
             // count:100, // 获取豆瓣书单数据条数
@@ -125,6 +125,7 @@
         document.getElementById('loading').classList.add('hide');
       }
     
+      // !BUG 书本重复出现的问题
       function renderList(list, id) {
         // console.log("renderList");
         for (var i = 0; i < list.length; ++i) {

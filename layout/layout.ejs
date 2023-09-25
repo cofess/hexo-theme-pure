@@ -24,5 +24,7 @@
   <%- body %>
   <%- partial('_common/footer', null, {cache: !config.relative_link}) %>
   <%- partial('_common/script', {post: page}) %>
+  <!-- 文本折叠按钮 -->
+  <%- partial('_partial/fold_action')%>
 </body>
 </html>

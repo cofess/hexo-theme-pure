@@ -39,6 +39,8 @@ purabo:
   about: # 开启about页面博客总体统计 需要安装 npm i --save hexo-statistics-charts
     chart:
       enable: true
+  fold_action:
+    enable: true
 
 # tag_cloud #已内置 参照 `hexo-tag-cloud`
 tag_cloud:

@@ -1,0 +1,41 @@
+<% if(theme.purabo.fold_action.enable){ %>
+    <style>
+        /* 折叠内容 */
+        /* toggle hider title */
+        .hider_title {
+            display: contents;
+            cursor: pointer;
+            background: #05f040c2;
+            font-size:15px;
+        }
+
+        /* toggle indicators */
+        .close:before {
+            padding-left: .5em;
+            padding-right: .5em;
+            content: "▼";
+        }
+        .open:before {
+            padding-left: .5em;
+            padding-right: .5em;
+            content: "▲";
+        } 
+        .fold_hider {
+        background: #eeeeee;
+        }
+        .fold {
+        background: rgb(241, 208, 208);
+        }
+    </style>
+    
+    <script>
+        $(document).ready(function(){
+        $(document).on('click', '.fold_hider', function(){
+        $('>.fold', this.parentNode).slideToggle();
+        $('>:first', this).toggleClass('open');
+        });
+        //默认情况下折叠
+        $("div.fold").css("display", "none");
+        });
+      </script>
+  <% } %>
